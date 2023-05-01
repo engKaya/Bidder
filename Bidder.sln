@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{923FCCA0-9908-43A4-9BAD-E9F54F66E091}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{91B00DA6-CB5B-497A-BAB0-D7639EF5A8FE}"
 EndProject
@@ -15,11 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{E62F521F-7C04-429C-A422-BE9EE2FC1F93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Application", "src\Services\UserService\Bidder.UserService.Application\Bidder.UserService.Application\Bidder.UserService.Application.csproj", "{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.UserService.Application", "src\Services\UserService\Bidder.UserService.Application\Bidder.UserService.Application\Bidder.UserService.Application.csproj", "{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Infastructure", "src\Services\UserService\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure.csproj", "{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.UserService.Infastructure", "src\Services\UserService\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure.csproj", "{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Domain", "src\Services\UserService\Bidder.UserService.Domain\Bidder.UserService.Domain\Bidder.UserService.Domain.csproj", "{0AF22D58-BCD9-42D9-A40F-32F84C110D55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.UserService.Domain", "src\Services\UserService\Bidder.UserService.Domain\Bidder.UserService.Domain\Bidder.UserService.Domain.csproj", "{0AF22D58-BCD9-42D9-A40F-32F84C110D55}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.UserService.Api", "src\Services\UserService\Bidder.UserService.Api\Bidder.UserService.Api.csproj", "{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}"
 EndProject
