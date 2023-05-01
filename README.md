@@ -16,6 +16,6 @@ Also the project will have Consul for service discovery.
 - [RabbitMQ] (https://www.rabbitmq.com/download.html)]
 - [.NET Core 8.0] (https://dotnet.microsoft.com/en-us/download/dotnet/8.0)]
 - [SQL Server] (https://www.microsoft.com/en-us/sql-server/sql-server-downloads)]
-- [Consul] (https://www.consul.io/downloads.html)]
+- [Consul] (https://developer.hashicorp.com/consul/downloads?product_intent=consul)]
 - [MediatR] (https://www.nuget.org/packages/MediatR)]
 - [SignalR] (https://learn.microsoft.com/tr-tr/aspnet/signalr/overview/getting-started/introduction-to-signalr)]
