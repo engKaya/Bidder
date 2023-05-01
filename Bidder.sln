@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{923FCCA0-9908-43A4-9BAD-E9F54F66E091}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{91B00DA6-CB5B-497A-BAB0-D7639EF5A8FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{321861E0-FD2A-4BF5-BEBC-307BC6F2E57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C44328DD-7789-40B7-A7D3-4B9FF5BDE581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{50929626-43B0-42E0-8BBE-A43EEDCE452A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{E62F521F-7C04-429C-A422-BE9EE2FC1F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Application", "src\Services\UserService\Bidder.UserService.Application\Bidder.UserService.Application\Bidder.UserService.Application.csproj", "{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Infastructure", "src\Services\UserService\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure.csproj", "{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.UserService.Domain", "src\Services\UserService\Bidder.UserService.Domain\Bidder.UserService.Domain\Bidder.UserService.Domain.csproj", "{0AF22D58-BCD9-42D9-A40F-32F84C110D55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.UserService.Api", "src\Services\UserService\Bidder.UserService.Api\Bidder.UserService.Api.csproj", "{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF22D58-BCD9-42D9-A40F-32F84C110D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF22D58-BCD9-42D9-A40F-32F84C110D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF22D58-BCD9-42D9-A40F-32F84C110D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF22D58-BCD9-42D9-A40F-32F84C110D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A6F8E9-651F-4889-94B8-5DF5E9CAC113}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91B00DA6-CB5B-497A-BAB0-D7639EF5A8FE} = {923FCCA0-9908-43A4-9BAD-E9F54F66E091}
+		{321861E0-FD2A-4BF5-BEBC-307BC6F2E57A} = {923FCCA0-9908-43A4-9BAD-E9F54F66E091}
+		{C44328DD-7789-40B7-A7D3-4B9FF5BDE581} = {923FCCA0-9908-43A4-9BAD-E9F54F66E091}
+		{50929626-43B0-42E0-8BBE-A43EEDCE452A} = {923FCCA0-9908-43A4-9BAD-E9F54F66E091}
+		{E62F521F-7C04-429C-A422-BE9EE2FC1F93} = {91B00DA6-CB5B-497A-BAB0-D7639EF5A8FE}
+		{D4EC9EF3-6B8C-4EBD-8990-4D7719FA9C9C} = {E62F521F-7C04-429C-A422-BE9EE2FC1F93}
+		{F1320DE8-3F50-4460-BDD1-E895C0D2F3B1} = {E62F521F-7C04-429C-A422-BE9EE2FC1F93}
+		{0AF22D58-BCD9-42D9-A40F-32F84C110D55} = {E62F521F-7C04-429C-A422-BE9EE2FC1F93}
+		{92A6F8E9-651F-4889-94B8-5DF5E9CAC113} = {E62F521F-7C04-429C-A422-BE9EE2FC1F93}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {485A19D1-0A78-4220-9432-923394C977FC}
+	EndGlobalSection
+EndGlobal
