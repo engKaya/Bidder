@@ -4,7 +4,7 @@ An Open Bid Platform For Everyone
 
 ### Description
 
--- This is  a train project that means can be not completed or will take for a long time. --
+-- This is a train project that means can be not completed or will take for a long time. --
 
 A Platform for a person who want to buy big amount of asset/product or vice versa. The platform will be open for everyone to bid.
 There will be real time currency convertion for buyers or sellers on payment.

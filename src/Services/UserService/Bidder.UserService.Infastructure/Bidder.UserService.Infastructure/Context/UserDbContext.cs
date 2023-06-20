@@ -14,7 +14,7 @@ namespace Bidder.UserService.Infastructure.Context
 
         private readonly IMediator mediator;
 
-        public UserDbContext(DbContextOptions<UserDbContext> options, IMediator mediator)
+        public UserDbContext(DbContextOptions<UserDbContext> options, IMediator mediator) : base(options) 
         {
             this.mediator = mediator;
         }

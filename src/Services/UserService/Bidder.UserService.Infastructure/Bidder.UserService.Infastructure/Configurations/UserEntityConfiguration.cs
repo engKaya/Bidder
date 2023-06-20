@@ -13,7 +13,7 @@ namespace Bidder.UserService.Infastructure.Configurations
             builder.HasKey(k => k.Id);
             builder.Ignore(k=>k.DomainEvents);
             builder.Property(k=>k.Id).ValueGeneratedOnAdd();
-            builder.Property(k => k.Username).IsRequired();
+            builder.Property(k => k.UserName).IsRequired();
             builder.Property(k => k.Password).IsRequired();
         }
     }

@@ -12,6 +12,7 @@ namespace Bidder.UserService.Api.Extensions
                 opt.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
                 opt.Lifetime = ServiceLifetime.Transient;
             });
+
         }
     }
 }
