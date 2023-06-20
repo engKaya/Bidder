@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Bidder.UserService.Domain\Bidder.UserService.Domain\Bidder.UserService.Domain.csproj" />
+    <ProjectReference Include="..\Bidder.UserService.Domain\Bidder.UserService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -63,6 +63,7 @@ namespace Bidder.UserService.Domain.Models
             _surname = surname;
             _address = address;
             _phoneNumber = phoneNumber;
+            this.CreatedAt= DateTime.UtcNow; 
         }
 
         public void SetPassword(string password)

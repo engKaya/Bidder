@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure.csproj" />
+    <ProjectReference Include="..\Bidder.UserService.Infastructure\Bidder.UserService.Infastructure.csproj" /> 
   </ItemGroup>
 
 </Project>

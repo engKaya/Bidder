@@ -1,4 +1,5 @@
 ﻿using Bidder.UserService.Infastructure.Context;
+using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace Bidder.UserService.Api.Extensions
 {
@@ -8,7 +9,7 @@ namespace Bidder.UserService.Api.Extensions
 
             application.MigrationDbContext<UserDbContext>((context, services) =>
             {
-                var env = services.GetRequiredService<Microsoft.AspNetCore.Hosting.IHostingEnvironment>();
+                var env = services.GetRequiredService<IHostingEnvironment>();
                 var loggger = services.GetRequiredService<ILogger<UserDbContext>>();
                 loggger.LogInformation($"Seeding Starting");
 
