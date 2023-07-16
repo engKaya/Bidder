@@ -1,4 +1,4 @@
-﻿namespace Bidder.UserService.Domain.Abstract.UnitOfWork
+﻿namespace Bidder.UserService.Application.Interfaces.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

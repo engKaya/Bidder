@@ -1,4 +1,4 @@
-﻿using Bidder.UserService.Domain.Abstract.UnitOfWork;
+﻿using Bidder.UserService.Application.Interfaces.UnitOfWork;
 using Bidder.UserService.Domain.Models;
 using Bidder.UserService.Infastructure.Configurations;
 using Bidder.UserService.Infastructure.Extensions;

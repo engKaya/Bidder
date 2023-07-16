@@ -1,5 +1,5 @@
-﻿using Bidder.UserService.Domain.Abstract.Repo;
-using Bidder.UserService.Domain.Abstract.UnitOfWork;
+﻿using Bidder.UserService.Application.Interfaces.Repo;
+using Bidder.UserService.Application.Interfaces.UnitOfWork;
 using Bidder.UserService.Domain.Extensions;
 using Bidder.UserService.Infastructure.Context;
 using Microsoft.EntityFrameworkCore;

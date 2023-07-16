@@ -1,8 +1,8 @@
 ﻿using Bidder.UserService.Domain.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Client;
 using Polly;
 
 namespace Bidder.UserService.Infastructure.Context
@@ -11,6 +11,10 @@ namespace Bidder.UserService.Infastructure.Context
     {
         public async Task SeedAsync(UserDbContext userContext, IHostingEnvironment environment, ILogger<UserDbContext> logger)
         {
+            if (environment.IsProduction())
+                return;
+
+
             var policy = Policy.Handle<SqlException>()
                 .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
                 {

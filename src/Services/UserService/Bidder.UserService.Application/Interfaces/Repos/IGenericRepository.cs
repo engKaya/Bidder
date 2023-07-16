@@ -1,7 +1,8 @@
-﻿using Bidder.UserService.Domain.Extensions;
+﻿using Bidder.UserService.Application.Interfaces.Repos;
+using Bidder.UserService.Domain.Extensions;
 using System.Linq.Expressions;
 
-namespace Bidder.UserService.Domain.Abstract.Repo
+namespace Bidder.UserService.Application.Interfaces.Repo
 {
     public interface IGenericRepository<T> : IRepository<T> where T : BaseEntity
     {

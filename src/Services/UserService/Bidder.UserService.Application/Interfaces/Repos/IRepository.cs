@@ -1,7 +1,7 @@
-﻿using Bidder.UserService.Domain.Abstract.UnitOfWork;
+﻿using Bidder.UserService.Application.Interfaces.UnitOfWork;
 using Bidder.UserService.Domain.Extensions;
 
-namespace Bidder.UserService.Domain.Abstract.Repo
+namespace Bidder.UserService.Application.Interfaces.Repos
 {
     public interface IRepository<T> where T : BaseEntity
     {
