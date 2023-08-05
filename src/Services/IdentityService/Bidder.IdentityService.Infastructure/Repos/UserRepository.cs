@@ -4,9 +4,9 @@ using Bidder.IdentityService.Infastructure.Context;
 
 namespace Bidder.IdentityService.Infastructure.Repos
 {
-    public class UserRepository : GenericRepository<Users>, IUserRepository
+    public class UserRepository : Repository<Users>, IUserRepository
     {
-        public UserRepository(UserDbContext dbContext) : base(dbContext)
+        public UserRepository(UserDbContext context) : base(context)
         {
         }
     }

@@ -10,4 +10,13 @@
     <ProjectReference Include="..\Bidder.IdentityService.Domain\Bidder.IdentityService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+  </ItemGroup>
+
 </Project>

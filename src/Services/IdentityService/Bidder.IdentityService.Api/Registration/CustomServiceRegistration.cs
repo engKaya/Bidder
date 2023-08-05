@@ -1,6 +1,8 @@
 ﻿using Bidder.IdentityService.Application.Interfaces.Repos;
+using Bidder.IdentityService.Domain.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Bidder.IdentityService.Infastructure.Repos;
+using Bidder.IdentityService.Infastructure.Uof;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Reflection;
@@ -12,7 +14,9 @@ namespace Bidder.IdentityService.Api.Registration
         public static  IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         { 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddScoped<IUserRepository, UserRepository>(); 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));  
             services.AddDbContext<UserDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("UserConnectionString")); 
