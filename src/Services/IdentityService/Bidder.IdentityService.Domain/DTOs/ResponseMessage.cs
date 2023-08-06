@@ -87,6 +87,14 @@ namespace Bidder.IdentityService.Domain.DTOs
                 StatusCode = statusCode
             };
         }
+        public static ResponseMessageNoContent Success(string message, int statusCode = 200)
+        {
+            return new ResponseMessageNoContent
+            {
+                StatusCode = statusCode,
+                Message = message
+            };
+        }
 
         public static ResponseMessageNoContent SuccessWithErrors(List<string> errors, int statusCode = 200)
         {

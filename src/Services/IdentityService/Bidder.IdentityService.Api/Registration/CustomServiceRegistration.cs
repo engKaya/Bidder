@@ -1,4 +1,5 @@
-﻿using Bidder.IdentityService.Application.Interfaces.Repos;
+﻿using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
+using Bidder.IdentityService.Application.Interfaces.Repos;
 using Bidder.IdentityService.Domain.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Bidder.IdentityService.Infastructure.Repos;
@@ -29,12 +30,13 @@ namespace Bidder.IdentityService.Api.Registration
             //using var dbContext = services.BuildServiceProvider().GetService<UserDbContext>();
             //dbContext.Database.EnsureCreated();
             //dbContext.Database.Migrate();
+            services.AddLogging(conf => conf.AddConsole());
             return services;
         }
 
         public static void AddMediatR(this IServiceCollection services)
         { 
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateUserCommand)));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
         }
     }

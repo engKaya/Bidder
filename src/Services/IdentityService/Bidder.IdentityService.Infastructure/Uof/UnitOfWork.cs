@@ -14,26 +14,23 @@ namespace Bidder.IdentityService.Infastructure.Uof
         private IDbContextTransaction currentTransaction;
         public IDbContextTransaction GetCurrentTransaction() => currentTransaction;
         public bool HasActiveTransaction => currentTransaction != null;
-
-        private IUserRepository userRepository;
-        public IUserRepository UserRepository => userRepository  ?? new UserRepository(_userDbContext);
         public UnitOfWork(UserDbContext context, IMediator mediator)
         {
-            this._userDbContext= context;
+            this._userDbContext = context;
             this.mediator = mediator;
             currentTransaction = _userDbContext.Database.BeginTransaction();
         }
-        public void Dispose()
-        { 
-
+        public async void Dispose()
+        {
+            await _userDbContext.DisposeAsync();
         }
 
-        public async Task<bool> SaveChangesAsync(CancellationToken cancellation = default)
+        public async Task<int> SaveChangesAsync(CancellationToken cancellation = default)
         {
             await mediator.DispatchDomainEventsAsync(_userDbContext);
-            await _userDbContext.SaveChangesAsync(cancellation);
-
-            return true;
+            int hasChanges = await _userDbContext.SaveChangesAsync();
+            await currentTransaction.CommitAsync(cancellation);
+            return hasChanges;
         }
 
         public void RollbackTransaction()
@@ -49,6 +46,18 @@ namespace Bidder.IdentityService.Infastructure.Uof
                     currentTransaction.Dispose();
                     currentTransaction = default;
                 }
+            }
+        }
+
+
+
+        private IUserRepository userRepository;
+        public IUserRepository UserRepository
+        {
+            get
+            {
+                userRepository = new UserRepository(_userDbContext);
+                return userRepository;
             }
         }
     }

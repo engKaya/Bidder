@@ -13,7 +13,7 @@ namespace Bidder.IdentityService.Domain.Entities
         private string _phoneNumber = string.Empty;
         private string _identityNumber = string.Empty;
         private bool _isEmailVerified = false;
-        private DateTime? _emailVerifiedAt;
+        private DateTime? _emailVerifiedAt; 
         public string Name
         {
             get => _name;
@@ -59,17 +59,22 @@ namespace Bidder.IdentityService.Domain.Entities
         {
             get => _emailVerifiedAt;
             set => _emailVerifiedAt = value;
-        }
+        } 
         public Users()
         {
 
         }
 
-        //public Users(string name, string username, string email, )
-        //{
-
-        //}
-
+        public Users(string email, string password, string name, string surname)
+        {
+            Email = email;
+            Password = password;
+            IsEmailVerified = false;
+            Name = name;
+            Surname = surname;
+            Username = "Anon" + DateTime.Now.Ticks.ToString();
+            CreatedAt = DateTime.Now;
+        }
 
         public void SetPassword(string password)
         {

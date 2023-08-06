@@ -3,6 +3,6 @@
     public interface IUnitOfWork : IDisposable
     {
         IUserRepository UserRepository { get; } 
-        Task<bool> SaveChangesAsync(CancellationToken cancellation = default);
+        Task<int> SaveChangesAsync(CancellationToken cancellation = default);
     }
 }

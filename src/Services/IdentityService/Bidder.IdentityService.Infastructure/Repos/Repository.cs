@@ -15,15 +15,16 @@ namespace Bidder.IdentityService.Infastructure.Repos
             this.context = context;
         }
 
-        public T Add(T entity)
+        public async Task<T> Add(T entity)
         {
-            context.Set<T>().Add(entity);
+            
+            await context.Set<T>().AddAsync(entity); 
             return entity;
         }
 
-        public IEnumerable<T> AddRange(IEnumerable<T> entities)
+        public async Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities)
         {
-            context.Set<T>().AddRange(entities);
+            await context.Set<T>().AddRangeAsync(entities);
             return entities;
         }
 
@@ -62,9 +63,9 @@ namespace Bidder.IdentityService.Infastructure.Repos
         /// <returns>IEnumerable<T></returns>
         public async Task<IEnumerable<T>> GetWhere(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, params Expression<Func<T, object>>[] includes)
         {
-            IQueryable<T> query = context.Set<T>().Where(predicate); 
-            
-            if (includes is not null) query = includes.Aggregate(query, (current, include) => current.Include(include)); 
+            IQueryable<T> query = context.Set<T>().Where(predicate);
+
+            if (includes is not null) query = includes.Aggregate(query, (current, include) => current.Include(include));
 
             if (orderBy is not null) query = orderBy(query);
 
