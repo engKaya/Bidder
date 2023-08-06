@@ -81,6 +81,11 @@ namespace Bidder.IdentityService.Domain.Entities
             this._password = PasswordHasher.HashPassword(password);
         }
 
+        /// <summary>
+        /// Eğer verilen Şifre ile Hashlenmiş şifre doğru ise  "True" döner.
+        /// </summary>
+        /// <param name="password">Dışarıdan gelen açık şifre</param>
+        /// <returns>Boolean</returns>
         public bool VerifyPassword(string password)
         {
             return PasswordHasher.VerifyHashedPassword(this._password, password);

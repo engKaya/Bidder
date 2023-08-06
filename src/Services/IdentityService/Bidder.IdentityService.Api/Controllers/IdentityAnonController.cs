@@ -1,44 +1,45 @@
 using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
-using Bidder.IdentityService.Application.Interfaces.Repos;
+using Bidder.IdentityService.Application.Features.Queries.User.Login;
 using Bidder.IdentityService.Domain.DTOs;
 using Bidder.IdentityService.Domain.DTOs.User.Request;
-using Bidder.IdentityService.Domain.Entities;
-using Bidder.IdentityService.Infastructure.Context;
+using Bidder.IdentityService.Domain.DTOs.User.Responses;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc; 
 
 namespace Bidder.IdentityService.Api.Controllers
 {
     [ApiController]
     [Route("Identity/[action]")]
-    public partial class IdentityController : ControllerBase
+    public partial class IdentityController : BaseController
     {
+        IMediator mediator { get; set; }
         public IdentityController(IMediator mediator)
         {
             this.mediator = mediator; 
         }
 
-        IMediator mediator { get; set; } 
 
         [HttpPost]
         [ActionName("CreateUser")]
-        public async Task<ResponseMessageNoContent> CreateUser([FromBody] CreateUserRequest req)
+        [ProducesResponseType(typeof(ResponseMessageNoContent), 200)] 
+        [ProducesResponseType(typeof(ResponseMessageNoContent), 500)]
+        public async Task<ActionResult<ResponseMessageNoContent>> CreateUser([FromBody] CreateUserRequest req)
         {
             var command = new CreateUserCommand(req);
             var result = await mediator.Send(command);
-            return result;
+            return Custom(result);
         }
 
-        //[HttpGet]
-        //[ActionName("Test")]
-        //public async void Test()
-        //{
-        //    Users user = new("ibrahimsabitkaya2@gmail","asdasd","ibo","kaya");
-        //    using (var context = dbContext)
-        //    {
-        //        await context.Set<Users>().AddAsync(user);
-        //        await context.SaveChangesAsync();
-        //    }
-        //}
+        [HttpPost]
+        [ProducesResponseType(typeof(ResponseMessage<LoginResponse>), 200)]
+        [ProducesResponseType(typeof(ResponseMessage<LoginResponse>), 403)]
+        [ProducesResponseType(typeof(ResponseMessage<LoginResponse>), 500)]
+        [ActionName("Login")]
+        public async Task<ActionResult<ResponseMessage<LoginResponse>>> Login([FromBody] LoginRequest req)
+        {
+            var query = new LoginQuery(req);
+            var result = await mediator.Send(query); 
+            return Custom(result);
+        }
     }
 }

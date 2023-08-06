@@ -4,6 +4,7 @@ using Bidder.IdentityService.Domain.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Bidder.IdentityService.Infastructure.Repos;
 using Bidder.IdentityService.Infastructure.Uof;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Reflection;
@@ -30,7 +31,9 @@ namespace Bidder.IdentityService.Api.Registration
             //using var dbContext = services.BuildServiceProvider().GetService<UserDbContext>();
             //dbContext.Database.EnsureCreated();
             //dbContext.Database.Migrate();
-            services.AddLogging(conf => conf.AddConsole());
+
+            services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
+            services.ConfigureAuth(configuration);
             return services;
         }
 

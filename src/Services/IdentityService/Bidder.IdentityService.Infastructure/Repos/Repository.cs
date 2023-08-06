@@ -17,7 +17,6 @@ namespace Bidder.IdentityService.Infastructure.Repos
 
         public async Task<T> Add(T entity)
         {
-            
             await context.Set<T>().AddAsync(entity); 
             return entity;
         }

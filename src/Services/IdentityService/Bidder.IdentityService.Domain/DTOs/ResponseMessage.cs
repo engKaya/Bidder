@@ -1,14 +1,13 @@
-﻿using System.Text.Json.Serialization;
+﻿ 
 
 namespace Bidder.IdentityService.Domain.DTOs
 {
-    public class ResponseMessage<T>
+    
+
+
+    public class ResponseMessage<T> : ResponseMessageNoContent
     {
         public T Data { get; set; } = default;
-        public IList<string>? Errors { get; set; }
-        public string Message { get; set; } = string.Empty;
-        [JsonIgnore]
-        public int StatusCode { get; set; }
 
         public static ResponseMessage<T> Success(T data, int statusCode = 200)
         {
@@ -19,7 +18,7 @@ namespace Bidder.IdentityService.Domain.DTOs
             };
         }
 
-        public static ResponseMessage<T> SuccessWithErrors(T data, IList<string> errors, int statusCode = 200)
+        public static ResponseMessage<T> SuccessWithErrors(T data, List<string> errors, int statusCode = 200)
         {
             return new ResponseMessage<T>
             {
