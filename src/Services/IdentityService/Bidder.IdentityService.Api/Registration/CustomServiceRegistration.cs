@@ -4,9 +4,14 @@ using Bidder.IdentityService.Domain.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Bidder.IdentityService.Infastructure.Repos;
 using Bidder.IdentityService.Infastructure.Uof;
+using EventBus.Base;
+using EventBus.Base.Abstraction;
+using EventBus.Factory;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using RabbitMQ.Client;
 using System.Reflection;
 
 namespace Bidder.IdentityService.Api.Registration
@@ -34,6 +39,7 @@ namespace Bidder.IdentityService.Api.Registration
 
             services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
             services.ConfigureAuth(configuration);
+            services.ConnectToMessaBroker();
             return services;
         }
 
@@ -41,6 +47,33 @@ namespace Bidder.IdentityService.Api.Registration
         { 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateUserCommand)));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        }
+
+        public static void ConnectToMessaBroker(this IServiceCollection services)
+        {
+            services.AddSingleton<IEventBus>(sp =>
+            {
+                EventBusConfig conf = new()
+                {
+                    ConnectionRetry = 5,
+                    SubscriberClientAppName = "EventBus.UnitTest",
+                    DefaultTopicName = "BidderTest",
+                    EventBusType = EventBusType.RabbitMQ,
+                    EventNameSuffix = "IntegrationEvent",
+                    Connection = new ConnectionFactory()
+                    {
+                        HostName = "localhost",
+                        Port = 5672,
+                        UserName = "test",
+                        Password = "test",
+                        Uri = new Uri("amqp://localhost:5672"),
+                        TopologyRecoveryExceptionHandler = new TopologyRecoveryExceptionHandler()
+                    }
+                };
+                return EventBusFactory.CreateEventBus(conf, sp);
+            });
+            var provider = services.BuildServiceProvider();
+            var eventBus = provider.GetRequiredService<IEventBus>();
         }
     }
 }

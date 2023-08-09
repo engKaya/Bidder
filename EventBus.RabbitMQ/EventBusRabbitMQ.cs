@@ -21,22 +21,22 @@ namespace EventBus.RabbitMQ
         {
             this.eventBusConfig = _config;
             if (_config.Connection != null)
-            {
+            {   
                 var jsonSettings = new JsonSerializerSettings
                 {
                     TypeNameHandling = TypeNameHandling.All,
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                 };
 
-                var json = JsonConvert.SerializeObject(_config.Connection, jsonSettings);
-
-                connectionFactory = JsonConvert.DeserializeObject<ConnectionFactory>(json, jsonSettings);
+                //var json = JsonConvert.SerializeObject(_config.Connection, jsonSettings);
+                //var st = json;
+                connectionFactory = (ConnectionFactory)_config.Connection;
             }
             else
                 connectionFactory = new ConnectionFactory();
 
-            connectionFactory.UserName = eventBusConfig.UserName;
-            connectionFactory.Password = eventBusConfig.Password;
+            //connectionFactory.UserName = eventBusConfig.UserName;
+            //connectionFactory.Password = eventBusConfig.Password;
 
             connection = new RabbitMQPersistenConnection(connectionFactory);
             this.consumerChannel = CreateConsumerChannel();

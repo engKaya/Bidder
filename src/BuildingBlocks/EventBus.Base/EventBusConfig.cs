@@ -5,9 +5,9 @@ namespace EventBus.Base
     public class EventBusConfig
     {
         public int ConnectionRetry { get; set; } = 5;
-        public string UserName = string.Empty;
-        public string Password = string.Empty;
-        public string DefaultTopicName { get; set; } = "MicroserviceEventBus";
+        public string UserName =   "admin";
+        public string Password = "admin";
+        public string DefaultTopicName { get; set; } = "BidderEventBus";
         public string EventBusConnectionString { get; set; } = String.Empty;
         public string SubscriberClientAppName { get; set; } = String.Empty;
         public string EventNamePrefix { get; set; } = String.Empty;
@@ -17,12 +17,15 @@ namespace EventBus.Base
         public bool DeleteEventPrefix => !String.IsNullOrEmpty(EventNamePrefix);
         public bool DeleteEventSuffix => !String.IsNullOrEmpty(EventNameSuffix);
 
+        public EventBusConfig()
+        {
+
+        }
         public EventBusConfig(IConfiguration configuration)
         {
             this.UserName = configuration["EventBus:UserName"];
             this.Password = configuration["EventBus:Password"];
-        }
-
+        } 
     }
 
     public enum EventBusType

@@ -1,5 +1,6 @@
 ﻿using EventBus.Base;
 using EventBus.Base.Abstraction;
+using EventBus.RabbitMQ;
 
 namespace EventBus.Factory
 {
