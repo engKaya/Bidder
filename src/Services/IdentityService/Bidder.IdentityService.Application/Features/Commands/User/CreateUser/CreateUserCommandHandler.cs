@@ -1,6 +1,8 @@
-﻿using Bidder.IdentityService.Application.Interfaces.Repos;
+﻿using Bidder.IdentityService.Application.IntegrationEvents;
+using Bidder.IdentityService.Application.Interfaces.Repos;
 using Bidder.IdentityService.Domain.DTOs;
 using Bidder.IdentityService.Domain.Entities;
+using EventBus.Base.Abstraction;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -10,11 +12,13 @@ namespace Bidder.IdentityService.Application.Features.Commands.User.CreateUser
     {
         private readonly IUnitOfWork uof;
         private readonly ILogger<CreateUserCommandHandler> logger;
+        private readonly IEventBus eventBus;
 
-        public CreateUserCommandHandler(IUnitOfWork uof, ILogger<CreateUserCommandHandler> logger)
+        public CreateUserCommandHandler(IUnitOfWork uof, IEventBus eventBus, ILogger<CreateUserCommandHandler> logger)
         {
             this.uof = uof;
             this.logger = logger;
+            this.eventBus = eventBus;
         }
 
         public async Task<ResponseMessageNoContent> Handle(CreateUserCommand request, CancellationToken cancellationToken)
@@ -29,6 +33,7 @@ namespace Bidder.IdentityService.Application.Features.Commands.User.CreateUser
 
                 await uof.UserRepository.Add(user);
                 await uof.SaveChangesAsync();
+                eventBus.Publish(new NewUserIntegrationEvent(user.Email, user.Username));
                 return ResponseMessageNoContent.Success("User Successfully Created", 200);
 
             }

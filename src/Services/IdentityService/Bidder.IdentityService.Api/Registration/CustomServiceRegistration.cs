@@ -36,7 +36,7 @@ namespace Bidder.IdentityService.Api.Registration
 
             services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
             services.ConfigureAuth(configuration);
-            services.ConnectToMessaBroker();
+            services.ConnectToMessaBroker(configuration);
             return services;
         }
 
@@ -46,25 +46,29 @@ namespace Bidder.IdentityService.Api.Registration
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
         }
 
-        public static void ConnectToMessaBroker(this IServiceCollection services)
+        public static void ConnectToMessaBroker(this IServiceCollection services, IConfiguration conf)
         {
+            var _uri = conf["RabbitSettings:uri"];
+            var _hostname = conf["RabbitSettings:host"];
+            var _port = int.Parse(conf["RabbitSettings:port"]);
+            var _username = conf["RabbitSettings:username"];
+            var _password = conf["RabbitSettings:password"];
             services.AddSingleton<IEventBus>(sp =>
             {
                 EventBusConfig conf = new()
                 {
                     ConnectionRetry = 5,
-                    SubscriberClientAppName = "EventBus.UnitTest",
-                    DefaultTopicName = "BidderTest",
+                    SubscriberClientAppName = "Bidder.IdentityService",
+                    DefaultTopicName = "Bidder",
                     EventBusType = EventBusType.RabbitMQ,
                     EventNameSuffix = "IntegrationEvent",
                     Connection = new ConnectionFactory()
                     {
-                        HostName = "localhost",
-                        Port = 5672,
-                        UserName = "test",
-                        Password = "test",
-                        Uri = new Uri("amqp://localhost:5672"),
-                        TopologyRecoveryExceptionHandler = new TopologyRecoveryExceptionHandler()
+                        HostName = _hostname,
+                        Port = _port,
+                        UserName = _username,
+                        Password = _password,
+                        Uri = new Uri(_uri)
                     }
                 };
                 return EventBusFactory.CreateEventBus(conf, sp);

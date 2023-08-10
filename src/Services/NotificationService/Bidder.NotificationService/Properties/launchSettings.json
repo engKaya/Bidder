@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Bidder.NotificationService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
