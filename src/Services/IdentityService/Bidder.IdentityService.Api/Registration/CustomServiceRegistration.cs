@@ -7,10 +7,7 @@ using Bidder.IdentityService.Infastructure.Uof;
 using EventBus.Base;
 using EventBus.Base.Abstraction;
 using EventBus.Factory;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using RabbitMQ.Client;
 using System.Reflection;
 

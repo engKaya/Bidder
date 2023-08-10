@@ -42,9 +42,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.SignalR.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.SignalR.Api", "src\Services\SignalRHub\Bidder.SignalR.Api\Bidder.SignalR.Api.csproj", "{3E6FF314-86B8-495A-A7BD-4E648ACA0C08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Notification.ServiceWorker", "src\Services\NotificationService\Bidder.Notification.ServiceWorker\Bidder.Notification.ServiceWorker.csproj", "{A6E7D91E-017A-44AD-8557-3FA2F075C253}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ", "src\BuildingBlocks\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.NotificationService", "src\Services\NotificationService\Bidder.NotificationService\Bidder.NotificationService.csproj", "{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,14 +88,14 @@ Global
 		{3E6FF314-86B8-495A-A7BD-4E648ACA0C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E6FF314-86B8-495A-A7BD-4E648ACA0C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E6FF314-86B8-495A-A7BD-4E648ACA0C08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6E7D91E-017A-44AD-8557-3FA2F075C253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6E7D91E-017A-44AD-8557-3FA2F075C253}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6E7D91E-017A-44AD-8557-3FA2F075C253}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6E7D91E-017A-44AD-8557-3FA2F075C253}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,8 +118,8 @@ Global
 		{50E0290B-FDC9-4479-9DCA-B7ABBE0E2500} = {91B00DA6-CB5B-497A-BAB0-D7639EF5A8FE}
 		{03F13F28-C8AA-48F1-A3B8-6C342FB6F605} = {50E0290B-FDC9-4479-9DCA-B7ABBE0E2500}
 		{3E6FF314-86B8-495A-A7BD-4E648ACA0C08} = {50E0290B-FDC9-4479-9DCA-B7ABBE0E2500}
-		{A6E7D91E-017A-44AD-8557-3FA2F075C253} = {6C9FDF3D-4A0F-4A7F-8891-2DE7A9752D16}
 		{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3} = {321861E0-FD2A-4BF5-BEBC-307BC6F2E57A}
+		{30E12FFB-0CE9-4FE9-B1EE-6DDDF2A2960D} = {6C9FDF3D-4A0F-4A7F-8891-2DE7A9752D16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {485A19D1-0A78-4220-9432-923394C977FC}

@@ -1,4 +1,5 @@
-﻿using EventBus.Base;
+﻿
+using EventBus.Base;
 using EventBus.Base.Events;
 using Newtonsoft.Json;
 using Polly;
