@@ -1,6 +1,6 @@
 ﻿using EventBus.Base.Events;
 
-namespace Bidder.NotificationService.IntegrationEvents.User.Events
+namespace Bidder.Notification.EventIntegration.IntegrationEvents.User.Events
 {
     public class NewUserIntegrationEvent : IntegrationEvent
     {
