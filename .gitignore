@@ -3,3 +3,6 @@ bin*
 obj*
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.json
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.json
+/src/Services/NotificationService/Bidder.Notification.Api/appsettings.Development.json
+/src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.Development.json
+/src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.Test.json
