@@ -1,5 +1,5 @@
-﻿using AutoMapper;
-using Bidder.Notification.Application.Abstraction;
+﻿using AutoMapper; 
+using Bidder.Notification.Application.Abstraction.EmailBase;
 using Bidder.Notification.Application.DTOs;
 using Bidder.Notification.Application.Response;
 using Microsoft.Extensions.Configuration;
@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using System.Net;
 using System.Net.Mail;
 
-namespace Bidder.Notification.Application.Services
+namespace Bidder.Notification.Application.Services.EmailBase
 {
     public class BasicAuthEmailClient : IEmailService
     {
@@ -18,7 +18,7 @@ namespace Bidder.Notification.Application.Services
         private readonly string mailUserName;
         private readonly string mailPassword;
         private readonly string mailFrom;
-        private readonly string mailFromName;
+        private readonly string mailFromName; 
         public BasicAuthEmailClient(ILogger<BasicAuthEmailClient> logger, IConfiguration conf, IMapper mapper)
         {
             this.logger = logger;
@@ -34,7 +34,7 @@ namespace Bidder.Notification.Application.Services
         {
             try
             {
-                parameters.MailFromAddress= mailFrom;
+                parameters.MailFromAddress = mailFrom;
                 parameters.MailFromName = mailFromName;
                 MailMessage mailMessage = mapper.Map<MailMessage>(parameters);
                 SendEmail(mailMessage);
@@ -46,18 +46,6 @@ namespace Bidder.Notification.Application.Services
                 throw;
             }
         }
-        
-        public void WelcomeNewUserMail(string email, string fullname) 
-        {
-            string body = $@"
-                Hello {fullname}, 
-                Welcome to Bidder            
-            ";
-
-            MailParameters parameters = new MailParameters(new List<string>() { email }, "Welcome to Bidder", body);
-            SendEmailAsync(parameters);
-        }
-
         private void SendEmail(MailMessage mail)
         {
             var client = new SmtpClient();
@@ -72,4 +60,4 @@ namespace Bidder.Notification.Application.Services
             logger.LogInformation($"Email sent successfully, Email: {mail.Body}");
         }
     }
-} 
+}

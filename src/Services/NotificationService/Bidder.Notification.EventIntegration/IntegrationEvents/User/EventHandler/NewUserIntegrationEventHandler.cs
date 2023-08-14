@@ -1,4 +1,5 @@
-﻿using Bidder.Notification.Application.Abstraction;
+﻿using Bidder.Notification.Application.Abstraction.EmailBase;
+using Bidder.Notification.Application.Abstraction.User;
 using Bidder.Notification.EventIntegration.IntegrationEvents.User.Events;
 using EventBus.Base.Abstraction;
 using Microsoft.Extensions.Logging;
@@ -8,12 +9,12 @@ namespace Bidder.Notification.EventIntegration.IntegrationEvents.User.EventHandl
     internal class NewUserIntegrationEventHandler : IIntegrationEventHandler<NewUserIntegrationEvent>
     {
         private readonly ILogger<NewUserIntegrationEventHandler> _logger;
-        private readonly IEmailService _emailService;
+        private readonly IUserRelatedMails mailHelper;
 
-        public NewUserIntegrationEventHandler(ILogger<NewUserIntegrationEventHandler> logger, IEmailService emailService)
+        public NewUserIntegrationEventHandler(ILogger<NewUserIntegrationEventHandler> logger, IUserRelatedMails mailHelper)
         {
             _logger = logger;
-            _emailService = emailService;
+            this.mailHelper = mailHelper;
         }
 
         public Task Handle(NewUserIntegrationEvent @event)
@@ -21,7 +22,7 @@ namespace Bidder.Notification.EventIntegration.IntegrationEvents.User.EventHandl
             try
             {
                 _logger.LogInformation($"New User: Name: {@event.UserName}");
-                _emailService.WelcomeNewUserMail(@event.Email, @event.UserName);
+                mailHelper.WelcomeNewUserMail(@event.Email, @event.UserName);
                 return Task.CompletedTask;
             }
             catch (Exception ex)

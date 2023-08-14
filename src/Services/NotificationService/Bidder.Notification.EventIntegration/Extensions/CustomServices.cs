@@ -1,5 +1,7 @@
-﻿using Bidder.Notification.Application.Abstraction;
-using Bidder.Notification.Application.Services;
+﻿using Bidder.Notification.Application.Abstraction.EmailBase;
+using Bidder.Notification.Application.Abstraction.User;
+using Bidder.Notification.Application.Services.EmailBase;
+using Bidder.Notification.Application.Services.User;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +13,8 @@ namespace Bidder.Notification.EventIntegration.Extensions
         {
             services.AddAutoMapperCustom(configuration);
             services.AddSingleton<IEmailService, BasicAuthEmailClient>(); 
+            services.AddScoped<IEmailFactory, EmailFactory>();
+            services.AddSingleton<IUserRelatedMails, UserRelatedMails>();
         }
     }
 }
