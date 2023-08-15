@@ -1,0 +1,35 @@
+{
+    "GENERAL" : {
+      "HOME" : "Home",
+      "LOADING" : "Loading...",
+      "ADD_TO_CART" : "Add to Cart"
+    },
+    "AUTH":{
+       "LOGIN":"Login",
+       "LOGOUT":"Logout",
+       "REGISTER":"Register",
+       "USERNAME_REQUIRED": "Username Required",
+       "USERNAME":"Username",
+       "PASSWORD_REQUIRED":"Password Required",
+       "PASSWORD":"Password",
+       "EMAIL":"Email",
+       "REMEMBER_ME":"Remember Me",
+       "FORM_ERRORS":"Please correct the errors in the form"
+    },
+    "ERROR_CODES":{
+      "LOGIN":{
+        "200": "Login Successful",
+        "401": "Invalid Username or Password",
+        "404": "Invalid Username or Password"
+      }
+    },
+  "FORM_VALID": {
+    "REQUIRED": "This field is required",
+    "EMAIL": "Please enter a valid email address",
+    "MINLENGTH": "Please enter at least {{minl}} characters",
+    "MAXLENGTH": "Please enter no more than {{maxl}} characters",
+    "PATTERN": "Please match the requested format",
+    "MIN": "Please enter a value greater than or equal to {min}}",
+    "MAX": "Please enter a value less than or equal to {{max}}"
+  }
+}

@@ -12,18 +12,17 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.6.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Base\EventBus.Base.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Factory\EventBus.Factory.csproj" />
+    <ProjectReference Include="..\..\IdentityService\Bidder.IdentityService.Application\Bidder.IdentityService.Application.csproj" />
+    <ProjectReference Include="..\..\IdentityService\Bidder.IdentityService.Domain\Bidder.IdentityService.Domain.csproj" />
     <ProjectReference Include="..\Bidder.Notification.EventIntegration\Bidder.Notification.EventIntegration.csproj" />
   </ItemGroup>
 

@@ -12,9 +12,9 @@ namespace Bidder.Notification.EventIntegration.Extensions
         public static void AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddAutoMapperCustom(configuration);
-            services.AddSingleton<IEmailService, BasicAuthEmailClient>(); 
+            services.AddScoped<IEmailService, BasicAuthEmailClient>(); 
+            services.AddScoped<IUserRelatedMails, UserRelatedMails>();
             services.AddScoped<IEmailFactory, EmailFactory>();
-            services.AddSingleton<IUserRelatedMails, UserRelatedMails>();
         }
     }
 }

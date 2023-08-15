@@ -44,7 +44,7 @@ namespace Bidder.IdentityService.Infastructure.Uof
             {
                 logger.LogCritical($"Error occured at commiting changes. Transaction Id: {this.currentTransaction.TransactionId}.\n Ex: {ex.ToString()}\n Stack Trace: {ex.StackTrace} ");
                 this.RollbackTransaction();
-                throw ex;
+                throw;
             }
         }
 

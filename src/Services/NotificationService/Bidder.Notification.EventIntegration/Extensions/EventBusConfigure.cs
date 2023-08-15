@@ -62,7 +62,7 @@ namespace Bidder.Notification.EventIntegration.Extensions
 
         public static void AddHandlersTransient(this IServiceCollection services)
         {
-            services.AddSingleton<NewUserIntegrationEventHandler>();
+            services.AddTransient<NewUserIntegrationEventHandler>();
         }
     }
 }

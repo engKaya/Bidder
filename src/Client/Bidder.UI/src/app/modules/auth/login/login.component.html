@@ -1,0 +1,50 @@
+<mat-card style="width:35%; padding: 15px; margin: auto;">
+  <mat-card-title style="text-align: center;">
+    <span [translate]="'AUTH.LOGIN'"></span>
+  </mat-card-title>
+  <mat-card-content style="text-align: center;">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <p>
+        <mat-form-field style="width: 100%;">
+        <mat-label>{{ 'AUTH.USERNAME' | translate }}</mat-label>
+          <input
+            type="text"
+            matInput 
+            formControlName="username" 
+            required
+          />
+          <mat-error *ngIf="form.controls['username'].invalid">{{getErrorMessage("username")}}</mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field style="width: 100%;">
+        <mat-label>{{ 'AUTH.PASSWORD' | translate }}</mat-label>
+          <input
+            type="password"
+            matInput
+            formControlName="password"
+            required
+          />
+          <mat-error *ngIf="form.controls['password'].invalid">{{getErrorMessage("password")}}</mat-error>
+        </mat-form-field>
+      </p>
+ 
+      <p>
+        <mat-checkbox class="text-success" formControlName="rememberMe">{{'AUTH.REMEMBER_ME' | translate}}</mat-checkbox>
+      </p>
+
+      <p>
+        <mat-error *ngIf="error">{{error}}</mat-error>
+      </p>
+
+      <div class="button-row" style="margin: auto"> 
+
+        <button type="submit" class="btn btn-outline-primary pull-right">
+          <span *ngIf="!(IsLoading$ | async)">{{'AUTH.LOGIN' | translate}}</span>
+          <span *ngIf="(IsLoading$ | async)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;<span *ngIf="(IsLoading$ | async)" [translate]="'GENERAL.LOADING'">Loading...</span>
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

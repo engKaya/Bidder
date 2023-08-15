@@ -14,8 +14,19 @@ builder.Services.AddControllers(opt =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
-}); ;
- 
+});
+
+var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("*")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
@@ -27,12 +38,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
-
+} 
 app.UseHttpsRedirection();
 app.UseHttpLogging();
 app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors();
 app.Run();

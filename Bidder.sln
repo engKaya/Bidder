@@ -44,11 +44,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.SignalR.Api", "src\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ", "src\BuildingBlocks\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{5F25FABD-C515-4CA2-BAC2-E0E83DE53DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Notification.Api", "src\Services\NotificationService\Bidder.Notification.Api\Bidder.Notification.Api.csproj", "{F171C53A-8FBE-4EEC-9ACF-3C7438DEEEC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.Notification.Api", "src\Services\NotificationService\Bidder.Notification.Api\Bidder.Notification.Api.csproj", "{F171C53A-8FBE-4EEC-9ACF-3C7438DEEEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Notification.EventIntegration", "src\Services\NotificationService\Bidder.Notification.EventIntegration\Bidder.Notification.EventIntegration.csproj", "{64F42921-5354-4DCD-A6FA-C8D4A1A8E30F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.Notification.EventIntegration", "src\Services\NotificationService\Bidder.Notification.EventIntegration\Bidder.Notification.EventIntegration.csproj", "{64F42921-5354-4DCD-A6FA-C8D4A1A8E30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Notification.Application", "src\Services\NotificationService\Bidder.Notification.Application\Bidder.Notification.Application.csproj", "{D6C221DB-D95A-4AF0-BEC5-3C4DD1AE202A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.Notification.Application", "src\Services\NotificationService\Bidder.Notification.Application\Bidder.Notification.Application.csproj", "{D6C221DB-D95A-4AF0-BEC5-3C4DD1AE202A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
