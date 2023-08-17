@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { LoginRequestModel } from '../models/loginRequest.model';
+import { LoginRequest } from '../models/loginRequest.model';
 import { AuthLoginService } from '../services/auth-login.service';
 import { Observable } from 'rxjs';
 import { ToasterService } from 'src/app/services/toaster.service'; 
@@ -44,15 +44,17 @@ export class LoginComponent {
 
   submit() {
     if (this.form.valid) {
-      var model = new LoginRequestModel(this.form.value.username, this.form.value.password); 
+      var model = new LoginRequest(this.form.value.username, this.form.value.password); 
       this.authLoginService.login(model).then((response) => {  
-        if(response.Status !== 200) {
-          this.error = this.translate.instant(`ERROR_CODES.LOGIN.${response.Status}`);
+        if(response.StatusCode !== 200) { 
+          this.error = this.translate.instant(`ERROR_CODES.LOGIN.${response.StatusCode}`);
           return;
         }
 
         this.router.navigate([this.returnUrl.replace("%2F", "/")]);
-      })
+      }).catch((error) => { 
+        this.error = this.translate.instant(`ERROR_CODES.LOGIN.${error.status}`);
+      });
     } else {
       this.error = this.translate.instant('AUTH.FORM_ERRORS');
     }

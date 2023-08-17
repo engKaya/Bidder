@@ -24,7 +24,7 @@ export class GeneralAuthGuard {
             returnUrl += returnUrl == "" ? iterator :  "%2F" + iterator; 
         } 
         this.toastr.openToastError("Not Authorized","You are not logged in");
-        this.router.navigate([`/login`], { queryParams: { returnUrl: returnUrl } });
+        this.router.navigate([`/auth/login`], { queryParams: { returnUrl: returnUrl } });
         return false;
       }
     }

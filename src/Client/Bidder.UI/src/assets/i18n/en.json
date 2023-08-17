@@ -17,10 +17,20 @@
        "FORM_ERRORS":"Please correct the errors in the form"
     },
     "ERROR_CODES":{
+      "GENERAL": {
+        "500": "Error Occured",
+        "404": "Page Not Found",
+        "403": "Access Denied"
+      },
       "LOGIN":{
         "200": "Login Successful",
         "401": "Invalid Username or Password",
         "404": "Invalid Username or Password"
+      },
+      "GENERAL_ERROR_EXP": {
+        "500": "Please try again later",
+        "404": "Page Not Found",
+        "403": "Access Denied"
       }
     },
   "FORM_VALID": {

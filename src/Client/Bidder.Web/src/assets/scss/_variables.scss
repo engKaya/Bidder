@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+// font
+$font-family: 'Plus Jakarta Sans', sans-serif;
+
+// light color variable
+// $sidebarbg: white;
+// $background: white;
+// $cardbg: white;
+// $toolbar: white;
+// $cardshadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+// $hoverBgColor: #f6f9fc;
+
+// Ligt Theme changed with
+// $sidebarbg: white;
+// $background: white;
+// $cardbg: white;
+// $toolbar: white;
+// $cardshadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+// $hoverBgColor: #f6f9fc;
+
+// Dark color variable
+$sidebarbg: #2a3447;
+$background: #2a3447;
+$cardbg: #2a3447;
+$toolbar: #2a3447;
+$cardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+$borderColor: #333f55;
+$formborderColor: #465670;  
+$hoverBgColor: #333f55;
+$primary: #c3d2f8;
+$accent: #a1c4da;
+$warning: #f3c7c5;
+$error: #fab4b4;
+$success: #58aa51;
+
+// Sidenav
+$sidenav-desktop: 270px !default;
+$sidenav-mini: 80px !default;
+$header-height: 70px !default;
+
+
+//BorderColor
+// $borderColor: #e5eaef;
+$borderformColor: #292d33;
+
+// custom
+// $primary: #5d87ff;
+// $accent: #49beff;
+// $warning: #ffae1f;
+// $error: #fa896b;
+// $success: #13deb9;
+// $white: #ffffff;
+
+$light: #565c61;
+$white: #475879;
+
+$gray-100:  #7c8fac;
+
+$light-primary: #2570a1;
+$light-accent: #2172db;
+$light-warning: #bb7e7e;
+$light-error: #e06464;
+$light-success: #757575;
+
+// layout
+$boxedWidth: 1200px;
+
+$border-radius: 7px;
+
+// text color
+$textPrimary: #e0d3d3;

@@ -10,12 +10,15 @@ import {
 } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import {
-  LoginRequestModel,
-  LoginResponseModel,
+  LoginRequest,
+  LoginResponse,
 } from '../models/loginRequest.model';
 import { environment } from 'src/enviroment/enviroment';
 import { LocalStorageService } from 'src/app/services/localstorage.service';
 import { Router } from '@angular/router';
+import { ToasterService } from 'src/app/services/toaster.service';
+import { TranslateService } from '@ngx-translate/core';
+import { ResponseMessage } from 'src/app/common-objects/ResponseMessage.model';
 @Injectable({
   providedIn: 'root',
 })
@@ -36,7 +39,9 @@ export class AuthLoginService {
   constructor(
     private http: HttpClient,
     private localStorage: LocalStorageService,
-    private router : Router
+    private router : Router,
+    private toastr: ToasterService,
+    private translate: TranslateService
   ) {
     this.IsLoadingSubject = new BehaviorSubject<boolean>(false);
     this.IsLoading$ = this.IsLoadingSubject.asObservable(); 
@@ -48,17 +53,17 @@ export class AuthLoginService {
     this.UserName$ = this.UserNameSubject.asObservable();
   }
 
-  login(model: LoginRequestModel): Promise<LoginResponseModel> {
+  login(model: LoginRequest): Promise<ResponseMessage<LoginResponse>> {
     this.IsLoadingSubject.next(true);
     return lastValueFrom(
-      this.http.post<LoginResponseModel>(`${this.apiUrl}Login`, model)
+      this.http.post<ResponseMessage<LoginResponse>>(`${this.apiUrl}Login`, model)
     )
       .then(async (response) => {
-        if (response.Status === HttpStatusCode.Ok) {  
-          await this.localStorage.SetToken(response.Token as string);
-          await this.localStorage.setUsername(response.UserName as string); 
+        if (response.StatusCode === HttpStatusCode.Ok) {  
+          await this.localStorage.SetToken(response.Data.Token as string);
+          await this.localStorage.setUsername(response.Data.UserName as string); 
           this.IsLoggedInSubject.next(true);
-          this.UserNameSubject.next(response.UserName as string);
+          this.UserNameSubject.next(response.Data.UserName as string);
         }
         return response;
       })
@@ -66,8 +71,8 @@ export class AuthLoginService {
         this.IsLoadingSubject.next(false);
       })
       .catch((error) => {
-        if (this.isDevMode) this.handleError(error);
-        return error;
+        if (this.isDevMode && error.status == 500) this.handleError(error);
+        throw error;
       });
   }
 
@@ -78,7 +83,7 @@ export class AuthLoginService {
     } else {
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
-    window.alert(errorMessage);
+    this.toastr.openToastError(this.translate.instant("ERROR_CODES.GENERAL_ERROR_EXP.500"), this.translate.instant("ERROR_CODES.GENERAL.500"));
     return throwError(() => {
       return errorMessage;
     });

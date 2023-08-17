@@ -34,8 +34,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgToastModule } from 'ng-angular-popup';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ToastrModule } from 'ngx-toastr';
 
 const materialModules = [
   CdkTreeModule,
@@ -73,8 +73,7 @@ const materialModules = [
   MatTooltipModule,
   FlexLayoutModule,
   FormsModule, 
-  ReactiveFormsModule,
-  NgToastModule
+  ReactiveFormsModule
 ];
 @NgModule({
   imports: [

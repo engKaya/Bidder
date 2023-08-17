@@ -48,6 +48,7 @@ namespace Bidder.IdentityService.Application.Features.Queries.User.Login
                     Token = encodedToken,
                     RefreshToken = encodedToken,
                     Email = request.Email,
+                    UserName = user.Username,
                 },
                 StatusCode = (int)HttpStatusCode.OK
             };

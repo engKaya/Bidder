@@ -31,16 +31,16 @@
       </p>
  
       <p>
-        <mat-checkbox class="text-success" formControlName="rememberMe">{{'AUTH.REMEMBER_ME' | translate}}</mat-checkbox>
+        <mat-checkbox class="text-primary" formControlName="rememberMe">{{'AUTH.REMEMBER_ME' | translate}}</mat-checkbox>
       </p>
 
       <p>
         <mat-error *ngIf="error">{{error}}</mat-error>
       </p>
 
-      <div class="button-row" style="margin: auto"> 
+      <div class="button-row" style="margin: auto; margin-top: 15px;"> 
 
-        <button type="submit" class="btn btn-outline-primary pull-right">
+        <button id="login" type="submit" class="btn btn-outline-primary pull-right">
           <span *ngIf="!(IsLoading$ | async)">{{'AUTH.LOGIN' | translate}}</span>
           <span *ngIf="(IsLoading$ | async)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;<span *ngIf="(IsLoading$ | async)" [translate]="'GENERAL.LOADING'">Loading...</span>
         </button>

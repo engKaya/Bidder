@@ -17,10 +17,20 @@
     "FORM_ERRORS": "Form Hatalarını Düzeltin"
   },
   "ERROR_CODES": {
+    "GENERAL": {
+      "500": "Hata",
+      "404": "Sayfa Bulunamadı",
+      "403": "Yetkisiz Erişim"
+    },
     "LOGIN": {
       "200": "Giriş Başarılı",
       "401": "Kullanıcı Adı veya Şifre Hatalı",
       "404": "Kullanıcı Adı veya Şifre Hatalı"
+    },
+    "GENERAL_ERROR_EXP": {
+      "500": "Lütfen daha sonra tekrar deneyiniz",
+      "404": "Lütfen daha sonra tekrar deneyiniz",
+      "403": "Bu sayfaya erişim yetkiniz bulunmamaktadır"
     }
   },
   "FORM_VALID": {

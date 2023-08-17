@@ -1,5 +1,6 @@
 using Bidder.IdentityService.Api.Extensions;
 using Bidder.IdentityService.Api.Registration;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,6 +1,6 @@
 import { HttpStatusCode } from '@angular/common/http';
 
-export class LoginRequestModel { 
+export class LoginRequest { 
   constructor(email: string, password: string) {
     this.Email = email;
     this.Password = password;
@@ -9,14 +9,17 @@ export class LoginRequestModel {
   Password: string | undefined;
 }
 
-export class LoginResponseModel {
-  constructor() {}
-  UserName: string | undefined;
-  Token: string | undefined;
-  ExpiresIn: number | undefined;
-  Rights: string[] | undefined;
-  RoleId: number | undefined;
-  Message: string | undefined;
-  Status: HttpStatusCode | undefined;
-  Email: string | undefined;
+export class LoginResponse  {
+  constructor() {
+    this.Token = '';
+    this.RefreshToken = '';
+    this.Email = '';
+    this.UserName = '';
+    this.TokenLife = new Date();
+  }
+  Token : string;
+  RefreshToken: string;
+  Email: string;
+  UserName: string;  
+  TokenLife: Date;  
 }

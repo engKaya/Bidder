@@ -1,0 +1,10 @@
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 16px;
+  background-color: #475878!important;
+}
+
+.mdc-data-table__cell, .mdc-data-table__header-cell {
+    border-bottom-color: $borderColor;
+    background-color: #475878 !important  ;
+}

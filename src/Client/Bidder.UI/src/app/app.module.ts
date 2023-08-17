@@ -1,6 +1,5 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 import { NavbarComponent } from './layout/navbar/navbar.component';
@@ -11,32 +10,42 @@ import { I18nModule } from './common-modules/i18n.module';
 import { MainPagesModule } from './modules/main-pages/main-pages.module';
 import { AuthModule } from './modules/auth/auth.module'; 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthInterceptor } from './interceptors/httpinterceptor.interceptor';
+import { AuthInterceptor } from './interceptors/httpinterceptor.interceptor'; 
+import { ToastrModule } from 'ngx-toastr'
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent, 
   ],
-  imports: [ 
-    
+  imports: [   
     BrowserModule,
     NgbCollapseModule,
     AppRoutingModule, 
     AngularMaterialModule,
-    BrowserAnimationsModule,
     I18nModule,
     MainPagesModule,
-    AuthModule
+    AuthModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+      onActivateTick: true,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      closeButton: true,
+      maxOpened: 3,
+    }),
+    BrowserAnimationsModule,
   ],
   providers: [  
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
-      multi: true
-    }
+      multi: true,
+    },
   ],
-  bootstrap: [AppComponent],
-  
+  bootstrap: [AppComponent],   
   schemas: []
 })
 export class AppModule { }
