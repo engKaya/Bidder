@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Bidder.IdentityService.Api.Controllers
 {
     [ApiController]
-    [Route("Identity/[action]")]
+    [Route("api/v1/identity/[action]")]
     public partial class IdentityController : BaseController
     {
         IMediator mediator { get; set; }

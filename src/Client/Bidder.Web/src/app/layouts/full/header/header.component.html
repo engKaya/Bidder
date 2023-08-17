@@ -23,15 +23,14 @@
   <!-- --------------------------------------------------------------- -->
   <!-- profile Dropdown -->
   <!-- --------------------------------------------------------------- -->
-  <a
+  <button
     mat-flat-button
     color="primary"
-    href="https://adminmart.com/"
-    target="_blank"
-    class="d-flex justify-content-center"
+    class="d-flex justify-content-center align-items-center "
   >
-    Download Free
-  </a>
+    <span class="m-l-4">{{ "GENERAL.START_BID" | translate }}</span>
+    <i-tabler name="shopping-cart" class="icon-18 d-flex"></i-tabler>
+  </button>
   <button
     mat-icon-button
     [matMenuTriggerFor]="profilemenu"

@@ -1,0 +1,52 @@
+{
+  "FORM_VALIDATIONS":{
+    "REQUIRED":"{{field}} alanı zorunludur."
+  },
+  "LABELS":{
+    "EMAIL": "E-posta",
+    "PASS": "Şifre",
+    "USERNAME": "Kullanıcı Adı"
+  }, 
+  "GENERAL": {
+    "HOME": "Ana Sayfa",
+    "LOADING": "Lütfen Bekleyiniz...", 
+    "SUBMIT": "Gönder",
+    "START_BID": "İhale Başlat"
+  },
+  "AUTH": {
+    "LOGIN": "Giriş Yap",
+    "LOGOUT": "Çıkış Yap",
+    "REGISTER": "Kayıt Ol",
+    "USERNAME_REQUIRED": "Kullanıcı Adı Gerekli", 
+    "PASSWORD_REQUIRED": "Şifre Gerekli", 
+    "REMEMBER_ME": "Beni Hatırla",
+    "FORM_ERRORS": "Form Hatalarını Düzeltin"
+  },
+  "ERROR_CODES": {
+    "GENERAL": {
+      "500": "Hata",
+      "404": "Sayfa Bulunamadı",
+      "403": "Yetkisiz Erişim"
+    },
+    "LOGIN": {
+      "200": "Giriş Başarılı",
+      "401": "Kullanıcı Adı veya Şifre Hatalı",
+      "404": "Kullanıcı Adı veya Şifre Hatalı"
+    },
+    "GENERAL_ERROR_EXP": {
+      "500": "Lütfen daha sonra tekrar deneyiniz",
+      "404": "Lütfen daha sonra tekrar deneyiniz",
+      "403": "Bu sayfaya erişim yetkiniz bulunmamaktadır"
+    }
+  },
+  "FORM_VALID": {
+    
+    "REQUIRED": "Bu alan gereklidir",
+    "EMAIL": "Lütfen geçerli bir e-posta adresi girin",
+    "MINLENGTH": "Lütfen en az {{minl}} karakter girin",
+    "MAXLENGTH": "Lütfen en fazla {{maxl}} karakter girin",
+    "PATTERN": "Lütfen geçerli bir değer girin",
+    "MIN": "Lütfen {{min}} veya daha büyük bir değer girin",
+    "MAX": "Lütfen {{max}} veya daha küçük bir değer girin"
+  }
+}

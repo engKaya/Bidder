@@ -14,8 +14,9 @@ import * as TablerIcons from 'angular-tabler-icons/icons';
 
 import { AuthenticationRoutes } from './authentication.routing';
 
-import { AppSideLoginComponent } from './login/login.component';
-import { AppSideRegisterComponent } from './register/register.component';
+import { AppSideLoginComponent } from './module.pages/login.page/login.component';
+import { AppSideRegisterComponent } from './module.pages/register.page/register.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { AppSideRegisterComponent } from './register/register.component';
     MatCheckboxModule,
     MatButtonModule,
     FormsModule,
+    TranslateModule,
     ReactiveFormsModule,
     TablerIconsModule.pick(TablerIcons),
   ],

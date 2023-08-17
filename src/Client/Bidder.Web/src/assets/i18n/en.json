@@ -1,7 +1,52 @@
 {
-  "Starter": "Starter",
-  "Menu Level": "Menu Level",
-  "Menu 1": "Menu 1",
-  "Menu 2": "Menu 2",
-  "Disabled": "Disabled"
+  "FORM_VALIDATIONS":{
+    "REQUIRED":"{{field}} is required"
+  },
+  "LABELS":{
+    "EMAIL": "Email",
+    "PASS": "Password",
+    "USERNAME":"Username"
+  },
+ 
+  "GENERAL" : {
+    "HOME" : "Home",
+    "LOADING" : "Loading...", 
+    "SUBMIT": "Submit",
+    "START_BID": "Start Bid"
+  },
+  "AUTH":{
+     "LOGIN":"Login",
+     "LOGOUT":"Logout",
+     "REGISTER":"Register",
+     "USERNAME_REQUIRED": "Username Required",
+     "PASSWORD_REQUIRED":"Password Required", 
+     "REMEMBER_ME":"Remember Me",
+     "FORM_ERRORS":"Please correct the errors in the form"
+  },
+  "ERROR_CODES":{
+    "GENERAL": {
+      "500": "Error Occured",
+      "404": "Page Not Found",
+      "403": "Access Denied"
+    },
+    "LOGIN":{
+      "200": "Login Successful",
+      "401": "Invalid Username or Password",
+      "404": "Invalid Username or Password"
+    },
+    "GENERAL_ERROR_EXP": {
+      "500": "Please try again later",
+      "404": "Page Not Found",
+      "403": "Access Denied"
+    }
+  },
+"FORM_VALID": {
+  "REQUIRED": "This field is required",
+  "EMAIL": "Please enter a valid email address",
+  "MINLENGTH": "Please enter at least {{minl}} characters",
+  "MAXLENGTH": "Please enter no more than {{maxl}} characters",
+  "PATTERN": "Please match the requested format",
+  "MIN": "Please enter a value greater than or equal to {min}}",
+  "MAX": "Please enter a value less than or equal to {{max}}"
+}
 }

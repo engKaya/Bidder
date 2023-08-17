@@ -4,9 +4,6 @@ import { AppDashboardComponent } from './dashboard/dashboard.component';
 export const PagesRoutes: Routes = [
   {
     path: '',
-    component: AppDashboardComponent,
-    data: {
-      title: 'Starter Page',
-    },
+    component: AppDashboardComponent
   },
 ];

@@ -5,7 +5,7 @@ using System.Net;
 namespace Bidder.IdentityService.Api.Controllers
 {
     [ApiController]
-    [Route("Identity/[action]")]
+    [Route("api/v1/identity/[action]")]
     public partial class BaseController : ControllerBase
     {
          
