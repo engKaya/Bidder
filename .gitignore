@@ -6,3 +6,6 @@ obj*
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.Development.json
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.Development.json
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.Test.json
+/src/Services/BidService/Bidder.BidService.Api/appsettings.json
+/src/Services/BidService/Bidder.BidService.Api/appsettings.Development.json
+/src/Services/BidService/Bidder.BidService.Api/appsettings.Test.json
