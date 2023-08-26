@@ -62,9 +62,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.BidService.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.BidService.Infastructure", "src\Services\BidService\Bidder.BidService.Infastructure\Bidder.BidService.Infastructure.csproj", "{82AB464D-749D-452C-AF21-7B307139C1CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Infastructure.Common", "src\Bidder.Common\Bidder.Infastructure.Common\Bidder.Infastructure.Common.csproj", "{994A8A21-D491-4611-8DB7-035C30436DCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.Infastructure.Common", "src\Bidder.Common\Bidder.Infastructure.Common\Bidder.Infastructure.Common.csproj", "{994A8A21-D491-4611-8DB7-035C30436DCE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bidder.Domain.Common", "src\Bidder.Common\Bidder.Domain.Common\Bidder.Domain.Common.csproj", "{2372452D-3A57-4E26-B1CF-52CEFB9C6972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bidder.Common.Application", "src\Bidder.Common\Bidder.Common.Application\Bidder.Common.Application.csproj", "{616C4849-C57C-4232-80C9-C5EBFC3C9789}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -148,6 +150,10 @@ Global
 		{2372452D-3A57-4E26-B1CF-52CEFB9C6972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2372452D-3A57-4E26-B1CF-52CEFB9C6972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2372452D-3A57-4E26-B1CF-52CEFB9C6972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616C4849-C57C-4232-80C9-C5EBFC3C9789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616C4849-C57C-4232-80C9-C5EBFC3C9789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616C4849-C57C-4232-80C9-C5EBFC3C9789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616C4849-C57C-4232-80C9-C5EBFC3C9789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{82AB464D-749D-452C-AF21-7B307139C1CC} = {AF7BCC10-E969-4A1E-A864-37CCC4DEE286}
 		{994A8A21-D491-4611-8DB7-035C30436DCE} = {44D5CF4B-1AD7-44C3-A675-E115FC64CB82}
 		{2372452D-3A57-4E26-B1CF-52CEFB9C6972} = {44D5CF4B-1AD7-44C3-A675-E115FC64CB82}
+		{616C4849-C57C-4232-80C9-C5EBFC3C9789} = {44D5CF4B-1AD7-44C3-A675-E115FC64CB82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {485A19D1-0A78-4220-9432-923394C977FC}

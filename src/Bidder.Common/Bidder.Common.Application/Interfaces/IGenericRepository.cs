@@ -2,7 +2,7 @@
 using Bidder.Domain.Common.Interfaces;
 using System.Linq.Expressions;
 
-namespace Bidder.IdentityService.Application.Interfaces.Repos
+namespace Bidder.Common.Application.Interfaces
 {
     public interface IGenericRepository<T> : IRepository<T> where T : BaseEntity
     {
