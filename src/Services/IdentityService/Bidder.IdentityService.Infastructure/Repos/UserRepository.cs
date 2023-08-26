@@ -1,4 +1,6 @@
-﻿using Bidder.IdentityService.Application.Interfaces.Repos;
+﻿
+
+using Bidder.IdentityService.Application.Interfaces.Repos;
 using Bidder.IdentityService.Domain.Entities;
 using Bidder.IdentityService.Infastructure.Context;
 

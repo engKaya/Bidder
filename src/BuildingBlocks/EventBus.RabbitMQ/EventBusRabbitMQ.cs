@@ -28,16 +28,10 @@ namespace EventBus.RabbitMQ
                     TypeNameHandling = TypeNameHandling.All,
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                 };
-
-                //var json = JsonConvert.SerializeObject(_config.Connection, jsonSettings);
-                //var st = json;
                 connectionFactory = (ConnectionFactory)_config.Connection;
             }
             else
                 connectionFactory = new ConnectionFactory();
-
-            //connectionFactory.UserName = eventBusConfig.UserName;
-            //connectionFactory.Password = eventBusConfig.Password;
 
             connection = new RabbitMQPersistenConnection(connectionFactory);
             this.consumerChannel = CreateConsumerChannel();
@@ -54,7 +48,7 @@ namespace EventBus.RabbitMQ
             if (subsManager.IsEmpty) consumerChannel.Close();
         }
 
-        public override void Publish(IntegrationEvent @event)
+        public override void Publish(IntegrationEvent @event, string? topic = null)
         {
             if (!connection.IsConnected) connection.TryConnect();
 
@@ -67,7 +61,7 @@ namespace EventBus.RabbitMQ
             var eventName = @event.GetType().Name;
             eventName = ProcessEventName(eventName);
 
-            consumerChannel.ExchangeDeclare(eventBusConfig.DefaultTopicName, "direct");
+            consumerChannel.ExchangeDeclare(topic == null ? eventBusConfig.DefaultTopicName : topic, "direct");
 
             var message = JsonConvert.SerializeObject(@event);
             var body = Encoding.UTF8.GetBytes(message);
@@ -78,7 +72,7 @@ namespace EventBus.RabbitMQ
                 var properties = consumerChannel.CreateBasicProperties();
                 properties.DeliveryMode = 2;
 
-                consumerChannel.BasicPublish(exchange: eventBusConfig.DefaultTopicName,
+                consumerChannel.BasicPublish(exchange: topic == null ? eventBusConfig.DefaultTopicName : topic,
                                              routingKey: eventName,
                                              mandatory: true,
                                              basicProperties: properties,
@@ -86,7 +80,7 @@ namespace EventBus.RabbitMQ
             });
         }
 
-        public override void Subscribe<T, TH>()
+        public override void Subscribe<T, TH>(string? topic = null)
         {
             var eventName = typeof(T).Name;
             eventName = ProcessEventName(eventName);
@@ -101,7 +95,7 @@ namespace EventBus.RabbitMQ
                                              autoDelete: false,
                                              arguments: null);
                 consumerChannel.QueueBind(queue: GetSubName(eventName),
-                                          exchange: eventBusConfig.DefaultTopicName,
+                                          exchange: topic == null ? eventBusConfig.DefaultTopicName : topic,
                                           routingKey: eventName);
 
             }

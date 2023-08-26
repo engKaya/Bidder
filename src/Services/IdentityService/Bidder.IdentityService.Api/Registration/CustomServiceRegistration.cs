@@ -1,6 +1,6 @@
-﻿using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
+﻿using Bidder.Domain.Common.Interfaces;
+using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
 using Bidder.IdentityService.Application.Interfaces.Repos;
-using Bidder.IdentityService.Domain.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Bidder.IdentityService.Infastructure.Repos;
 using Bidder.IdentityService.Infastructure.Uof;
@@ -28,11 +28,7 @@ namespace Bidder.IdentityService.Api.Registration
             });
             services.AddMediatR();
             var optionsBuilder = new DbContextOptionsBuilder<UserDbContext>()
-                                                .UseSqlServer(configuration.GetConnectionString("UserConnectionString"));
-
-            //using var dbContext = services.BuildServiceProvider().GetService<UserDbContext>();
-            //dbContext.Database.EnsureCreated();
-            //dbContext.Database.Migrate();
+                                                .UseSqlServer(configuration.GetConnectionString("UserConnectionString")); 
 
             services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
             services.ConfigureAuth(configuration);

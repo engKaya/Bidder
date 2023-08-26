@@ -1,4 +1,5 @@
-﻿using Bidder.IdentityService.Domain.Helper;
+﻿using Bidder.Domain.Common.Entity;
+using Bidder.IdentityService.Domain.Helper;
 using System.ComponentModel.DataAnnotations;
 
 namespace Bidder.IdentityService.Domain.Entities

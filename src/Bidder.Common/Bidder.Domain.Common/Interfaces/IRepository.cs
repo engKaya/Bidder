@@ -1,7 +1,7 @@
-﻿using Bidder.IdentityService.Domain.Entities;
+﻿using Bidder.Domain.Common.Entity; 
 using System.Linq.Expressions;
 
-namespace Bidder.IdentityService.Domain.Interfaces
+namespace Bidder.Domain.Common.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {

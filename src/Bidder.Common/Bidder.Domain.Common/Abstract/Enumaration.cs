@@ -1,4 +1,4 @@
-﻿namespace Bidder.IdentityService.Domain.Abstract
+﻿namespace Bidder.Domain.Common.Abstract
 {
     public abstract class Enumaration : IComparable
     {

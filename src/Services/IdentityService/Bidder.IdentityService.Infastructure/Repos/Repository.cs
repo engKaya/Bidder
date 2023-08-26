@@ -1,5 +1,5 @@
-﻿using Bidder.IdentityService.Domain.Entities;
-using Bidder.IdentityService.Domain.Interfaces;
+﻿using Bidder.Domain.Common.Entity;
+using Bidder.Domain.Common.Interfaces;
 using Bidder.IdentityService.Infastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;

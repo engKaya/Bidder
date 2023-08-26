@@ -69,9 +69,9 @@ namespace EventBus.Base.Events
             config = null;
             subsManager.Clear();
         }
-        public abstract void Publish(IntegrationEvent @event);
+        public abstract void Publish(IntegrationEvent @event, string topic = null);
 
-        public abstract void Subscribe<T, TH>()
+        public abstract void Subscribe<T, TH>(string? topic = null)
             where T : IntegrationEvent
             where TH : IIntegrationEventHandler<T>;
 

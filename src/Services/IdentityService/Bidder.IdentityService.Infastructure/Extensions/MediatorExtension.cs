@@ -1,8 +1,9 @@
-﻿using Bidder.IdentityService.Domain.Entities;
+﻿
+using Bidder.Domain.Common.Entity;
 using Bidder.IdentityService.Infastructure.Context;
 using MediatR;
 
-namespace Bidder.IdentityService.Infastructure.Extensions
+namespace Bidder.Infastructure.Common.Extensions
 {
     public static class MediatorExtension
     {

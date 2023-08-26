@@ -6,6 +6,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AppDashboardComponent } from 'src/app/pages/dashboard/dashboard.component';
 
 
 @Component({
@@ -23,4 +24,8 @@ export class HeaderComponent {
   showFiller = false;
 
   constructor(public dialog: MatDialog) {}
+
+  openDialog() { 
+    this.dialog.open(AppDashboardComponent);
+  }
 }

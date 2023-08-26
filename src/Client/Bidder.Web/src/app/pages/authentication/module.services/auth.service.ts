@@ -9,7 +9,7 @@ import {
   throwError,
 } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { environment } from 'src/enviroment/enviroment';
+import { environment } from 'src/environment/environment';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core'; 
 import { LocalStorageService } from 'src/app/bidder.common/common.services/localstorage.service';

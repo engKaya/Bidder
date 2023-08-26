@@ -1,5 +1,5 @@
-﻿using Bidder.IdentityService.Domain.Entities;
-using Bidder.IdentityService.Domain.Interfaces;
+﻿using Bidder.Domain.Common.Interfaces;
+using Bidder.IdentityService.Domain.Entities;
 
 namespace Bidder.IdentityService.Application.Interfaces.Repos
 {

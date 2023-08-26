@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Domain.Common\Bidder.Domain.Common.csproj" />
     <ProjectReference Include="..\Bidder.IdentityService.Application\Bidder.IdentityService.Application.csproj" />
     <ProjectReference Include="..\Bidder.IdentityService.Domain\Bidder.IdentityService.Domain.csproj" />
   </ItemGroup>

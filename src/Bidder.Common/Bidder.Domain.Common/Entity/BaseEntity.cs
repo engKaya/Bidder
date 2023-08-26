@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Bidder.IdentityService.Domain.Entities
+namespace Bidder.Domain.Common.Entity
 {
     public abstract class BaseEntity
     {
