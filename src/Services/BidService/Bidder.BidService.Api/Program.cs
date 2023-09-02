@@ -1,6 +1,6 @@
 using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Infastructure.Context;
-using Bidder.Common.Application.Extension;
+using Bidder.Common.Application.Extension; 
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +16,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
+builder.Services.ConfigureAuth(builder.Configuration);
 
 var app = builder.Build();
 

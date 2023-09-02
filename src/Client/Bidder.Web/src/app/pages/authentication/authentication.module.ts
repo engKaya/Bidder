@@ -15,7 +15,8 @@ import * as TablerIcons from 'angular-tabler-icons/icons';
 import { AuthenticationRoutes } from './authentication.routing';
 
 import { AppSideLoginComponent } from './module.pages/login.page/login.component';
-import { AppSideRegisterComponent } from './module.pages/register.page/register.component';
+import { AppSideRegisterComponent } from './module.pages/register.page/register.component'; 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
@@ -26,8 +27,9 @@ import { TranslateModule } from '@ngx-translate/core';
     MatCardModule,
     MatInputModule,
     MatCheckboxModule,
+    MatProgressSpinnerModule,
     MatButtonModule,
-    FormsModule,
+    FormsModule, 
     TranslateModule,
     ReactiveFormsModule,
     TablerIconsModule.pick(TablerIcons),

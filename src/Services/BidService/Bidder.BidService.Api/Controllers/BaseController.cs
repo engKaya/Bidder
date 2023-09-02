@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Security.Claims;
 
-namespace Bidder.IdentityService.Api.Controllers
+namespace Bidder.BidService.Api.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]/[action]")]

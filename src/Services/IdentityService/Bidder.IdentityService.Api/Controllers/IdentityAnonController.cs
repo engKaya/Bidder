@@ -1,24 +1,14 @@
+using Bidder.Domain.Common.BaseClassess;
 using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
 using Bidder.IdentityService.Application.Features.Queries.User.Login;
-using Bidder.IdentityService.Domain.DTOs;
 using Bidder.IdentityService.Domain.DTOs.User.Request;
 using Bidder.IdentityService.Domain.DTOs.User.Responses;
-using MediatR;
-using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bidder.IdentityService.Api.Controllers
-{
-    [ApiController]
-    [Route("api/v1/identity/[action]")]
+{ 
     public partial class IdentityController : BaseController
-    {
-        IMediator mediator { get; set; }
-        public IdentityController(IMediator mediator)
-        {
-            this.mediator = mediator; 
-        }
-
-
+    {  
         [HttpPost]
         [ActionName("CreateUser")]
         [ProducesResponseType(typeof(ResponseMessageNoContent), 200)] 

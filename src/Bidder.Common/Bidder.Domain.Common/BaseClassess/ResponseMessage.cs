@@ -1,6 +1,6 @@
 ﻿ 
 
-namespace Bidder.IdentityService.Domain.DTOs
+namespace Bidder.Domain.Common.BaseClassess
 {
     
 

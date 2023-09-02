@@ -77,7 +77,8 @@
 
             <button id="login" type="submit" mat-flat-button color="primary" class="w-100">
               <span *ngIf="!(IsLoading$ | async)">{{'AUTH.LOGIN' | translate}}</span>
-              <span *ngIf="(IsLoading$ | async)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;<span *ngIf="(IsLoading$ | async)" [translate]="'GENERAL.LOADING'">Loading...</span>
+              <span *ngIf="(IsLoading$ | async)" class="spinner-border spinner-border-sm"></span>&nbsp;<span *ngIf="(IsLoading$ | async)" [translate]="'GENERAL.LOADING'">Loading...</span>
+ 
             </button>
             <!-- <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
               Sign In

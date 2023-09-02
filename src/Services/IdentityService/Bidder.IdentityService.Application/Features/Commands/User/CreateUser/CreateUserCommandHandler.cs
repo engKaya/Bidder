@@ -1,6 +1,6 @@
-﻿using Bidder.IdentityService.Application.IntegrationEvents;
+﻿using Bidder.Domain.Common.BaseClassess;
+using Bidder.IdentityService.Application.IntegrationEvents;
 using Bidder.IdentityService.Application.Interfaces.Repos;
-using Bidder.IdentityService.Domain.DTOs;
 using Bidder.IdentityService.Domain.Entities;
 using EventBus.Base.Abstraction;
 using MediatR;

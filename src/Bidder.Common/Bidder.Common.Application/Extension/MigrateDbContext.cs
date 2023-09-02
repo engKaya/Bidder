@@ -7,7 +7,7 @@ using Polly;
 
 namespace Bidder.Common.Application.Extension
 {
-    public static class MigrateDb
+    public static class MigrateDbContext
     {
         public static void MigrateDatabase<TContext>(this IHost host, Action<TContext, IServiceProvider>? seeder = null) where TContext : DbContext
         { 

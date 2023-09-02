@@ -19,11 +19,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Common.Application\Bidder.Common.Application.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Base\EventBus.Base.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Factory\EventBus.Factory.csproj" />
     <ProjectReference Include="..\..\IdentityService\Bidder.IdentityService.Application\Bidder.IdentityService.Application.csproj" />
     <ProjectReference Include="..\..\IdentityService\Bidder.IdentityService.Domain\Bidder.IdentityService.Domain.csproj" />
     <ProjectReference Include="..\Bidder.Notification.EventIntegration\Bidder.Notification.EventIntegration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

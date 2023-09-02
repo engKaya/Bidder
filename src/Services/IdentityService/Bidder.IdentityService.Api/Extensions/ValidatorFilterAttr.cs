@@ -1,4 +1,5 @@
-﻿using Bidder.IdentityService.Domain.DTOs;
+﻿using Bidder.Domain.Common.BaseClassess;
+using Bidder.IdentityService.Domain.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 

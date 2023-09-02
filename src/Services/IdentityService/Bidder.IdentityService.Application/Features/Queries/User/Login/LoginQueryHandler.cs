@@ -1,5 +1,5 @@
-﻿using Bidder.IdentityService.Application.Interfaces.Repos;
-using Bidder.IdentityService.Domain.DTOs;
+﻿using Bidder.Domain.Common.BaseClassess;
+using Bidder.IdentityService.Application.Interfaces.Repos;
 using Bidder.IdentityService.Domain.DTOs.User.Responses;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -23,13 +23,13 @@ namespace Bidder.IdentityService.Application.Features.Queries.User.Login
 
         public async Task<ResponseMessage<LoginResponse>> Handle(LoginQuery request, CancellationToken cancellationToken)
         {
-            var user = await _unitOfWork.UserRepository.FindFirst(x => x.Email == request.Email);
-             
+            var user = await _unitOfWork.UserRepository.FindFirst(x => x.Email == request.Email); 
             if (user is null || !user.VerifyPassword(request.Password)) return ResponseMessage<LoginResponse>.Fail("Password Or Email not correct", (int)HttpStatusCode.Unauthorized);
             var secretKey = _configuration["CustomSettings:Key"];
 
             var claims = new Claim[]
             {
+                new Claim(ClaimTypes.UserData, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.NameIdentifier, user.Username),
             };

@@ -1,4 +1,4 @@
-﻿using Bidder.IdentityService.Domain.DTOs;
+﻿using Bidder.Domain.Common.BaseClassess;
 using Bidder.IdentityService.Domain.DTOs.User.Request;
 using Bidder.IdentityService.Domain.DTOs.User.Responses;
 using MediatR;
