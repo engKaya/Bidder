@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bidder.BidService.Domain.Entities;
+using Bidder.BidService.Infastructure.EntityConfiguration;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bidder.BidService.Infastructure.Context
 {
@@ -10,10 +12,10 @@ namespace Bidder.BidService.Infastructure.Context
         {
         }
 
-        //public DbSet<Users> Users { get; set; }
+        public DbSet<Bid> Bids{ get; set; } 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.ApplyConfiguration(new UserDbConfiguration());
+            modelBuilder.ApplyConfiguration(new BidEntityConfiguration());
         }
     }
 }

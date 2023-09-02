@@ -1,4 +1,6 @@
 using Bidder.BidService.Api.Registration;
+using Bidder.BidService.Infastructure.Context;
+using Bidder.Common.Application.Extension;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MigrateDatabase<BidDbContext>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
