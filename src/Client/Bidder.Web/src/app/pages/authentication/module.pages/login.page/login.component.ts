@@ -5,6 +5,7 @@ import { AuthLoginService } from '../../module.services/auth.service';
 import { LoginRequest } from '../../module.objects/loginobjects.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,8 @@ export class AppSideLoginComponent {
     private translate: TranslateService,
     private authLoginService: AuthLoginService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private toastr: ToasterService
   ) {
     this.IsLoading$ =  this.authLoginService.IsLoading$;   
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
@@ -39,7 +41,7 @@ export class AppSideLoginComponent {
           if (response.StatusCode !== 200) {
             this.error = this.translate.instant(
               `ERROR_CODES.LOGIN.${response.StatusCode}`
-            );
+            ); 
             return;
           } 
           this.router.navigate([this.returnUrl.replace('%2F', '/')]);
@@ -48,6 +50,7 @@ export class AppSideLoginComponent {
           this.error = this.translate.instant(
             `ERROR_CODES.LOGIN.${error.status}`
           );
+          this.toastr.openToastError(this.error,"Error")
         });
     } else {
       this.error = this.translate.instant('AUTH.FORM_ERRORS');

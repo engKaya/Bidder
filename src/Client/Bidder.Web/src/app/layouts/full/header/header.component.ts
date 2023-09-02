@@ -6,6 +6,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { BiddingPupComponent } from 'src/app/pages/bidding/bidding-pup/bidding-pup.component';
 import { AppDashboardComponent } from 'src/app/pages/dashboard/dashboard.component';
 
 
@@ -26,6 +27,6 @@ export class HeaderComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog() { 
-    this.dialog.open(AppDashboardComponent);
+    this.dialog.open(BiddingPupComponent)
   }
 }
