@@ -46,7 +46,6 @@ namespace Bidder.IdentityService.Application.Features.Queries.User.Login
                 Data = new LoginResponse()
                 {
                     Token = encodedToken,
-                    RefreshToken = encodedToken,
                     Email = request.Email,
                     UserName = user.Username,
                 },

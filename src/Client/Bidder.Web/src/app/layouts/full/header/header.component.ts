@@ -4,10 +4,9 @@ import {
   EventEmitter,
   Input,
   ViewEncapsulation,
-} from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { BiddingPupComponent } from 'src/app/pages/bidding/bidding-pup/bidding-pup.component';
-import { AppDashboardComponent } from 'src/app/pages/dashboard/dashboard.component';
+} from '@angular/core'; 
+import { DialogService, DialogSize } from 'src/app/bidder.common/common.services/dialog.service';
+import { BiddingPupComponent } from 'src/app/pages/bidding/bidding-pup/bidding-pup.component'; 
 
 
 @Component({
@@ -24,9 +23,9 @@ export class HeaderComponent {
 
   showFiller = false;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: DialogService) {} 
 
   openDialog() { 
-    this.dialog.open(BiddingPupComponent)
+    this.dialog.openDialog(BiddingPupComponent, DialogSize.FullLarge)
   }
 }

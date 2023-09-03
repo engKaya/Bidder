@@ -1,35 +1,35 @@
 {
-  "FORM_VALIDATIONS":{
-    "REQUIRED":"{{field}} is required"
+  "FORM_VALIDATIONS": {
+    "REQUIRED": "{{field}} is required"
   },
-  "LABELS":{
+  "LABELS": {
     "EMAIL": "Email",
     "PASS": "Password",
-    "USERNAME":"Username"
+    "USERNAME": "Username"
   },
- 
-  "GENERAL" : {
-    "HOME" : "Home",
-    "LOADING" : "Loading...", 
+
+  "GENERAL": {
+    "HOME": "Home",
+    "LOADING": "Loading...",
     "SUBMIT": "Submit",
     "START_BID": "Start Bid"
   },
-  "AUTH":{
-     "LOGIN":"Login",
-     "LOGOUT":"Logout",
-     "REGISTER":"Register",
-     "USERNAME_REQUIRED": "Username Required",
-     "PASSWORD_REQUIRED":"Password Required", 
-     "REMEMBER_ME":"Remember Me",
-     "FORM_ERRORS":"Please correct the errors in the form"
+  "AUTH": {
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "REGISTER": "Register",
+    "USERNAME_REQUIRED": "Username Required",
+    "PASSWORD_REQUIRED": "Password Required",
+    "REMEMBER_ME": "Remember Me",
+    "FORM_ERRORS": "Please correct the errors in the form"
   },
-  "ERROR_CODES":{
+  "ERROR_CODES": {
     "GENERAL": {
       "500": "Error Occured",
       "404": "Page Not Found",
       "403": "Access Denied"
     },
-    "LOGIN":{
+    "LOGIN": {
       "200": "Login Successful",
       "401": "Invalid Username or Password",
       "404": "Invalid Username or Password"
@@ -40,13 +40,17 @@
       "403": "Access Denied"
     }
   },
-"FORM_VALID": {
-  "REQUIRED": "This field is required",
-  "EMAIL": "Please enter a valid email address",
-  "MINLENGTH": "Please enter at least {{minl}} characters",
-  "MAXLENGTH": "Please enter no more than {{maxl}} characters",
-  "PATTERN": "Please match the requested format",
-  "MIN": "Please enter a value greater than or equal to {min}}",
-  "MAX": "Please enter a value less than or equal to {{max}}"
-}
+  "FORM_VALID": {
+    "REQUIRED": "This field is required",
+    "EMAIL": "Please enter a valid email address",
+    "MINLENGTH": "Please enter at least {{minl}} characters",
+    "MAXLENGTH": "Please enter no more than {{maxl}} characters",
+    "PATTERN": "Please match the requested format",
+    "MIN": "Please enter a value greater than or equal to {min}}",
+    "MAX": "Please enter a value less than or equal to {{max}}"
+  },
+  
+  "BID": {
+    "OPEN_AUCTION": "Open Auction"
+  }
 }

@@ -48,5 +48,8 @@
     "PATTERN": "Lütfen geçerli bir değer girin",
     "MIN": "Lütfen {{min}} veya daha büyük bir değer girin",
     "MAX": "Lütfen {{max}} veya daha küçük bir değer girin"
+  },
+  "BID": {
+    "OPEN_AUCTION": "Açık Arttırma Başlat"
   }
 }

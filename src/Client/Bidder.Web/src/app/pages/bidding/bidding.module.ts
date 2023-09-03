@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BiddingPupComponent } from './bidding-pup/bidding-pup.component';
-import { MaterialModule } from 'src/app/material.module';  
-import { FormsModule } from '@angular/forms';
-
+import { BiddingPupComponent } from './bidding-pup/bidding-pup.component'; 
+import { SharedModule } from 'src/app/bidder.common/common.modules/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +9,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    MaterialModule, 
-    FormsModule, 
+    SharedModule
   ]
 })
 export class BiddingModule { }
