@@ -34,33 +34,54 @@
       width="35"
     />
   </button>
-  <mat-menu #profilemenu="matMenu" class="topbar-dd cardWithShadow">
+  <mat-menu #profilemenu="matMenu" class="topbar-dd cardWithShadow"> 
     <button mat-menu-item>
       <mat-icon class="d-flex align-items-center"
         ><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon
-      >My Profile
-    </button>
-    <button mat-menu-item>
-      <mat-icon class="d-flex align-items-center"
-        ><i-tabler name="mail" class="icon-18 d-flex"></i-tabler></mat-icon
-      >My Account
+      >{{"AUTH.MY_ACCOUNT" |translate}}
     </button>
     <button mat-menu-item>
       <mat-icon class="d-flex align-items-center"
         ><i-tabler
-          name="list-check"
+          name="bell"
           class="icon-18 d-flex"
         ></i-tabler></mat-icon
-      >My Task
+      >{{"AUTH.MY_NOTIFICATIONS" |translate}}
+    </button>
+
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler
+          name="arrow-big-up-lines-filled"
+          class="icon-18 d-flex"
+        ></i-tabler></mat-icon
+      >{{"AUTH.MY_BIDS" |translate}}
+    </button>
+    
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler 
+          name="arrow-merge-both"
+          class="icon-18 d-flex"
+        ></i-tabler></mat-icon
+      >{{"AUTH.MY_AUCTIONS" |translate}}
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler
+          name="mail"
+          class="icon-18 d-flex"
+        ></i-tabler></mat-icon
+      >{{"AUTH.MY_MESSAGES" |translate}}
     </button>
 
     <div class="p-x-12 m-t-12">
       <a
-        [routerLink]="['/authentication/login']"
+        (click)="logout()"
         mat-stroked-button
         color="primary"
         class="w-100"
-        >Logout</a
+        >{{"AUTH.LOGOUT" |translate}}</a
       >
     </div>
   </mat-menu>

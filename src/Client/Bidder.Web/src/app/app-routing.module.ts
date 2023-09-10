@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FullComponent } from './layouts/full/full.component';
+import { AuthGuard } from './bidder.common/common.services/guard/Auth.guard';
 
 const routes: Routes = [
   {
@@ -17,43 +18,16 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: '/dashboard',
-        pathMatch: 'full',
+        pathMatch: 'full' 
       },
       {
         path: 'dashboard',
         loadChildren: () =>
           import('./pages/pages.module').then((m) => m.PagesModule),
+        canActivate: [AuthGuard],
       },
     ],
-  },
-  // {
-  //   path: '',
-  //   component: FullComponent,
-  //   children: [
-  //     {
-  //       path: '',
-  //       redirectTo: '/dashboard',
-  //       pathMatch: 'full',
-  //     },
-  //     {
-  //       path: 'dashboard',
-  //       loadChildren: () =>
-  //         import('./pages/pages.module').then((m) => m.PagesModule),
-  //     },
-  //     {
-  //       path: 'ui-components',
-  //       loadChildren: () =>
-  //         import('./pages/ui-components/ui-components.module').then(
-  //           (m) => m.UicomponentsModule
-  //         ),
-  //     },
-  //     {
-  //       path: 'extra',
-  //       loadChildren: () =>
-  //         import('./pages/extra/extra.module').then((m) => m.ExtraModule),
-  //     },
-  //   ],
-  // },
+  }
 ];
 
 @NgModule({

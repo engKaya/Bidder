@@ -6,6 +6,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core'; 
 import { DialogService, DialogSize } from 'src/app/bidder.common/common.services/dialog.service';
+import { AuthLoginService } from 'src/app/pages/authentication/module.services/auth.service';
 import { BiddingPupComponent } from 'src/app/pages/bidding/bidding-pup/bidding-pup.component'; 
 
 
@@ -23,9 +24,16 @@ export class HeaderComponent {
 
   showFiller = false;
 
-  constructor(public dialog: DialogService) {} 
+  constructor(
+    public dialog: DialogService,
+    public auth: AuthLoginService  
+  ) {} 
 
   openDialog() { 
     this.dialog.openDialog(BiddingPupComponent, DialogSize.FullLarge)
+  }
+
+  logout() {
+    this.auth.logout();
   }
 }

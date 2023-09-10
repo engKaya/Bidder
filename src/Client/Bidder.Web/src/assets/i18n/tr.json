@@ -16,6 +16,11 @@
   "AUTH": {
     "LOGIN": "Giriş Yap",
     "LOGOUT": "Çıkış Yap",
+    "MY_ACCOUNT": "Hesabım",
+    "MY_NOTIFICATIONS": "Bildirimlerim",
+    "MY_BIDS": "Tekliflerim",
+    "MY_AUCTIONS": "İhalelerim",
+    "MY_MESSAGES": "Mesajlarım",
     "REGISTER": "Kayıt Ol",
     "USERNAME_REQUIRED": "Kullanıcı Adı Gerekli", 
     "PASSWORD_REQUIRED": "Şifre Gerekli", 

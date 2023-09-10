@@ -1,5 +1,7 @@
+using Bidder.Common.Application.Extension;
 using Bidder.IdentityService.Api.Extensions;
 using Bidder.IdentityService.Api.Registration;
+using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -32,6 +34,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.ConfigureValidation();
+builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

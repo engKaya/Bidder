@@ -17,6 +17,11 @@
   "AUTH": {
     "LOGIN": "Login",
     "LOGOUT": "Logout",
+    "MY_ACCOUNT": "My Account",
+    "MY_NOTIFICATIONS": "My Notifications",
+    "MY_BIDS": "My Bids",
+    "MY_AUCTIONS": "My Auctions",
+    "MY_MESSAGES": "My Messages",
     "REGISTER": "Register",
     "USERNAME_REQUIRED": "Username Required",
     "PASSWORD_REQUIRED": "Password Required",

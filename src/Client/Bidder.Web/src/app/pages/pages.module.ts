@@ -21,5 +21,6 @@ import { AppDashboardComponent } from './dashboard/dashboard.component';
     TablerIconsModule.pick(TablerIcons),
   ],
   exports: [TablerIconsModule],
+  
 })
 export class PagesModule {}

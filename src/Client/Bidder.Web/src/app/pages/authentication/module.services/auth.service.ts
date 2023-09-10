@@ -59,6 +59,7 @@ export class AuthLoginService {
       if (response.StatusCode === HttpStatusCode.Ok) {  
         await this.localStorage.SetToken(response.Data.Token as string);
         await this.localStorage.setUsername(response.Data.UserName as string); 
+        await this.localStorage.setExpiration(response.Data.TokenLife as Date);
         this.IsLoggedInSubject.next(true);
         this.UserNameSubject.next(response.Data.UserName as string);
       }
@@ -92,7 +93,7 @@ export class AuthLoginService {
   }
  
   isLoggedIn(): boolean { 
-    return this.localStorage.GetToken() !== null && this.localStorage.GetToken() !== undefined && this.localStorage.GetToken() !== '';
+    return this.localStorage.GetToken() !== null && this.localStorage.GetToken() !== undefined && this.localStorage.GetToken() !== '' && this.localStorage.getExpiration() > new Date();
   }
 
   getUserName(): string {

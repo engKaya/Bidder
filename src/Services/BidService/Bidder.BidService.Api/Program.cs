@@ -1,6 +1,7 @@
 using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Infastructure.Context;
-using Bidder.Common.Application.Extension; 
+using Bidder.Common.Application.Extension;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +18,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.ConfigureAuth(builder.Configuration);
-
+builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,8 +29,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MigrateDatabase<BidDbContext>();
-app.UseHttpsRedirection();
-
+app.UseHttpsRedirection(); 
 app.UseAuthorization();
 
 app.MapControllers();

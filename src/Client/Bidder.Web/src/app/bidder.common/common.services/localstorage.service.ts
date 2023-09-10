@@ -42,4 +42,13 @@ export class LocalStorageService {
         localStorage.removeItem('username');
     }
 
+    setExpiration(expiration: Date)  {  
+        localStorage.setItem('expiration', expiration.toLocaleString("dd/MM/yyyy HH:mm:ss"));
+    }
+
+    getExpiration(): Date {
+        var expiration = localStorage.getItem('expiration') || '';
+        return expiration === '' ? new Date() : new Date(expiration);
+    }
+
 }
