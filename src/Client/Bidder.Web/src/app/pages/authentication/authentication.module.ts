@@ -18,17 +18,13 @@ import { AppSideLoginComponent } from './module.pages/login.page/login.component
 import { AppSideRegisterComponent } from './module.pages/register.page/register.component'; 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/bidder.common/common.modules/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AuthenticationRoutes),
-    MatIconModule,
-    MatCardModule,
-    MatInputModule,
-    MatCheckboxModule,
-    MatProgressSpinnerModule,
-    MatButtonModule,
+    SharedModule,
     FormsModule, 
     TranslateModule,
     ReactiveFormsModule,

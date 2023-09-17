@@ -30,8 +30,8 @@ namespace Bidder.BidService.Application.Features.Command.Bidding.CreateBid
             {
                 Bid bid = new(request.Title, request.Description, request.MinPrice, request.HasIncreaseRest, request.MinPriceIncrease, identityService.GetUserId());
 
-                await uof.BidRepository.Add(bid);
-                await uof.SaveChangesAsync();
+                await uof.BidRepository.Add(bid, cancellationToken);
+                await uof.SaveChangesAsync(cancellationToken);
                 return ResponseMessage<CreateBidResponse>.Success(new CreateBidResponse(bid.Id), 200);
             }
             catch (Exception ex)

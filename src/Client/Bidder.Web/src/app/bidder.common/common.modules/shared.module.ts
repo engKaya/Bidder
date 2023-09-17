@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/material.module';
 import { TranslateModule } from '@ngx-translate/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -12,12 +12,14 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     TranslateModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     MaterialModule,
     TranslateModule,
-    FormsModule
+    FormsModule, 
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

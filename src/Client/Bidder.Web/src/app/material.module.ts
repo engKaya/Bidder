@@ -82,7 +82,13 @@ import { TranslateModule } from '@ngx-translate/core';
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
-    TranslateModule
+    TranslateModule, 
+    MatIconModule,
+    MatCardModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatProgressSpinnerModule,
+    MatButtonModule,
   ],
 })
 export class MaterialModule {}

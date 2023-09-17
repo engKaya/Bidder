@@ -31,8 +31,8 @@ namespace Bidder.IdentityService.Application.Features.Commands.User.CreateUser
 
                 var user = new Users(request.Email, request.Password, request.Name, request.Surname);
 
-                await uof.UserRepository.Add(user);
-                await uof.SaveChangesAsync();
+                await uof.UserRepository.Add(user, cancellationToken);
+                await uof.SaveChangesAsync(cancellationToken);
                 eventBus.Publish(new NewUserIntegrationEvent(user.Email, user.Username));
                 return ResponseMessageNoContent.Success("User Successfully Created", 200);
 

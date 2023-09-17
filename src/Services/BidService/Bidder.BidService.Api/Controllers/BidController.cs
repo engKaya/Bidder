@@ -9,6 +9,7 @@ namespace Bidder.BidService.Api.Controllers
     public class BidController : BaseController
     {
         private readonly IMapper map; 
+        private readonly ILogger<BidController> logger;
         public BidController(IMapper map)
         {
             this.map = map;
@@ -26,8 +27,8 @@ namespace Bidder.BidService.Api.Controllers
             }
             catch (Exception ex)
             {
-
-                throw;
+                logger.LogError(ex, ex.StackTrace);
+                return ResponseMessage<CreateBidResponse>.Fail("AUCTION_CREATION_FAILED", 500, new List<string>() { ex.Message, ex.StackTrace });
             }
         }
     }

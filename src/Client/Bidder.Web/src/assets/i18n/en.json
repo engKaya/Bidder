@@ -1,11 +1,15 @@
 {
   "FORM_VALIDATIONS": {
-    "REQUIRED": "{{field}} is required"
+    "REQUIRED": "{{field}} is required",
+    "FORM_ERRORS": "Please correct the errors in the form",
+    "ERROR" : "Form Validation Error"
   },
   "LABELS": {
     "EMAIL": "Email",
     "PASS": "Password",
-    "USERNAME": "Username"
+    "USERNAME": "Username",
+    "TITLE": "Başlık",
+    "DESCRIPTION": "Açıklama"
   },
 
   "GENERAL": {
@@ -25,8 +29,7 @@
     "REGISTER": "Register",
     "USERNAME_REQUIRED": "Username Required",
     "PASSWORD_REQUIRED": "Password Required",
-    "REMEMBER_ME": "Remember Me",
-    "FORM_ERRORS": "Please correct the errors in the form"
+    "REMEMBER_ME": "Remember Me"
   },
   "ERROR_CODES": {
     "GENERAL": {
@@ -56,6 +59,9 @@
   },
   
   "BID": {
-    "OPEN_AUCTION": "Open Auction"
+    "OPEN_AUCTION": "Open Auction",
+    "ERRORS": {
+      "AUCTION_CREATION_FAILED": "Auction Creation Failed"
+    }
   }
 }

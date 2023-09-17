@@ -1,17 +1,21 @@
 {
   "FORM_VALIDATIONS":{
-    "REQUIRED":"{{field}} alanı zorunludur."
+    "REQUIRED":"{{field}} alanı zorunludur.",
+    "FORM_ERRORS": "Form Hatalarını Düzeltin",
+    "ERROR" : "Form Hatası Mevcut"
   },
   "LABELS":{
     "EMAIL": "E-posta",
     "PASS": "Şifre",
-    "USERNAME": "Kullanıcı Adı"
+    "USERNAME": "Kullanıcı Adı",
+    "TITLE": "Başlık",
+    "DESCRIPTION": "Açıklama"
   }, 
   "GENERAL": {
     "HOME": "Ana Sayfa",
     "LOADING": "Lütfen Bekleyiniz...", 
     "SUBMIT": "Gönder",
-    "START_BID": "İhale Başlat"
+    "START_BID": "İhale Başlat"    
   },
   "AUTH": {
     "LOGIN": "Giriş Yap",
@@ -24,8 +28,7 @@
     "REGISTER": "Kayıt Ol",
     "USERNAME_REQUIRED": "Kullanıcı Adı Gerekli", 
     "PASSWORD_REQUIRED": "Şifre Gerekli", 
-    "REMEMBER_ME": "Beni Hatırla",
-    "FORM_ERRORS": "Form Hatalarını Düzeltin"
+    "REMEMBER_ME": "Beni Hatırla"
   },
   "ERROR_CODES": {
     "GENERAL": {
@@ -55,6 +58,9 @@
     "MAX": "Lütfen {{max}} veya daha küçük bir değer girin"
   },
   "BID": {
-    "OPEN_AUCTION": "Açık Arttırma Başlat"
+    "OPEN_AUCTION": "Açık Arttırma Başlat",
+    "ERRORS": {
+      "AUCTION_CREATION_FAILED": "İhale oturumu oluşturulamadı"
+    }
   }
 }

@@ -7,7 +7,7 @@ import {
 } from '@angular/core'; 
 import { DialogService, DialogSize } from 'src/app/bidder.common/common.services/dialog.service';
 import { AuthLoginService } from 'src/app/pages/authentication/module.services/auth.service';
-import { BiddingPupComponent } from 'src/app/pages/bidding/bidding-pup/bidding-pup.component'; 
+import { BiddingPupComponent } from 'src/app/pages/bidding/module.components/bidding-pup/bidding-pup.component'; 
 
 
 @Component({

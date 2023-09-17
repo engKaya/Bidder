@@ -53,7 +53,7 @@ export class AppSideLoginComponent {
           this.toastr.openToastError(this.error,"Error")
         });
     } else {
-      this.error = this.translate.instant('AUTH.FORM_ERRORS');
+      this.error = this.translate.instant('FORM_VALIDATIONS.FORM_ERRORS');
     }
   }
   getField(field: string): string {

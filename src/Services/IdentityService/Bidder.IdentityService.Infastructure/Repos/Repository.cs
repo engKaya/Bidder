@@ -15,9 +15,9 @@ namespace Bidder.IdentityService.Infastructure.Repos
             this.context = context;
         }
 
-        public async Task<T> Add(T entity)
+        public async Task<T> Add(T entity, CancellationToken cancellation)
         {
-            await context.Set<T>().AddAsync(entity); 
+            await context.Set<T>().AddAsync(entity, cancellation); 
             return entity;
         }
 
