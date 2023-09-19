@@ -4,6 +4,7 @@ import { BiddingService } from '../../module.services/bidding.service';
 import { AbstractControl, AsyncValidatorFn, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms'; 
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
+import { CreateBidRequest } from '../../module.objects/Requests/CreateBidRequest.request';
 
 @Component({
   selector: 'app-bidding-pup',
@@ -37,8 +38,19 @@ export class BiddingPupComponent {
       this.toast.openToastError(this.translate.instant('FORM_VALIDATIONS.ERROR'),this.translate.instant('FORM_VALIDATIONS.FORM_ERRORS'));
       return;
     }
+ 
+    var obj = new CreateBidRequest(
+      this.form.value.Title,
+      this.form.value.Description,
+      Number.parseFloat(this.form.value.MinPrice),
+      this.form.value.HasIncreaseRest,
+      Number.parseFloat(this.form.value.MinPriceIncrease) 
+    );
 
-    console.log(this.form.value);
+    this.bidService.CreateBid(obj).then((response) => {
+      console.log(response);
+    }).catch((error) => {});
+
   }
     
   getField(field: string): string {

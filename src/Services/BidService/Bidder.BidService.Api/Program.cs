@@ -13,6 +13,15 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("*")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+    });
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -29,9 +38,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MigrateDatabase<BidDbContext>();
-app.UseHttpsRedirection(); 
+app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors();
 
 app.Run();

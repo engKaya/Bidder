@@ -14,7 +14,7 @@ import { environment } from 'src/environment/environment';
   providedIn: 'root',
 })
 export class BiddingService {
-  apiUrl = environment.identity_server;
+  apiUrl = environment.bid_server;
   isDevMode = environment.isDevMode;
   IsLoadingSubject: BehaviorSubject<boolean>;
   IsLoading$: Observable<boolean>;
@@ -31,7 +31,7 @@ export class BiddingService {
 
   CreateBid(req : CreateBidRequest): Promise<ResponseMessage<CreateBidResponse>> {
     this.IsLoadingSubject.next(true);
-    const url = `${this.apiUrl}CreateBid`;
+    const url = `${this.apiUrl}Bid/CreateBid`; 
     return lastValueFrom(
       this.http.post<ResponseMessage<CreateBidResponse>>(url, req)
     ).then(async (response: ResponseMessage<CreateBidResponse>) => {

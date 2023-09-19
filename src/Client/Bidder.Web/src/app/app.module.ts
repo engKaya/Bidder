@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TablerIconsModule } from 'angular-tabler-icons';
@@ -21,6 +21,7 @@ import {
   MAT_CHECKBOX_DEFAULT_OPTIONS,
   MatCheckboxDefaultOptions,
 } from '@angular/material/checkbox';
+import { AuthInterceptor } from './bidder.common/common.services/http.interceptor';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,11 @@ import {
       provide: MAT_CHECKBOX_DEFAULT_OPTIONS,
       useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions,
     },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
   ],
 })
 export class AppModule {}

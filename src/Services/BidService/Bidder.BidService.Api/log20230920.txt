@@ -1,0 +1,525 @@
+2023-09-20 00:03:49.485 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:03:49.732 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:03:49.771 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:03:49.777 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:04:21.108 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:04:21.353 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:04:21.384 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:04:21.387 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:04:21.658 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:04:21.700 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:04:21.706 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:04:21.710 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:04:21.713 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:04:21.716 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:04:21.730 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:04:21.739 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:04:21.742 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:04:21.814 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:05:11.087 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:05:11.330 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:05:11.372 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:05:11.376 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:05:11.649 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:11.688 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:05:11.694 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:11.700 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:05:11.704 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:11.707 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:05:11.721 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:05:11.732 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:05:11.734 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:05:11.804 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:05:29.552 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:05:29.815 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:05:29.856 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:05:29.860 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:05:30.136 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:30.180 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:05:30.188 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:30.196 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:05:30.201 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:05:30.204 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:05:30.217 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:05:30.228 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:05:30.230 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:05:30.317 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:06:04.282 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:06:04.531 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:06:04.567 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:06:04.571 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:06:04.836 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:06:04.856 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:06:04.862 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:06:04.867 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:06:04.871 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:06:04.874 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:06:04.886 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:06:04.896 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:06:04.898 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:06:04.972 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:06:05.054 +03:00 [INF] Now listening on: https://localhost:5002
+2023-09-20 00:06:05.057 +03:00 [INF] Now listening on: http://localhost:5272
+2023-09-20 00:06:05.059 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:06:05.061 +03:00 [INF] Hosting environment: Development
+2023-09-20 00:06:05.064 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-09-20 00:06:12.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger - -
+2023-09-20 00:06:12.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger - - - 301 0 - 103.3483ms
+2023-09-20 00:06:12.741 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html - -
+2023-09-20 00:06:12.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 102.0801ms
+2023-09-20 00:06:12.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/swagger-ui.css - -
+2023-09-20 00:06:12.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/swagger-ui-standalone-preset.js - -
+2023-09-20 00:06:12.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:06:12.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/swagger-ui-bundle.js - -
+2023-09-20 00:06:12.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_vs/browserLink - -
+2023-09-20 00:06:12.891 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 32.5026ms
+2023-09-20 00:06:12.928 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-20 00:06:12.928 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-20 00:06:12.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/swagger-ui.css - - - 200 143943 text/css 81.9001ms
+2023-09-20 00:06:12.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 82.7888ms
+2023-09-20 00:06:12.948 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-20 00:06:12.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 97.5343ms
+2023-09-20 00:06:12.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.8479ms
+2023-09-20 00:06:13.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-09-20 00:06:13.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/favicon-32x32.png - -
+2023-09-20 00:06:13.144 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-20 00:06:13.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/favicon-32x32.png - - - 200 628 image/png 37.7333ms
+2023-09-20 00:06:13.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.7221ms
+2023-09-20 00:06:20.041 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/identity/CreateBid - -
+2023-09-20 00:06:20.048 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/identity/CreateBid - - - 404 0 - 7.5524ms
+2023-09-20 00:09:16.435 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:09:16.686 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:09:16.726 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:09:16.730 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:09:16.986 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:09:17.020 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:09:17.026 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:09:17.031 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:09:17.034 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:09:17.037 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:09:17.049 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:09:17.058 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:09:17.060 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:09:17.134 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:09:17.212 +03:00 [INF] Now listening on: https://localhost:5002
+2023-09-20 00:09:17.214 +03:00 [INF] Now listening on: http://localhost:5272
+2023-09-20 00:09:17.216 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:09:17.218 +03:00 [INF] Hosting environment: Development
+2023-09-20 00:09:17.220 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-09-20 00:09:23.558 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html - -
+2023-09-20 00:09:23.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 224.3302ms
+2023-09-20 00:09:23.792 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:09:23.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_vs/browserLink - -
+2023-09-20 00:09:23.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 8.6138ms
+2023-09-20 00:09:23.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.8790ms
+2023-09-20 00:09:23.977 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-09-20 00:09:24.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.1614ms
+2023-09-20 00:09:32.784 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/CreateBid - -
+2023-09-20 00:09:32.794 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/CreateBid - - - 404 0 - 9.4171ms
+2023-09-20 00:10:04.422 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:10:04.430 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:10:04.433 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:10:04.435 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 13.8690ms
+2023-09-20 00:11:10.846 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:11:10.853 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:11:10.857 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:11:10.863 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 16.9508ms
+2023-09-20 00:11:47.154 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:11:47.451 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:11:47.490 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:11:47.494 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:11:47.772 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:11:47.818 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:11:47.825 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:11:47.831 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:11:47.834 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:11:47.838 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:11:47.851 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:11:47.862 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:11:47.864 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:11:47.947 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:11:48.031 +03:00 [INF] Now listening on: https://localhost:5002
+2023-09-20 00:11:48.033 +03:00 [INF] Now listening on: http://localhost:5272
+2023-09-20 00:11:48.035 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:11:48.037 +03:00 [INF] Hosting environment: Development
+2023-09-20 00:11:48.039 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-09-20 00:11:54.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html - -
+2023-09-20 00:11:54.578 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 196.5502ms
+2023-09-20 00:11:54.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:11:54.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_vs/browserLink - -
+2023-09-20 00:11:54.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 7.8378ms
+2023-09-20 00:11:54.631 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4946ms
+2023-09-20 00:11:54.684 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-09-20 00:11:54.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.5695ms
+2023-09-20 00:11:57.786 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:11:57.796 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:11:57.799 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:11:57.802 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 16.7163ms
+2023-09-20 00:13:12.327 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:13:12.331 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:13:12.334 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:13:12.337 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 9.5084ms
+2023-09-20 00:14:49.489 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:14:49.736 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:14:49.771 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:14:49.774 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:14:50.005 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:14:50.044 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:14:50.049 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:14:50.055 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:14:50.058 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:14:50.060 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:14:50.072 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:14:50.081 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:14:50.083 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:14:50.152 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:14:50.231 +03:00 [INF] Now listening on: https://localhost:5002
+2023-09-20 00:14:50.233 +03:00 [INF] Now listening on: http://localhost:6002
+2023-09-20 00:14:50.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:14:50.237 +03:00 [INF] Hosting environment: Development
+2023-09-20 00:14:50.239 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-09-20 00:14:55.240 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html - -
+2023-09-20 00:14:55.431 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 192.1016ms
+2023-09-20 00:14:55.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:14:55.448 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_vs/browserLink - -
+2023-09-20 00:14:55.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 29.6038ms
+2023-09-20 00:14:55.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1505ms
+2023-09-20 00:14:55.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-09-20 00:14:55.626 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.9241ms
+2023-09-20 00:15:06.619 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:15:06.631 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:15:06.634 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:15:06.636 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 17.8477ms
+2023-09-20 00:17:53.939 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/api/v1/Bid/CreateBid application/json 143
+2023-09-20 00:17:54.052 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:17:54.054 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:17:54.064 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/api/v1/Bid/CreateBid application/json 143 - 405 0 - 125.0739ms
+2023-09-20 00:17:58.907 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 143
+2023-09-20 00:17:58.916 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:17:58.936 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:17:58.974 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:17:58.985 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 44.7822ms
+2023-09-20 00:17:58.988 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:17:58.991 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 143 - 400 - application/problem+json;+charset=utf-8 84.3847ms
+2023-09-20 00:18:12.295 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 142
+2023-09-20 00:18:12.300 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:18:12.302 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:18:37.165 +03:00 [INF] Saving Changes. Transaction Id: 03ec2ae3-a5ad-48fb-88b7-fbf06c334c22
+2023-09-20 00:18:37.926 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@p0='ecb40cbe-12fb-4cc0-b3b0-79fc723b6c95', @p1=NULL (DbType = Guid), @p2='2023-09-19T21:18:33.7054839Z', @p3='qweqwe' (Nullable = false) (Size = 4000), @p4='2023-09-27T00:18:33.7055549+03:00', @p5='False', @p6='False', @p7='12412.22' (Nullable = true) (Precision = 18) (Scale = 2), @p8='0' (Precision = 18) (Scale = 2), @p9='0', @p10='asdasd' (Nullable = false) (Size = 4000), @p11='9142f361-e8d6-4768-b5eb-08db9f51077a'], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bid] ([Id], [CategoryId], [CreatedAt], [Description], [EndDate], [HasIncreaseRest], [IsEnded], [MinPrice], [MinPriceIncrease], [ProductType], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-09-20 00:18:40.810 +03:00 [INF] Changes Commited. Transaction Id: 03ec2ae3-a5ad-48fb-88b7-fbf06c334c22, 1 changes committed!
+2023-09-20 00:18:49.563 +03:00 [INF] Executing ObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse, Bidder.BidService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-20 00:18:49.572 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 37264.7654ms
+2023-09-20 00:18:49.575 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:18:49.578 +03:00 [INF] Disposing UnitOfWork._bidDbContext
+2023-09-20 00:18:49.584 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 142 - 200 - application/json;+charset=utf-8 37288.6195ms
+2023-09-20 00:20:09.333 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:20:09.336 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:20:09.339 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-20 00:20:09.342 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 405 0 - 8.7440ms
+2023-09-20 00:20:51.180 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-09-20 00:20:51.472 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-09-20 00:20:51.506 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:20:51.510 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-09-20 00:20:51.791 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:20:51.838 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-09-20 00:20:51.845 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:20:51.850 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:20:51.854 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:20:51.857 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:20:51.870 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:20:51.881 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-09-20 00:20:51.883 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-09-20 00:20:51.960 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-20 00:20:52.080 +03:00 [INF] Now listening on: https://localhost:5002
+2023-09-20 00:20:52.082 +03:00 [INF] Now listening on: http://localhost:6002
+2023-09-20 00:20:52.085 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:20:52.086 +03:00 [INF] Hosting environment: Development
+2023-09-20 00:20:52.088 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-09-20 00:20:55.087 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:20:55.156 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:20:55.163 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 77.1203ms
+2023-09-20 00:20:55.170 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112
+2023-09-20 00:20:55.287 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:20:55.290 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:20:55.312 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:20:55.367 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:20:55.383 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 65.1101ms
+2023-09-20 00:20:55.386 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:20:55.389 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112 - 400 - application/problem+json;+charset=utf-8 219.0497ms
+2023-09-20 00:21:00.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html - -
+2023-09-20 00:21:00.161 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 132.4175ms
+2023-09-20 00:21:00.183 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:21:00.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/_vs/browserLink - -
+2023-09-20 00:21:00.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 8.6307ms
+2023-09-20 00:21:00.229 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.8813ms
+2023-09-20 00:21:00.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-09-20 00:21:00.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.1308ms
+2023-09-20 00:21:03.469 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:21:03.473 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:21:03.476 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 7.0379ms
+2023-09-20 00:21:03.480 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112
+2023-09-20 00:21:03.485 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:21:03.488 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:21:03.492 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:21:03.498 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:21:03.501 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 5.6855ms
+2023-09-20 00:21:03.504 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:21:03.506 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112 - 400 - application/problem+json;+charset=utf-8 25.5886ms
+2023-09-20 00:21:14.133 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:21:14.136 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:21:14.139 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 6.3963ms
+2023-09-20 00:21:14.141 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112
+2023-09-20 00:21:14.146 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:21:14.148 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:21:14.150 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:21:14.153 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:21:14.155 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 3.1207ms
+2023-09-20 00:21:14.158 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:21:14.160 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112 - 400 - application/problem+json;+charset=utf-8 18.8474ms
+2023-09-20 00:22:40.376 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:22:40.381 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:22:40.385 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 8.7593ms
+2023-09-20 00:22:40.389 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112
+2023-09-20 00:22:40.393 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:22:40.395 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:22:40.398 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:22:40.403 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:22:40.406 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 4.4407ms
+2023-09-20 00:22:40.414 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:22:40.421 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 112 - 400 - application/problem+json;+charset=utf-8 32.5356ms
+2023-09-20 00:23:36.465 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:23:36.469 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:23:36.472 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 7.0982ms
+2023-09-20 00:23:36.475 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 107
+2023-09-20 00:23:36.478 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:23:36.480 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:23:36.483 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:23:36.487 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:23:36.499 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 12.1127ms
+2023-09-20 00:23:36.503 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:23:36.506 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 107 - 0 - application/problem+json;+charset=utf-8 31.5486ms
+2023-09-20 00:23:42.717 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:23:42.720 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:23:42.721 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 4.0942ms
+2023-09-20 00:23:42.723 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 100
+2023-09-20 00:23:42.725 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:23:42.727 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:23:42.729 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:23:42.732 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:23:42.734 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 2.7831ms
+2023-09-20 00:23:42.736 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:23:42.739 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 100 - 400 - application/problem+json;+charset=utf-8 15.3435ms
+2023-09-20 00:24:05.226 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 142
+2023-09-20 00:24:05.228 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:24:05.230 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:24:11.072 +03:00 [INF] Saving Changes. Transaction Id: 0d517706-71cf-4e6f-8bc3-33ab208d0e44
+2023-09-20 00:24:11.185 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='3e028aed-73f5-4cf9-87ba-146469013b24', @p1=NULL (DbType = Guid), @p2='2023-09-19T21:24:10.3710885Z', @p3='qweqwe' (Nullable = false) (Size = 4000), @p4='2023-09-27T00:24:10.3711434+03:00', @p5='False', @p6='False', @p7='12412.22' (Nullable = true) (Precision = 18) (Scale = 2), @p8='0' (Precision = 18) (Scale = 2), @p9='0', @p10='asdasd' (Nullable = false) (Size = 4000), @p11='9142f361-e8d6-4768-b5eb-08db9f51077a'], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bid] ([Id], [CategoryId], [CreatedAt], [Description], [EndDate], [HasIncreaseRest], [IsEnded], [MinPrice], [MinPriceIncrease], [ProductType], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-09-20 00:24:11.203 +03:00 [INF] Changes Commited. Transaction Id: 0d517706-71cf-4e6f-8bc3-33ab208d0e44, 1 changes committed!
+2023-09-20 00:24:11.206 +03:00 [INF] Executing ObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse, Bidder.BidService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-20 00:24:11.217 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 5983.9997ms
+2023-09-20 00:24:11.219 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:24:11.222 +03:00 [INF] Disposing UnitOfWork._bidDbContext
+2023-09-20 00:24:11.227 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 142 - 200 - application/json;+charset=utf-8 6001.4199ms
+2023-09-20 00:25:59.431 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - -
+2023-09-20 00:25:59.437 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:25:59.440 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5002/api/v1/Bid/CreateBid - - - 204 - - 8.5403ms
+2023-09-20 00:25:59.442 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 100
+2023-09-20 00:25:59.446 +03:00 [INF] CORS policy execution successful.
+2023-09-20 00:25:59.448 +03:00 [INF] Executing endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:25:59.450 +03:00 [INF] Route matched with {action = "CreateBid", controller = "Bid"}. Executing controller action with signature System.Threading.Tasks.Task`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidResponse]] CreateBid(Bidder.BidService.Domain.DTOs.Bidding.CreateBid.CreateBidRequest) on controller Bidder.BidService.Api.Controllers.BidController (Bidder.BidService.Api).
+2023-09-20 00:25:59.454 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-20 00:25:59.457 +03:00 [INF] Executed action Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api) in 3.593ms
+2023-09-20 00:25:59.460 +03:00 [INF] Executed endpoint 'Bidder.BidService.Api.Controllers.BidController.CreateBid (Bidder.BidService.Api)'
+2023-09-20 00:25:59.462 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5002/api/v1/Bid/CreateBid application/json 100 - 400 - application/problem+json;+charset=utf-8 19.9300ms
