@@ -4,13 +4,21 @@
     "FORM_ERRORS": "Form Hatalarını Düzeltin",
     "ERROR" : "Form Hatası Mevcut"
   },
-  "LABELS":{
-    "EMAIL": "E-posta",
-    "PASS": "Şifre",
-    "USERNAME": "Kullanıcı Adı",
-    "TITLE": "Başlık",
-    "DESCRIPTION": "Açıklama"
-  }, 
+  "LABELS": {
+    "LOGIN": {
+      "EMAIL": "E-posta",
+      "PASS": "Şifre",
+      "USERNAME": "Kullanıcı Adı"
+    },
+    "BID": {
+      "TITLE": "Başlık",
+      "DESCRIPTION": "Açıklama",
+      "MINPRICE": "Minimum Fiyat",
+      "MAXPRICE": "Maksimum Fiyat",
+      "HASINCREASEREST": "Arttırma Sınırı Var Mı?",
+      "INCREASEREST": "Minimum Arttırma Sınırı"
+    }
+  },
   "GENERAL": {
     "HOME": "Ana Sayfa",
     "LOADING": "Lütfen Bekleyiniz...", 

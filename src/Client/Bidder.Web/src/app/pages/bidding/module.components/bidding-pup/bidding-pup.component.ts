@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
 import { BiddingService } from '../../module.services/bidding.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms'; 
+import { AbstractControl, AsyncValidatorFn, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms'; 
 import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-bidding-pup',
@@ -14,25 +15,24 @@ export class BiddingPupComponent {
     private readonly bidService: BiddingService,
     private readonly translate: TranslateService,
   ) {}
-
+  labelPosition : 'before' | 'after' = 'before';
+  role: boolean = false;
   form: FormGroup = new FormGroup({
     Title: new FormControl('', Validators.required),
     Description: new FormControl('', Validators.required),
     MinPrice: new FormControl(null, [
-      Validators.required,
-      Validators.pattern('^[0-9]*$'),
+      Validators.required, 
     ]),
     HasIncreaseRest: new FormControl(false, Validators.required),
     MinPriceIncrease: new FormControl('', [ 
-      Validators.pattern('^[0-9]*$'),
+      Validators.pattern('^[0-9]+(\.[0-9]{1,2})?$'), 
     ]), 
-  });
-
+  }); 
   get f() {
     return this.form.controls;
   }
 
-  submit() {
+  submit() { 
     if(this.form.invalid){
       this.toast.openToastError(this.translate.instant('FORM_VALIDATIONS.ERROR'),this.translate.instant('FORM_VALIDATIONS.FORM_ERRORS'));
       return;
@@ -46,5 +46,5 @@ export class BiddingPupComponent {
     return this.translate.instant('FORM_VALIDATIONS.REQUIRED', {
       field: fieldname,
     });
-  }
+  } 
 }

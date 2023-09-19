@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/material.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NumericDirective } from '../common.services/directives/NumericDirective.directive';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NumericDirective
+  ],
   imports: [
     CommonModule,
     MaterialModule,
@@ -16,10 +19,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ],
   exports: [
+    CommonModule,
     MaterialModule,
     TranslateModule,
-    FormsModule, 
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    NumericDirective
   ]
 })
 export class SharedModule { }

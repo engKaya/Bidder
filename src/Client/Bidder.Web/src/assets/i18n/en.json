@@ -2,14 +2,22 @@
   "FORM_VALIDATIONS": {
     "REQUIRED": "{{field}} is required",
     "FORM_ERRORS": "Please correct the errors in the form",
-    "ERROR" : "Form Validation Error"
+    "ERROR": "Form Validation Error"
   },
   "LABELS": {
-    "EMAIL": "Email",
-    "PASS": "Password",
-    "USERNAME": "Username",
-    "TITLE": "Başlık",
-    "DESCRIPTION": "Açıklama"
+    "LOGIN": {
+      "EMAIL": "Email",
+      "PASS": "Password",
+      "USERNAME": "Username"
+    },
+    "BID": {
+      "TITLE": "Title",
+      "DESCRIPTION": "Description",
+      "MINPRICE": "Minimum Price",
+      "MAXPRICE": "Maximum Price",
+      "HASINCREASEREST": "Has Increase Restriction",
+      "INCREASEREST": "Minimum Increase Restriction"
+    }
   },
 
   "GENERAL": {
@@ -57,7 +65,7 @@
     "MIN": "Please enter a value greater than or equal to {min}}",
     "MAX": "Please enter a value less than or equal to {{max}}"
   },
-  
+
   "BID": {
     "OPEN_AUCTION": "Open Auction",
     "ERRORS": {

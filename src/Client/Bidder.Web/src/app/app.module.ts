@@ -1,42 +1,46 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component'; 
+import { AppComponent } from './app.component';
 import { TablerIconsModule } from 'angular-tabler-icons';
-import * as TablerIcons from 'angular-tabler-icons/icons'; 
+import * as TablerIcons from 'angular-tabler-icons/icons';
 import { MaterialModule } from './material.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
-import { FullComponent } from './layouts/full/full.component';  
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FullComponent } from './layouts/full/full.component';
 import { SidebarComponent } from './layouts/full/sidebar/sidebar.component';
 import { HeaderComponent } from './layouts/full/header/header.component';
 import { BrandingComponent } from './layouts/full/sidebar/branding.component';
-import { AppNavItemComponent } from './layouts/full/sidebar/nav-item/nav-item.component'; 
-import { I18nModule } from './bidder.common/common.modules/i18n.module'; 
-import { ToastrModule } from 'ngx-toastr'; 
+import { AppNavItemComponent } from './layouts/full/sidebar/nav-item/nav-item.component';
+import { I18nModule } from './bidder.common/common.modules/i18n.module';
+import { ToastrModule } from 'ngx-toastr';
 import { BiddingModule } from './pages/bidding/bidding.module';
-
+import { NumericDirective } from './bidder.common/common.services/directives/NumericDirective.directive';
+import {
+  MAT_CHECKBOX_DEFAULT_OPTIONS,
+  MatCheckboxDefaultOptions,
+} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FullComponent, 
+    FullComponent,
     SidebarComponent,
     HeaderComponent,
     BrandingComponent,
-    AppNavItemComponent
+    AppNavItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule, 
+    BrowserAnimationsModule,
     I18nModule,
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    TablerIconsModule.pick(TablerIcons), 
+    TablerIconsModule.pick(TablerIcons),
     ToastrModule.forRoot({
       timeOut: 3000,
       positionClass: 'toast-bottom-right',
@@ -51,5 +55,11 @@ import { BiddingModule } from './pages/bidding/bidding.module';
   ],
   exports: [TablerIconsModule],
   bootstrap: [AppComponent],
+  providers: [ 
+    {
+      provide: MAT_CHECKBOX_DEFAULT_OPTIONS,
+      useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions,
+    },
+  ],
 })
 export class AppModule {}

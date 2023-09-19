@@ -12,8 +12,8 @@ import { ToasterService } from 'src/app/bidder.common/common.services/toaster.se
   templateUrl: './login.component.html',
 })
 export class AppSideLoginComponent {
-  IsLoading$: Observable<boolean>; 
-  returnUrl: string = "";
+  IsLoading$: Observable<boolean>;
+  returnUrl: string = '';
   constructor(
     private translate: TranslateService,
     private authLoginService: AuthLoginService,
@@ -21,7 +21,7 @@ export class AppSideLoginComponent {
     private route: ActivatedRoute,
     private toastr: ToasterService
   ) {
-    this.IsLoading$ =  this.authLoginService.IsLoading$;   
+    this.IsLoading$ = this.authLoginService.IsLoading$;
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
   error: string = '';
@@ -34,23 +34,27 @@ export class AppSideLoginComponent {
       var model = new LoginRequest(
         this.LoginForm.value.email,
         this.LoginForm.value.password
-      ); 
+      );
       this.authLoginService
         .login(model)
         .then((response) => {
           if (response.StatusCode !== 200) {
             this.error = this.translate.instant(
               `ERROR_CODES.LOGIN.${response.StatusCode}`
-            ); 
+            );
             return;
-          } 
+          }
           this.router.navigate([this.returnUrl.replace('%2F', '/')]);
         })
-        .catch((error) => {
-          this.error = this.translate.instant(
-            `ERROR_CODES.LOGIN.${error.status}`
-          );
-          this.toastr.openToastError(this.error,"Error")
+        .catch((error) => { 
+          if (error.status != undefined && error.status != 0) {
+            this.error = this.translate.instant(
+              `ERROR_CODES.LOGIN.${error.status}`
+            );
+          }
+          else 
+            this.error = error.message; 
+          this.toastr.openToastError(this.error, 'Error');
         });
     } else {
       this.error = this.translate.instant('FORM_VALIDATIONS.FORM_ERRORS');

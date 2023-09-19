@@ -1,4 +1,6 @@
-<div class="blank-layout-container justify-content-center align-items-center bg-light-primary">
+<div
+  class="blank-layout-container justify-content-center align-items-center bg-light-primary"
+>
   <div
     class="position-relative row w-100 h-100 bg-gredient justify-content-center"
   >
@@ -50,24 +52,27 @@
           <div class="or-border m-t-30">or sign in with</div>
 
           <form [formGroup]="LoginForm" class="m-t-30" (ngSubmit)="submit()">
-            <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block">{{"LABELS.EMAIL" | translate}}</mat-label>
-            <mat-form-field appearance="outline" class="w-100" >
-              <input matInput 
-              type="text" 
-              formControlName="email" 
-              required /> 
-              <mat-error *ngIf="LoginForm.controls['email'].invalid">{{ getField("EMAIL") }}</mat-error> 
-            </mat-form-field> 
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>{{ "LABELS.LOGIN.EMAIL" | translate }}</mat-label>
+              <input matInput type="text" formControlName="email" required />
+              <mat-error *ngIf="LoginForm.controls['email'].invalid">{{
+                getField("EMAIL")
+              }}</mat-error>
+            </mat-form-field>
 
-            <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block">{{"LABELS.PASS" | translate}}</mat-label>
             <mat-form-field appearance="outline" class="w-100" color="primary">
-              <input matInput type="password"
-              formControlName="password" 
-              required />
+              <mat-label>{{ "LABELS.LOGIN.PASS" | translate }}</mat-label>
+              <input
+                matInput
+                type="password"
+                formControlName="password"
+                required
+              />
             </mat-form-field>
             <mat-error *ngIf="LoginForm.controls['password'].invalid">
-              {{getField("PASS")}} </mat-error> 
-            <div class="d-flex align-items-center m-b-12"> 
+              {{ getField("PASS") }}
+            </mat-error>
+            <div class="d-flex align-items-center m-b-12">
               <a
                 [routerLink]="['/']"
                 class="text-primary f-w-600 text-decoration-none m-l-auto f-s-14"
@@ -75,15 +80,26 @@
               >
             </div>
 
-            <button id="login" type="submit" mat-flat-button color="primary" class="w-100">
-              <span *ngIf="!(IsLoading$ | async)">{{'AUTH.LOGIN' | translate}}</span>
-              <span *ngIf="(IsLoading$ | async)" class="spinner-border spinner-border-sm"></span>&nbsp;<span *ngIf="(IsLoading$ | async)" [translate]="'GENERAL.LOADING'">Loading...</span>
- 
+            <button
+              id="login"
+              type="submit"
+              mat-flat-button
+              color="primary"
+              class="w-100"
+            >
+              <span *ngIf="!(IsLoading$ | async)">{{
+                "AUTH.LOGIN" | translate
+              }}</span>
+              <span
+                *ngIf="IsLoading$ | async"
+                class="spinner-border spinner-border-sm"
+              ></span
+              >&nbsp;<span
+                *ngIf="IsLoading$ | async"
+                [translate]="'GENERAL.LOADING'"
+                >Loading...</span
+              >
             </button>
-            <!-- <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
-              Sign In
-            </a> -->
-            <!-- input -->
           </form>
           <span class="d-block f-w-500 text-center m-t-24"
             >New to Modernize?
