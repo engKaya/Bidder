@@ -23,7 +23,9 @@
     "HOME": "Ana Sayfa",
     "LOADING": "Lütfen Bekleyiniz...", 
     "SUBMIT": "Gönder",
-    "START_BID": "İhale Başlat"    
+    "START_BID": "İhale Başlat",
+    "SUCCESS": "Success",
+    "ERROR": "Error"
   },
   "AUTH": {
     "LOGIN": "Giriş Yap",
@@ -69,6 +71,9 @@
     "OPEN_AUCTION": "Açık Arttırma Başlat",
     "ERRORS": {
       "AUCTION_CREATION_FAILED": "İhale oturumu oluşturulamadı"
+    },
+    "SUCCESS": {
+      "AUCTION_CREATED": "Auction Created Successfully"
     }
   }
 }

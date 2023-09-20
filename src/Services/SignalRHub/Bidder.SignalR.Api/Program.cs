@@ -1,4 +1,6 @@
 using Bidder.SignalR.Api.Extensions;
+using Bidder.SignalR.Application.AuctionHub;
+using Microsoft.AspNetCore.Http.Connections;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,5 +26,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<BidHub>("/bidhub", options =>
+{
+    options.Transports =
+        HttpTransportType.WebSockets |
+        HttpTransportType.LongPolling;
+});
 
 app.Run();

@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
 import { BiddingService } from '../../module.services/bidding.service';
-import { AbstractControl, AsyncValidatorFn, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms'; 
+import { FormControl, FormGroup,  Validators } from '@angular/forms'; 
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { CreateBidRequest } from '../../module.objects/Requests/CreateBidRequest.request';
+import { HttpStatusCode } from '@angular/common/http';
+import { PubSubService } from 'src/app/bidder.common/common.services/PubSubService/PubSub.service'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bidding-pup',
@@ -15,6 +18,8 @@ export class BiddingPupComponent {
     private readonly toast: ToasterService,
     private readonly bidService: BiddingService,
     private readonly translate: TranslateService,
+    private readonly pubsub: PubSubService,
+    private readonly router: Router
   ) {}
   labelPosition : 'before' | 'after' = 'before';
   role: boolean = false;
@@ -48,7 +53,11 @@ export class BiddingPupComponent {
     );
 
     this.bidService.CreateBid(obj).then((response) => {
-      console.log(response);
+      if(response.StatusCode === HttpStatusCode.Ok){ 
+        this.toast.openToastSuccess(this.translate.instant('GENERAL.SUCCESS'),this.translate.instant('BID.SUCCESS.AUCTION_CREATED'));
+        this.router.navigate(['/pages/bidding/bid']);
+        this.pubsub.CloseBidDialogSubject.next(true);
+      }
     }).catch((error) => {});
 
   }

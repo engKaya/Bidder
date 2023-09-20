@@ -6,4 +6,9 @@ export const PagesRoutes: Routes = [
     path: '',
     component: AppDashboardComponent
   },
+  {
+    path: 'bidding',
+    loadChildren: () => import('./bidding/bidding.module').then(m => m.BiddingModule)
+
+  }
 ];

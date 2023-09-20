@@ -1,5 +1,6 @@
+import { DialogRef } from '@angular/cdk/dialog';
 import { Injectable } from '@angular/core';  
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 
 
 @Injectable({
@@ -42,7 +43,7 @@ export class DialogService {
         }
     }
     
-    openDialog(component: any, size: DialogSize = DialogSize.Medium ,data: any = null, afterClosed: Function | undefined = undefined)   {
+    openDialog(component: any, size: DialogSize = DialogSize.Medium ,data: any = null, afterClosed: Function | undefined = undefined) : MatDialogRef<any>  {
         var sizeConfig = this.sizes[size];
         const dialogRef = this.dialog.open(component, {
             width: sizeConfig.width,
@@ -55,6 +56,8 @@ export class DialogService {
                 afterClosed(result);
             });
         }  
+
+        return dialogRef;
     } 
 }
 

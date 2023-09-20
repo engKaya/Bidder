@@ -6,7 +6,9 @@ using System.Linq.Expressions;
 
 namespace Bidder.BidService.Infastructure.Repos
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    //Bu şekilde her repo için ayrı ayrı uof yazmak yerine tek bir uof yazıp her repo için ayrı ayrı dbcontextleri register edip kullanmak daha mantıklı
+    //TODO : Bu şekilde bir yapı kurulursa ayrı ayrı bu classa gerek kalmayacak
+    public class Repository<T> : IRepository<T> where T : BaseEntity 
     {
         protected readonly BidDbContext context;
 

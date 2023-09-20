@@ -19,4 +19,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bidder.SignalR.Application\Bidder.SignalR.Application\Bidder.SignalR.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,5 @@
 import { HttpClient, HttpStatusCode } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Observable, lastValueFrom, throwError } from 'rxjs';
@@ -60,5 +60,5 @@ export class BiddingService {
     return throwError(() => {
       return errorMessage;
     });
-  }
+  } 
 }

@@ -61,7 +61,7 @@ export class AppSideLoginComponent {
     }
   }
   getField(field: string): string {
-    var fieldname = this.translate.instant(`LABELS.${field}`);
+    var fieldname = this.translate.instant(`LABELS.LOGIN.${field}`);
     return this.translate.instant('FORM_VALIDATIONS.REQUIRED', {
       field: fieldname,
     });

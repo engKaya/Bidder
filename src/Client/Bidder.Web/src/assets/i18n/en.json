@@ -24,7 +24,9 @@
     "HOME": "Home",
     "LOADING": "Loading...",
     "SUBMIT": "Submit",
-    "START_BID": "Start Bid"
+    "START_BID": "Start Bid",
+    "SUCCESS": "Success",
+    "ERROR": "Error"
   },
   "AUTH": {
     "LOGIN": "Login",
@@ -70,6 +72,9 @@
     "OPEN_AUCTION": "Open Auction",
     "ERRORS": {
       "AUCTION_CREATION_FAILED": "Auction Creation Failed"
+    },
+    "SUCCESS": {
+      "AUCTION_CREATED": "Auction Created Successfully"
     }
   }
 }
