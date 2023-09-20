@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseCors();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -32,5 +33,4 @@ app.MapHub<BidHub>("/bidhub", options =>
         HttpTransportType.WebSockets |
         HttpTransportType.LongPolling;
 });
-
 app.Run();

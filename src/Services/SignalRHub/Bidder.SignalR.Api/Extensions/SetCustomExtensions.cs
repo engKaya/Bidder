@@ -8,11 +8,12 @@ namespace Bidder.SignalR.Api.Extensions
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .AllowCredentials());
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("*")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod();
+                });
             });
             services.AddSignalR(config =>
             {
