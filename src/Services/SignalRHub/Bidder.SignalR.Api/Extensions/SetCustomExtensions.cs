@@ -10,16 +10,17 @@ namespace Bidder.SignalR.Api.Extensions
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.WithOrigins("*")
-                                        .AllowAnyHeader()
-                                        .AllowAnyMethod();
+                    builder.WithOrigins("http://localhost:4200", "https://localhost:4200")
+                                .AllowAnyMethod()
+                                .AllowAnyHeader() 
+                                .AllowCredentials();
                 });
             });
             services.AddSignalR(config =>
             {
                 config.MaximumReceiveMessageSize = 128;
                 config.EnableDetailedErrors = true;
-                config.KeepAliveInterval = TimeSpan.FromMinutes(1);
+                config.KeepAliveInterval = TimeSpan.FromMinutes(1); 
             });
             return services;
         }

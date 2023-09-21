@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 
 import * as signalR from '@microsoft/signalr';
 import { environment } from 'src/environment/environment';
 
@@ -8,7 +8,8 @@ import { environment } from 'src/environment/environment';
 })
 export class BidComponent implements OnInit {
 
-  constructor() { }
+  constructor( 
+  ) { }
   env = environment;
   signalrConnection: signalR.HubConnection;
 
@@ -16,7 +17,7 @@ export class BidComponent implements OnInit {
     this.signalrConnection = new signalR.HubConnectionBuilder()
       .configureLogging(signalR.LogLevel.Information)
       .withHubProtocol(new signalR.JsonHubProtocol())
-      .withUrl(this.env.auction_hub)
+      .withUrl(this.env.bid_hub)
       .build();
 
     this.signalrConnection.start().then(() => {
@@ -24,6 +25,10 @@ export class BidComponent implements OnInit {
     }).catch((error:any) => {
       console.log('SignalR connection error: ' + error);
     });
+  }
+
+  public ngOnDestroy() {
+    console.log('page closed!');
   }
 
 }

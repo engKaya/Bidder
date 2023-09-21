@@ -27,10 +27,14 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<BidHub>("/bidhub", options =>
+app.MapHub<BidHub>("bidhub", options =>
 {
     options.Transports =
         HttpTransportType.WebSockets |
         HttpTransportType.LongPolling;
+
+
+
+
 });
 app.Run();

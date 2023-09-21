@@ -6,8 +6,8 @@ export const environment = {
 
 
     // Hubs
-    auction_hub: 'http://api.bidder.hub.com:5502/auctionhub',
-    chat_hub: 'http://api.bidder.hub.com:5502/chathub',
+    bid_hub: 'http://api.bidder.hub.com:5501/bidhub',
+    chat_hub: 'http://api.bidder.hub.com:5501/chathub',
 
     isDevMode: false
 }

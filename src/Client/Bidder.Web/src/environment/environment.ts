@@ -4,6 +4,6 @@ export const environment = {
     bid_server: 'https://localhost:5002/api/v1/',
     isDevMode: true,
     // Hubs
-    auction_hub: 'http://localhost:5502/auctionhub',
-    chat_hub: 'http://localhost:5502/chathub',
+    bid_hub: 'https://localhost:5501/bidhub',
+    chat_hub: 'https://localhost:5501/chathub',
 }

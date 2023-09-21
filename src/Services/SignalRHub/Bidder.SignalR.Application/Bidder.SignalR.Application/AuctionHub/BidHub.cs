@@ -17,5 +17,11 @@ namespace Bidder.SignalR.Application.AuctionHub
             logger.LogInformation("Client connected", Context.ToString());
             return base.OnConnectedAsync();
         }
+
+        public override Task OnDisconnectedAsync(Exception exception)
+        {
+            logger.LogInformation("Client disconnected", Context.ToString());
+            return base.OnDisconnectedAsync(exception);
+        }
     }
 }
