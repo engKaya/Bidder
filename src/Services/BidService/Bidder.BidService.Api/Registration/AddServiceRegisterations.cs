@@ -13,7 +13,7 @@ namespace Bidder.BidService.Api.Registration
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBidRepository, BidRepository>();
             services.AddSingleton<IIdentityService, IdentityService>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IBaseRepository<>), typeof(Repository<>));
             services.AddEventBus(configuration, services.BuildServiceProvider().GetRequiredService<ILogger<Program>>());
         }
     }

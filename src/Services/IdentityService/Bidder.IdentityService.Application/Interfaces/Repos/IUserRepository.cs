@@ -3,7 +3,7 @@ using Bidder.IdentityService.Domain.Entities;
 
 namespace Bidder.IdentityService.Application.Interfaces.Repos
 {
-    public interface IUserRepository : IRepository<Users>
+    public interface IUserRepository : IBaseRepository<Users>
     {
     }
 }

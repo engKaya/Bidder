@@ -14,7 +14,7 @@ namespace Bidder.Application.Common.Extension
                 .Enrich.WithMachineName()
                 .WriteTo.Debug()
                 .WriteTo.Console()
-        .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day).WriteTo.Elasticsearch(ConfigureElasticSink(assemblyName,configure, env))
+        .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Day).WriteTo.Elasticsearch(ConfigureElasticSink(assemblyName,configure, env))
                 .Enrich.WithProperty("Environment", env)
                 .ReadFrom.Configuration(configure)
                 .CreateLogger();

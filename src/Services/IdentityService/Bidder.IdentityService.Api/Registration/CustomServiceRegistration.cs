@@ -20,7 +20,7 @@ namespace Bidder.IdentityService.Api.Registration
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));  
+            services.AddScoped(typeof(IBaseRepository<>), typeof(Repository<>));  
             services.AddDbContext<UserDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("UserConnectionString")); 

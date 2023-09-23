@@ -3,7 +3,7 @@ using Bidder.Domain.Common.Interfaces;
 
 namespace Bidder.BidService.Application.Interfaces.Repos
 {
-    public interface IBidRepository :  IRepository<Bid>
+    public interface IBidRepository : IBaseRepository<Bid>
     {
     }
 }

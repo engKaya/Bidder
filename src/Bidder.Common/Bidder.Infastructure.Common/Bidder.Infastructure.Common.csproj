@@ -7,18 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Extensions\**" />
-    <EmbeddedResource Remove="Extensions\**" />
-    <None Remove="Extensions\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Services\IdentityService\Bidder.IdentityService.Infastructure\Bidder.IdentityService.Infastructure.csproj" />
+    <ProjectReference Include="..\Bidder.Aplication.Common\Bidder.Application.Common.csproj" />
     <ProjectReference Include="..\Bidder.Domain.Common\Bidder.Domain.Common.csproj" />
   </ItemGroup>
 

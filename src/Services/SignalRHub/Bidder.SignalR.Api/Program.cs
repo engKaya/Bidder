@@ -1,6 +1,8 @@
+using Bidder.Application.Common.Extension;
 using Bidder.SignalR.Api.Extensions;
 using Bidder.SignalR.Application.AuctionHub;
 using Microsoft.AspNetCore.Http.Connections;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddCustomServices();
+builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.AddSwaggerGen();
+builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
 
 var app = builder.Build();
 
@@ -31,10 +34,6 @@ app.MapHub<BidHub>("bidhub", options =>
 {
     options.Transports =
         HttpTransportType.WebSockets |
-        HttpTransportType.LongPolling;
-
-
-
-
+        HttpTransportType.LongPolling; 
 });
 app.Run();

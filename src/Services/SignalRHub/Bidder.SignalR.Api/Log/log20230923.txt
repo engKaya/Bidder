@@ -1,0 +1,29 @@
+2023-09-23 23:49:40.536 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-09-23 23:49:40.697 +03:00 [INF] Now listening on: https://localhost:5501
+2023-09-23 23:49:40.700 +03:00 [INF] Now listening on: http://localhost:5502
+2023-09-23 23:49:40.704 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-23 23:49:40.707 +03:00 [INF] Hosting environment: Development
+2023-09-23 23:49:40.709 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-09-23 23:49:40.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-09-23 23:49:41.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 176.1410ms
+2023-09-23 23:49:41.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-09-23 23:49:41.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.3618ms
+2023-09-23 23:49:41.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-09-23 23:49:41.188 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.3534ms
+2023-09-23 23:49:41.258 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-09-23 23:49:41.283 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.9258ms
+2023-09-23 23:49:53.605 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-09-23 23:49:53.610 +03:00 [INF] CORS policy execution successful.
+2023-09-23 23:49:53.613 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.9001ms
+2023-09-23 23:49:53.618 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-09-23 23:49:53.620 +03:00 [INF] CORS policy execution successful.
+2023-09-23 23:49:53.625 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-09-23 23:49:53.641 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-09-23 23:49:53.644 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 25.9554ms
+2023-09-23 23:49:53.665 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=KXGywDDhArq9Pr8yRTtjig - -
+2023-09-23 23:49:53.667 +03:00 [INF] CORS policy execution successful.
+2023-09-23 23:49:53.669 +03:00 [INF] Executing endpoint 'bidhub'
+2023-09-23 23:50:12.290 +03:00 [INF] Client connected
+2023-09-23 23:50:33.860 +03:00 [INF] Client disconnected
+2023-09-23 23:50:35.259 +03:00 [INF] Executed endpoint 'bidhub'
+2023-09-23 23:50:35.262 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=KXGywDDhArq9Pr8yRTtjig - - - 200 - - 41597.0656ms

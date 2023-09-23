@@ -23,9 +23,6 @@ namespace Bidder.BidService.Infastructure.EntityConfiguration
             builder.Property(k => k.HasIncreaseRest).IsRequired();
             builder.Property(k => k.MinPriceIncrease);
             builder.Property(k => k.ProductType);
-
-
-
         }
     }
 }

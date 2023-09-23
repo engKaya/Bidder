@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,19 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="7.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="7.0.10" /> 
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Aplication.Common\Bidder.Application.Common.csproj" />
+    <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Infastructure.Common\Bidder.Infastructure.Common.csproj" />
     <ProjectReference Include="..\Bidder.SignalR.Application\Bidder.SignalR.Application\Bidder.SignalR.Application.csproj" />
   </ItemGroup>
 

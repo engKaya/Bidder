@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Aplication.Common\Bidder.Application.Common.csproj" />
     <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Domain.Common\Bidder.Domain.Common.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Base\EventBus.Base.csproj" />
     <ProjectReference Include="..\Bidder.BidService.Domain\Bidder.BidService.Domain.csproj" />
