@@ -1,4 +1,4 @@
-using Bidder.Common.Application.Extension;
+using Bidder.Application.Common.Extension;
 using Bidder.IdentityService.Api.Extensions;
 using Bidder.IdentityService.Api.Registration;
 using System.Reflection;

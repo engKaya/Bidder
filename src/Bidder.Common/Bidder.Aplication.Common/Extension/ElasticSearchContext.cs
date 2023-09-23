@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Sinks.Elasticsearch; 
 
-namespace Bidder.Common.Application.Extension
+namespace Bidder.Application.Common.Extension
 {
     public static class ElasticSearchContext
     {

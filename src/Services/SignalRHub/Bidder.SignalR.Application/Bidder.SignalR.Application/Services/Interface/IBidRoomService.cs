@@ -2,6 +2,6 @@
 {
     public interface IBidRoomService
     {
-        IList<>
+        //IList<>
     }
 }

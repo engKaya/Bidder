@@ -1,6 +1,6 @@
+using Bidder.Application.Common.Extension;
 using Bidder.BidService.Api.Registration;
-using Bidder.BidService.Infastructure.Context;
-using Bidder.Common.Application.Extension;
+using Bidder.BidService.Infastructure.Context; 
 using System.Reflection;
 using System.Text.Json.Serialization;
 
