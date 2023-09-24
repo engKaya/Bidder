@@ -24,11 +24,22 @@ namespace Bidder.Application.Common.Extension
         private static ElasticsearchSinkOptions ConfigureElasticSink(string assemblyName, IConfiguration configuration, string environment)
         { 
             string indexFormat = $"{assemblyName.ToLower().Replace(".", "-")}-{environment?.ToLower().Replace(".", "-")}-{DateTime.UtcNow:yyyy-MM}";
+            
+            indexFormat = RemoveTurkishChars(indexFormat);
             return new ElasticsearchSinkOptions(new Uri(configuration["ElasticConfiguration:Uri"]))
             {
                 AutoRegisterTemplate = true,
                 IndexFormat = indexFormat,
             };
+        }
+
+        private static string RemoveTurkishChars(string str)
+        {
+            str = str.Trim();
+            if (str.Length > 0)
+                str = str.Replace("İ", "I").Replace("ı", "i").Replace("Ğ", "G").Replace("ğ", "g").Replace("Ü", "U").Replace("ü", "u").Replace("Ş", "S").Replace("ş", "s").Replace("Ö", "O").Replace("ö", "o").Replace("Ç", "C").Replace("ç", "c");
+
+            return str;
         }
     }
 }

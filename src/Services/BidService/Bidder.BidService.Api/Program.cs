@@ -1,6 +1,8 @@
 using Bidder.Application.Common.Extension;
 using Bidder.BidService.Api.Registration;
-using Bidder.BidService.Infastructure.Context; 
+using Bidder.BidService.Api.Services;
+using Bidder.BidService.Infastructure.Context;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
@@ -27,21 +29,30 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.ConfigureAuth(builder.Configuration);
+builder.Services.AddGrpc();
+builder.Services.AddGrpcReflection();
 builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
-var app = builder.Build();
+ 
 
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.MapGrpcReflectionService();
 }
 
 app.MigrateDatabase<BidDbContext>();
-app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    app.MapGrpcService<BidGrpcService>(); 
+});
 
+app.UseHttpsRedirection(); 
+app.UseAuthorization(); 
 app.MapControllers();
-app.UseCors( );
+app.UseCors();
 
 app.Run();

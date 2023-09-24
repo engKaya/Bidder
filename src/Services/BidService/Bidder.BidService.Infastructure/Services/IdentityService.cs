@@ -1,15 +1,15 @@
-﻿using Bidder.BidService.Application.Interfaces.Repos;
+﻿using Bidder.BidService.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
-namespace Bidder.BidService.Infastructure.Repos
+namespace Bidder.BidService.Infastructure.Services
 {
     public class IdentityService : IIdentityService
     {
         private readonly IHttpContextAccessor httpContextAccessor;
         public IdentityService(IHttpContextAccessor _httpContextAccessor)
         {
-            this.httpContextAccessor = _httpContextAccessor;
+            httpContextAccessor = _httpContextAccessor;
         }
         public Guid GetUserId()
         {

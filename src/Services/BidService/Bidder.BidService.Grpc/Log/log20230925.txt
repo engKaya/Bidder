@@ -1,0 +1,113 @@
+2023-09-25 00:13:25.008 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:13:25.148 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:13:25.351 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-25 00:13:25.354 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:13:25.357 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:13:25.359 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:13:25.361 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:15:04.038 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:15:04.194 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:15:04.414 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-25 00:15:04.417 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:15:04.419 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:15:04.421 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:15:04.423 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:17:00.091 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:17:00.258 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:17:00.435 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-25 00:17:00.438 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:17:00.440 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:17:00.442 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:17:00.444 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:19:20.467 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:19:20.583 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:19:20.762 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-25 00:19:20.765 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:19:20.766 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:19:20.768 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:19:20.770 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:19:44.033 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:19:44.149 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:19:44.351 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-25 00:19:44.355 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:19:44.357 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:19:44.359 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:19:44.361 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:21:06.428 +03:00 [INF] Application is shutting down...
+2023-09-25 00:21:49.518 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:21:49.629 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:21:49.782 +03:00 [WRN] Overriding address(es) 'https://localhost:5012, http://localhost:6012'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-09-25 00:21:49.791 +03:00 [INF] Now listening on: http://localhost:5012
+2023-09-25 00:21:49.793 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:21:49.795 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:21:49.797 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:21:49.798 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:22:01.210 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:22:01.250 +03:00 [INF] Executing endpoint 'gRPC - Unimplemented service'
+2023-09-25 00:22:01.254 +03:00 [INF] Service 'grpc.reflection.v1alpha.ServerReflection' is unimplemented.
+2023-09-25 00:22:01.259 +03:00 [INF] Executed endpoint 'gRPC - Unimplemented service'
+2023-09-25 00:22:01.262 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 0 application/grpc 53.3523ms
+2023-09-25 00:24:32.789 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:24:32.913 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:24:33.071 +03:00 [WRN] Overriding address(es) 'https://localhost:5012, http://localhost:6012'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-09-25 00:24:33.084 +03:00 [INF] Now listening on: http://localhost:5012
+2023-09-25 00:24:33.086 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:24:33.088 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:24:33.090 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:24:33.091 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:24:35.955 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:24:35.994 +03:00 [INF] Executing endpoint 'gRPC - Unimplemented service'
+2023-09-25 00:24:35.997 +03:00 [INF] Service 'grpc.reflection.v1alpha.ServerReflection' is unimplemented.
+2023-09-25 00:24:36.002 +03:00 [INF] Executed endpoint 'gRPC - Unimplemented service'
+2023-09-25 00:24:36.005 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 0 application/grpc 51.0263ms
+2023-09-25 00:27:33.429 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:27:33.571 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:27:54.558 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:27:54.658 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:27:54.823 +03:00 [WRN] Overriding address(es) 'https://localhost:5012, http://localhost:6012'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-09-25 00:27:54.835 +03:00 [INF] Now listening on: http://localhost:5012
+2023-09-25 00:27:54.837 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-25 00:27:54.839 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:27:54.841 +03:00 [INF] Hosting environment: Development
+2023-09-25 00:27:54.843 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-25 00:27:59.110 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:27:59.161 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:27:59.240 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:27:59.243 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:27:59.246 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:27:59.246 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 137.0029ms
+2023-09-25 00:27:59.251 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:27:59.253 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 10.3849ms
+2023-09-25 00:28:10.172 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-09-25 00:28:10.178 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-09-25 00:28:10.187 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-25 00:28:10.200 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-25 00:28:10.227 +03:00 [ERR] Error when executing service method 'GetBidRoom'.
+System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at Bidder.BidService.Grpc.Services.BidGrpcService.GetBidRoom(GetBidRoomRequest request, ServerCallContext context) in C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc\Services\BidGrpcService.cs:line 22
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2023-09-25 00:28:10.248 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-09-25 00:28:10.251 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 0 application/grpc 79.4151ms
+2023-09-25 00:28:16.568 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:28:16.568 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:28:16.572 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.574 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.577 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.578 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:28:16.579 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.583 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 14.2788ms
+2023-09-25 00:28:16.585 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.582 +03:00 [INF] Request starting HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc -
+2023-09-25 00:28:16.587 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 18.5755ms
+2023-09-25 00:28:16.589 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.590 +03:00 [INF] Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.593 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 14.2137ms
+2023-09-25 00:28:16.595 +03:00 [INF] Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2023-09-25 00:28:16.597 +03:00 [INF] Request finished HTTP/2 POST http://localhost:6012/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo application/grpc - - 200 - application/grpc 16.0519ms

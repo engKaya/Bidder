@@ -23,6 +23,7 @@ namespace Bidder.BidService.Infastructure.EntityConfiguration
             builder.Property(k => k.HasIncreaseRest).IsRequired();
             builder.Property(k => k.MinPriceIncrease);
             builder.Property(k => k.ProductType);
+            builder.HasOne(k => k.BidRoom).WithOne(k => k.Bid).HasForeignKey<BidRoom>(a =>a.BidId);
         }
     }
 }

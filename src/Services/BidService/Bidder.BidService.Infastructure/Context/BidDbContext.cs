@@ -13,9 +13,11 @@ namespace Bidder.BidService.Infastructure.Context
         }
 
         public DbSet<Bid> Bids{ get; set; } 
+        public DbSet<BidRoom> BidRooms { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BidEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new BidRoomEntityConfiguration());
         }
     }
 }

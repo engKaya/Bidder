@@ -25,7 +25,7 @@ namespace Bidder.BidService.Domain.Entities
         public Guid UserId { get => _userId; set => _userId = value; }
         public Guid? CategoryId { get => _categoryId; set => _categoryId = value; }
         public DateTime EndDate { get => _endDate; set => _endDate = value; }
-
+        public BidRoom BidRoom { get; set; } = null!;
         public Bid(string title, string description, decimal? minPrice, bool hasIncreaseRest, decimal minPriceIncrease, Guid  userId)
         {
             Id  = Guid.NewGuid();

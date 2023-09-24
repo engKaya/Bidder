@@ -5,5 +5,6 @@ namespace Bidder.BidService.Application.Interfaces.Repos
     public interface IUnitOfWork : IBaseUnitOfWork
     { 
         IBidRepository BidRepository { get; } 
+        IBidRoomRepository BidRoomRepository { get;}
     } 
 }

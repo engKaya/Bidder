@@ -23,6 +23,14 @@ namespace Bidder.BidService.Infastructure.Uof
                 return _bidRepository;
             }
         }
-         
+        private IBidRoomRepository _bidRoomRepository;
+        public IBidRoomRepository BidRoomRepository
+        {
+            get
+            {
+                _bidRoomRepository = new BidRoomRepository(this._dbContext);
+                return _bidRoomRepository;
+            }
+        }
     }
 }

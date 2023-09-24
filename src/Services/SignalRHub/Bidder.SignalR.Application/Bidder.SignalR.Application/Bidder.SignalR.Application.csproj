@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="IntegrationEvents\" />
     <Folder Include="Redis\" />
   </ItemGroup>
 

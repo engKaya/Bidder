@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Bidder.BidService.Grpc.Protos";
+
+import "google/protobuf/timestamp.proto";
+package BidGrpcService ;
+
+service BidGrpcService {
+  rpc GetBidRoom (GetBidRoomRequest) returns (GetBidRoomResponse);
+}
+
+message GetBidRoomRequest {
+  string Id = 1;
+}
+
+message GetBidRoomResponse {
+  string RoomId = 1;
+  string BidId = 2; 
+  google.protobuf.Timestamp BidEndDate = 3;
+  int32 BidStatus = 4;
+}

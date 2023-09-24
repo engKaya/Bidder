@@ -1,0 +1,28 @@
+2023-09-24 23:55:22.558 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-24 23:55:22.862 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-24 23:55:23.243 +03:00 [INF] Now listening on: https://localhost:7275
+2023-09-24 23:55:23.245 +03:00 [INF] Now listening on: http://localhost:5242
+2023-09-24 23:55:23.248 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:55:23.250 +03:00 [INF] Hosting environment: Development
+2023-09-24 23:55:23.251 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-24 23:56:16.506 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-24 23:56:16.611 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-24 23:56:16.797 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-24 23:56:16.800 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-24 23:56:16.802 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:56:16.804 +03:00 [INF] Hosting environment: Development
+2023-09-24 23:56:16.806 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-24 23:56:44.042 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-24 23:56:44.165 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-24 23:56:44.366 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-24 23:56:44.368 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-24 23:56:44.371 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:56:44.372 +03:00 [INF] Hosting environment: Development
+2023-09-24 23:56:44.374 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc
+2023-09-24 23:59:55.128 +03:00 [INF] Event Bus Service Creation Has Started
+2023-09-24 23:59:55.233 +03:00 [INF] Event Bus Service Creation Has Finished
+2023-09-24 23:59:55.421 +03:00 [INF] Now listening on: https://localhost:5012
+2023-09-24 23:59:55.424 +03:00 [INF] Now listening on: http://localhost:6012
+2023-09-24 23:59:55.425 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:59:55.427 +03:00 [INF] Hosting environment: Development
+2023-09-24 23:59:55.429 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Grpc

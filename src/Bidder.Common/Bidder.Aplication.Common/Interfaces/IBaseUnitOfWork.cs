@@ -3,5 +3,6 @@
     public interface IBaseUnitOfWork : IDisposable
     {
         Task<int> SaveChangesAsync(CancellationToken cancellation = default);
+        void RollbackTransaction();
     }
 }

@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5242"
+    },
+    "https": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GRPC_TRACE": "all",
+        "GRPC_VERBOSITY": "DEBUG"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:5012;http://localhost:6012"
+    }
+  }
+}
