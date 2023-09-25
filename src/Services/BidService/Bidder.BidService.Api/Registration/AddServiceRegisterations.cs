@@ -19,16 +19,16 @@ namespace Bidder.BidService.Api.Registration
 
         public static void AddCustomRepositories(this IServiceCollection services)
         {
-            services.AddSingleton(typeof(IBaseRepository<>), typeof(Repository<>));
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton<IBidRepository, BidRepository>();
-            services.AddSingleton<IBidRoomRepository, BidRoomRepository>();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IBidRepository, BidRepository>();
+            services.AddScoped<IBidRoomRepository, BidRoomRepository>();
         }
 
         public static void AddCustomServices(this IServiceCollection services)
         {
-            services.AddSingleton<IIdentityService, IdentityService>();
-            services.AddSingleton<IBiddingService, BiddingService>();
+            services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<IBiddingService, BiddingService>();
         }
     }
 }

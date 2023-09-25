@@ -1,4 +1,5 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
+using Bidder.BidService.Domain.Enums;
 using Bidder.BidService.Grpc.Protos;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
@@ -8,7 +9,7 @@ using System.Net;
 namespace Bidder.BidService.Api.Services
 {
     public class BidGrpcService : Bidder.BidService.Grpc.Protos.BidGrpcService.BidGrpcServiceBase
-    { 
+    {
         private readonly IEventBus eventBus;
         private readonly IBiddingService bidService;
 
@@ -20,19 +21,37 @@ namespace Bidder.BidService.Api.Services
 
         public override async Task<GetBidRoomResponse> GetBidRoom(GetBidRoomRequest request, ServerCallContext context)
         {
-            var result = await bidService.GetBidRoom(Guid.Parse(request.Id));
+            var result = await bidService.GetBid(Guid.Parse(request.Id));
             var response = new GetBidRoomResponse();
-
             if (result.StatusCode == (int)HttpStatusCode.NotFound)
+            {
+                response.BidStatus = (int)BidRoomStatus.NeverCreated;
                 return response;
+            }
 
+            if (result.Data.EndDate > DateTime.Now && result.Data.BidRoom is null)
+            {
+                var createdRoom = await bidService.CreateBidRoom(result.Data, context.CancellationToken);
+                response.BidStatus = (int)BidRoomStatus.Created;
+                result.Data.BidRoom = createdRoom.Data;
+            }
+            else if (result.Data.EndDate <= DateTime.Now && result.Data.BidRoom is null)
+            {
+                response.BidStatus = (int)BidRoomStatus.NeverCreated;
+                return response;
+            }
+            try
+            { 
+                response.BidId = result.Data.Id.ToString();
+                response.BidEndDate = result.Data.EndDate.ToUniversalTime().ToTimestamp();
+                response.BidStatus = (int)result.Data.BidRoom.RoomStatus;
+                response.RoomId = result.Data.BidRoom.Id.ToString();
+            }
+            catch (Exception ex)
+            {
 
-            response.BidId = result.Data.BidId.ToString();
-            response.BidEndDate = Timestamp.FromDateTime(result.Data.EndDate.ToLocalTime());
-            response.BidStatus = (int)result.Data.BidRoomStatus;
-            response.RoomId = result.Data.RoomId.ToString();
-
-
+                throw ex;
+            }
 
             return response;
         }

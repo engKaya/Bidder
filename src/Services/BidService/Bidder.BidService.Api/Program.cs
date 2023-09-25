@@ -45,14 +45,14 @@ if (app.Environment.IsDevelopment())
 
 app.MigrateDatabase<BidDbContext>();
 app.UseRouting();
+app.UseAuthorization();
+app.UseCors();
 app.UseEndpoints(endpoints =>
 {
     app.MapGrpcService<BidGrpcService>(); 
 });
 
 app.UseHttpsRedirection(); 
-app.UseAuthorization(); 
 app.MapControllers();
-app.UseCors();
 
 app.Run();

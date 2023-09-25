@@ -30,7 +30,7 @@ namespace Bidder.BidService.Infastructure.Services
             try
             {
                 await uof.BidRepository.Add(request, cancellationToken);
-                await uof.SaveChangesAsync(cancellationToken);
+                await CreateBidRoom(request, cancellationToken);
                 return ResponseMessage<CreateBidResponse>.Success(new CreateBidResponse(request.Id), 200); 
             }
             catch (Exception ex)
@@ -46,15 +46,21 @@ namespace Bidder.BidService.Infastructure.Services
             return CreateBid(bid, cancellationToken);
         }
 
-        public async Task<ResponseMessage<GetBidRoomResponse>> GetBidRoom(Guid id)
+        public async Task<ResponseMessage<BidRoom>> CreateBidRoom(Bid bid, CancellationToken cancellationToken = default)
         {
-            var room = await uof.BidRoomRepository.FindFirst(x => x.BidId == id, null);
+            var room = new BidRoom(bid);
+            await uof.BidRoomRepository.Add(room, cancellationToken);
+            return ResponseMessage<BidRoom>.Success(room, 200);
+        }
+
+        public async Task<ResponseMessage<Bid>> GetBid(Guid id)
+        {
+            var room = await uof.BidRepository.FindFirst(x => x.Id == id, null, x=>x.BidRoom);
             
             if(room == null)
-                return ResponseMessage<GetBidRoomResponse>.Fail("Bid Room Not Found", 404);
-
-            var roomResponse = new GetBidRoomResponse(room);
-            return ResponseMessage<GetBidRoomResponse>.Success(roomResponse, 200);
+                return ResponseMessage<Bid>.Fail("Bid Room Not Found", 404);
+             
+            return ResponseMessage<Bid>.Success(room, 200);
         }
     }
 }

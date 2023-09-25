@@ -2,9 +2,11 @@
 {
     public enum BidRoomStatus
     {
-        Created = 1,
-        Started = 2,
-        Finished = 3,
-        Canceled = 4
+        NeverCreated = 0,
+        BidCreatedButBidRoomNotCreated= 1,
+        Created = 2,
+        Started = 3,
+        Finished = 4,
+        Canceled = 5
     }
 }

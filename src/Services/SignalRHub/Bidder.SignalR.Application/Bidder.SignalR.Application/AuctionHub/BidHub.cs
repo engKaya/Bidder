@@ -1,4 +1,5 @@
 ﻿using Bidder.Application.Common.Redis.Interface;
+using Bidder.Infastructure.Common.Grpc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 
@@ -17,6 +18,10 @@ namespace Bidder.SignalR.Application.AuctionHub
 
         public override Task OnConnectedAsync()
         {
+            using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
+            var client = BidGrpcService
+
+
             logger.LogInformation("Client connected", Context.ToString());
             cacheService.Set("a", "b");
             return base.OnConnectedAsync();

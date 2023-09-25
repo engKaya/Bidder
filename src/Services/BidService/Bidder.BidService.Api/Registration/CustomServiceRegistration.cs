@@ -18,7 +18,7 @@ namespace Bidder.BidService.Api.Registration
                     sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
                 });
                 options.EnableSensitiveDataLogging();
-            }, contextLifetime: ServiceLifetime.Singleton); 
+            }, contextLifetime: ServiceLifetime.Scoped); 
             services.AddMediatR(); 
             services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
             services.AddAutoMapperCustom(configuration);
