@@ -1,7 +1,10 @@
-﻿using Bidder.Application.Common.Redis.Interface;
+﻿using Azure;
+using Bidder.Application.Common.Redis.Interface;
 using Bidder.Infastructure.Common.Grpc;
+using Bidder.SignalR.Application.Protos;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 
 namespace Bidder.SignalR.Application.AuctionHub
 {
@@ -18,8 +21,6 @@ namespace Bidder.SignalR.Application.AuctionHub
 
         public override Task OnConnectedAsync()
         {
-            using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
-            var client = BidGrpcService
 
 
             logger.LogInformation("Client connected", Context.ToString());
@@ -31,6 +32,30 @@ namespace Bidder.SignalR.Application.AuctionHub
         {
             logger.LogInformation("Client disconnected", Context.ToString());
             return base.OnDisconnectedAsync(exception);
+        }
+
+        public async Task<string> Join()
+        {
+            using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
+            var client = new BidGrpcService.BidGrpcServiceClient(grpcChannel);
+            GetBidRoomResponse response;
+            try
+            {
+                response = await client.GetBidRoomAsync(new GetBidRoomRequest() { Id = Guid.NewGuid().ToString() });
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogTrace("Error ", ex.StackTrace);
+                throw;
+            }
+
+            if (response == null)
+            {
+                throw new Exception("Bid room not found");
+            }
+
+            return response.BidId;    
         }
     }
 }

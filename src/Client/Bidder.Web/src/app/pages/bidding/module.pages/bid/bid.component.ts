@@ -13,15 +13,20 @@ export class BidComponent implements OnInit {
   env = environment;
   signalrConnection: signalR.HubConnection;
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.signalrConnection = new signalR.HubConnectionBuilder()
       .configureLogging(signalR.LogLevel.Information)
       .withHubProtocol(new signalR.JsonHubProtocol())
       .withUrl(this.env.bid_hub)
       .build();
 
-    this.signalrConnection.start().then(() => {
-      console.log('SignalR Connected!');      
+    await this.signalrConnection.start().then((res) => {
+      console.log('SignalR Connected!' + res);   
+      this.signalrConnection.invoke("Join").then(() => {
+  
+      }).catch((error:any) => {
+  
+      });    
     }).catch((error:any) => {
       console.log('SignalR connection error: ' + error);
     });
