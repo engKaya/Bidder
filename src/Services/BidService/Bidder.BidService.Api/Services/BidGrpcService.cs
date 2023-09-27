@@ -40,20 +40,20 @@ namespace Bidder.BidService.Api.Services
                 response.BidStatus = (int)BidRoomStatus.NeverCreated;
                 return response;
             }
-            try
-            { 
                 response.BidId = result.Data.Id.ToString();
                 response.BidEndDate = result.Data.EndDate.ToUniversalTime().ToTimestamp();
                 response.BidStatus = (int)result.Data.BidRoom.RoomStatus;
                 response.RoomId = result.Data.BidRoom.Id.ToString();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
 
             return response;
         }
+
+        public override Task<GetActiveBidRoomResponse> GetActiveBidRoom(Empty request, ServerCallContext context)
+        {
+            GetActiveBidRoomResponse response = new();
+
+            return base.GetActiveBidRoom(request, context);
+        }
+
     }
 }

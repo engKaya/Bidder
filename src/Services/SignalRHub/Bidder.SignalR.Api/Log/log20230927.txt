@@ -1990,3 +1990,17 @@ System.Exception: Bid room not found
 2023-09-27 22:07:49.724 +03:00 [INF] Client disconnected
 2023-09-27 22:07:49.728 +03:00 [INF] Executed endpoint 'bidhub'
 2023-09-27 22:07:49.732 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=_oHB_otkvIEEVikU-xqAyg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiOTE0MmYzNjEtZThkNi00NzY4LWI1ZWItMDhkYjlmNTEwNzdhIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkFub242MzgyNzkwNTA1Njk1NTU1MDAiLCJuYmYiOjE2OTU4NDAxNjcsImV4cCI6MTY5NTg0NzM2N30.aK6JrlxefM8C5P-6rSk2diZo4fAiqeTLZJmBlriy--8 - - - 200 - - 13071.6439ms
+2023-09-27 23:31:28.617 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-09-27 23:31:28.833 +03:00 [INF] Now listening on: https://localhost:5501
+2023-09-27 23:31:28.836 +03:00 [INF] Now listening on: http://localhost:5502
+2023-09-27 23:31:28.840 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-27 23:31:28.842 +03:00 [INF] Hosting environment: Development
+2023-09-27 23:31:28.844 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-09-27 23:31:30.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-09-27 23:31:30.456 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 368.9494ms
+2023-09-27 23:31:30.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 23:31:30.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-09-27 23:31:30.508 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 28.7302ms
+2023-09-27 23:31:30.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.3316ms
+2023-09-27 23:31:30.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-09-27 23:31:30.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 30.8037ms

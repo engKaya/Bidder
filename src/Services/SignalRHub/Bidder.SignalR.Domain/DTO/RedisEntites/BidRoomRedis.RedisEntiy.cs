@@ -8,7 +8,10 @@ namespace Bidder.SignalR.Domain.DTO.RedisEntites
         public Guid BidId { get;  }
         public Guid RoomId { get;  }
         public BidRoomStatus BidStatus { get;  }
+        public List<RoomUser>? RoomUsers { get; } 
         public DateTime EndDate { get;  } 
+
+
         public BidRoomRedis(Guid bidId, Guid roomId, BidRoomStatus bidStatus, DateTime endDate)
         {
             BidId = bidId;

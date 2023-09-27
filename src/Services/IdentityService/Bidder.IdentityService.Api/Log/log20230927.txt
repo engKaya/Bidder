@@ -454,3 +454,17 @@ Access-Control-Allow-Origin: [Redacted]
 2023-09-27 21:53:27.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.5629ms
 2023-09-27 21:53:28.041 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
 2023-09-27 21:53:28.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.9379ms
+2023-09-27 23:31:28.488 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-27 23:31:28.685 +03:00 [INF] Now listening on: https://localhost:5001
+2023-09-27 23:31:28.688 +03:00 [INF] Now listening on: http://localhost:6001
+2023-09-27 23:31:28.692 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-27 23:31:28.695 +03:00 [INF] Hosting environment: Development
+2023-09-27 23:31:28.696 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-09-27 23:31:29.689 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-09-27 23:31:30.045 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 357.5774ms
+2023-09-27 23:31:30.076 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 23:31:30.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-09-27 23:31:30.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 37.0019ms
+2023-09-27 23:31:30.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 119.3399ms
+2023-09-27 23:31:30.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-09-27 23:31:30.524 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.3805ms

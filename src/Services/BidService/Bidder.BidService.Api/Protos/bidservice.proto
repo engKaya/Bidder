@@ -3,10 +3,13 @@ syntax = "proto3";
 option csharp_namespace = "Bidder.BidService.Grpc.Protos";
 
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
 package BidGrpcService ;
 
 service BidGrpcService {
   rpc GetBidRoom (GetBidRoomRequest) returns (GetBidRoomResponse);
+  rpc GetActiveBidRoom (google.protobuf.Empty) returns (GetActiveBidRoomResponse);
 }
 
 message GetBidRoomRequest {
@@ -18,4 +21,21 @@ message GetBidRoomResponse {
   string BidId = 2; 
   google.protobuf.Timestamp BidEndDate = 3;
   int32 BidStatus = 4;
+}
+message GetActiveBidRoomResponse {
+    repeated ActiveBidRooms ActiveBidRooms = 1;
+}
+message BidRoomUsers {
+        string RoomId = 1;
+        string UserId = 2;
+        string UserName = 3;
+        string ConnectionId = 4;
+        google.protobuf.Timestamp JoinDate = 5;
+}  
+message ActiveBidRooms {
+        string BidId = 1;
+        string RoomId = 2;
+        string BidStatus = 3;
+        google.protobuf.Timestamp BidEndDate = 4;
+        repeated BidRoomUsers RoomUsers = 5;
 }

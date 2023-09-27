@@ -16,6 +16,7 @@ namespace Bidder.BidService.Infastructure.EntityConfiguration
             builder.Property(k => k.BidName).IsRequired();
             builder.Property(k => k.RoomStatus).HasConversion<int>();
             builder.HasOne(k => k.Bid).WithOne(k => k.BidRoom).HasForeignKey<BidRoom>(a => a.BidId);
+            builder.HasMany(k => k.BidRoomUsers).WithOne(k => k.BidRoom).HasForeignKey(k => k.BidRoomId);
         }
     }
 }

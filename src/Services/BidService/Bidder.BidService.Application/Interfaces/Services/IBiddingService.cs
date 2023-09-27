@@ -11,5 +11,7 @@ namespace Bidder.BidService.Application.Interfaces.Services
         public Task<ResponseMessage<CreateBidResponse>> CreateBid(CreateBidCommand request, CancellationToken cancellationToken); 
         public Task<ResponseMessage<Bid>> GetBid(Guid BidId);
         public Task<ResponseMessage<BidRoom>> CreateBidRoom(Bid bid, CancellationToken cancellationToken);
+
+
     }
 }
