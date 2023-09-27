@@ -1,6 +1,5 @@
-﻿using Bidder.BidService.Domain.Enums;
+﻿using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Domain.Common.Entity;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Bidder.BidService.Domain.Entities
 {

@@ -12,8 +12,8 @@
   import { environment } from 'src/environment/environment';
   import { Router } from '@angular/router';
   import { TranslateService } from '@ngx-translate/core'; 
-  import { LocalStorageService } from 'src/app/bidder.common/common.services/localstorage.service';
-  import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
+  import { LocalStorageService } from 'src/app/bidder.common/common.services/Utilities/LocalStorageService/localstorage.service';
+  import { ToasterService } from 'src/app/bidder.common/common.services/Utilities/ToasterService/toaster.service';
   import { LoginRequest, LoginResponse } from '../module.objects/loginobjects.model';
   import { ResponseMessage } from 'src/app/bidder.common/common.objects/ResponseMessage.model';
 

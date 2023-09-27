@@ -1,4 +1,4 @@
-﻿namespace Bidder.BidService.Domain.Enums
+﻿namespace Bidder.Domain.Common.Bid.Enums
 {
     public enum BidRoomStatus
     {

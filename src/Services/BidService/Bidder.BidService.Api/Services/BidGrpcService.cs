@@ -1,6 +1,6 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
-using Bidder.BidService.Domain.Enums;
 using Bidder.BidService.Grpc.Protos;
+using Bidder.Domain.Common.Bid.Enums;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;

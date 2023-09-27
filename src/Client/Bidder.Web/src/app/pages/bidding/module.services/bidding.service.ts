@@ -3,12 +3,12 @@ import { Injectable, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Observable, lastValueFrom, throwError } from 'rxjs';
-import { LocalStorageService } from 'src/app/bidder.common/common.services/localstorage.service';
-import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
+import { LocalStorageService } from 'src/app/bidder.common/common.services/Utilities/LocalStorageService/localstorage.service';
+import { ToasterService } from 'src/app/bidder.common/common.services/Utilities/ToasterService/toaster.service';
 import { CreateBidRequest } from '../module.objects/Requests/CreateBidRequest.request';
-import { ResponseMessage } from 'src/app/bidder.common/common.objects/ResponseMessage.model';
-import { CreateBidResponse } from '../module.objects/Responses/CreateBidResponse.response';
+import { ResponseMessage } from 'src/app/bidder.common/common.objects/ResponseMessage.model'; 
 import { environment } from 'src/environment/environment';
+import { CreateBidResponse } from '../module.objects/Responses/Http/CreateBidResponse.response';
 
 @Injectable({
   providedIn: 'root',

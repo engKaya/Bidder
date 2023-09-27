@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Bidder.SignalR.Application.Protos";
+option csharp_namespace = "Bidder.SignalR.Domain.Protos";
 
 import "google/protobuf/timestamp.proto";
 package BidGrpcService ;

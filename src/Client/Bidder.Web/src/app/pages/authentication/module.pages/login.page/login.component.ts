@@ -5,7 +5,7 @@ import { AuthLoginService } from '../../module.services/auth.service';
 import { LoginRequest } from '../../module.objects/loginobjects.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
+import { ToasterService } from 'src/app/bidder.common/common.services/Utilities/ToasterService/toaster.service';
 
 @Component({
   selector: 'app-login',

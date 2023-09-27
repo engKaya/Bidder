@@ -10,4 +10,8 @@
     <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Domain.Common\Bidder.Domain.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+
 </Project>

@@ -16,12 +16,12 @@ import { AppNavItemComponent } from './layouts/full/sidebar/nav-item/nav-item.co
 import { I18nModule } from './bidder.common/common.modules/i18n.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BiddingModule } from './pages/bidding/bidding.module';
-import { NumericDirective } from './bidder.common/common.services/directives/NumericDirective.directive';
+import { NumericDirective } from './bidder.common/common.services/Directives/NumericDirective.directive';
 import {
   MAT_CHECKBOX_DEFAULT_OPTIONS,
   MatCheckboxDefaultOptions,
-} from '@angular/material/checkbox';
-import { AuthInterceptor } from './bidder.common/common.services/http.interceptor';
+} from '@angular/material/checkbox'; 
+import { AuthInterceptor } from './bidder.common/common.services/Interceptors/http.interceptor';
 
 @NgModule({
   declarations: [

@@ -1,10 +1,15 @@
 ﻿using Azure;
 using Bidder.Application.Common.Redis.Interface;
+using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Infastructure.Common.Grpc;
-using Bidder.SignalR.Application.Protos;
+using Bidder.SignalR.Domain.DTO.Responses.Join;
+using Bidder.SignalR.Domain.Protos; 
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
+using Polly;
+using Polly.Retry;
 using System.Diagnostics;
+using System.Net;
 
 namespace Bidder.SignalR.Application.AuctionHub
 {
@@ -22,7 +27,6 @@ namespace Bidder.SignalR.Application.AuctionHub
         public override Task OnConnectedAsync()
         {
 
-
             logger.LogInformation("Client connected", Context.ToString());
             cacheService.Set("a", "b");
             return base.OnConnectedAsync();
@@ -34,28 +38,41 @@ namespace Bidder.SignalR.Application.AuctionHub
             return base.OnDisconnectedAsync(exception);
         }
 
-        public async Task<string> Join()
+        public async Task<JoinResponse> Join(Guid BidId)
         {
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
             var client = new BidGrpcService.BidGrpcServiceClient(grpcChannel);
-            GetBidRoomResponse response;
-            try
-            {
-                response = await client.GetBidRoomAsync(new GetBidRoomRequest() { Id = Guid.NewGuid().ToString() });
+            GetBidRoomResponse response = new();
 
-            }
-            catch (Exception ex)
-            {
-                logger.LogTrace("Error ", ex.StackTrace);
-                throw;
-            }
 
-            if (response == null)
+            var policy = CreateExceptionPolicy();
+
+            await policy.ExecuteAsync(async () =>
             {
-                throw new Exception("Bid room not found");
+                response = await client.GetBidRoomAsync(new GetBidRoomRequest() { Id = BidId.ToString() });
+            });
+
+            if (response == null || response.BidStatus == (int)BidRoomStatus.NeverCreated)
+            {
+                return new JoinResponse(HttpStatusCode.NotFound, "Bid not found", Context.ConnectionId);
             }
 
-            return response.BidId;    
+            if (response.BidStatus == (int)BidRoomStatus.Created)
+            {
+                await Groups.AddToGroupAsync(Context.ConnectionId, response.BidId);
+            }
+
+            return new JoinResponse(HttpStatusCode.OK, "Joined Successfully", Context.ConnectionId);  
+        }
+
+        private AsyncRetryPolicy CreateExceptionPolicy()
+        {
+            return Policy
+                .Handle<Exception>()
+                .RetryAsync(3, (exception, count) =>
+                {
+                    logger.LogError(exception, "Error while getting bid room with Grpc");
+                });
         }
     }
 }

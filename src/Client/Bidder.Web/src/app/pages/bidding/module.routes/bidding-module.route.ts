@@ -3,7 +3,7 @@ import { BidComponent } from '../module.pages/bid/bid.component';
 
 export const PagesRoutes: Routes = [
   {
-    path: 'bid',
+    path: 'bid/:id',
     component: BidComponent
   },
 ];

@@ -1,5 +1,4 @@
 ﻿using Bidder.BidService.Domain.Entities;
-using Bidder.BidService.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

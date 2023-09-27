@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FullComponent } from './layouts/full/full.component';
-import { AuthGuard } from './bidder.common/common.services/guard/Auth.guard';
+import { FullComponent } from './layouts/full/full.component'; 
+import { AuthGuard } from './bidder.common/common.services/Guards/Auth.guard';
 
 const routes: Routes = [
   {

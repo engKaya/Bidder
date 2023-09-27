@@ -3,7 +3,7 @@ import {   ActivatedRouteSnapshot,  RouterStateSnapshot,  Router, UrlTree} from 
 import { Injectable } from "@angular/core"; 
 import { Observable } from "rxjs";
 import { AuthLoginService } from "src/app/pages/authentication/module.services/auth.service";
-import { ToasterService } from "../toaster.service";
+import { ToasterService } from "../Utilities/ToasterService/toaster.service";
 
 @Injectable({
     providedIn: 'root'

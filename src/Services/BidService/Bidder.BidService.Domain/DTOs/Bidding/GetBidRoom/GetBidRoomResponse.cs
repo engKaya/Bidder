@@ -1,5 +1,5 @@
 ﻿using Bidder.BidService.Domain.Entities;
-using Bidder.BidService.Domain.Enums;
+using Bidder.Domain.Common.Bid.Enums;
 
 namespace Bidder.BidService.Domain.DTOs.Bidding.GetBidRoom
 {

@@ -7,8 +7,8 @@ import {
 } from '@angular/core'; 
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
-import { PubSubService } from 'src/app/bidder.common/common.services/PubSubService/PubSub.service';
-import { DialogService, DialogSize } from 'src/app/bidder.common/common.services/dialog.service';
+import { DialogService, DialogSize } from 'src/app/bidder.common/common.services/Utilities/DialogService/dialog.service';
+import { PubSubService } from 'src/app/bidder.common/common.services/Utilities/PubSubService/PubSub.service'; 
 import { AuthLoginService } from 'src/app/pages/authentication/module.services/auth.service';
 import { BiddingPupComponent } from 'src/app/pages/bidding/module.components/bidding-pup/bidding-pup.component'; 
 

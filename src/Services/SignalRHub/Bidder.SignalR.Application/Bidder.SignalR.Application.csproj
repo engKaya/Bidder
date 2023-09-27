@@ -22,15 +22,15 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Aplication.Common\Bidder.Application.Common.csproj" />
     <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Infastructure.Common\Bidder.Infastructure.Common.csproj" />
+    <ProjectReference Include="..\Bidder.SignalR.Domain\Bidder.SignalR.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="IntegrationEvents\" />
     <Folder Include="Redis\" />
   </ItemGroup>
-  
   <ItemGroup>
-    <Protobuf Include="Protos\bidservice.proto" GrpcServices="Client" />
+    <Protobuf Include="..\Bidder.SignalR.Domain\Protos\bidservice.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

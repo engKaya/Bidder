@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ToasterService } from 'src/app/bidder.common/common.services/toaster.service';
+import { ToasterService } from 'src/app/bidder.common/common.services/Utilities/ToasterService/toaster.service';
 import { BiddingService } from '../../module.services/bidding.service';
 import { FormControl, FormGroup,  Validators } from '@angular/forms'; 
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { CreateBidRequest } from '../../module.objects/Requests/CreateBidRequest.request';
 import { HttpStatusCode } from '@angular/common/http';
-import { PubSubService } from 'src/app/bidder.common/common.services/PubSubService/PubSub.service'; 
+import { PubSubService } from 'src/app/bidder.common/common.services/Utilities/PubSubService/PubSub.service'; 
 import { Router } from '@angular/router';
 
 @Component({
@@ -55,7 +55,7 @@ export class BiddingPupComponent {
     this.bidService.CreateBid(obj).then((response) => {
       if(response.StatusCode === HttpStatusCode.Ok){ 
         this.toast.openToastSuccess(this.translate.instant('GENERAL.SUCCESS'),this.translate.instant('BID.SUCCESS.AUCTION_CREATED'));
-        this.router.navigate(['/pages/bidding/bid']);
+        this.router.navigate([`/pages/bidding/bid/${response.Data.BidId}`]);
         this.pubsub.CloseBidDialogSubject.next(true);
       }
     }).catch((error) => {});
