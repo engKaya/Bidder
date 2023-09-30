@@ -1,0 +1,183 @@
+2023-10-01 01:03:44.634 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-10-01 01:03:47.063 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-10-01 01:03:47.107 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:03:47.110 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:03:47.405 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:03:47.450 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-01 01:03:47.456 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:03:47.461 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:03:47.464 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:03:47.468 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:03:47.482 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-10-01 01:03:47.496 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-10-01 01:03:47.500 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-10-01 01:03:47.669 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:03:47.761 +03:00 [WRN] Overriding address(es) 'https://localhost:5002, http://localhost:6002'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-10-01 01:03:47.778 +03:00 [INF] Now listening on: http://localhost:5012
+2023-10-01 01:03:47.781 +03:00 [INF] Now listening on: https://localhost:5002
+2023-10-01 01:03:47.784 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:03:47.786 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:03:47.790 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-10-01 01:03:47.959 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/index.html - -
+2023-10-01 01:03:48.152 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 193.7564ms
+2023-10-01 01:03:48.164 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:03:48.171 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 5.9292ms
+2023-10-01 01:03:48.190 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_vs/browserLink - -
+2023-10-01 01:03:48.207 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc -
+2023-10-01 01:03:48.226 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.1174ms
+2023-10-01 01:03:48.249 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:03:48.284 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-10-01 01:03:50.847 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2562.5341ms
+2023-10-01 01:03:51.058 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[IsEnded] = CAST(0 AS bit) AND [b].[EndDate] > GETDATE()
+2023-10-01 01:04:19.868 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:04:19.873 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-01 01:04:19.884 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc - - 200 - application/grpc 31676.9894ms
+2023-10-01 01:05:00.879 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-10-01 01:05:08.102 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-10-01 01:05:08.142 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:05:08.145 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:05:08.445 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:05:08.485 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-01 01:05:08.490 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:05:08.495 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:05:08.499 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:05:08.502 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:05:08.513 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-10-01 01:05:08.522 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-10-01 01:05:08.525 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-10-01 01:05:08.628 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:05:08.715 +03:00 [WRN] Overriding address(es) 'https://localhost:5002, http://localhost:6002'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-10-01 01:05:08.736 +03:00 [INF] Now listening on: http://localhost:5012
+2023-10-01 01:05:08.738 +03:00 [INF] Now listening on: https://localhost:5002
+2023-10-01 01:05:08.741 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:05:08.743 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:05:08.746 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-10-01 01:05:09.156 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/index.html - -
+2023-10-01 01:05:09.159 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc -
+2023-10-01 01:05:09.264 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:05:12.202 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 3047.9602ms
+2023-10-01 01:05:12.228 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_vs/browserLink - -
+2023-10-01 01:05:12.229 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:05:12.238 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 9.8024ms
+2023-10-01 01:05:12.249 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3413ms
+2023-10-01 01:05:12.331 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-10-01 01:05:12.417 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.5653ms
+2023-10-01 01:05:12.463 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[IsEnded] = CAST(0 AS bit) AND [b].[EndDate] > GETDATE()
+2023-10-01 01:05:12.585 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:05:12.589 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-01 01:05:12.599 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc - - 200 - application/grpc 3440.0757ms
+2023-10-01 01:09:17.392 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-10-01 01:09:27.284 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-10-01 01:09:27.325 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:09:27.328 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-01 01:09:27.594 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:09:27.637 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-01 01:09:27.643 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:09:27.648 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:09:27.651 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-01 01:09:27.654 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-01 01:09:27.666 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-10-01 01:09:27.676 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-10-01 01:09:27.678 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-10-01 01:09:27.761 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:09:27.831 +03:00 [WRN] Overriding address(es) 'https://localhost:5002, http://localhost:6002'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-10-01 01:09:27.852 +03:00 [INF] Now listening on: http://localhost:5012
+2023-10-01 01:09:27.854 +03:00 [INF] Now listening on: https://localhost:5002
+2023-10-01 01:09:27.857 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:09:27.860 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:09:27.862 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-10-01 01:09:28.013 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/index.html - -
+2023-10-01 01:09:28.200 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 187.8462ms
+2023-10-01 01:09:28.215 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:09:28.221 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 6.1604ms
+2023-10-01 01:09:28.224 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_vs/browserLink - -
+2023-10-01 01:09:28.237 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.9514ms
+2023-10-01 01:09:28.314 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-10-01 01:09:28.325 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc -
+2023-10-01 01:09:28.360 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:09:43.733 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15418.8469ms
+2023-10-01 01:09:43.919 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[IsEnded] = CAST(0 AS bit) AND [b].[EndDate] > GETDATE()
+2023-10-01 01:09:44.012 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRoom'
+2023-10-01 01:09:44.016 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-01 01:09:44.025 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRoom application/grpc - - 200 - application/grpc 15700.6074ms

@@ -2,6 +2,11 @@
 using Bidder.Application.Common.Redis;
 using Bidder.Application.Common.Redis.Interface;
 using Bidder.Infastructure.Common.Redis.Repo;
+using Bidder.SignalR.Application.Redis.Implementation;
+using Bidder.SignalR.Application.Redis.Interface;
+using Bidder.SignalR.Application.Services.Implementation;
+using Bidder.SignalR.Application.Services.Interface;
+using Bidder.SignalR.Domain.DTO.RedisEntites;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,7 +43,10 @@ namespace Bidder.SignalR.Api.Extensions
             });
 
             services.AddSingleton<RedisClient>();
+            services.AddSingleton<IRoomRedisService, RoomRedisService>();
             services.AddSingleton<IDistributedCacheManager, RedisCacheManager>();
+            services.AddSingleton<IBidRoomService, BidRoomService>();
+            services.GetRoomsAndSetRedis();
 
             return services;
         }

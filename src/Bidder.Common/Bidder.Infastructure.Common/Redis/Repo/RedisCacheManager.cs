@@ -24,7 +24,7 @@ namespace Bidder.Infastructure.Common.Redis.Repo
 
         public byte[] Get(string key)
         {
-            return _redisClient.RedisCache.Get(key);
+            return  _redisClient.RedisCache.Get(key);
         }
 
         public void Set(string key, object value)

@@ -5,7 +5,7 @@ namespace Bidder.BidService.Domain.DTOs.Bidding.GetBidRoom
 {
     public class GetBidRoomResponse
     {
-        public Guid RoomId { get; set; }
+        public long RoomId { get; set; }
         public Guid BidId { get; set; }
         public BidRoomStatus BidRoomStatus { get; set; }
         public DateTime EndDate { get; set; }

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\Client\bidservice.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Grpc.Core" Version="2.46.6" />
     <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
     <PackageReference Include="MediatR" Version="12.1.1" />
@@ -23,12 +27,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Protos\bidservice.proto">
+    <None Update="Protos\Server\bidservice.proto">
       <GrpcServices>Server</GrpcServices>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="Protos\bidservice.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Client\bidservice.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Server\bidservice.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>

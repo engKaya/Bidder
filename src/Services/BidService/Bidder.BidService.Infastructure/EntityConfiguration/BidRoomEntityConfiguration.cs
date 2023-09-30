@@ -10,8 +10,8 @@ namespace Bidder.BidService.Infastructure.EntityConfiguration
         {
             builder.ToTable(nameof(BidRoom));
             builder.HasKey(k => k.Id);
+            builder.Property(k => k.Id).UseIdentityColumn();
             builder.Ignore(k => k.DomainEvents);
-            builder.Property(k => k.Id).ValueGeneratedOnAdd();
             builder.Property(k => k.BidId);
             builder.Property(k => k.BidName).IsRequired();
             builder.Property(k => k.RoomStatus).HasConversion<int>();

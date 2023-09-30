@@ -1,0 +1,42 @@
+2023-10-01 01:03:47.441 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:03:47.697 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-01 01:03:47.700 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-01 01:03:47.703 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:03:47.706 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:03:47.709 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-01 01:03:47.968 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-01 01:03:48.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 201.3103ms
+2023-10-01 01:03:48.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:03:48.191 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-01 01:03:48.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 10.2827ms
+2023-10-01 01:03:48.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.2777ms
+2023-10-01 01:03:48.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-01 01:03:50.735 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2432.8666ms
+2023-10-01 01:05:08.188 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:05:08.349 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-01 01:05:08.352 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-01 01:05:08.356 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:05:08.358 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:05:08.360 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-01 01:05:08.639 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-01 01:05:08.827 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 188.4080ms
+2023-10-01 01:05:08.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:05:08.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-01 01:05:08.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 7.1426ms
+2023-10-01 01:05:08.878 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.5727ms
+2023-10-01 01:05:08.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-01 01:05:09.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.3850ms
+2023-10-01 01:09:27.336 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-01 01:09:27.489 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-01 01:09:27.491 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-01 01:09:27.494 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 01:09:27.496 +03:00 [INF] Hosting environment: Development
+2023-10-01 01:09:27.498 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-01 01:09:27.954 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-01 01:09:28.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 195.2472ms
+2023-10-01 01:09:28.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-01 01:09:28.175 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-01 01:09:28.182 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 10.3828ms
+2023-10-01 01:09:28.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.9999ms
+2023-10-01 01:09:28.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-01 01:09:28.373 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.4526ms

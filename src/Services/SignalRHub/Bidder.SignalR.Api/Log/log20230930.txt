@@ -55,3 +55,17 @@
 2023-09-30 14:26:44.520 +03:00 [INF] CORS policy execution successful.
 2023-09-30 14:26:44.523 +03:00 [INF] Executing endpoint 'bidhub'
 2023-09-30 14:26:44.535 +03:00 [INF] Client connected
+2023-09-30 22:31:18.629 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-09-30 22:31:18.803 +03:00 [INF] Now listening on: https://localhost:5501
+2023-09-30 22:31:18.807 +03:00 [INF] Now listening on: http://localhost:5502
+2023-09-30 22:31:18.810 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 22:31:18.812 +03:00 [INF] Hosting environment: Development
+2023-09-30 22:31:18.814 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-09-30 22:31:19.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-09-30 22:31:19.372 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 141.9245ms
+2023-09-30 22:31:19.385 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-09-30 22:31:19.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-09-30 22:31:19.394 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.6701ms
+2023-09-30 22:31:19.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.2919ms
+2023-09-30 22:31:19.489 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-09-30 22:31:19.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.0968ms

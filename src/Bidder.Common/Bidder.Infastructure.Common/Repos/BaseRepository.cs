@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Bidder.Infastructure.Common.Repos
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity  
+    public class BaseRepository<T> : IBaseRepository<T> where T : DBEntity
     {
         protected readonly DbContext context;
 

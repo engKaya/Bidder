@@ -1,0 +1,71 @@
+﻿using Bidder.Application.Common.Redis.Interface;
+using Bidder.Domain.Common.Dto.BidService.IBiddingService;
+using Bidder.SignalR.Application.Redis.Interface;
+
+namespace Bidder.SignalR.Application.Redis.Implementation
+{
+    public class RoomRedisService : IRoomRedisService
+    {
+        private readonly IDistributedCacheManager _redis;
+
+
+        public RoomRedisService(IDistributedCacheManager redis)
+        {
+            _redis = redis;
+            var key = redis.Get("BidRooms");
+            if (key == null)
+            {
+                redis.Set("BidRooms", new Dictionary<string, ActiveBidRooms>());
+            }
+        }
+        public Task<ActiveBidRooms> CreateOrUpdateRoom(ActiveBidRooms room)
+        {
+            var redisrooms = GetRedisRooms();
+
+            if (redisrooms.ContainsKey(room.BidId.ToString()))
+            {
+                redisrooms[room.BidId.ToString()] = room;
+                _redis.Set("BidRooms", redisrooms);
+                return Task.FromResult(room);
+            }
+             
+            redisrooms.Add(room.BidId.ToString(), room);
+            _redis.Set("BidRooms", redisrooms);
+            return Task.FromResult(room);
+        }
+
+        public Task<bool> DeleteRoom(Guid bidId)
+        {
+            var bidrooms = GetRedisRooms();
+
+            if (!bidrooms.ContainsKey(bidId.ToString()))
+                Task.FromResult(false);
+
+            bidrooms.Remove(bidId.ToString());
+            _redis.Set("BidRooms", bidrooms);
+            return Task.FromResult(true);
+        }
+
+        public Task<ActiveBidRooms?> GetRoom(Guid bidId)
+        {
+            return Task.FromResult(GetRedisRoom(bidId));
+        }
+
+        public Task<IEnumerable<ActiveBidRooms>> GetRooms()
+        {
+            var redisrooms = GetRedisRooms();
+            return Task.FromResult(redisrooms.Values.AsEnumerable());
+        } 
+
+        private IDictionary<string, ActiveBidRooms> GetRedisRooms()
+        {
+            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRooms>>("BidRooms");
+            return redisrooms;
+        }
+        private ActiveBidRooms? GetRedisRoom(Guid BidId)
+        {
+            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRooms>>("BidRooms"); 
+            return redisrooms[BidId.ToString()];
+        }
+    } 
+}

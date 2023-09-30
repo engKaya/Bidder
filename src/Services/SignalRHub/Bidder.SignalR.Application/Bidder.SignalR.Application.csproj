@@ -27,9 +27,5 @@
 
   <ItemGroup>
     <Folder Include="IntegrationEvents\" />
-    <Folder Include="Redis\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Protobuf Include="..\..\..\Bidder.Common\Bidder.Infastructure.Common\Protos\bidservice.proto" GrpcServices="Client" />
-  </ItemGroup>
+  </ItemGroup> 
 </Project>

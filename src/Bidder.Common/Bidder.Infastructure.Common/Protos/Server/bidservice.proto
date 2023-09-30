@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Bidder.Infastructure.Common.Protos";
+option csharp_namespace = "Bidder.Infastructure.Common.Protos.Server";
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
@@ -25,17 +25,9 @@ message GetBidRoomResponse {
 message GetActiveBidRoomResponse {
     repeated ActiveBidRooms ActiveBidRooms = 1;
 }
-message BidRoomUsers {
-        string RoomId = 1;
-        string UserId = 2;
-        string UserName = 3;
-        string ConnectionId = 4;
-        google.protobuf.Timestamp JoinDate = 5;
-}  
 message ActiveBidRooms {
         string BidId = 1;
-        string RoomId = 2;
-        string BidStatus = 3;
+        int64 RoomId = 2;
+        int32 BidStatus = 3;
         google.protobuf.Timestamp BidEndDate = 4;
-        repeated BidRoomUsers RoomUsers = 5;
 }

@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace Bidder.Domain.Common.Interfaces
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IBaseRepository<T> where T : DBEntity
     {
         Task<T> FindFirst(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, params Expression<Func<T, object>>[] includes);
         Task<IEnumerable<T>> GetAll();

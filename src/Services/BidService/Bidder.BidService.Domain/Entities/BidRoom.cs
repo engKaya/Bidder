@@ -3,7 +3,7 @@ using Bidder.Domain.Common.Entity;
 
 namespace Bidder.BidService.Domain.Entities
 {
-    public class BidRoom : BaseEntity
+    public class BidRoom : IntBaseEntity
     {
         private Guid _bidId;
         private string _bidName;

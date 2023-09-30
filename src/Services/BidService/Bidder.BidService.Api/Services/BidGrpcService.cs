@@ -1,6 +1,6 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
 using Bidder.Domain.Common.Bid.Enums;
-using Bidder.Infastructure.Common.Protos;
+using Bidder.Infastructure.Common.Protos.Server;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
@@ -11,7 +11,7 @@ namespace Bidder.BidService.Api.Services
     public class BidGrpcServerService : BidGrpcService.BidGrpcServiceBase
     {
         private readonly IEventBus eventBus;
-        private readonly IBiddingService bidService;
+        private readonly IBiddingService bidService; 
 
         public BidGrpcServerService(IEventBus eventBus, IBiddingService bidService)
         {
@@ -48,11 +48,29 @@ namespace Bidder.BidService.Api.Services
             return response;
         }
 
-        public override Task<GetActiveBidRoomResponse> GetActiveBidRoom(Empty request, ServerCallContext context)
-        {
-            GetActiveBidRoomResponse response = new();
+        public override async Task<GetActiveBidRoomResponse> GetActiveBidRoom(Empty request, ServerCallContext context)
+        { 
+            var response = await bidService.GetActiveBidRooms();
+            var result = new GetActiveBidRoomResponse();
 
-            return base.GetActiveBidRoom(request, context);
+            if (response.Data is null)
+            {
+                return result;
+            }
+
+            foreach (var item in response.Data)
+            {
+                result.ActiveBidRooms.Add(new ActiveBidRooms
+                {
+                    BidId = item.BidId.ToString(),
+                    BidEndDate = item.BidEndDate.ToUniversalTime().ToTimestamp(),
+                    BidStatus = (int)item.BidRoomStatus,
+                    RoomId = item.RoomId
+                });
+            }
+
+            return result;
+
         }
 
     }

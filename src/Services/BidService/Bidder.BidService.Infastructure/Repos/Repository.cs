@@ -5,7 +5,7 @@ using Bidder.Infastructure.Common.Repos;
 
 namespace Bidder.BidService.Infastructure.Repos
 { 
-    public class Repository<T> : BaseRepository<T>, IBaseRepository<T> where T : BaseEntity
+    public class Repository<T> : BaseRepository<T>, IBaseRepository<T> where T : DBEntity
     {
         public Repository(BidDbContext context) : base(context)
         {

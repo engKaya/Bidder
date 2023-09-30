@@ -1,12 +1,11 @@
-﻿using Bidder.Application.Common.Redis.Interface;
+﻿using Bidder.Application.Common.Extension;
+using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Infastructure.Common.Grpc;
-using Bidder.Infastructure.Common.Protos;
+using Bidder.Infastructure.Common.Protos.Client;
 using Bidder.SignalR.Domain.DTO.Responses.Join;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
-using Polly;
-using Polly.Retry;
 using System.Net;
 
 namespace Bidder.SignalR.Application.AuctionHub
@@ -43,7 +42,7 @@ namespace Bidder.SignalR.Application.AuctionHub
             GetBidRoomResponse response = new();
 
 
-            var policy = CreateExceptionPolicy();
+            var policy = PollyPolicyGenerator.CreateExceptionPolicy(logger);
 
             await policy.ExecuteAsync(async () =>
             {
@@ -61,16 +60,6 @@ namespace Bidder.SignalR.Application.AuctionHub
             }
 
             return new JoinResponse(HttpStatusCode.OK, "Joined Successfully", Context.ConnectionId);  
-        }
-
-        private AsyncRetryPolicy CreateExceptionPolicy()
-        {
-            return Policy
-                .Handle<Exception>()
-                .RetryAsync(3, (exception, count) =>
-                {
-                    logger.LogError(exception, "Error while getting bid room with Grpc");
-                });
         }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace Bidder.Domain.Common.Entity
 {
-    public abstract class BaseEntity : DBEntity
+    public class IntBaseEntity : DBEntity
     {
-        public virtual Guid Id { get; protected set; }
+        public virtual long Id { get; protected set; }
         public virtual DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         int? _requestedHashCode;
         private IList<INotification>? domainEvents;
@@ -32,7 +32,7 @@ namespace Bidder.Domain.Common.Entity
         }
         public override bool Equals(object obj)
         {
-            if (obj == null || !(obj is BaseEntity))
+            if (obj == null || !(obj is IntBaseEntity))
                 return false;
 
             if (ReferenceEquals(this, obj))
@@ -41,7 +41,7 @@ namespace Bidder.Domain.Common.Entity
             if (GetType() != obj.GetType())
                 return false;
 
-            BaseEntity item = (BaseEntity)obj;
+            IntBaseEntity item = (IntBaseEntity)obj;
 
             if (item.IsTransient() || IsTransient())
                 return false;
@@ -62,7 +62,7 @@ namespace Bidder.Domain.Common.Entity
                 return base.GetHashCode();
         }
 
-        public static bool operator ==(BaseEntity left, BaseEntity right)
+        public static bool operator ==(IntBaseEntity left, IntBaseEntity right)
         {
             if (Equals(left, null))
                 return Equals(right, null) ? true : false;
@@ -70,7 +70,7 @@ namespace Bidder.Domain.Common.Entity
                 return left.Equals(right);
         }
 
-        public static bool operator !=(BaseEntity left, BaseEntity right)
+        public static bool operator !=(IntBaseEntity left, IntBaseEntity right)
         {
             return !(left == right);
         }
