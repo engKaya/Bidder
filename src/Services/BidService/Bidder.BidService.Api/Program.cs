@@ -2,7 +2,6 @@ using Bidder.Application.Common.Extension;
 using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Api.Services;
 using Bidder.BidService.Infastructure.Context;
-using Microsoft.AspNetCore.Server.Kestrel.Core;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
@@ -49,7 +48,7 @@ app.UseAuthorization();
 app.UseCors();
 app.UseEndpoints(endpoints =>
 {
-    app.MapGrpcService<BidGrpcService>(); 
+    app.MapGrpcService<BidGrpcServerService>(); 
 });
 
 app.UseHttpsRedirection(); 

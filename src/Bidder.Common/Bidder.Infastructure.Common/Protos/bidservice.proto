@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Bidder.BidService.Grpc.Protos";
+option csharp_namespace = "Bidder.Infastructure.Common.Protos";
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";

@@ -30,7 +30,6 @@
     <Folder Include="Redis\" />
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="..\Bidder.SignalR.Domain\Protos\bidservice.proto" GrpcServices="Client" />
+    <Protobuf Include="..\..\..\Bidder.Common\Bidder.Infastructure.Common\Protos\bidservice.proto" GrpcServices="Client" />
   </ItemGroup>
-
 </Project>

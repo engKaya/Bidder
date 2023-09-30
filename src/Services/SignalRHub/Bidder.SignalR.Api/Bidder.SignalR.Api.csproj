@@ -30,9 +30,6 @@
     <ProjectReference Include="..\..\..\Bidder.Common\Bidder.Infastructure.Common\Bidder.Infastructure.Common.csproj" />
     <ProjectReference Include="..\Bidder.SignalR.Application\Bidder.SignalR.Application.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Protobuf Include="..\Bidder.SignalR.Domain\Protos\bidservice.proto" GrpcServices="Client" />
-  </ItemGroup>
 
 
 </Project>

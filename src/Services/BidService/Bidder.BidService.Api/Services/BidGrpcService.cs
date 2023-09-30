@@ -1,6 +1,6 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
-using Bidder.BidService.Grpc.Protos;
 using Bidder.Domain.Common.Bid.Enums;
+using Bidder.Infastructure.Common.Protos;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
@@ -8,12 +8,12 @@ using System.Net;
 
 namespace Bidder.BidService.Api.Services
 {
-    public class BidGrpcService : Bidder.BidService.Grpc.Protos.BidGrpcService.BidGrpcServiceBase
+    public class BidGrpcServerService : BidGrpcService.BidGrpcServiceBase
     {
         private readonly IEventBus eventBus;
         private readonly IBiddingService bidService;
 
-        public BidGrpcService(IEventBus eventBus, IBiddingService bidService)
+        public BidGrpcServerService(IEventBus eventBus, IBiddingService bidService)
         {
             this.eventBus = eventBus;
             this.bidService = bidService;

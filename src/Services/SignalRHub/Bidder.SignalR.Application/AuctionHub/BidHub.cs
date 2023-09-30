@@ -1,14 +1,12 @@
-﻿using Azure;
-using Bidder.Application.Common.Redis.Interface;
+﻿using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Infastructure.Common.Grpc;
+using Bidder.Infastructure.Common.Protos;
 using Bidder.SignalR.Domain.DTO.Responses.Join;
-using Bidder.SignalR.Domain.Protos; 
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using Polly;
 using Polly.Retry;
-using System.Diagnostics;
 using System.Net;
 
 namespace Bidder.SignalR.Application.AuctionHub

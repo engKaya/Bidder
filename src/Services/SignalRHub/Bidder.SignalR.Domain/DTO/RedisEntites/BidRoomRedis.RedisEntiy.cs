@@ -1,5 +1,5 @@
 ﻿using Bidder.Domain.Common.Bid.Enums;
-using Bidder.SignalR.Domain.Protos;
+using Bidder.Infastructure.Common.Protos;
 
 namespace Bidder.SignalR.Domain.DTO.RedisEntites
 {
