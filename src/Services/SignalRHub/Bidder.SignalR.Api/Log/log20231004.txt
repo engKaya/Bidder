@@ -1,0 +1,42 @@
+2023-10-04 00:38:50.039 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-04 00:38:50.209 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-04 00:38:50.212 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-04 00:38:50.216 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-04 00:38:50.219 +03:00 [INF] Hosting environment: Development
+2023-10-04 00:38:50.222 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-04 00:38:50.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-04 00:38:50.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 150.2024ms
+2023-10-04 00:38:50.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-04 00:38:50.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-04 00:38:50.615 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 13.3620ms
+2023-10-04 00:38:50.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.3968ms
+2023-10-04 00:38:50.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-04 00:38:50.728 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.9287ms
+2023-10-04 00:40:57.811 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-04 00:40:57.954 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-04 00:40:57.957 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-04 00:40:57.961 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-04 00:40:57.964 +03:00 [INF] Hosting environment: Development
+2023-10-04 00:40:57.966 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-04 00:40:58.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-04 00:40:58.568 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 205.9415ms
+2023-10-04 00:40:58.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-04 00:40:58.585 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-04 00:40:58.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.4276ms
+2023-10-04 00:40:58.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.6291ms
+2023-10-04 00:40:58.676 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-04 00:40:58.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.2574ms
+2023-10-04 00:43:09.097 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-04 00:43:09.223 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-04 00:43:09.226 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-04 00:43:09.229 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-04 00:43:09.231 +03:00 [INF] Hosting environment: Development
+2023-10-04 00:43:09.233 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-04 00:43:09.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-04 00:43:09.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 134.4166ms
+2023-10-04 00:43:09.868 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-04 00:43:09.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-04 00:43:09.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.9788ms
+2023-10-04 00:43:09.912 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.0196ms
+2023-10-04 00:43:09.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-04 00:43:09.982 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.6241ms

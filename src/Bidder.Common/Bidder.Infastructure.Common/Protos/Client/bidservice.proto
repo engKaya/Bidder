@@ -8,21 +8,22 @@ import "google/protobuf/empty.proto";
 package BidGrpcService ;
 
 service BidGrpcService {
-  rpc GetBidRoom (GetBidRoomRequest) returns (GetBidRoomResponse);
-  rpc GetActiveBidRoom (google.protobuf.Empty) returns (GetActiveBidRoomResponse);
+  rpc GetBidRoom (GetBidRoomRequest) returns (GetBidRoomsResponse);
+  rpc GetActiveBidRooms (google.protobuf.Empty) returns (GetActiveBidRoomsResponse);
+  rpc GetActiveBidRoom(GetActiveBidRoomRequest) returns (ActiveBidRooms);
 }
 
 message GetBidRoomRequest {
   string Id = 1;
 }
 
-message GetBidRoomResponse {
+message GetBidRoomsResponse {
   int64 RoomId = 1;
   string BidId = 2; 
   google.protobuf.Timestamp BidEndDate = 3;
   int32 BidStatus = 4;
 }
-message GetActiveBidRoomResponse {
+message GetActiveBidRoomsResponse {
     repeated ActiveBidRooms ActiveBidRooms = 1;
 }
 
@@ -31,4 +32,9 @@ message ActiveBidRooms {
         int64 RoomId = 2;
         int32 BidStatus = 3;
         google.protobuf.Timestamp BidEndDate = 4;
+}
+
+
+message GetActiveBidRoomRequest {
+    string BidId = 1;
 }

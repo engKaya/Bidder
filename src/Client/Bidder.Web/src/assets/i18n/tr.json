@@ -55,7 +55,7 @@
       "500": "Lütfen daha sonra tekrar deneyiniz",
       "404": "Lütfen daha sonra tekrar deneyiniz",
       "403": "Bu sayfaya erişim yetkiniz bulunmamaktadır"
-    }
+    } 
   },
   "FORM_VALID": {
     
@@ -70,10 +70,13 @@
   "BID": {
     "OPEN_AUCTION": "Açık Arttırma Başlat",
     "ERRORS": {
-      "AUCTION_CREATION_FAILED": "İhale oturumu oluşturulamadı"
+      "AUCTION_CREATION_FAILED": "İhale oturumu oluşturulamadı",
+      "BID_NOT_FOUND": "İhale Bulunamadı",
+      "CONNECTION_FAILED": "Bağlantı Hatası"
     },
     "SUCCESS": {
-      "AUCTION_CREATED": "Auction Created Successfully"
+      "AUCTION_CREATED": "İhale oturumu oluşturuldu",
+      "JOINED" : "Oturuma Katıldınız"
     }
   }
 }

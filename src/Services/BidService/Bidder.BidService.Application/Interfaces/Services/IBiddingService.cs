@@ -3,7 +3,6 @@ using Bidder.BidService.Domain.DTOs.Bidding.CreateBid;
 using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.BaseClassess;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
-using System.Collections.Generic;
 
 namespace Bidder.BidService.Application.Interfaces.Services
 {
@@ -14,6 +13,7 @@ namespace Bidder.BidService.Application.Interfaces.Services
         public Task<ResponseMessage<Bid>> GetBid(Guid BidId);
         public Task<ResponseMessage<BidRoom>> CreateBidRoom(Bid bid, CancellationToken cancellationToken);
         public Task<ResponseMessage<IEnumerable<ActiveBidRooms>>> GetActiveBidRooms();
+        public Task<ResponseMessage<ActiveBidRooms>> GetActiveBidRoom(string BidId);
 
 
     }

@@ -8,6 +8,8 @@ namespace Bidder.Domain.Common.Dto.BidService.IBiddingService
         public long RoomId { get; set; }
         public DateTime BidEndDate { get; set; }
         public BidRoomStatus BidRoomStatus { get; set; }
+
+        public IDictionary<Guid,string> Users { get ; set; }
         public ActiveBidRooms()
         {
 

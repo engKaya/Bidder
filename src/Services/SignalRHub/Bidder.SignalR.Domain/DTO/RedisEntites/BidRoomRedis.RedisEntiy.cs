@@ -23,7 +23,7 @@ namespace Bidder.SignalR.Domain.DTO.RedisEntites
         public BidRoomRedis()
         {
         } 
-        public BidRoomRedis(GetBidRoomResponse response ) { 
+        public BidRoomRedis(GetBidRoomsResponse response ) { 
             this.RoomId = (long)response.RoomId;
             this.BidId = Guid.Parse(response.BidId);
             this.BidStatus = (BidRoomStatus)response.BidStatus;

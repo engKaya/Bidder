@@ -71,10 +71,13 @@
   "BID": {
     "OPEN_AUCTION": "Open Auction",
     "ERRORS": {
-      "AUCTION_CREATION_FAILED": "Auction Creation Failed"
+      "AUCTION_CREATION_FAILED": "Auction Creation Failed",
+      "BID_NOT_FOUND": "Bid Not Found",
+      "CONNECTION_FAILED": "Connection Failed"
     },
     "SUCCESS": {
-      "AUCTION_CREATED": "Auction Created Successfully"
+      "AUCTION_CREATED": "Auction Created Successfully",
+      "JOINED" : "Joined Successfully"
     }
   }
 }

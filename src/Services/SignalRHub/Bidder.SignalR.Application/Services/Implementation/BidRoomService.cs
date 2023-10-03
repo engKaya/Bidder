@@ -49,7 +49,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
             return ResponseMessageNoContent.Success();
         }
 
-        private async Task<GetActiveBidRoomResponse> GetRoomsFromBidService()
+        private async Task<GetActiveBidRoomsResponse> GetRoomsFromBidService()
         {
             _logger.LogInformation("GetActiveRoomsAndSaveToRedis has started");
 
@@ -57,11 +57,12 @@ namespace Bidder.SignalR.Application.Services.Implementation
             var client = new BidGrpcService.BidGrpcServiceClient(channel);
 
             var policy = PollyPolicyGenerator.CreateExceptionPolicy(_logger);
-            var response = await policy.ExecuteAsync<GetActiveBidRoomResponse>(async () =>
+            var response = await policy.ExecuteAsync<GetActiveBidRoomsResponse>(async () =>
             {
-                return await client.GetActiveBidRoomAsync(new Google.Protobuf.WellKnownTypes.Empty());
+                return await client.GetActiveBidRoomsAsync(new Google.Protobuf.WellKnownTypes.Empty());
             });
 
+            _logger.LogInformation($"GetActiveRoomsAndSaveToRedis has finished with {response.ActiveBidRooms.Count}");
             return response;
         }
     }

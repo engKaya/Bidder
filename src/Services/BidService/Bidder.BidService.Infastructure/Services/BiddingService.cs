@@ -6,6 +6,7 @@ using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.BaseClassess;
 using EventBus.Base.Abstraction;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 using ActiveBidRooms = Bidder.Domain.Common.Dto.BidService.IBiddingService.ActiveBidRooms;
 
 namespace Bidder.BidService.Infastructure.Services
@@ -53,11 +54,18 @@ namespace Bidder.BidService.Infastructure.Services
             return ResponseMessage<BidRoom>.Success(room, 200);
         }
 
+        public async Task<ResponseMessage<ActiveBidRooms>> GetActiveBidRoom(string BidId)
+        { 
+            var bid = await uof.BidRepository.FindFirst(x => x.Id == Guid.Parse(BidId), null, x => x.BidRoom);
+            ActiveBidRooms room = new(bid.BidRoom.BidId, bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
+            return ResponseMessage<ActiveBidRooms>.Success(room, 200);
+        }
+
         public async Task<ResponseMessage<IEnumerable<ActiveBidRooms>>> GetActiveBidRooms()
         {
             try
             {
-                List<ActiveBidRooms> activeRooms = new List<ActiveBidRooms>();
+                List<ActiveBidRooms> activeRooms = new();
                 IEnumerable<Bid> bids = await uof.BidRepository.GetWhere(x => !x.IsEnded && x.EndDate > DateTime.Now, null, x => x.BidRoom);
                 foreach (var bid in bids)
                 {
@@ -66,7 +74,7 @@ namespace Bidder.BidService.Infastructure.Services
 
                     ActiveBidRooms room = new(bid.BidRoom.BidId, bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
                     activeRooms.Add(room);
-                } 
+                }  
                 return ResponseMessage<IEnumerable<ActiveBidRooms>>.Success(activeRooms.AsEnumerable());
 
             }

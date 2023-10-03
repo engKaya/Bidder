@@ -19,10 +19,10 @@ namespace Bidder.BidService.Api.Services
             this.bidService = bidService;
         }
 
-        public override async Task<GetBidRoomResponse> GetBidRoom(GetBidRoomRequest request, ServerCallContext context)
+        public override async Task<GetBidRoomsResponse> GetBidRoom(GetBidRoomRequest request, ServerCallContext context)
         {
             var result = await bidService.GetBid(Guid.Parse(request.Id));
-            var response = new GetBidRoomResponse();
+            var response = new GetBidRoomsResponse();
             if (result.StatusCode == (int)HttpStatusCode.NotFound)
             {
                 response.BidStatus = (int)BidRoomStatus.NeverCreated;
@@ -43,15 +43,15 @@ namespace Bidder.BidService.Api.Services
                 response.BidId = result.Data.Id.ToString();
                 response.BidEndDate = result.Data.EndDate.ToUniversalTime().ToTimestamp();
                 response.BidStatus = (int)result.Data.BidRoom.RoomStatus;
-                response.RoomId = result.Data.BidRoom.Id.ToString();
+                response.RoomId = result.Data.BidRoom.Id;
 
             return response;
         }
 
-        public override async Task<GetActiveBidRoomResponse> GetActiveBidRoom(Empty request, ServerCallContext context)
+        public override async Task<GetActiveBidRoomsResponse> GetActiveBidRooms(Empty request, ServerCallContext context)
         { 
             var response = await bidService.GetActiveBidRooms();
-            var result = new GetActiveBidRoomResponse();
+            var result = new GetActiveBidRoomsResponse();
 
             if (response.Data is null)
             {
@@ -68,10 +68,24 @@ namespace Bidder.BidService.Api.Services
                     RoomId = item.RoomId
                 });
             }
-
             return result;
-
         }
 
+        public override async Task<ActiveBidRooms> GetActiveBidRoom(GetActiveBidRoomRequest request, ServerCallContext context)
+        {
+            var serviceresponse = await bidService.GetActiveBidRoom(request.BidId);
+            
+            var response = new ActiveBidRooms();
+
+            if (serviceresponse.Data is null)
+                return response;
+
+            response.BidId = serviceresponse.Data.BidId.ToString();
+            response.RoomId= serviceresponse.Data.RoomId;
+            response.BidStatus = (int)serviceresponse.Data.BidRoomStatus;
+            response.BidEndDate = serviceresponse.Data.BidEndDate.ToUniversalTime().ToTimestamp();
+
+            return response;
+        }
     }
 }
