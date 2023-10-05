@@ -34,6 +34,8 @@
   <ItemGroup>
     <Protobuf Include="Protos\Client\bidservice.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\Server\bidservice.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Common\bidservice.common.proto" GrpcServices="Client" Compile="True" />
+    <Protobuf Include="Protos\Common\bidservice.common.proto" GrpcServices="Server" Compile="True" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
 using Bidder.Domain.Common.Bid.Enums;
+using Bidder.Infastructure.Common.Protos.Common;
 using Bidder.Infastructure.Common.Protos.Server;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
@@ -19,10 +20,10 @@ namespace Bidder.BidService.Api.Services
             this.bidService = bidService;
         }
 
-        public override async Task<GetBidRoomsResponse> GetBidRoom(GetBidRoomRequest request, ServerCallContext context)
+        public override async Task<GetBidRoomsGrpcResponse> GetBidRoom(GetBidRoomGrpcRequest request, ServerCallContext context)
         {
             var result = await bidService.GetBid(Guid.Parse(request.Id));
-            var response = new GetBidRoomsResponse();
+            var response = new GetBidRoomsGrpcResponse();
             if (result.StatusCode == (int)HttpStatusCode.NotFound)
             {
                 response.BidStatus = (int)BidRoomStatus.NeverCreated;
@@ -48,10 +49,10 @@ namespace Bidder.BidService.Api.Services
             return response;
         }
 
-        public override async Task<GetActiveBidRoomsResponse> GetActiveBidRooms(Empty request, ServerCallContext context)
+        public override async Task<GetActiveBidRoomsGrpcResponse> GetActiveBidRooms(Empty request, ServerCallContext context)
         { 
             var response = await bidService.GetActiveBidRooms();
-            var result = new GetActiveBidRoomsResponse();
+            var result = new GetActiveBidRoomsGrpcResponse();
 
             if (response.Data is null)
             {
@@ -60,7 +61,7 @@ namespace Bidder.BidService.Api.Services
 
             foreach (var item in response.Data)
             {
-                result.ActiveBidRooms.Add(new ActiveBidRooms
+                result.ActiveBidRooms.Add(new ActiveBidRoomGrpcResponse
                 {
                     BidId = item.BidId.ToString(),
                     BidEndDate = item.BidEndDate.ToUniversalTime().ToTimestamp(),
@@ -71,11 +72,11 @@ namespace Bidder.BidService.Api.Services
             return result;
         }
 
-        public override async Task<ActiveBidRooms> GetActiveBidRoom(GetActiveBidRoomRequest request, ServerCallContext context)
+        public override async Task<ActiveBidRoomGrpcResponse> GetActiveBidRoom(GetActiveBidRoomGrpcRequest request, ServerCallContext context)
         {
             var serviceresponse = await bidService.GetActiveBidRoom(request.BidId);
             
-            var response = new ActiveBidRooms();
+            var response = new ActiveBidRoomGrpcResponse();
 
             if (serviceresponse.Data is null)
                 return response;

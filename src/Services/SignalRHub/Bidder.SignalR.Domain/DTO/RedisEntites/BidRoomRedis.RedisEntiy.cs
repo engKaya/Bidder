@@ -1,5 +1,5 @@
 ﻿using Bidder.Domain.Common.Bid.Enums;
-using Bidder.Infastructure.Common.Protos.Client;
+using Bidder.Infastructure.Common.Protos.Common;
 
 namespace Bidder.SignalR.Domain.DTO.RedisEntites
 {
@@ -23,7 +23,7 @@ namespace Bidder.SignalR.Domain.DTO.RedisEntites
         public BidRoomRedis()
         {
         } 
-        public BidRoomRedis(GetBidRoomsResponse response ) { 
+        public BidRoomRedis(GetBidRoomsGrpcResponse response ) { 
             this.RoomId = (long)response.RoomId;
             this.BidId = Guid.Parse(response.BidId);
             this.BidStatus = (BidRoomStatus)response.BidStatus;

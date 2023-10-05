@@ -4,9 +4,9 @@ namespace Bidder.SignalR.Application.Redis.Interface
 {
     public  interface IRoomRedisService
     {
-        Task<ActiveBidRooms> GetRoom(Guid bidId);
-        Task<IEnumerable<ActiveBidRooms>> GetRooms();
-        Task<ActiveBidRooms> CreateOrUpdateRoom(ActiveBidRooms room); 
+        Task<ActiveBidRoom> GetRoom(Guid bidId);
+        Task<IEnumerable<ActiveBidRoom>> GetRooms();
+        Task<ActiveBidRoom> CreateOrUpdateRoom(ActiveBidRoom room); 
         Task<bool> DeleteRoom(Guid bidId);
     }
 }

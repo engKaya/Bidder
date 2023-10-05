@@ -1,9 +1,9 @@
 ﻿using Bidder.Application.Common.Extension;
 using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Bid.Enums;
+using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.Infastructure.Common.Grpc;
-using Bidder.Infastructure.Common.Protos.Client;
-using Bidder.Infastructure.Common.Protos.Server;
+using Bidder.Infastructure.Common.Protos.Common;
 using Bidder.SignalR.Domain.DTO.Responses.Join;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
@@ -40,8 +40,8 @@ namespace Bidder.SignalR.Application.AuctionHub
         {
             logger.LogInformation("Client joined", Context.ConnectionId.ToString());
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
-            var client = new BidGrpcService.BidGrpcServiceClient(grpcChannel);
-            GetBidRoomsResponse response = new();
+            var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
+            GetBidRoomsGrpcResponse response = new();
             logger.LogInformation("Grpc Client Created");
 
             var policy = PollyPolicyGenerator.CreateExceptionPolicy(logger);
@@ -49,7 +49,7 @@ namespace Bidder.SignalR.Application.AuctionHub
             await policy.ExecuteAsync(async () =>
             {
                 logger.LogInformation("Calling Grpc Service GetBidRoomRequest");
-                response = await client.GetBidRoomAsync(new GetBidRoomRequest() { Id = BidId.ToString() });
+                response = await client.GetBidRoomAsync(new GetBidRoomGrpcRequest() { Id = BidId.ToString() });
                 logger.LogInformation($"Grpc Service GetBidRoomRequest Completed, Response:{(response == null ? "null" : response.ToString())}");
             });
 
@@ -65,27 +65,26 @@ namespace Bidder.SignalR.Application.AuctionHub
                 logger.LogInformation($"BidRoomStatus:{response.BidStatus}, Joining {response.BidId} group with {Context.ConnectionId}");
                 await Groups.AddToGroupAsync(Context.ConnectionId, response.BidId);
                 logger.LogInformation("Joined Group looking in cache for BidRoom");
-                var bidRoom = cacheService.Get<ActiveBidRooms>(response.BidId.ToString());
+                var bidRoom = cacheService.Get<ActiveBidRoom>(response.BidId.ToString());
                 if (bidRoom is null)
-                {
-
+                { 
                 }
             }
 
             return new JoinResponse(HttpStatusCode.OK, "JOINED", Context.ConnectionId);  
         }
 
-        private async Task FindAndSetRedisActiveBidRoom(string BidId)
+        private async Task<ActiveBidRoomGrpcResponse> FindAndSetRedisActiveBidRoom(string BidId)
         {
 
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
             var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
 
-            Infastructure.Common.Protos.Client.GetActiveBidRoomRequest request = new();
+            GetActiveBidRoomGrpcRequest request = new();
 
             request.BidId = BidId;
-            var response = client.GetActiveBidRoom(request);
-            
+            var response = await client.GetActiveBidRoomAsync(request); 
+            return response;
         }
     }
 }

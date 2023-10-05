@@ -15,10 +15,10 @@ namespace Bidder.SignalR.Application.Redis.Implementation
             var key = redis.Get("BidRooms");
             if (key == null)
             {
-                redis.Set("BidRooms", new Dictionary<string, ActiveBidRooms>());
+                redis.Set("BidRooms", new Dictionary<string, ActiveBidRoom>());
             }
         }
-        public Task<ActiveBidRooms> CreateOrUpdateRoom(ActiveBidRooms room)
+        public Task<ActiveBidRoom> CreateOrUpdateRoom(ActiveBidRoom room)
         {
             var redisrooms = GetRedisRooms();
 
@@ -46,25 +46,25 @@ namespace Bidder.SignalR.Application.Redis.Implementation
             return Task.FromResult(true);
         }
 
-        public Task<ActiveBidRooms?> GetRoom(Guid bidId)
+        public Task<ActiveBidRoom?> GetRoom(Guid bidId)
         {
             return Task.FromResult(GetRedisRoom(bidId));
         }
 
-        public Task<IEnumerable<ActiveBidRooms>> GetRooms()
+        public Task<IEnumerable<ActiveBidRoom>> GetRooms()
         {
             var redisrooms = GetRedisRooms();
             return Task.FromResult(redisrooms.Values.AsEnumerable());
         } 
 
-        private IDictionary<string, ActiveBidRooms> GetRedisRooms()
+        private IDictionary<string, ActiveBidRoom> GetRedisRooms()
         {
-            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRooms>>("BidRooms");
+            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRoom>>("BidRooms");
             return redisrooms;
         }
-        private ActiveBidRooms? GetRedisRoom(Guid BidId)
+        private ActiveBidRoom? GetRedisRoom(Guid BidId)
         {
-            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRooms>>("BidRooms"); 
+            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRoom>>("BidRooms"); 
             return redisrooms[BidId.ToString()];
         }
     } 

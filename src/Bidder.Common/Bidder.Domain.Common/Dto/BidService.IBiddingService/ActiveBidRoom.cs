@@ -2,7 +2,7 @@
 
 namespace Bidder.Domain.Common.Dto.BidService.IBiddingService
 {
-    public class ActiveBidRooms
+    public class ActiveBidRoom
     {
         public Guid BidId { get; set; }
         public long RoomId { get; set; }
@@ -10,11 +10,11 @@ namespace Bidder.Domain.Common.Dto.BidService.IBiddingService
         public BidRoomStatus BidRoomStatus { get; set; }
 
         public IDictionary<Guid,string> Users { get ; set; }
-        public ActiveBidRooms()
+        public ActiveBidRoom()
         {
 
         }
-        public ActiveBidRooms(Guid bidId, long roomId, DateTime bidEndDate, BidRoomStatus bidRoomStatus)
+        public ActiveBidRoom(Guid bidId, long roomId, DateTime bidEndDate, BidRoomStatus bidRoomStatus)
         {
             BidId = bidId;
             RoomId = roomId;

@@ -1,13 +1,12 @@
 ﻿using Bidder.Application.Common.Extension;
-using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.BaseClassess;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.Infastructure.Common.Grpc;
 using Bidder.Infastructure.Common.Protos.Client;
+using Bidder.Infastructure.Common.Protos.Common;
 using Bidder.SignalR.Application.Redis.Interface;
 using Bidder.SignalR.Application.Services.Interface;
-using Bidder.SignalR.Domain.DTO.RedisEntites;
 using Microsoft.Extensions.Logging;
 
 namespace Bidder.SignalR.Application.Services.Implementation
@@ -37,7 +36,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
             {
                 try
                 { 
-                    Bidder.Domain.Common.Dto.BidService.IBiddingService.ActiveBidRooms bidroomredis = new(Guid.Parse(room.BidId), room.RoomId, room.BidEndDate.ToDateTime(), (BidRoomStatus)room.BidStatus);
+                    ActiveBidRoom bidroomredis = new(Guid.Parse(room.BidId), room.RoomId, room.BidEndDate.ToDateTime(), (BidRoomStatus)room.BidStatus);
                     await _roomRedis.CreateOrUpdateRoom(bidroomredis);
                 }
                 catch (Exception ex)
@@ -49,7 +48,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
             return ResponseMessageNoContent.Success();
         }
 
-        private async Task<GetActiveBidRoomsResponse> GetRoomsFromBidService()
+        private async Task<GetActiveBidRoomsGrpcResponse> GetRoomsFromBidService()
         {
             _logger.LogInformation("GetActiveRoomsAndSaveToRedis has started");
 
@@ -57,7 +56,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
             var client = new BidGrpcService.BidGrpcServiceClient(channel);
 
             var policy = PollyPolicyGenerator.CreateExceptionPolicy(_logger);
-            var response = await policy.ExecuteAsync<GetActiveBidRoomsResponse>(async () =>
+            var response = await policy.ExecuteAsync<GetActiveBidRoomsGrpcResponse>(async () =>
             {
                 return await client.GetActiveBidRoomsAsync(new Google.Protobuf.WellKnownTypes.Empty());
             });

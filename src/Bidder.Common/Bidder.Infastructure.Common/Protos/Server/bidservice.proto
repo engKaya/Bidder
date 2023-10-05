@@ -4,36 +4,12 @@ option csharp_namespace = "Bidder.Infastructure.Common.Protos.Server";
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
+import "Protos/Common/bidservice.common.proto";
 
 package BidGrpcService ;
 
 service BidGrpcService {
-  rpc GetBidRoom (GetBidRoomRequest) returns (GetBidRoomsResponse);
-  rpc GetActiveBidRooms (google.protobuf.Empty) returns (GetActiveBidRoomsResponse);
-  rpc GetActiveBidRoom(GetActiveBidRoomRequest) returns (ActiveBidRooms);
-}
-
-message GetBidRoomRequest {
-  string Id = 1;
-}
-
-message GetBidRoomsResponse {
-  int64 RoomId = 1;
-  string BidId = 2; 
-  google.protobuf.Timestamp BidEndDate = 3;
-  int32 BidStatus = 4;
-}
-message GetActiveBidRoomsResponse {
-    repeated ActiveBidRooms ActiveBidRooms = 1;
-}
-
-message ActiveBidRooms {
-        string BidId = 1;
-        int64 RoomId = 2;
-        int32 BidStatus = 3;
-        google.protobuf.Timestamp BidEndDate = 4;
-}
-
-message GetActiveBidRoomRequest {
-    string BidId = 1;
+  rpc GetBidRoom (BidGrpcServiceCommon.GetBidRoomGrpcRequest) returns (BidGrpcServiceCommon.GetBidRoomsGrpcResponse);
+  rpc GetActiveBidRooms (google.protobuf.Empty) returns (BidGrpcServiceCommon.GetActiveBidRoomsGrpcResponse);
+  rpc GetActiveBidRoom(BidGrpcServiceCommon.GetActiveBidRoomGrpcRequest) returns (BidGrpcServiceCommon.ActiveBidRoomGrpcResponse);
 }
