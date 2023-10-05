@@ -28,8 +28,9 @@ namespace Bidder.SignalR.Api.Extensions
                     var accessToken = context.Request.Query["access_token"];
 
                     var path = context.HttpContext.Request.Path;
+                    var test = path.Value;
                     if (!string.IsNullOrEmpty(accessToken) &&
-                         (path.StartsWithSegments("/bidhub")))
+                         (path.Value.Contains("hub")))
                     {
                         context.Token = accessToken;
                     }

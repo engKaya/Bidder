@@ -74,7 +74,7 @@ namespace Bidder.SignalR.Application.AuctionHub
                 var bidRoom = await roomRedisService.GetRoom(Guid.Parse(response.BidId));
                 if (bidRoom is null)
                 { 
-                    bidRoom = await FindAndSetRedisActiveBidRoom(response.BidId, Guid.NewGuid(), Context.ConnectionId);
+                    bidRoom = await FindAndSetRedisActiveBidRoom(response.BidId, identityService.GetUserId(), Context.ConnectionId);
                 }
                 else
                 {
