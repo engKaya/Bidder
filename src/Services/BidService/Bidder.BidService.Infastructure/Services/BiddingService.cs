@@ -1,13 +1,13 @@
-﻿using Bidder.BidService.Application.Features.Command.Bidding.CreateBid;
+﻿using Bidder.Application.Common.Interfaces;
+using Bidder.BidService.Application.Features.Command.Bidding.CreateBid;
 using Bidder.BidService.Application.Interfaces.Repos;
 using Bidder.BidService.Application.Interfaces.Services;
 using Bidder.BidService.Domain.DTOs.Bidding.CreateBid;
 using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.BaseClassess;
+using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using EventBus.Base.Abstraction;
-using Microsoft.Extensions.Logging;
-using System.Linq;
-using ActiveBidRooms = Bidder.Domain.Common.Dto.BidService.IBiddingService.ActiveBidRooms;
+using Microsoft.Extensions.Logging; 
 
 namespace Bidder.BidService.Infastructure.Services
 {
@@ -54,40 +54,40 @@ namespace Bidder.BidService.Infastructure.Services
             return ResponseMessage<BidRoom>.Success(room, 200);
         }
 
-        public async Task<ResponseMessage<ActiveBidRooms>> GetActiveBidRoom(string BidId)
+        public async Task<ResponseMessage<ActiveBidRoom>> GetActiveBidRoom(string BidId, CancellationToken cancellationToken)
         { 
-            var bid = await uof.BidRepository.FindFirst(x => x.Id == Guid.Parse(BidId), null, x => x.BidRoom);
-            ActiveBidRooms room = new(bid.BidRoom.BidId, bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
-            return ResponseMessage<ActiveBidRooms>.Success(room, 200);
+            var bid = await uof.BidRepository.FindFirst(x => x.Id == Guid.Parse(BidId), null, cancellationToken, x => x.BidRoom);
+            ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
+            return ResponseMessage<ActiveBidRoom>.Success(room, 200);
         }
 
-        public async Task<ResponseMessage<IEnumerable<ActiveBidRooms>>> GetActiveBidRooms()
+        public async Task<ResponseMessage<IEnumerable<ActiveBidRoom>>> GetActiveBidRooms(CancellationToken cancellationToken)
         {
             try
             {
-                List<ActiveBidRooms> activeRooms = new();
-                IEnumerable<Bid> bids = await uof.BidRepository.GetWhere(x => !x.IsEnded && x.EndDate > DateTime.Now, null, x => x.BidRoom);
+                List<ActiveBidRoom> activeRooms = new();
+                IEnumerable<Bid> bids = await uof.BidRepository.GetWhere(x => !x.IsEnded && x.EndDate > DateTime.Now, null, cancellationToken, x => x.BidRoom);
                 foreach (var bid in bids)
                 {
                     if (bid.BidRoom is null || bid.BidRoom.Id == 0)
                         continue;
 
-                    ActiveBidRooms room = new(bid.BidRoom.BidId, bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
+                    ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
                     activeRooms.Add(room);
                 }  
-                return ResponseMessage<IEnumerable<ActiveBidRooms>>.Success(activeRooms.AsEnumerable());
+                return ResponseMessage<IEnumerable<ActiveBidRoom>>.Success(activeRooms.AsEnumerable());
 
             }
             catch (Exception ex)
             {
                 logger.LogError("Failed On GetActiveBidRooms", ex.StackTrace);
-                return ResponseMessage<IEnumerable<ActiveBidRooms>>.Fail("Failed On GetActiveBidRooms", 500);
+                return ResponseMessage<IEnumerable<ActiveBidRoom>>.Fail("Failed On GetActiveBidRooms", 500);
             }
         }
 
-        public async Task<ResponseMessage<Bid>> GetBid(Guid id)
+        public async Task<ResponseMessage<Bid>> GetBid(Guid id, CancellationToken cancellationToken)
         {
-            var room = await uof.BidRepository.FindFirst(x => x.Id == id, null, x => x.BidRoom);
+            var room = await uof.BidRepository.FindFirst(x => x.Id == id, null, cancellationToken, x => x.BidRoom);
 
             if (room == null)
                 return ResponseMessage<Bid>.Fail("Bid Room Not Found", 404);

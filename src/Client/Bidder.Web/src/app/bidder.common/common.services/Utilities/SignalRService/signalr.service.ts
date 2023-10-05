@@ -33,7 +33,6 @@ export class SignalRService {
         transport: signalR.HttpTransportType.WebSockets,
       })
       .build();
-
     await connection
       .start()
       .then((res) => {

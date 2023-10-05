@@ -10,10 +10,10 @@ namespace Bidder.BidService.Application.Interfaces.Services
     {
         public Task<ResponseMessage<CreateBidResponse>> CreateBid(Bid request, CancellationToken cancellationToken);
         public Task<ResponseMessage<CreateBidResponse>> CreateBid(CreateBidCommand request, CancellationToken cancellationToken); 
-        public Task<ResponseMessage<Bid>> GetBid(Guid BidId);
+        public Task<ResponseMessage<Bid>> GetBid(Guid BidId, CancellationToken cancellationToken);
         public Task<ResponseMessage<BidRoom>> CreateBidRoom(Bid bid, CancellationToken cancellationToken);
-        public Task<ResponseMessage<IEnumerable<ActiveBidRooms>>> GetActiveBidRooms();
-        public Task<ResponseMessage<ActiveBidRooms>> GetActiveBidRoom(string BidId);
+        public Task<ResponseMessage<IEnumerable<ActiveBidRoom>>> GetActiveBidRooms(CancellationToken cancellationToken);
+        public Task<ResponseMessage<ActiveBidRoom>> GetActiveBidRoom(string BidId, CancellationToken cancellationToken);
 
 
     }

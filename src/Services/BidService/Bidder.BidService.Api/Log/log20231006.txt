@@ -1,0 +1,119 @@
+2023-10-06 00:59:01.702 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/index.html - -
+2023-10-06 00:59:01.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 17.8230ms
+2023-10-06 00:59:01.747 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 00:59:01.750 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 2.6784ms
+2023-10-06 00:59:01.753 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_vs/browserLink - -
+2023-10-06 00:59:01.764 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.7632ms
+2023-10-06 00:59:01.840 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-10-06 00:59:01.849 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.9275ms
+2023-10-06 00:59:59.417 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-10-06 00:59:59.422 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 00:59:59.437 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[Id] = @__id_0
+2023-10-06 00:59:59.440 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 00:59:59.442 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 00:59:59.445 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 27.8653ms
+2023-10-06 01:00:57.844 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-10-06 01:00:57.849 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:00:57.857 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[Id] = @__id_0
+2023-10-06 01:00:57.861 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:00:57.863 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 01:00:57.866 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 22.3423ms
+2023-10-06 01:01:07.414 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-10-06 01:01:07.416 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:07.420 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[Id] = @__id_0
+2023-10-06 01:01:07.424 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:07.426 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 01:01:07.429 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 15.3820ms
+2023-10-06 01:01:10.417 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-10-06 01:01:10.419 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:10.424 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[Id] = @__id_0
+2023-10-06 01:01:10.428 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:10.430 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 01:01:10.433 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 16.4319ms
+2023-10-06 01:01:48.391 +03:00 [INF] Migrating Database associated with context db: BidDbContext
+2023-10-06 01:01:48.735 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-10-06 01:01:48.772 +03:00 [WRN] No store type was specified for the decimal property 'MinPrice' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-06 01:01:48.775 +03:00 [WRN] No store type was specified for the decimal property 'MinPriceIncrease' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-06 01:01:49.017 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:01:49.050 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:01:49.055 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:01:49.061 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-06 01:01:49.064 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:01:49.066 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-06 01:01:49.077 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-10-06 01:01:49.085 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-10-06 01:01:49.088 +03:00 [INF] Migrated Database associated with context db: BidDbContext
+2023-10-06 01:01:49.166 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 01:01:49.236 +03:00 [WRN] Overriding address(es) 'https://localhost:5002, http://localhost:6002'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2023-10-06 01:01:49.252 +03:00 [INF] Now listening on: http://localhost:5012
+2023-10-06 01:01:49.254 +03:00 [INF] Now listening on: https://localhost:5002
+2023-10-06 01:01:49.256 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 01:01:49.258 +03:00 [INF] Hosting environment: Development
+2023-10-06 01:01:49.260 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\BidService\Bidder.BidService.Api
+2023-10-06 01:01:49.720 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRooms application/grpc -
+2023-10-06 01:01:49.843 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRooms'
+2023-10-06 01:01:49.851 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/index.html - -
+2023-10-06 01:01:50.080 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 228.1391ms
+2023-10-06 01:01:50.102 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:01:50.108 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 5.7774ms
+2023-10-06 01:01:50.111 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/_vs/browserLink - -
+2023-10-06 01:01:50.141 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.3237ms
+2023-10-06 01:01:50.248 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - -
+2023-10-06 01:01:50.305 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[IsEnded] = CAST(0 AS bit) AND [b].[EndDate] > GETDATE()
+2023-10-06 01:01:50.342 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.1079ms
+2023-10-06 01:01:50.459 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetActiveBidRooms'
+2023-10-06 01:01:50.463 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 01:01:50.475 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetActiveBidRooms application/grpc - - 200 - application/grpc 757.3046ms
+2023-10-06 01:01:57.893 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
+2023-10-06 01:01:57.897 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:57.998 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
+FROM [Bid] AS [b]
+LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
+WHERE [b].[Id] = @__id_0
+2023-10-06 01:01:58.005 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
+2023-10-06 01:01:58.008 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 01:01:58.011 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 118.1567ms

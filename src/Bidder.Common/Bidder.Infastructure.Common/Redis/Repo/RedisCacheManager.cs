@@ -27,11 +27,21 @@ namespace Bidder.Infastructure.Common.Redis.Repo
             return  _redisClient.RedisCache.Get(key);
         }
 
-        public void Set(string key, object value)
+        public void Set(string key, object value, int? expireTime = null, ExpireTimeUnit timeUnit = ExpireTimeUnit.Minutes)
         {
             var serializedObject = JsonConvert.SerializeObject(value);
             var utf8String = Encoding.UTF8.GetBytes(serializedObject);
-            _redisClient.RedisCache.Set(key, utf8String);
+            DistributedCacheEntryOptions options = new();
+            if (expireTime != null)
+            {
+                if (timeUnit == ExpireTimeUnit.Minutes)
+                    options.SetAbsoluteExpiration(DateTime.Now.AddMinutes(expireTime.Value));
+                else if(timeUnit == ExpireTimeUnit.Hours)
+                    options.SetAbsoluteExpiration(DateTime.Now.AddHours(expireTime.Value));
+                else
+                    options.SetAbsoluteExpiration(DateTime.Now.AddDays(expireTime.Value));
+            }
+            _redisClient.RedisCache.Set(key, utf8String, options);
         }
 
         public void Refresh(string key)

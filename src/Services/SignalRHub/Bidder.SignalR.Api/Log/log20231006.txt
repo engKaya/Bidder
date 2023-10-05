@@ -1,0 +1,335 @@
+2023-10-06 00:59:49.022 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 00:59:49.028 +03:00 [INF] CORS policy execution successful.
+2023-10-06 00:59:49.031 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 8.9978ms
+2023-10-06 00:59:49.034 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 00:59:49.040 +03:00 [INF] CORS policy execution successful.
+2023-10-06 00:59:49.043 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 00:59:49.046 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 00:59:49.049 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 15.0399ms
+2023-10-06 00:59:49.060 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=2QeHbZI5nKE6MwPTVS3j5w&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 00:59:49.063 +03:00 [INF] CORS policy execution successful.
+2023-10-06 00:59:49.066 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 00:59:49.072 +03:00 [INF] Client connected
+2023-10-06 00:59:57.416 +03:00 [INF] Client joined
+2023-10-06 00:59:58.266 +03:00 [INF] Grpc Client Created
+2023-10-06 00:59:59.400 +03:00 [INF] Calling Grpc Service GetBidRoomRequest
+2023-10-06 00:59:59.443 +03:00 [INF] Grpc Service GetBidRoomRequest Completed, Response:{ "RoomId": "1", "BidId": "ae795423-86f0-42fa-9391-ca22778d7a36", "BidEndDate": "2023-10-07T11:26:10.587679700Z", "BidStatus": 2 }
+2023-10-06 01:00:03.268 +03:00 [INF] BidRoomStatus:2, Joining ae795423-86f0-42fa-9391-ca22778d7a36 group with AvEuQiVZnSIGQzjEW7CNQA
+2023-10-06 01:00:04.990 +03:00 [INF] Joined Group looking in cache for BidRoom
+2023-10-06 01:00:28.271 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:00:28.278 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:28.278 +03:00 [INF] Client disconnected
+2023-10-06 01:00:28.285 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 14.3966ms
+2023-10-06 01:00:28.286 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:00:28.287 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:00:28.290 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=2QeHbZI5nKE6MwPTVS3j5w&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 39229.4080ms
+2023-10-06 01:00:28.326 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:28.334 +03:00 [INF] Connection id "0HMU5RLT2UT6I", Request id "0HMU5RLT2UT6I:0000001D": the application completed without reading the entire request body.
+2023-10-06 01:00:28.338 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:00:28.350 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:00:28.357 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 69.3038ms
+2023-10-06 01:00:28.366 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=49OqiEs9M_BSK5pfdw3AqA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:00:28.371 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:28.374 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:00:28.380 +03:00 [INF] Client connected
+2023-10-06 01:00:36.011 +03:00 [INF] Client disconnected
+2023-10-06 01:00:36.014 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:00:36.017 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=49OqiEs9M_BSK5pfdw3AqA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 7650.6517ms
+2023-10-06 01:00:36.506 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:00:36.508 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:36.511 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 4.4553ms
+2023-10-06 01:00:36.513 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:00:36.516 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:36.518 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:00:36.521 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:00:36.524 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 10.9246ms
+2023-10-06 01:00:36.547 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=Rz5uSQ5ikLlrTNoJngGzYw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:00:36.563 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:36.566 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:00:36.571 +03:00 [INF] Client connected
+2023-10-06 01:00:57.770 +03:00 [INF] Client joined
+2023-10-06 01:00:57.797 +03:00 [INF] Grpc Client Created
+2023-10-06 01:00:57.804 +03:00 [INF] Calling Grpc Service GetBidRoomRequest
+2023-10-06 01:00:57.808 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:00:57.810 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:00:57.813 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:57.815 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:57.817 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 8.2938ms
+2023-10-06 01:00:57.820 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 10.0952ms
+2023-10-06 01:00:57.826 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:00:57.826 +03:00 [INF] Client disconnected
+2023-10-06 01:00:57.835 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:57.837 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:00:57.842 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:00:57.845 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=Rz5uSQ5ikLlrTNoJngGzYw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 21297.9142ms
+2023-10-06 01:00:57.848 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:00:57.851 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 24.8716ms
+2023-10-06 01:00:57.856 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=7jD_he3WCJ6saKS_x-bU_w&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:00:57.858 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:00:57.861 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:00:57.864 +03:00 [INF] Grpc Service GetBidRoomRequest Completed, Response:{ "RoomId": "1", "BidId": "ae795423-86f0-42fa-9391-ca22778d7a36", "BidEndDate": "2023-10-07T11:26:10.587679700Z", "BidStatus": 2 }
+2023-10-06 01:00:57.868 +03:00 [INF] BidRoomStatus:2, Joining ae795423-86f0-42fa-9391-ca22778d7a36 group with B5fIb7kbnyl1lO_zoYbFuA
+2023-10-06 01:00:57.870 +03:00 [INF] Client connected
+2023-10-06 01:00:57.871 +03:00 [INF] Joined Group looking in cache for BidRoom
+2023-10-06 01:00:57.874 +03:00 [INF] Client joined
+2023-10-06 01:00:57.876 +03:00 [INF] Grpc Client Created
+2023-10-06 01:01:02.239 +03:00 [INF] Calling Grpc Service GetBidRoomRequest
+2023-10-06 01:01:07.428 +03:00 [INF] Grpc Service GetBidRoomRequest Completed, Response:{ "RoomId": "1", "BidId": "ae795423-86f0-42fa-9391-ca22778d7a36", "BidEndDate": "2023-10-07T11:26:10.587679700Z", "BidStatus": 2 }
+2023-10-06 01:01:07.431 +03:00 [INF] BidRoomStatus:2, Joining ae795423-86f0-42fa-9391-ca22778d7a36 group with 8C8Hproj1b8GXLuVkckDeQ
+2023-10-06 01:01:07.433 +03:00 [INF] Joined Group looking in cache for BidRoom
+2023-10-06 01:01:07.405 +03:00 [ERR] Failed to invoke hub method 'Join'.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Bidder.Infastructure.Common.Services.IdentityService.GetUserId() in C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Bidder.Common\Bidder.Infastructure.Common\Services\IdentityService.cs:line 16
+   at Bidder.SignalR.Application.AuctionHub.BidHub.<>c__DisplayClass6_0.<Join>b__1(KeyValuePair`2 x) in C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Application\AuctionHub\BidHub.cs:line 81
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Bidder.SignalR.Application.AuctionHub.BidHub.Join(Guid BidId) in C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Application\AuctionHub\BidHub.cs:line 81
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteMethod(ObjectMethodExecutor methodExecutor, Hub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.<Invoke>g__ExecuteInvocation|18_0(DefaultHubDispatcher`1 dispatcher, ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments, AsyncServiceScope scope, IHubActivator`1 hubActivator, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamCall)
+2023-10-06 01:01:09.861 +03:00 [INF] Client disconnected
+2023-10-06 01:01:09.864 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:01:09.867 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=7jD_he3WCJ6saKS_x-bU_w&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 12010.9937ms
+2023-10-06 01:01:10.349 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:01:10.352 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:10.354 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 5.0611ms
+2023-10-06 01:01:10.356 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:01:10.358 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:10.361 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:01:10.363 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:01:10.366 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 9.9509ms
+2023-10-06 01:01:10.379 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=gWC_qIi0y67Qi8e9ptc2IQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:01:10.385 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:10.390 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:01:10.403 +03:00 [INF] Client connected
+2023-10-06 01:01:10.406 +03:00 [INF] Client joined
+2023-10-06 01:01:10.408 +03:00 [INF] Grpc Client Created
+2023-10-06 01:01:10.411 +03:00 [INF] Calling Grpc Service GetBidRoomRequest
+2023-10-06 01:01:10.431 +03:00 [INF] Grpc Service GetBidRoomRequest Completed, Response:{ "RoomId": "1", "BidId": "ae795423-86f0-42fa-9391-ca22778d7a36", "BidEndDate": "2023-10-07T11:26:10.587679700Z", "BidStatus": 2 }
+2023-10-06 01:01:10.434 +03:00 [INF] BidRoomStatus:2, Joining ae795423-86f0-42fa-9391-ca22778d7a36 group with AbGv7qH-L3Kw4EwpV8IV8w
+2023-10-06 01:01:10.436 +03:00 [INF] Joined Group looking in cache for BidRoom
+2023-10-06 01:01:51.023 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-06 01:01:51.103 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 01:01:51.202 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-06 01:01:51.205 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-06 01:01:51.208 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 01:01:51.210 +03:00 [INF] Hosting environment: Development
+2023-10-06 01:01:51.212 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-06 01:01:51.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-06 01:01:51.554 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 158.7315ms
+2023-10-06 01:01:51.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:01:51.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-06 01:01:51.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.4331ms
+2023-10-06 01:01:51.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.9788ms
+2023-10-06 01:01:51.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-06 01:01:51.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.8512ms
+2023-10-06 01:01:57.643 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:01:57.651 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:57.655 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 12.1088ms
+2023-10-06 01:01:57.660 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:01:57.755 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:57.764 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:01:57.770 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:01:57.773 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 112.5944ms
+2023-10-06 01:01:57.777 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=SGw216PFL8P7hXl067qLbA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:01:57.779 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:01:57.782 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:01:57.822 +03:00 [INF] Client connected
+2023-10-06 01:01:57.867 +03:00 [INF] Client joined
+2023-10-06 01:01:57.869 +03:00 [INF] Grpc Client Created
+2023-10-06 01:01:57.876 +03:00 [INF] Calling Grpc Service GetBidRoomRequest
+2023-10-06 01:01:58.042 +03:00 [INF] Grpc Service GetBidRoomRequest Completed, Response:{ "RoomId": "1", "BidId": "ae795423-86f0-42fa-9391-ca22778d7a36", "BidEndDate": "2023-10-07T11:26:10.587679700Z", "BidStatus": 2 }
+2023-10-06 01:01:58.046 +03:00 [INF] BidRoomStatus:2, Joining ae795423-86f0-42fa-9391-ca22778d7a36 group with jlk9n-4wWQlGSxkPEdHzww
+2023-10-06 01:01:58.048 +03:00 [INF] Joined Group looking in cache for BidRoom
+2023-10-06 01:02:53.333 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:02:53.338 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:02:53.340 +03:00 [INF] Client disconnected
+2023-10-06 01:02:53.341 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 8.2824ms
+2023-10-06 01:02:53.344 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:02:53.346 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:02:53.350 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:02:53.351 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:02:53.353 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:02:53.355 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=SGw216PFL8P7hXl067qLbA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 55578.4026ms
+2023-10-06 01:02:53.356 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 12.3065ms
+2023-10-06 01:02:53.362 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=NfE-gmNtjmT9J0g7Tg7Mqg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:02:53.363 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000003": the application completed without reading the entire request body.
+2023-10-06 01:02:53.366 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:02:53.368 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:02:53.374 +03:00 [INF] Client connected
+2023-10-06 01:03:24.336 +03:00 [INF] Client disconnected
+2023-10-06 01:03:24.345 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:03:24.346 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:03:24.348 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=NfE-gmNtjmT9J0g7Tg7Mqg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30985.9808ms
+2023-10-06 01:03:24.350 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:24.352 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000007": the application completed without reading the entire request body.
+2023-10-06 01:03:24.353 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.6119ms
+2023-10-06 01:03:24.355 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:03:24.358 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:24.362 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:03:24.364 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:03:24.367 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 11.6102ms
+2023-10-06 01:03:24.372 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=JpCw524e0JaW7ES7xuRZCw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:03:24.374 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:24.377 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:03:24.382 +03:00 [INF] Client connected
+2023-10-06 01:03:55.324 +03:00 [INF] Client disconnected
+2023-10-06 01:03:55.330 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:03:55.330 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:03:55.334 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=JpCw524e0JaW7ES7xuRZCw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30961.7237ms
+2023-10-06 01:03:55.335 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:55.337 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000000B": the application completed without reading the entire request body.
+2023-10-06 01:03:55.338 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 8.1589ms
+2023-10-06 01:03:55.339 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:03:55.342 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:55.344 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:03:55.346 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:03:55.349 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 9.3557ms
+2023-10-06 01:03:55.353 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=wf6tWN55eHWurVxeHNaxiQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:03:55.356 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:03:55.358 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:03:55.363 +03:00 [INF] Client connected
+2023-10-06 01:04:26.323 +03:00 [INF] Client disconnected
+2023-10-06 01:04:26.329 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:04:26.329 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:04:26.333 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=wf6tWN55eHWurVxeHNaxiQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30979.4162ms
+2023-10-06 01:04:26.357 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:26.362 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000000F": the application completed without reading the entire request body.
+2023-10-06 01:04:26.364 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 34.8392ms
+2023-10-06 01:04:26.365 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:04:26.368 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:26.370 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:04:26.373 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:04:26.376 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 10.7298ms
+2023-10-06 01:04:26.379 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=H4Z5tmUJi2VKyVfl75-3Ag&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:04:26.382 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:26.385 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:04:26.392 +03:00 [INF] Client connected
+2023-10-06 01:04:57.321 +03:00 [INF] Client disconnected
+2023-10-06 01:04:57.324 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:04:57.327 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:04:57.329 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=H4Z5tmUJi2VKyVfl75-3Ag&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30949.4866ms
+2023-10-06 01:04:57.331 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:57.332 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000013": the application completed without reading the entire request body.
+2023-10-06 01:04:57.334 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 6.6722ms
+2023-10-06 01:04:57.336 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:04:57.338 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:57.340 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:04:57.343 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:04:57.345 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 9.3323ms
+2023-10-06 01:04:57.349 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=iOGTnw48Bet7LzYX-rBNWA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:04:57.352 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:04:57.354 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:04:57.359 +03:00 [INF] Client connected
+2023-10-06 01:05:28.320 +03:00 [INF] Client disconnected
+2023-10-06 01:05:28.323 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:05:28.325 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:05:28.327 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=iOGTnw48Bet7LzYX-rBNWA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30976.8412ms
+2023-10-06 01:05:28.328 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:28.330 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000017": the application completed without reading the entire request body.
+2023-10-06 01:05:28.333 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.7091ms
+2023-10-06 01:05:28.333 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:05:28.339 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:28.341 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:05:28.343 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:05:28.345 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 11.9845ms
+2023-10-06 01:05:28.348 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=nl0Kft5pLLqW7itHEEd6Ew&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:05:28.351 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:28.353 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:05:28.357 +03:00 [INF] Client connected
+2023-10-06 01:05:59.322 +03:00 [INF] Client disconnected
+2023-10-06 01:05:59.327 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:05:59.329 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:05:59.331 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=nl0Kft5pLLqW7itHEEd6Ew&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30982.6842ms
+2023-10-06 01:05:59.333 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:59.334 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000001B": the application completed without reading the entire request body.
+2023-10-06 01:05:59.336 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.2888ms
+2023-10-06 01:05:59.338 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:05:59.340 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:59.342 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:05:59.344 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:05:59.347 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 8.9759ms
+2023-10-06 01:05:59.351 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=ltCX3cvIie3y7I8kkhblqQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:05:59.353 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:05:59.355 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:05:59.361 +03:00 [INF] Client connected
+2023-10-06 01:06:30.326 +03:00 [INF] Client disconnected
+2023-10-06 01:06:30.332 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:06:30.332 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:06:30.335 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:06:30.337 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=ltCX3cvIie3y7I8kkhblqQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30986.1367ms
+2023-10-06 01:06:30.338 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 5.9082ms
+2023-10-06 01:06:30.339 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:06:30.341 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000001F": the application completed without reading the entire request body.
+2023-10-06 01:06:30.343 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:06:30.345 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:06:30.347 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:06:30.368 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 28.7950ms
+2023-10-06 01:06:30.376 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=mGLdawCxYhocPChubCPYzg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:06:30.380 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:06:30.383 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:06:30.389 +03:00 [INF] Client connected
+2023-10-06 01:07:01.327 +03:00 [INF] Client disconnected
+2023-10-06 01:07:01.335 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:07:01.337 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:07:01.339 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=mGLdawCxYhocPChubCPYzg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30963.7620ms
+2023-10-06 01:07:01.341 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:01.342 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000023": the application completed without reading the entire request body.
+2023-10-06 01:07:01.344 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.2697ms
+2023-10-06 01:07:01.345 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:07:01.350 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:01.353 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:07:01.355 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:07:01.357 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 12.1832ms
+2023-10-06 01:07:01.362 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=XlfOKTU_sZ4C-niST-_1Vg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:07:01.364 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:01.366 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:07:01.371 +03:00 [INF] Client connected
+2023-10-06 01:07:32.329 +03:00 [INF] Client disconnected
+2023-10-06 01:07:32.333 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:07:32.335 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:07:32.337 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=XlfOKTU_sZ4C-niST-_1Vg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30974.7737ms
+2023-10-06 01:07:32.339 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:32.341 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:00000027": the application completed without reading the entire request body.
+2023-10-06 01:07:32.342 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.5642ms
+2023-10-06 01:07:32.343 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:07:32.348 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:32.350 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:07:32.353 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:07:32.356 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 12.2292ms
+2023-10-06 01:07:32.359 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=QmmjUwXgsqra_r3H5-e2lQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:07:32.362 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:07:32.364 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:07:32.370 +03:00 [INF] Client connected
+2023-10-06 01:08:03.323 +03:00 [INF] Client disconnected
+2023-10-06 01:08:03.329 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:08:03.329 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:08:03.333 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=QmmjUwXgsqra_r3H5-e2lQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30974.0548ms
+2023-10-06 01:08:03.335 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:03.338 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000002B": the application completed without reading the entire request body.
+2023-10-06 01:08:03.340 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 11.7652ms
+2023-10-06 01:08:03.342 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:08:03.344 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:03.346 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:08:03.348 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:08:03.350 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 8.0809ms
+2023-10-06 01:08:03.354 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=x7xPn_UFdiMosduYW4ZSlQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:08:03.356 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:03.359 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:08:03.364 +03:00 [INF] Client connected
+2023-10-06 01:08:34.319 +03:00 [INF] Client disconnected
+2023-10-06 01:08:34.322 +03:00 [INF] Executed endpoint 'bidhub'
+2023-10-06 01:08:34.325 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-06 01:08:34.328 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:5501/bidhub?id=x7xPn_UFdiMosduYW4ZSlQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - - - 200 - - 30974.4142ms
+2023-10-06 01:08:34.329 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:34.331 +03:00 [INF] Connection id "0HMU5TQMTCVU7", Request id "0HMU5TQMTCVU7:0000002F": the application completed without reading the entire request body.
+2023-10-06 01:08:34.333 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 7.4932ms
+2023-10-06 01:08:34.335 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0
+2023-10-06 01:08:34.337 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:34.339 +03:00 [INF] Executing endpoint 'bidhub/negotiate'
+2023-10-06 01:08:34.341 +03:00 [INF] Executed endpoint 'bidhub/negotiate'
+2023-10-06 01:08:34.343 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5501/bidhub/negotiate?negotiateVersion=1 - 0 - 200 256 application/json 8.1491ms
+2023-10-06 01:08:34.346 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:5501/bidhub?id=ZDyY5M0BDlCi6H_qONMckw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiN2IwNTUxMDgtYjA0YS00ZmFiLTQ2ZDEtMDhkYmM1ZWU1NGY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaWJyYWhpbXNhYml0a2F5YTJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJBbm9uNjM4MzIxNTA3NjIxMzUzNDg3IiwibmJmIjoxNjk2NTQzMTgzLCJleHAiOjE2OTY1NTAzODN9.TkCOQOwXcHE4GDF7DlYfZN3PV8yQQIyw6S43x0a8rOc - -
+2023-10-06 01:08:34.349 +03:00 [INF] CORS policy execution successful.
+2023-10-06 01:08:34.351 +03:00 [INF] Executing endpoint 'bidhub'
+2023-10-06 01:08:34.355 +03:00 [INF] Client connected

@@ -1,32 +1,38 @@
 ﻿using Bidder.Application.Common.Extension;
+using Bidder.Application.Common.Interfaces;
 using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.Infastructure.Common.Grpc;
 using Bidder.Infastructure.Common.Protos.Common;
+using Bidder.SignalR.Application.Redis.Interface;
 using Bidder.SignalR.Domain.DTO.Responses.Join;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using System.Net;
 
 namespace Bidder.SignalR.Application.AuctionHub
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] 
     public class BidHub  : Hub
     {
-        private readonly ILogger<BidHub> logger;
-        private readonly IDistributedCacheManager cacheService;
+        private readonly ILogger<BidHub> logger; 
+        private readonly IRoomRedisService roomRedisService;
+        private readonly IIdentityService identityService;
 
-        public BidHub(ILogger<BidHub> logger, IDistributedCacheManager cacheService)
+        public BidHub(ILogger<BidHub> logger, IRoomRedisService roomRedisService, IIdentityService identityService)
         {
             this.logger = logger;
-            this.cacheService = cacheService;
+            this.roomRedisService = roomRedisService;
+            this.identityService = identityService;
         }
 
         public override Task OnConnectedAsync()
         {
 
-            logger.LogInformation("Client connected", Context.ToString());
-            cacheService.Set("a", "b");
+            logger.LogInformation("Client connected", Context.ToString()); 
             return base.OnConnectedAsync();
         }
 
@@ -65,16 +71,26 @@ namespace Bidder.SignalR.Application.AuctionHub
                 logger.LogInformation($"BidRoomStatus:{response.BidStatus}, Joining {response.BidId} group with {Context.ConnectionId}");
                 await Groups.AddToGroupAsync(Context.ConnectionId, response.BidId);
                 logger.LogInformation("Joined Group looking in cache for BidRoom");
-                var bidRoom = cacheService.Get<ActiveBidRoom>(response.BidId.ToString());
+                var bidRoom = await roomRedisService.GetRoom(Guid.Parse(response.BidId));
                 if (bidRoom is null)
                 { 
+                    bidRoom = await FindAndSetRedisActiveBidRoom(response.BidId, Guid.NewGuid(), Context.ConnectionId);
                 }
+                else
+                {
+                    var user = bidRoom.Users.FirstOrDefault(x=>x.Key == identityService.GetUserId());
+                    if (string.IsNullOrEmpty(user.Value))
+                    {
+                        bidRoom.Users.Add(identityService.GetUserId(), Context.ConnectionId);
+                        await roomRedisService.CreateOrUpdateRoom(bidRoom);
+                    } 
+                } 
             }
 
             return new JoinResponse(HttpStatusCode.OK, "JOINED", Context.ConnectionId);  
         }
 
-        private async Task<ActiveBidRoomGrpcResponse> FindAndSetRedisActiveBidRoom(string BidId)
+        private async Task<ActiveBidRoomGrpcResponse> GetActiveBidRoomWithGrpcAsync(string BidId)
         {
 
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
@@ -85,6 +101,19 @@ namespace Bidder.SignalR.Application.AuctionHub
             request.BidId = BidId;
             var response = await client.GetActiveBidRoomAsync(request); 
             return response;
+        }
+        private async Task<ActiveBidRoom> FindAndSetRedisActiveBidRoom(string BidId, Guid UserId, string ConnectionId)
+        {
+            var grpcResponse = await  GetActiveBidRoomWithGrpcAsync(BidId);
+            if (grpcResponse == null)
+            {
+                return null;
+            }
+
+            ActiveBidRoom room = new(grpcResponse.BidId, grpcResponse.RoomId, grpcResponse.BidEndDate.ToDateTime(), (BidRoomStatus)grpcResponse.BidStatus);
+            room.Users.Add(UserId, ConnectionId);
+            await roomRedisService.CreateOrUpdateRoom(room);
+            return room;
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using Bidder.BidService.Application.Interfaces.Services;
+﻿using Bidder.Application.Common.Interfaces;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
-namespace Bidder.BidService.Infastructure.Services
+namespace Bidder.Infastructure.Common.Services
 {
     public class IdentityService : IIdentityService
     {

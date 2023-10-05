@@ -1,4 +1,4 @@
-﻿namespace Bidder.BidService.Application.Interfaces.Services
+﻿namespace Bidder.Application.Common.Interfaces
 {
     public interface IIdentityService
     {

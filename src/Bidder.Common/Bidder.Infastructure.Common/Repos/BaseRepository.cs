@@ -37,7 +37,7 @@ namespace Bidder.Infastructure.Common.Repos
         /// <param name="orderBy">Eğer istenir ise order by parametresi</param>
         /// <param name="includes">Eğer gerekirse Configuration üzerinde maplenmiş ilişkili objeleri de eklemesini sağlayan parametre</param>
         /// <returns>IEnumerable<T></returns>
-        public async Task<T> FindFirst(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, params Expression<Func<T, object>>[] includes)
+        public async Task<T> FindFirst(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, CancellationToken cancellationToken = default, params Expression<Func<T, object>>[] includes)
         {
             var query = context.Set<T>().Where(predicate);
             if (includes != null)
@@ -48,9 +48,9 @@ namespace Bidder.Infastructure.Common.Repos
             {
                 query = orderBy(query);
             }
-            return await query.FirstOrDefaultAsync();
+            return await query.FirstOrDefaultAsync(cancellationToken);
         }
-        public async Task<IEnumerable<T>> GetAll() => await context.Set<T>().ToListAsync();
+        public async Task<IEnumerable<T>> GetAll(CancellationToken cancellationToken) => await context.Set<T>().ToListAsync(cancellationToken);
 
         /// <summary>
         /// Verilen Koşullara Göre IEnumarable Dönen Metod
@@ -59,7 +59,7 @@ namespace Bidder.Infastructure.Common.Repos
         /// <param name="orderBy">Eğer istenir ise order by parametresi</param>
         /// <param name="includes">Eğer gerekirse Configuration üzerinde maplenmiş ilişkili objeleri de eklemesini sağlayan parametre</param>
         /// <returns>IEnumerable<T></returns>
-        public async Task<IEnumerable<T>> GetWhere(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, params Expression<Func<T, object>>[] includes)
+        public async Task<IEnumerable<T>> GetWhere(Expression<Func<T, bool>> predicate, Func<IQueryable, IOrderedQueryable<T>>? orderBy = null, CancellationToken cancellationToken = default, params Expression<Func<T, object>>[] includes)
         {
             IQueryable<T> query = context.Set<T>().Where(predicate);
 
@@ -67,7 +67,7 @@ namespace Bidder.Infastructure.Common.Repos
 
             if (orderBy is not null) query = orderBy(query);
 
-            return await query.ToListAsync();
+            return await query.ToListAsync(cancellationToken);
         }
 
         public T Update(T entity)

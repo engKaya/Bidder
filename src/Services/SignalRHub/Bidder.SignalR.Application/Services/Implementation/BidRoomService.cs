@@ -36,7 +36,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
             {
                 try
                 { 
-                    ActiveBidRoom bidroomredis = new(Guid.Parse(room.BidId), room.RoomId, room.BidEndDate.ToDateTime(), (BidRoomStatus)room.BidStatus);
+                    ActiveBidRoom bidroomredis = new(room.BidId, room.RoomId, room.BidEndDate.ToDateTime(), (BidRoomStatus)room.BidStatus);
                     await _roomRedis.CreateOrUpdateRoom(bidroomredis);
                 }
                 catch (Exception ex)

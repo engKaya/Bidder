@@ -1,4 +1,5 @@
-﻿using Bidder.Application.Common.Redis.Interface;
+﻿using Bidder.Application.Common.Redis;
+using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.SignalR.Application.Redis.Interface;
 
@@ -67,5 +68,17 @@ namespace Bidder.SignalR.Application.Redis.Implementation
             var redisrooms = _redis.Get<IDictionary<string, ActiveBidRoom>>("BidRooms"); 
             return redisrooms[BidId.ToString()];
         }
+
+        public void AddUserToRoom(string BidId, Guid UserId, string connectionId)
+        {
+            var redisrooms = GetRedisRooms();
+            var room = redisrooms[BidId];
+            if (room is null)
+                throw new Exception("Room Not Found");
+            room.Users.Add(UserId, connectionId);
+            redisrooms[BidId] = room;
+            _redis.Set("BidRooms", redisrooms);
+        }
+
     } 
 }

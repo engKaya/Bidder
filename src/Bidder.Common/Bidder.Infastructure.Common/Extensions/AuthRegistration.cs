@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace Bidder.BidService.Api.Registration
+namespace Bidder.Infastructure.Common.Extensions
 {
     public static class AuthRegistration
     {
-        public static IServiceCollection ConfigureAuth(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection ConfigureAuth(this IServiceCollection services, IConfiguration configuration, JwtBearerEvents? bearerEvents = null)
         {
             var secretkey = configuration["CustomSettings:Key"];
             var signinKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretkey));
@@ -29,6 +31,10 @@ namespace Bidder.BidService.Api.Registration
                     RequireExpirationTime = true,
                     ValidateLifetime = true
                 };
+                if (bearerEvents is not null)
+                {
+                    options.Events = bearerEvents;
+                }
             });
             return services;
         }

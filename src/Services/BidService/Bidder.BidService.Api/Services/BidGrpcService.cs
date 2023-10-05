@@ -22,7 +22,7 @@ namespace Bidder.BidService.Api.Services
 
         public override async Task<GetBidRoomsGrpcResponse> GetBidRoom(GetBidRoomGrpcRequest request, ServerCallContext context)
         {
-            var result = await bidService.GetBid(Guid.Parse(request.Id));
+            var result = await bidService.GetBid(Guid.Parse(request.Id), context.CancellationToken);
             var response = new GetBidRoomsGrpcResponse();
             if (result.StatusCode == (int)HttpStatusCode.NotFound)
             {
@@ -51,7 +51,7 @@ namespace Bidder.BidService.Api.Services
 
         public override async Task<GetActiveBidRoomsGrpcResponse> GetActiveBidRooms(Empty request, ServerCallContext context)
         { 
-            var response = await bidService.GetActiveBidRooms();
+            var response = await bidService.GetActiveBidRooms(context.CancellationToken);
             var result = new GetActiveBidRoomsGrpcResponse();
 
             if (response.Data is null)
@@ -74,7 +74,7 @@ namespace Bidder.BidService.Api.Services
 
         public override async Task<ActiveBidRoomGrpcResponse> GetActiveBidRoom(GetActiveBidRoomGrpcRequest request, ServerCallContext context)
         {
-            var serviceresponse = await bidService.GetActiveBidRoom(request.BidId);
+            var serviceresponse = await bidService.GetActiveBidRoom(request.BidId, context.CancellationToken);
             
             var response = new ActiveBidRoomGrpcResponse();
 
