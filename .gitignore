@@ -9,3 +9,6 @@ obj*
 /src/Services/BidService/Bidder.BidService.Api/appsettings.json
 /src/Services/BidService/Bidder.BidService.Api/appsettings.Development.json
 /src/Services/BidService/Bidder.BidService.Api/appsettings.Test.json
+/src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.json
+/src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Development.json
+/src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Test.json
