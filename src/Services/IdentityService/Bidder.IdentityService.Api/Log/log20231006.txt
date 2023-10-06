@@ -263,3 +263,221 @@ Server: Kestrel
 Access-Control-Allow-Origin: [Redacted]
 2023-10-06 01:11:59.665 +03:00 [INF] Disposing UnitOfWork._dbContext
 2023-10-06 01:11:59.685 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Identity/login application/json 61 - 200 - application/json;+charset=utf-8 987.5852ms
+2023-10-06 11:54:49.681 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 11:54:49.891 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 11:54:49.893 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 11:54:49.896 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 11:54:49.898 +03:00 [INF] Hosting environment: Development
+2023-10-06 11:54:49.900 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 11:54:53.094 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 11:54:53.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 201.4890ms
+2023-10-06 11:54:53.321 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 11:54:53.328 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 11:54:53.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 14.4308ms
+2023-10-06 11:54:53.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.4272ms
+2023-10-06 11:54:53.481 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 11:54:53.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.3874ms
+2023-10-06 11:55:41.437 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Identity/login - -
+2023-10-06 11:55:41.447 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/Identity/login
+Accept: */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-06 11:55:41.452 +03:00 [INF] CORS policy execution successful.
+2023-10-06 11:55:41.455 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-06 11:55:41.457 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Identity/login - - - 204 - - 20.5306ms
+2023-10-06 11:55:41.460 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Identity/login application/json 61
+2023-10-06 11:55:41.464 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/Identity/login
+Accept: application/json, text/plain, */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-06 11:55:41.467 +03:00 [INF] CORS policy execution successful.
+2023-10-06 11:55:41.471 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api)'
+2023-10-06 11:55:41.490 +03:00 [INF] Route matched with {action = "Login", controller = "Identity"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse]]] Login(Bidder.IdentityService.Domain.DTOs.User.Request.LoginRequest) on controller Bidder.IdentityService.Api.Controllers.IdentityController (Bidder.IdentityService.Api).
+2023-10-06 11:55:41.914 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-10-06 11:55:42.486 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__request_Email_0='ibrahimsabitkaya@gmail.com' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[EmailVerifiedAt], [u].[IdentityNumber], [u].[IsEmailVerified], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[Surname], [u].[Username]
+FROM [BIDDER_USER].[USERS] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2023-10-06 11:55:42.647 +03:00 [INF] Executing OkObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse, Bidder.IdentityService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 11:55:42.658 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api) in 1163.2014ms
+2023-10-06 11:55:42.661 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api)'
+2023-10-06 11:55:42.663 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Fri, 06 Oct 2023 08:55:42 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+2023-10-06 11:55:42.666 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 11:55:42.687 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Identity/login application/json 61 - 200 - application/json;+charset=utf-8 1227.3382ms
+2023-10-06 11:57:15.883 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Identity/login - -
+2023-10-06 11:57:15.888 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/Identity/login
+Accept: */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-06 11:57:15.890 +03:00 [INF] CORS policy execution successful.
+2023-10-06 11:57:15.892 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-06 11:57:15.895 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Identity/login - - - 204 - - 12.1294ms
+2023-10-06 11:57:15.897 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Identity/login application/json 63
+2023-10-06 11:57:15.898 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/Identity/login
+Accept: application/json, text/plain, */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-06 11:57:15.900 +03:00 [INF] CORS policy execution successful.
+2023-10-06 11:57:15.902 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api)'
+2023-10-06 11:57:15.905 +03:00 [INF] Route matched with {action = "Login", controller = "Identity"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse]]] Login(Bidder.IdentityService.Domain.DTOs.User.Request.LoginRequest) on controller Bidder.IdentityService.Api.Controllers.IdentityController (Bidder.IdentityService.Api).
+2023-10-06 11:57:15.925 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_Email_0='ibrahimsabitkaya2@gmail.com' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[EmailVerifiedAt], [u].[IdentityNumber], [u].[IsEmailVerified], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[Surname], [u].[Username]
+FROM [BIDDER_USER].[USERS] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2023-10-06 11:57:15.930 +03:00 [INF] Executing OkObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse, Bidder.IdentityService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 11:57:15.933 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api) in 26.0281ms
+2023-10-06 11:57:15.935 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.IdentityController.Login (Bidder.IdentityService.Api)'
+2023-10-06 11:57:15.938 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Fri, 06 Oct 2023 08:57:14 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+2023-10-06 11:57:15.940 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-10-06 11:57:15.942 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Identity/login application/json 63 - 200 - application/json;+charset=utf-8 45.3355ms
+2023-10-06 12:10:33.822 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 12:10:33.969 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 12:10:33.971 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 12:10:33.975 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 12:10:33.977 +03:00 [INF] Hosting environment: Development
+2023-10-06 12:10:33.978 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 12:10:34.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 12:10:34.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 276.3839ms
+2023-10-06 12:10:34.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 12:10:34.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 7.4204ms
+2023-10-06 12:10:34.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 12:10:35.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.2970ms
+2023-10-06 12:10:35.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 12:10:35.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.9094ms
+2023-10-06 12:11:37.153 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 12:11:37.301 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 12:11:37.304 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 12:11:37.308 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 12:11:37.310 +03:00 [INF] Hosting environment: Development
+2023-10-06 12:11:37.312 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 12:11:37.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 12:11:38.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 269.5847ms
+2023-10-06 12:11:38.175 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 12:11:38.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 12:11:38.188 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 12.6317ms
+2023-10-06 12:11:38.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2155ms
+2023-10-06 12:11:38.373 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 12:11:38.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.9644ms
+2023-10-06 12:14:54.751 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 12:14:54.890 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 12:14:54.892 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 12:14:54.895 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 12:14:54.897 +03:00 [INF] Hosting environment: Development
+2023-10-06 12:14:54.899 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 12:14:55.573 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 12:14:55.837 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 267.6648ms
+2023-10-06 12:14:55.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 12:14:55.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 12:14:55.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 12.0599ms
+2023-10-06 12:14:55.920 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.5435ms
+2023-10-06 12:14:55.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 12:14:56.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.1550ms
+2023-10-06 12:25:54.855 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 12:25:55.008 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 12:25:55.011 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 12:25:55.014 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 12:25:55.016 +03:00 [INF] Hosting environment: Development
+2023-10-06 12:25:55.018 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 12:25:55.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 12:25:55.914 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 277.8413ms
+2023-10-06 12:25:55.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 12:25:55.938 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 12:25:55.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 11.7194ms
+2023-10-06 12:25:55.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.2050ms
+2023-10-06 12:25:56.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 12:25:56.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.5447ms
+2023-10-06 12:35:04.141 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 12:35:04.302 +03:00 [INF] Now listening on: https://localhost:5001
+2023-10-06 12:35:04.305 +03:00 [INF] Now listening on: http://localhost:6001
+2023-10-06 12:35:04.308 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 12:35:04.311 +03:00 [INF] Hosting environment: Development
+2023-10-06 12:35:04.314 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-10-06 12:35:04.885 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-10-06 12:35:05.127 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 243.8922ms
+2023-10-06 12:35:05.147 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 12:35:05.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-10-06 12:35:05.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 11.4398ms
+2023-10-06 12:35:05.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.6279ms
+2023-10-06 12:35:05.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-10-06 12:35:05.398 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.4595ms

@@ -115,5 +115,11 @@ namespace Bidder.SignalR.Application.AuctionHub
             await roomRedisService.CreateOrUpdateRoom(room);
             return room;
         }
+
+        public async Task SendMessage(string BidId, string connectionId, string message)
+        { 
+                
+                await Clients.GroupExcept(BidId, new List<string> { connectionId }).SendAsync("ReceiveMessage", message);  
+        }
     }
 }

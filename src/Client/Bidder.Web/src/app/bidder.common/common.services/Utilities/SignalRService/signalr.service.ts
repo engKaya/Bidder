@@ -60,4 +60,10 @@ export class SignalRService {
             throw error;
         });
   }
+
+  public async OnMethod(connection: signalR.HubConnection, methodname: string, callBackFunction : (...args:any[]) => any) : Promise<void> {
+    await connection.on(methodname,callBackFunction);
+  }
+
+  
 }

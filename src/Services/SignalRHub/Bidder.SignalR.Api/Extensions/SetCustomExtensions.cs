@@ -55,7 +55,7 @@ namespace Bidder.SignalR.Api.Extensions
         {
             services.AddSignalR(config =>
             {
-                config.MaximumReceiveMessageSize = 128;
+                config.MaximumReceiveMessageSize = 512;
                 config.EnableDetailedErrors = true;
                 config.KeepAliveInterval = TimeSpan.FromMinutes(1);
             }).AddJsonProtocol(options =>
