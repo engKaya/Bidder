@@ -57,7 +57,7 @@ namespace Bidder.BidService.Infastructure.Services
         public async Task<ResponseMessage<ActiveBidRoom>> GetActiveBidRoom(string BidId, CancellationToken cancellationToken)
         { 
             var bid = await uof.BidRepository.FindFirst(x => x.Id == Guid.Parse(BidId), null, cancellationToken, x => x.BidRoom);
-            ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
+            ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.Title, bid.Description, bid.UserId, bid.EndDate, bid.BidRoom.RoomStatus);
             return ResponseMessage<ActiveBidRoom>.Success(room, 200);
         }
 
@@ -72,7 +72,7 @@ namespace Bidder.BidService.Infastructure.Services
                     if (bid.BidRoom is null || bid.BidRoom.Id == 0)
                         continue;
 
-                    ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.EndDate, bid.BidRoom.RoomStatus);
+                    ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.Title, bid.Description, bid.UserId, bid.EndDate, bid.BidRoom.RoomStatus);
                     activeRooms.Add(room);
                 }  
                 return ResponseMessage<IEnumerable<ActiveBidRoom>>.Success(activeRooms.AsEnumerable());

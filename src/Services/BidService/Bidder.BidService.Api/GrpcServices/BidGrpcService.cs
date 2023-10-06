@@ -7,7 +7,7 @@ using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using System.Net;
 
-namespace Bidder.BidService.Api.Services
+namespace Bidder.BidService.Api.GrpcServices
 {
     public class BidGrpcServerService : BidGrpcService.BidGrpcServiceBase
     {
@@ -66,7 +66,10 @@ namespace Bidder.BidService.Api.Services
                     BidId = item.BidId.ToString(),
                     BidEndDate = item.BidEndDate.ToUniversalTime().ToTimestamp(),
                     BidStatus = (int)item.BidRoomStatus,
-                    RoomId = item.RoomId
+                    RoomId = item.RoomId,
+                    Title = item.Title,
+                    Description = item.Description,
+                    OwnerId = item.OwnerId.ToString()
                 });
             }
             return result;

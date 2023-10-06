@@ -119,7 +119,7 @@ namespace Bidder.SignalR.Application.AuctionHub
                 return null;
             }
 
-            ActiveBidRoom room = new(grpcResponse.BidId, grpcResponse.RoomId, grpcResponse.BidEndDate.ToDateTime(), (BidRoomStatus)grpcResponse.BidStatus);
+            ActiveBidRoom room = new(grpcResponse.BidId, grpcResponse.RoomId, grpcResponse.Title, grpcResponse.Description, Guid.Parse(grpcResponse.OwnerId), grpcResponse.BidEndDate.ToDateTime(), (BidRoomStatus)grpcResponse.BidStatus);
             room.Users.Add(UserId, ConnectionId);
             await roomRedisService.CreateOrUpdateRoom(room);
             return room;

@@ -1,25 +1,19 @@
-﻿using Bidder.Application.Common.Redis;
-using Bidder.Application.Common.Redis.Interface;
+﻿using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.SignalR.Application.Redis.Interface;
-using Microsoft.Extensions.Logging;
 
 namespace Bidder.SignalR.Application.Redis.Implementation
 {
     public class RoomRedisService : IRoomRedisService
     {
         private readonly IDistributedCacheManager _redis;
-        private readonly ILogger<RoomRedisService> _logger;
 
-        public RoomRedisService(IDistributedCacheManager redis, ILogger<RoomRedisService> logger)
+        public RoomRedisService(IDistributedCacheManager redis)
         {
             _redis = redis;
-            _logger= logger;
             var key = redis.Get("BidRooms");
-            if (key == null)
-            {
-                redis.Set("BidRooms", new Dictionary<string, ActiveBidRoom>());
-            }
+            if (key == null) 
+                redis.Set("BidRooms", new Dictionary<string, ActiveBidRoom>()); 
         }
         public Task<ActiveBidRoom> CreateOrUpdateRoom(ActiveBidRoom room)
         {

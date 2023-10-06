@@ -1,6 +1,6 @@
 using Bidder.Application.Common.Extension;
 using Bidder.BidService.Api.Registration;
-using Bidder.BidService.Api.Services;
+using Bidder.BidService.Api.GrpcServices;
 using Bidder.BidService.Infastructure.Context;
 using Bidder.Infastructure.Common.Extensions;
 using System.Reflection;

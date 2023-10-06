@@ -26,6 +26,9 @@ message ActiveBidRoomGrpcResponse {
         int64 RoomId = 2;
         int32 BidStatus = 3;
         google.protobuf.Timestamp BidEndDate = 4;
+        string Title = 5;
+        string Description = 6;
+        string OwnerId = 7;
 } 
 
 message GetActiveBidRoomGrpcRequest {
