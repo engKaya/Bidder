@@ -2,17 +2,19 @@
 using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.SignalR.Application.Redis.Interface;
+using Microsoft.Extensions.Logging;
 
 namespace Bidder.SignalR.Application.Redis.Implementation
 {
     public class RoomRedisService : IRoomRedisService
     {
         private readonly IDistributedCacheManager _redis;
+        private readonly ILogger<RoomRedisService> _logger;
 
-
-        public RoomRedisService(IDistributedCacheManager redis)
+        public RoomRedisService(IDistributedCacheManager redis, ILogger<RoomRedisService> logger)
         {
             _redis = redis;
+            _logger= logger;
             var key = redis.Get("BidRooms");
             if (key == null)
             {
@@ -22,15 +24,16 @@ namespace Bidder.SignalR.Application.Redis.Implementation
         public Task<ActiveBidRoom> CreateOrUpdateRoom(ActiveBidRoom room)
         {
             var redisrooms = GetRedisRooms();
+            if (redisrooms == null)
+                redisrooms = new Dictionary<string, ActiveBidRoom>();
 
-            if (redisrooms.ContainsKey(room.BidId.ToString()))
+            if (redisrooms is not null && redisrooms.ContainsKey(room.BidId.ToString()))
             {
                 redisrooms[room.BidId.ToString()] = room;
                 _redis.Set("BidRooms", redisrooms);
                 return Task.FromResult(room);
-            }
-             
-            redisrooms.Add(room.BidId.ToString(), room);
+            } 
+            redisrooms?.Add(room.BidId.ToString(), room);
             _redis.Set("BidRooms", redisrooms);
             return Task.FromResult(room);
         }
@@ -64,9 +67,9 @@ namespace Bidder.SignalR.Application.Redis.Implementation
             return redisrooms;
         }
         private ActiveBidRoom? GetRedisRoom(Guid BidId)
-        {
-            var redisrooms = _redis.Get<IDictionary<string, ActiveBidRoom>>("BidRooms"); 
-            return redisrooms[BidId.ToString()];
+        { 
+                var redisrooms = _redis.Get<IDictionary<string, ActiveBidRoom>>("BidRooms");
+                return redisrooms is not null &&  redisrooms.ContainsKey(BidId.ToString()) ? redisrooms[BidId.ToString()]: null;
         }
 
         public void AddUserToRoom(string BidId, Guid UserId, string connectionId)

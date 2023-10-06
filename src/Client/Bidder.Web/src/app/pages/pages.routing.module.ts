@@ -4,11 +4,15 @@ import { AppDashboardComponent } from './dashboard/dashboard.component';
 export const PagesRoutes: Routes = [
   {
     path: '',
-    component: AppDashboardComponent
+    redirectTo: '/dashboard',
+    pathMatch: 'full'
   },
   {
     path: 'bidding',
-    loadChildren: () => import('./bidding/bidding.module').then(m => m.BiddingModule)
-
+    loadChildren: () => import('./bidding/bidding.module').then(m => m.BiddingModule) 
+  },
+  {
+    path:'**',
+    redirectTo: '/dashboard'
   }
 ];

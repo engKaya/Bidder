@@ -39,16 +39,16 @@ export class SignalRService {
         if (this.env.isDevMode) console.log('SignalR Connected!' + res);
         if (callBackFunction !== null) callBackFunction();
       })
-      .catch((error: any) => {
+      .catch((error: Error) => {
         if (this.env.isDevMode)
-          console.log('SignalR connection error: ' + error);
+          console.error('SignalR connection error: ' + error.message);
       });
     return connection;
   }
 
   public async Invoke<T>(methodname: string,connection: signalR.HubConnection,  ...args: any) : Promise<T> {
-    return await connection.invoke<T>(methodname,...args).catch((error: Error) => { 
-        if (this.env.isDevMode) this.toast.openToastError(`Error on ${methodname}`, JSON.stringify(error)); 
+    return await connection.invoke<T>(methodname,...args).catch((error: Error) => {  
+        if (this.env.isDevMode) console.error(`Error on ${methodname}`, error.message); 
         throw error;
     }) as T;
   }
@@ -56,7 +56,7 @@ export class SignalRService {
   
   public async InvokeWithoutType(methodname: string,connection: signalR.HubConnection, ...args: any) : Promise<void> {
         return await connection.invoke(methodname, args).catch((error: Error) => {
-            if (this.env.isDevMode) this.toast.openToastError(`Error on ${methodname}`, JSON.stringify(error));
+            if (this.env.isDevMode) console.error (`Error on ${methodname}`, JSON.stringify(error));
             throw error;
         });
   }

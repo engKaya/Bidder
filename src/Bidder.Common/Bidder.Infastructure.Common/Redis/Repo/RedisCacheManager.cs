@@ -17,7 +17,10 @@ namespace Bidder.Infastructure.Common.Redis.Repo
 
         public T Get<T>(string key)
         {
-            var utf8String = Encoding.UTF8.GetString(Get(key));
+            var data = Get(key);
+            if (data == null)
+                return default;
+            var utf8String = Encoding.UTF8.GetString(data);
             var result = JsonConvert.DeserializeObject<T>(utf8String);
             return result;
         }

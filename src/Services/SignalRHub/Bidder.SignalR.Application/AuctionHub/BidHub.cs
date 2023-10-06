@@ -15,10 +15,10 @@ using System.Net;
 
 namespace Bidder.SignalR.Application.AuctionHub
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] 
-    public class BidHub  : Hub
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public class BidHub : Hub
     {
-        private readonly ILogger<BidHub> logger; 
+        private readonly ILogger<BidHub> logger;
         private readonly IRoomRedisService roomRedisService;
         private readonly IIdentityService identityService;
 
@@ -32,7 +32,7 @@ namespace Bidder.SignalR.Application.AuctionHub
         public override Task OnConnectedAsync()
         {
 
-            logger.LogInformation("Client connected", Context.ToString()); 
+            logger.LogInformation("Client connected", Context.ToString());
             return base.OnConnectedAsync();
         }
 
@@ -55,39 +55,50 @@ namespace Bidder.SignalR.Application.AuctionHub
             await policy.ExecuteAsync(async () =>
             {
                 logger.LogInformation("Calling Grpc Service GetBidRoomRequest");
-                response = await client.GetBidRoomAsync(new GetBidRoomGrpcRequest() { Id = BidId.ToString() });
-                logger.LogInformation($"Grpc Service GetBidRoomRequest Completed, Response:{(response == null ? "null" : response.ToString())}");
+                response = await client.GetBidRoomAsync(new GetBidRoomGrpcRequest() { Id = BidId.ToString() }); 
+                var resp = response?.ToString() ?? "";
+                logger.LogInformation("Grpc Service GetBidRoomRequest Completed, Response: {resp}", resp);
             });
 
             if (response == null || response.BidStatus == (int)BidRoomStatus.NeverCreated)
             {
-                logger.LogInformation($"BidRoomStatus:{response.BidStatus}, Exiting");
-                return new JoinResponse(HttpStatusCode.NotFound, "BID_NOT_FOUND", Context.ConnectionId);}
+                var status = response?.BidStatus;
+                logger.LogInformation("BidRoomStatus:{status}, Exiting", status);
+                return new JoinResponse(HttpStatusCode.NotFound, "BID_NOT_FOUND", Context.ConnectionId);
+            }
 
 
 
             if (response.BidStatus == (int)BidRoomStatus.Created)
             {
-                logger.LogInformation($"BidRoomStatus:{response.BidStatus}, Joining {response.BidId} group with {Context.ConnectionId}");
+
+                var status = response.BidStatus;
+                var bidId = response.BidId;
+                var conId = Context.ConnectionId;
+                logger.LogInformation("BidRoomStatus: {status}, Joining {bidId} group with {conId}", status, bidId, conId);
+
+
                 await Groups.AddToGroupAsync(Context.ConnectionId, response.BidId);
+
                 logger.LogInformation("Joined Group looking in cache for BidRoom");
                 var bidRoom = await roomRedisService.GetRoom(Guid.Parse(response.BidId));
                 if (bidRoom is null)
-                { 
+                {
+                    logger.LogInformation("Room {bidId} coludn't found in cache. Calling Grpc \"GetActiveBidRoomAsync\"", bidId);
                     bidRoom = await FindAndSetRedisActiveBidRoom(response.BidId, identityService.GetUserId(), Context.ConnectionId);
                 }
                 else
                 {
-                    var user = bidRoom.Users.FirstOrDefault(x=>x.Key == identityService.GetUserId());
+                    var user = bidRoom.Users.FirstOrDefault(x => x.Key == identityService.GetUserId());
                     if (string.IsNullOrEmpty(user.Value))
                     {
                         bidRoom.Users.Add(identityService.GetUserId(), Context.ConnectionId);
                         await roomRedisService.CreateOrUpdateRoom(bidRoom);
-                    } 
-                } 
+                    }
+                }
             }
 
-            return new JoinResponse(HttpStatusCode.OK, "JOINED", Context.ConnectionId);  
+            return new JoinResponse(HttpStatusCode.OK, "JOINED", Context.ConnectionId);
         }
 
         private async Task<ActiveBidRoomGrpcResponse> GetActiveBidRoomWithGrpcAsync(string BidId)
@@ -96,15 +107,13 @@ namespace Bidder.SignalR.Application.AuctionHub
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
             var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
 
-            GetActiveBidRoomGrpcRequest request = new();
-
-            request.BidId = BidId;
-            var response = await client.GetActiveBidRoomAsync(request); 
+            GetActiveBidRoomGrpcRequest request = new() { BidId = BidId };
+            var response = await client.GetActiveBidRoomAsync(request);
             return response;
         }
         private async Task<ActiveBidRoom> FindAndSetRedisActiveBidRoom(string BidId, Guid UserId, string ConnectionId)
         {
-            var grpcResponse = await  GetActiveBidRoomWithGrpcAsync(BidId);
+            var grpcResponse = await GetActiveBidRoomWithGrpcAsync(BidId);
             if (grpcResponse == null)
             {
                 return null;
@@ -117,9 +126,8 @@ namespace Bidder.SignalR.Application.AuctionHub
         }
 
         public async Task SendMessage(string BidId, string connectionId, string message)
-        { 
-                
-                await Clients.GroupExcept(BidId, new List<string> { connectionId }).SendAsync("ReceiveMessage", message);  
+        {
+            await Clients.GroupExcept(BidId, new List<string> { connectionId }).SendAsync("ReceiveMessage", message);
         }
     }
 }
