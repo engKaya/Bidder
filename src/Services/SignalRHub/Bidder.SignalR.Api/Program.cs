@@ -30,7 +30,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<BidHub>("bidhub", options =>
+app.MapHub<BidHub>("hub/bidhub", options =>
 {
     options.Transports =
         HttpTransportType.WebSockets |
