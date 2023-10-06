@@ -12,3 +12,7 @@ obj*
 /src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.json
 /src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Development.json
 /src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Test.json
+/src/Services/ApiGateway/Bidder.ApiGateway/appsettings.json
+/src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Development.json
+/src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Test.json
+/Services.txt
