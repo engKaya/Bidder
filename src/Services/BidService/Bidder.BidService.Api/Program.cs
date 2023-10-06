@@ -1,10 +1,12 @@
 using Bidder.Application.Common.Extension;
-using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Api.GrpcServices;
+using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Infastructure.Context;
 using Bidder.Infastructure.Common.Extensions;
+using Microsoft.AspNetCore.Hosting.Server;
 using System.Reflection;
 using System.Text.Json.Serialization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +34,7 @@ builder.Services.ConfigureAuth(builder.Configuration);
 builder.Services.AddGrpc();
 builder.Services.AddGrpcReflection();
 builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
- 
+var serviceProvider = builder.Services.BuildServiceProvider();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
@@ -54,5 +56,5 @@ app.UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection(); 
 app.MapControllers();
-
+app.RegisterConsul(serviceProvider.GetRequiredService<IServer>(), builder.Configuration);
 app.Run();

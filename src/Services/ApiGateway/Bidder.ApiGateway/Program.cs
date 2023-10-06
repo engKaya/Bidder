@@ -1,3 +1,4 @@
+using Bidder.Application.Common.Extension;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Consul;
@@ -14,6 +15,7 @@ var config = new ConfigurationBuilder()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddOcelot().AddConsul();
+builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
 builder.Services.AddCors(options =>{
                 options.AddDefaultPolicy(builder =>
                 {
