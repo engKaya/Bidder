@@ -1,0 +1,406 @@
+2023-10-15 19:12:38.231 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 19:12:38.372 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 19:12:38.375 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 19:12:38.379 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 19:12:38.382 +03:00 [INF] Hosting environment: Development
+2023-10-15 19:12:38.385 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 19:12:39.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 19:12:39.373 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 184.1873ms
+2023-10-15 19:12:39.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 19:12:39.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 19:12:39.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 7.0355ms
+2023-10-15 19:12:39.438 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.0862ms
+2023-10-15 19:12:39.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 19:12:39.517 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.3968ms
+2023-10-15 19:18:11.448 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 19:18:11.633 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 19:18:11.642 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 19:18:11.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 19:18:11.657 +03:00 [INF] Hosting environment: Development
+2023-10-15 19:18:11.660 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 19:18:12.263 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 19:18:12.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 217.2432ms
+2023-10-15 19:18:12.494 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 19:18:12.498 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 19:18:12.513 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 19.4089ms
+2023-10-15 19:18:12.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.0273ms
+2023-10-15 19:18:12.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 19:18:12.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 24.2982ms
+2023-10-15 20:05:12.360 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:05:12.531 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:05:12.534 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:05:12.538 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:05:12.541 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:05:12.544 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:05:13.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:05:13.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 246.0965ms
+2023-10-15 20:05:13.404 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:05:13.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:05:13.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 16.3359ms
+2023-10-15 20:05:13.456 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.0604ms
+2023-10-15 20:05:13.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:05:13.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.3827ms
+2023-10-15 20:08:21.156 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:08:21.315 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:08:21.319 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:08:21.322 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:08:21.325 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:08:21.327 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:08:21.784 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:08:21.989 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 206.2996ms
+2023-10-15 20:08:22.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:08:22.008 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:08:22.023 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 18.7245ms
+2023-10-15 20:08:22.057 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.8014ms
+2023-10-15 20:08:22.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:08:22.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.3032ms
+2023-10-15 20:41:46.439 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:41:46.712 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:41:46.715 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:41:46.721 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:41:46.724 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:41:46.727 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:41:47.355 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:41:47.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 192.9190ms
+2023-10-15 20:41:47.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:41:47.574 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:41:47.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.4002ms
+2023-10-15 20:41:47.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.2246ms
+2023-10-15 20:41:47.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:41:47.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.9369ms
+2023-10-15 20:43:27.174 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:43:27.399 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:43:27.403 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:43:27.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:43:27.411 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:43:27.415 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:43:28.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:43:28.191 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 179.1975ms
+2023-10-15 20:43:28.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:43:28.208 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:43:28.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.2067ms
+2023-10-15 20:43:28.244 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.7554ms
+2023-10-15 20:43:28.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:43:28.324 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.6162ms
+2023-10-15 20:45:32.420 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:45:32.722 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:45:32.729 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:45:32.737 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:45:32.741 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:45:32.747 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:45:33.362 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:45:33.584 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 224.3719ms
+2023-10-15 20:45:33.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:45:33.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 5.9965ms
+2023-10-15 20:45:33.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:45:33.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3169ms
+2023-10-15 20:45:33.703 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:45:33.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.5413ms
+2023-10-15 20:46:06.903 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:46:07.079 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:46:07.082 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:46:07.085 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:46:07.087 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:46:07.090 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:46:07.679 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:46:07.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 216.5929ms
+2023-10-15 20:46:07.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:46:07.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:46:07.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 13.1014ms
+2023-10-15 20:46:07.956 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.9591ms
+2023-10-15 20:46:08.012 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:46:08.033 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.0033ms
+2023-10-15 20:48:36.373 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:48:36.536 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:48:36.539 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:48:36.543 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:48:36.545 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:48:36.548 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:48:37.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:48:37.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 198.7836ms
+2023-10-15 20:48:37.335 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:48:37.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:48:37.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 12.9420ms
+2023-10-15 20:48:37.389 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.7056ms
+2023-10-15 20:48:37.440 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:48:37.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.3042ms
+2023-10-15 20:49:16.083 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:49:16.255 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:49:16.260 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:49:16.265 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:49:16.269 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:49:16.271 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:49:16.775 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:49:16.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 206.4148ms
+2023-10-15 20:49:16.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:49:17.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:49:17.003 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.9887ms
+2023-10-15 20:49:17.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.9766ms
+2023-10-15 20:49:17.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:49:17.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.2588ms
+2023-10-15 20:49:50.549 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:49:50.780 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:49:50.783 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:49:50.788 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:49:50.791 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:49:50.794 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:49:51.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:49:51.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 178.3087ms
+2023-10-15 20:49:51.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:49:51.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:49:51.667 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.8655ms
+2023-10-15 20:49:51.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4239ms
+2023-10-15 20:49:51.748 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:49:51.765 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.2514ms
+2023-10-15 20:50:31.871 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:50:32.079 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:50:32.083 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:50:32.088 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:50:32.091 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:50:32.094 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:50:32.733 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:50:32.917 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 184.3815ms
+2023-10-15 20:50:32.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:50:32.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:50:32.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.3395ms
+2023-10-15 20:50:32.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.7383ms
+2023-10-15 20:50:33.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:50:33.056 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.7716ms
+2023-10-15 20:51:07.501 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:51:07.726 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:51:07.730 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:51:07.735 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:51:07.740 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:51:07.744 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:51:08.464 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:51:08.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 186.5956ms
+2023-10-15 20:51:08.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:51:08.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:51:08.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.5917ms
+2023-10-15 20:51:08.708 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1953ms
+2023-10-15 20:51:08.765 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:51:08.785 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.5334ms
+2023-10-15 20:52:24.733 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:52:24.889 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:52:24.891 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:52:24.894 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:52:24.897 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:52:24.899 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:52:25.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:52:25.549 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 169.7832ms
+2023-10-15 20:52:25.560 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:52:25.565 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:52:25.569 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.8282ms
+2023-10-15 20:52:25.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.7712ms
+2023-10-15 20:52:25.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:52:25.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.4948ms
+2023-10-15 20:52:44.337 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:52:44.558 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:52:44.563 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:52:44.570 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:52:44.574 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:52:44.577 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:52:45.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:52:45.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 197.2922ms
+2023-10-15 20:52:45.234 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:52:45.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:52:45.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 10.6224ms
+2023-10-15 20:52:45.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.0183ms
+2023-10-15 20:52:45.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:52:45.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.8360ms
+2023-10-15 20:53:38.184 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:53:38.342 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:53:38.345 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:53:38.349 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:53:38.352 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:53:38.355 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:53:39.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:53:39.249 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 187.3672ms
+2023-10-15 20:53:39.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:53:39.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:53:39.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.7244ms
+2023-10-15 20:53:39.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.6331ms
+2023-10-15 20:53:39.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:53:39.375 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.4918ms
+2023-10-15 20:56:04.661 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:56:04.835 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:56:04.839 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:56:04.843 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:56:04.846 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:56:04.849 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:56:05.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:56:05.460 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 218.3772ms
+2023-10-15 20:56:05.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:56:05.479 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:56:05.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 21.6000ms
+2023-10-15 20:56:05.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.9835ms
+2023-10-15 20:56:05.585 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:56:05.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.8758ms
+2023-10-15 20:57:15.475 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:57:15.700 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:57:15.711 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:57:15.718 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:57:15.721 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:57:15.724 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:57:16.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:57:16.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 221.4699ms
+2023-10-15 20:57:16.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:57:16.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:57:16.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 27.3872ms
+2023-10-15 20:57:16.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.0846ms
+2023-10-15 20:57:16.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:57:16.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.5276ms
+2023-10-15 20:58:13.291 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 20:58:13.488 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 20:58:13.492 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 20:58:13.497 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 20:58:13.504 +03:00 [INF] Hosting environment: Development
+2023-10-15 20:58:13.507 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 20:58:14.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 20:58:14.406 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 224.6780ms
+2023-10-15 20:58:14.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 20:58:14.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 20:58:14.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 20.5237ms
+2023-10-15 20:58:14.477 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.7033ms
+2023-10-15 20:58:14.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 20:58:14.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 27.0193ms
+2023-10-15 21:32:50.283 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 21:32:50.407 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 21:32:50.414 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 21:32:50.422 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 21:32:50.424 +03:00 [INF] Hosting environment: Development
+2023-10-15 21:32:50.426 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 21:32:50.535 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 21:32:50.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 161.7334ms
+2023-10-15 21:32:50.709 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 21:32:50.712 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 21:32:50.720 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.0458ms
+2023-10-15 21:32:50.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.5873ms
+2023-10-15 21:32:50.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 21:32:50.821 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.2604ms
+2023-10-15 22:47:19.077 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:47:19.192 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:47:19.195 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:47:19.198 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:47:19.200 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:47:19.202 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:47:19.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:47:19.549 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 152.7395ms
+2023-10-15 22:47:19.560 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:47:19.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:47:19.568 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.2770ms
+2023-10-15 22:47:19.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.2813ms
+2023-10-15 22:47:19.651 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:47:19.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.7451ms
+2023-10-15 22:52:32.922 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:52:33.058 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:52:33.061 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:52:33.064 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:52:33.067 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:52:33.069 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:52:33.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:52:33.475 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 166.7586ms
+2023-10-15 22:52:33.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:52:33.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 7.5805ms
+2023-10-15 22:52:33.503 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:52:33.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.9447ms
+2023-10-15 22:52:33.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:52:33.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.6990ms
+2023-10-15 22:53:29.985 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:53:30.109 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:53:30.119 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:53:30.122 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:53:30.125 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:53:30.127 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:53:30.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:53:30.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 162.4955ms
+2023-10-15 22:53:30.412 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:53:30.416 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:53:30.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 7.8017ms
+2023-10-15 22:53:30.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.1311ms
+2023-10-15 22:53:30.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:53:30.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.1174ms
+2023-10-15 22:54:10.422 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:54:10.541 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:54:10.544 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:54:10.546 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:54:10.549 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:54:10.550 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:54:10.753 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:54:10.927 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 175.2226ms
+2023-10-15 22:54:10.942 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:54:10.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:54:10.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.9769ms
+2023-10-15 22:54:10.991 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.5911ms
+2023-10-15 22:54:11.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:54:11.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.6005ms
+2023-10-15 22:55:36.897 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:55:37.018 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:55:37.020 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:55:37.024 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:55:37.027 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:55:37.028 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:55:37.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:55:37.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 152.4630ms
+2023-10-15 22:55:37.398 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:55:37.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:55:37.408 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.7151ms
+2023-10-15 22:55:37.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4882ms
+2023-10-15 22:55:37.488 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:55:37.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.9676ms
+2023-10-15 22:56:05.596 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:56:05.721 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:56:05.724 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:56:05.727 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:56:05.729 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:56:05.731 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:56:06.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:56:06.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 158.0941ms
+2023-10-15 22:56:06.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:56:06.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:56:06.488 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 7.6619ms
+2023-10-15 22:56:06.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.3623ms
+2023-10-15 22:56:06.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:56:06.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.5297ms
+2023-10-15 22:56:52.000 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:56:52.118 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:56:52.121 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:56:52.125 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:56:52.128 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:56:52.130 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:56:52.288 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:56:52.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 172.5190ms
+2023-10-15 22:56:52.482 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:56:52.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:56:52.492 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 10.0465ms
+2023-10-15 22:56:52.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.2033ms
+2023-10-15 22:56:52.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:56:52.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.5418ms
+2023-10-15 22:58:24.740 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 22:58:24.872 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 22:58:24.875 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 22:58:24.879 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 22:58:24.881 +03:00 [INF] Hosting environment: Development
+2023-10-15 22:58:24.883 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 22:58:25.184 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 22:58:25.359 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 175.7306ms
+2023-10-15 22:58:25.375 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 22:58:25.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 22:58:25.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.2809ms
+2023-10-15 22:58:25.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.5812ms
+2023-10-15 22:58:25.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 22:58:25.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.6230ms
+2023-10-15 23:05:30.048 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-15 23:05:30.167 +03:00 [INF] Now listening on: https://localhost:5501
+2023-10-15 23:05:30.170 +03:00 [INF] Now listening on: http://localhost:5502
+2023-10-15 23:05:30.174 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 23:05:30.176 +03:00 [INF] Hosting environment: Development
+2023-10-15 23:05:30.178 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-10-15 23:05:30.735 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-10-15 23:05:30.906 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 171.6745ms
+2023-10-15 23:05:30.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 23:05:30.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 6.5610ms
+2023-10-15 23:05:30.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-10-15 23:05:30.968 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.4649ms
+2023-10-15 23:05:31.017 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-10-15 23:05:31.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.1925ms

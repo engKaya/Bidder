@@ -10,7 +10,7 @@ namespace Bidder.Application.Common.Extension
         {
             return Policy
                 .Handle<Exception>()
-                .RetryAsync(3, (exception, count) =>
+                .RetryAsync(5, (exception, count) =>
                 {
                     logger.LogError(exception, "Error while getting bid room with Grpc");
                 });

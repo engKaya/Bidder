@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bidder.IdentityService.Api.Controllers
 { 
-    public partial class IdentityController : BaseController
+    public partial class AuthController : BaseController
     {  
         [HttpPost]
         [ActionName("CreateUser")]

@@ -3,7 +3,7 @@ using Bidder.BidService.Api.GrpcServices;
 using Bidder.BidService.Api.Registration;
 using Bidder.BidService.Infastructure.Context;
 using Bidder.Infastructure.Common.Extensions;
-using Microsoft.AspNetCore.Hosting.Server;
+using Steeltoe.Discovery.Client;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
@@ -34,8 +34,7 @@ builder.Services.ConfigureAuth(builder.Configuration);
 builder.Services.AddGrpc();
 builder.Services.AddGrpcReflection();
 builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
-var serviceProvider = builder.Services.BuildServiceProvider();
-
+var serviceProvider = builder.Services.BuildServiceProvider();  
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -55,6 +54,5 @@ app.UseEndpoints(endpoints =>
 });
 
 app.UseHttpsRedirection(); 
-app.MapControllers();
-app.RegisterConsul(serviceProvider.GetRequiredService<IServer>(), builder.Configuration);
+app.MapControllers();   
 app.Run();

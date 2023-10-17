@@ -1,6 +1,7 @@
 ﻿using Bidder.Application.Common.Extension;
 using Bidder.BidService.Application.Features.Command.Bidding.CreateBid;
 using Bidder.BidService.Application.Mapping;
+using Bidder.BidService.Domain.Entities;
 using Bidder.BidService.Infastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -12,7 +13,6 @@ namespace Bidder.BidService.Api.Registration
         public static IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddServiceRegistrations(configuration);
-            services.AddConsul(configuration);
             services.AddDbContext<BidDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("BidConnectionString"), sqlOptions =>

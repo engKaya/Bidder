@@ -52,7 +52,7 @@
 
     login(loginRequest: LoginRequest): Promise<ResponseMessage<LoginResponse>>{
       this.IsLoadingSubject.next(true);
-      const url = `${this.apiUrl}Identity/login`;
+      const url = `${this.apiUrl}Auth/Login`;
       return lastValueFrom(
         this.http.post<ResponseMessage<LoginResponse>>(url, loginRequest)
       ).then(async (response) => {

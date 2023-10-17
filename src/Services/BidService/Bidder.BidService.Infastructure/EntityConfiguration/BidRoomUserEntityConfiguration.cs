@@ -14,7 +14,7 @@ namespace Bidder.BidService.Infastructure.EntityConfiguration
             builder.Property(x => x.UserId).IsRequired();
             builder.Property(x => x.UserName).IsRequired();
             builder.Property(x => x.JoinedDate).IsRequired();
-            builder.Property(x => x.ExitDate).IsRequired(false);
+            builder.Property(x => x.ExitDate).IsRequired(false); 
             builder.HasOne(x => x.BidRoom).WithMany(x => x.BidRoomUsers).HasForeignKey(x => x.BidRoomId);
         }
     }

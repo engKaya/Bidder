@@ -1,6 +1,9 @@
 using Bidder.Application.Common.Extension;
 using Bidder.IdentityService.Api.Extensions;
 using Bidder.IdentityService.Api.Registration;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.Extensions.DependencyInjection;
+using Steeltoe.Discovery.Client;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -35,6 +38,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.ConfigureValidation();
 builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
+var serviceProvider = builder.Services.BuildServiceProvider();  
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,8 +50,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseHttpLogging();
 app.UseAuthorization();
-
-app.MapControllers();
-
+app.MapControllers(); 
 app.UseCors();
+app.UseConsul();
 app.Run();

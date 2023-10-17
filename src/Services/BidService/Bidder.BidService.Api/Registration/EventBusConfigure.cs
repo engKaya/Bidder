@@ -1,4 +1,6 @@
-﻿using EventBus.Base;
+﻿using Bidder.BidService.Domain.Entities;
+using Bidder.BidService.Infastructure.Context;
+using EventBus.Base;
 using EventBus.Base.Abstraction;
 using EventBus.Factory;
 using RabbitMQ.Client;
@@ -10,6 +12,7 @@ namespace Bidder.BidService.Api.Registration
         public static void AddEventBus(this IServiceCollection services, IConfiguration conf, ILogger logger)
         {
             services.AddHandlersTransient();
+
             try
             {
                 var _uri = conf["RabbitSettings:uri"];

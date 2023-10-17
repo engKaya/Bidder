@@ -7,7 +7,7 @@ using System.Security.Claims;
 namespace Bidder.IdentityService.Api.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]/[action]")]
+    [Route("[controller]/[action]")]
     public partial class BaseController : ControllerBase
     {
         private IMediator? _mediator;

@@ -4,6 +4,7 @@ using Bidder.Application.Common.Redis.Interface;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
 using Bidder.Infastructure.Common.Grpc;
+using Bidder.Infastructure.Common.Protos.Client;
 using Bidder.Infastructure.Common.Protos.Common;
 using Bidder.SignalR.Application.Redis.Interface;
 using Bidder.SignalR.Domain.DTO.Responses.Join;
@@ -39,6 +40,7 @@ namespace Bidder.SignalR.Application.AuctionHub
         public override Task OnDisconnectedAsync(Exception exception)
         {
             logger.LogInformation("Client disconnected", Context.ToString());
+            var userId = identityService.GetUserId();
             return base.OnDisconnectedAsync(exception);
         }
 
@@ -46,7 +48,7 @@ namespace Bidder.SignalR.Application.AuctionHub
         {
             logger.LogInformation("Client joined", Context.ConnectionId.ToString());
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
-            var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
+            var client = new BidGrpcService.BidGrpcServiceClient(grpcChannel);
             GetBidRoomsGrpcResponse response = new();
             logger.LogInformation("Grpc Client Created");
 
