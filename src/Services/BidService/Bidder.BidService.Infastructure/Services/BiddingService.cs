@@ -54,6 +54,13 @@ namespace Bidder.BidService.Infastructure.Services
             return ResponseMessage<BidRoom>.Success(room, 200);
         }
 
+        public async Task<ResponseMessage<BidRoom>> UpdateBidRoom(BidRoom room)
+        { 
+            uof.BidRoomRepository.Update(room);
+            await uof.SaveChangesAsync();
+            return ResponseMessage<BidRoom>.Success(room, 200);
+        }
+
         public async Task<ResponseMessage<ActiveBidRoom>> GetActiveBidRoom(string BidId, CancellationToken cancellationToken)
         { 
             var bid = await uof.BidRepository.FindFirst(x => x.Id == Guid.Parse(BidId), null, cancellationToken, x => x.BidRoom);
@@ -94,5 +101,15 @@ namespace Bidder.BidService.Infastructure.Services
 
             return ResponseMessage<Bid>.Success(room, 200);
         }
+
+        public async Task<ResponseMessage<BidRoom>> GetActiveBidRoom(long RoomId, CancellationToken cancellationToken)
+        {
+            var room = await uof.BidRoomRepository.FindFirst(x => x.Id == RoomId, null, cancellationToken);
+            if (room == null)
+                return ResponseMessage<BidRoom>.Fail("ROOM_NOT_FOUND", 404);
+
+            return ResponseMessage<BidRoom>.Success(room);
+        }
+
     }
 }

@@ -12,6 +12,20 @@
       "UpstreamPathTemplate": "/IdentityService/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
       "UpstreamScheme": "https"
+    },
+
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "LiveService",
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      },
+      "DownstreamPathTemplate": "{everything}",
+      "DownstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DownstreamScheme": "ws",
+      "UpstreamPathTemplate": "/LiveService/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "UpstreamScheme": "ws"
     }
   ],
 

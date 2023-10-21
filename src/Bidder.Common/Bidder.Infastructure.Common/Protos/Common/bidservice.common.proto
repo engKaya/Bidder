@@ -34,3 +34,13 @@ message ActiveBidRoomGrpcResponse {
 message GetActiveBidRoomGrpcRequest {
     string BidId = 1;
 }
+
+message UpdateBidRoomStatusGrpcRequest {
+    int64 RoomId = 1;
+    int32 RoomStatus = 2;    
+}
+
+message UpdateBidRoomStatusGrpcResponse {
+    int64 RoomId = 1;
+    int32 RoomStatus = 2;    
+}

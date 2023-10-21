@@ -1,4 +1,5 @@
-﻿using Bidder.Application.Common.Interfaces;
+﻿using Bidder.Application.Common.Extension;
+using Bidder.Application.Common.Interfaces;
 using Bidder.Application.Common.Redis;
 using Bidder.Application.Common.Redis.Interface;
 using Bidder.Infastructure.Common.Extensions;
@@ -18,6 +19,7 @@ namespace Bidder.SignalR.Api.Extensions
         public static IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddCorsCustom();
+            services.AddConsulConfig(configuration);
             services.AddSignalRCustom();
             services.SetCustomServices();
             services.GetRoomsAndSetRedis();

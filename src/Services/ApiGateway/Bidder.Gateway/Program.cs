@@ -28,19 +28,29 @@ builder.WebHost
     {
         logging.AddConsole();
     }).UseIISIntegration();
+
 builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
     {
-        options.AddDefaultPolicy(builder =>
-        {
-            builder.WithOrigins("*")
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
-        });
+        builder.AllowAnyOrigin();
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
     });
+});
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(); 
+}
 app.UseHttpsRedirection();
 app.UseHttpLogging();
 app.UseCors();
+app.UseWebSockets();
 app.UseOcelot().GetAwaiter().GetResult();
 app.Run();

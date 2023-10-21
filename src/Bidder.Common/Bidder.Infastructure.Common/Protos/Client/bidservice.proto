@@ -12,4 +12,5 @@ service BidGrpcService {
   rpc GetBidRoom (BidGrpcServiceCommon.GetBidRoomGrpcRequest) returns (BidGrpcServiceCommon.GetBidRoomsGrpcResponse);
   rpc GetActiveBidRooms (google.protobuf.Empty) returns (BidGrpcServiceCommon.GetActiveBidRoomsGrpcResponse);
   rpc GetActiveBidRoom(BidGrpcServiceCommon.GetActiveBidRoomGrpcRequest) returns (BidGrpcServiceCommon.ActiveBidRoomGrpcResponse);
+  rpc UpdateBidRoomStatus(BidGrpcServiceCommon.UpdateBidRoomStatusGrpcRequest) returns (BidGrpcServiceCommon.UpdateBidRoomStatusGrpcResponse);
 }

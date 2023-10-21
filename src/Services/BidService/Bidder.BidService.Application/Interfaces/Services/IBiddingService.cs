@@ -14,7 +14,8 @@ namespace Bidder.BidService.Application.Interfaces.Services
         public Task<ResponseMessage<BidRoom>> CreateBidRoom(Bid bid, CancellationToken cancellationToken);
         public Task<ResponseMessage<IEnumerable<ActiveBidRoom>>> GetActiveBidRooms(CancellationToken cancellationToken);
         public Task<ResponseMessage<ActiveBidRoom>> GetActiveBidRoom(string BidId, CancellationToken cancellationToken);
-
+        public Task<ResponseMessage<BidRoom>> GetActiveBidRoom(long RoomId, CancellationToken cancellationToken);
+        public Task<ResponseMessage<BidRoom>> UpdateBidRoom(BidRoom room);
 
     }
 }

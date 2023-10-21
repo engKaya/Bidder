@@ -1,0 +1,974 @@
+2023-10-21 19:14:50.802 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:14:50.841 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:14:50.847 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:14:50.851 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:14:50.855 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:14:53.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:14:53.488 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+DNT: 1
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2023-10-21 19:14:53.495 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:14:53.645 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /index.html
+2023-10-21 19:14:53.652 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: No authentication needed for /swagger/index.html
+2023-10-21 19:14:53.656 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: /index.html route does not require user to be authorized
+2023-10-21 19:14:53.664 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'swagger' is enabled.
+2023-10-21 19:14:53.671 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-10-21 19:14:53.680 +03:00 [INF] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: Retrieving new client information for service: swagger...
+2023-10-21 19:14:53.790 +03:00 [WRN] requestId: 0HMUIA3DC0ABE:00000001, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/swagger/index.html, request method: GET
+2023-10-21 19:14:53.804 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:14:53.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 404 0 - 379.6243ms
+2023-10-21 19:16:05.501 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:16:05.529 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:16:05.536 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:16:05.540 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:16:05.544 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:16:06.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:16:06.905 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at lambda_method20(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-21 19:16:07.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 500 - text/html;+charset=utf-8 198.8359ms
+2023-10-21 19:16:07.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:16:07.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:16:07.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.3005ms
+2023-10-21 19:16:07.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.8141ms
+2023-10-21 19:16:07.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/favicon.ico - -
+2023-10-21 19:16:07.223 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at lambda_method20(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-21 19:16:07.231 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/favicon.ico - - - 500 - text/plain;+charset=utf-8 13.7514ms
+2023-10-21 19:16:37.674 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:16:37.702 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:16:37.708 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:16:37.712 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:16:37.716 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:16:38.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:16:39.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 338.5270ms
+2023-10-21 19:16:39.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:16:39.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 13.7874ms
+2023-10-21 19:16:39.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:16:39.143 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.7172ms
+2023-10-21 19:16:39.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:16:39.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.5523ms
+2023-10-21 19:16:46.324 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/configuration - -
+2023-10-21 19:16:46.332 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /configuration
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:16:46.340 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:16:46.364 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /
+2023-10-21 19:16:46.369 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: No authentication needed for /configuration
+2023-10-21 19:16:46.373 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: / route does not require user to be authorized
+2023-10-21 19:16:46.378 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'configuration' is enabled.
+2023-10-21 19:16:46.380 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-10-21 19:16:46.387 +03:00 [INF] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: Retrieving new client information for service: configuration...
+2023-10-21 19:16:46.462 +03:00 [WRN] requestId: 0HMUIA4D70MA3:00000009, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/configuration, request method: GET
+2023-10-21 19:16:46.467 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:16:46.469 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/configuration - - - 404 0 - 145.2616ms
+2023-10-21 19:23:28.024 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:23:28.055 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:23:28.063 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:23:28.069 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:23:28.072 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:23:29.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:23:29.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 219.7694ms
+2023-10-21 19:23:29.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:23:29.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:23:29.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 12.0292ms
+2023-10-21 19:23:29.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.2678ms
+2023-10-21 19:23:29.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:23:29.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.5749ms
+2023-10-21 19:23:40.212 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-10-21 19:23:40.218 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:40.222 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:40.225 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:23:40.228 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 15.9418ms
+2023-10-21 19:23:40.230 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:23:40.232 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:40.235 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:40.242 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:23:40.264 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:23:40.269 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:23:40.273 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:23:40.280 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'IdentityService' is enabled.
+2023-10-21 19:23:40.283 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-10-21 19:23:40.290 +03:00 [INF] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:23:40.361 +03:00 [WRN] requestId: 0HMUIA87CHD91:00000003, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-10-21 19:23:40.365 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:23:40.368 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 138.0032ms
+2023-10-21 19:23:40.903 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:23:40.905 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:40.908 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:40.910 +03:00 [INF] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:23:40.913 +03:00 [INF] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:23:40.915 +03:00 [INF] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:23:40.916 +03:00 [INF] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:23:40.918 +03:00 [INF] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:23:40.921 +03:00 [WRN] requestId: 0HMUIA87CHD91:00000005, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-10-21 19:23:40.924 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:23:40.926 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 23.2297ms
+2023-10-21 19:23:41.639 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:23:41.641 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:41.644 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:41.645 +03:00 [INF] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:23:41.648 +03:00 [INF] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:23:41.650 +03:00 [INF] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:23:41.651 +03:00 [INF] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:23:41.653 +03:00 [INF] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:23:41.656 +03:00 [WRN] requestId: 0HMUIA87CHD91:00000007, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-10-21 19:23:41.657 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:23:41.659 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 20.3586ms
+2023-10-21 19:23:42.199 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:23:42.203 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:42.205 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:42.208 +03:00 [INF] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:23:42.210 +03:00 [INF] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:23:42.213 +03:00 [INF] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:23:42.215 +03:00 [INF] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:23:42.218 +03:00 [INF] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:23:42.222 +03:00 [WRN] requestId: 0HMUIA87CHD91:00000009, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-10-21 19:23:42.224 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:23:42.226 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 26.3289ms
+2023-10-21 19:23:42.696 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:23:42.698 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:23:42.700 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:23:42.702 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:23:42.704 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:23:42.705 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:23:42.707 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:23:42.709 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:23:42.712 +03:00 [WRN] requestId: 0HMUIA87CHD91:0000000B, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-10-21 19:23:42.714 +03:00 [INF] Response:
+StatusCode: 404
+2023-10-21 19:23:42.716 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 20.0402ms
+2023-10-21 19:24:01.423 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-10-21 19:24:01.426 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:24:01.427 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:24:01.429 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:24:01.431 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 8.0753ms
+2023-10-21 19:24:01.433 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-10-21 19:24:01.434 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:24:01.436 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:24:01.438 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-10-21 19:24:01.440 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-10-21 19:24:01.441 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-10-21 19:24:01.443 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-10-21 19:24:01.444 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-10-21 19:24:05.572 +03:00 [INF] requestId: 0HMUIA87CHD91:0000000F, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5001/Auth/Login
+2023-10-21 19:24:05.584 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 21 Oct 2023 16:24:05 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Content-Length: 749
+2023-10-21 19:24:05.586 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 200 749 application/json;+charset=utf-8 4153.5551ms
+2023-10-21 19:26:59.264 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:26:59.291 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:26:59.295 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:26:59.298 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:26:59.301 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:27:00.596 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:27:00.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 289.6585ms
+2023-10-21 19:27:00.899 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:27:00.927 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:27:00.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 41.1548ms
+2023-10-21 19:27:01.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.1844ms
+2023-10-21 19:27:01.082 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:27:01.251 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.2066ms
+2023-10-21 19:27:40.346 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:27:40.380 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:27:40.387 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:27:40.393 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:27:40.397 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:27:41.729 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:27:41.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 271.1895ms
+2023-10-21 19:27:42.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:27:42.039 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:27:42.050 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 14.3204ms
+2023-10-21 19:27:42.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.9757ms
+2023-10-21 19:27:42.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:27:42.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.8031ms
+2023-10-21 19:28:43.493 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:28:43.519 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:28:43.525 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:28:43.528 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:28:43.532 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:28:44.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:28:44.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 305.7471ms
+2023-10-21 19:28:44.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:28:44.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 12.1471ms
+2023-10-21 19:28:44.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:28:44.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.2485ms
+2023-10-21 19:28:45.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:28:45.229 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.4199ms
+2023-10-21 19:31:11.273 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:31:11.303 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:31:11.307 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:31:11.310 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:31:11.312 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:31:12.884 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:31:13.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 257.0978ms
+2023-10-21 19:31:13.176 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:31:13.176 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:31:13.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 19.2210ms
+2023-10-21 19:31:13.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.4672ms
+2023-10-21 19:31:13.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:31:13.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 159.6591ms
+2023-10-21 19:31:56.513 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 19:31:56.521 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:31:56.525 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:31:56.529 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:31:56.531 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 18.0444ms
+2023-10-21 19:32:42.985 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 19:32:42.991 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:32:42.995 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:32:42.997 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:32:42.999 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 13.6958ms
+2023-10-21 19:35:41.247 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:35:41.275 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:35:41.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:35:41.284 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:35:41.287 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:35:42.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:35:43.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 285.2721ms
+2023-10-21 19:35:43.161 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:35:43.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:35:43.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 16.3819ms
+2023-10-21 19:35:43.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.2644ms
+2023-10-21 19:35:43.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:35:43.483 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.9701ms
+2023-10-21 19:35:51.354 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 19:35:51.362 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:35:51.368 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:35:51.372 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:35:51.376 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 21.9257ms
+2023-10-21 19:37:21.061 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:37:21.091 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:37:21.097 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:37:21.101 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:37:21.105 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:37:22.731 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:37:23.004 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 274.5058ms
+2023-10-21 19:37:23.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:37:23.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:37:23.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.3160ms
+2023-10-21 19:37:23.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.5151ms
+2023-10-21 19:37:23.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:37:23.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 170.5810ms
+2023-10-21 19:37:31.816 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 19:37:31.824 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 19:37:31.829 +03:00 [INF] CORS policy execution successful.
+2023-10-21 19:37:31.833 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 19:37:31.835 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 19.1651ms
+2023-10-21 19:39:29.638 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:39:29.675 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:39:29.684 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:39:29.687 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:39:29.692 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:39:30.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:39:30.955 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 323.9428ms
+2023-10-21 19:39:30.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:39:30.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.2746ms
+2023-10-21 19:39:31.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:39:31.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.2499ms
+2023-10-21 19:39:31.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:39:31.304 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.2595ms
+2023-10-21 19:43:30.164 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:43:30.200 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:43:30.208 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:43:30.211 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:43:30.214 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:43:31.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:43:32.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 279.0801ms
+2023-10-21 19:43:32.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:43:32.067 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:43:32.088 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 22.6151ms
+2023-10-21 19:43:32.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.1099ms
+2023-10-21 19:43:32.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:43:32.348 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.5641ms
+2023-10-21 19:46:17.180 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:46:17.207 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:46:17.211 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:46:17.215 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:46:17.219 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:46:18.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:46:18.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 231.2243ms
+2023-10-21 19:46:18.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:46:18.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:46:18.932 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 18.6119ms
+2023-10-21 19:46:18.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.0340ms
+2023-10-21 19:46:19.067 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:46:19.183 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.6356ms
+2023-10-21 19:49:26.825 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:49:26.857 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:49:26.864 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:49:26.869 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:49:26.872 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:49:47.738 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:49:47.767 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:49:47.774 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:49:47.778 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:49:47.782 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:49:49.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:49:49.567 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 293.8934ms
+2023-10-21 19:49:49.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:49:49.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:49:49.598 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.3307ms
+2023-10-21 19:49:49.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.9221ms
+2023-10-21 19:49:49.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:49:49.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.8275ms
+2023-10-21 19:50:20.449 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 19:50:20.483 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 19:50:20.489 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 19:50:20.493 +03:00 [INF] Hosting environment: Development
+2023-10-21 19:50:20.496 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 19:50:22.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 19:50:22.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 191.1449ms
+2023-10-21 19:50:22.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 19:50:22.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.3128ms
+2023-10-21 19:50:22.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 19:50:22.373 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7714ms
+2023-10-21 19:50:22.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 19:50:22.600 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.3437ms
+2023-10-21 20:30:38.017 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 20:30:38.048 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 20:30:38.055 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 20:30:38.059 +03:00 [INF] Hosting environment: Development
+2023-10-21 20:30:38.061 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 20:30:39.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 20:30:39.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 260.6221ms
+2023-10-21 20:30:39.740 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 20:30:39.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.1906ms
+2023-10-21 20:30:39.762 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 20:30:39.806 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.3545ms
+2023-10-21 20:30:39.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 20:30:40.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.3722ms
+2023-10-21 20:31:16.340 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 20:31:16.367 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 20:31:16.372 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 20:31:16.377 +03:00 [INF] Hosting environment: Development
+2023-10-21 20:31:16.380 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 20:31:17.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 20:31:17.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 247.3747ms
+2023-10-21 20:31:18.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 20:31:18.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 20:31:18.033 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 12.2081ms
+2023-10-21 20:31:18.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.2631ms
+2023-10-21 20:31:18.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 20:31:18.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.8049ms
+2023-10-21 20:31:33.064 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:31:33.071 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:31:33.077 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:31:33.081 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:31:33.083 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 19.8324ms
+2023-10-21 20:32:23.158 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 20:32:23.185 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 20:32:23.190 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 20:32:23.192 +03:00 [INF] Hosting environment: Development
+2023-10-21 20:32:23.194 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 20:32:23.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 20:32:24.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 245.0399ms
+2023-10-21 20:32:24.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 20:32:24.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 6.7077ms
+2023-10-21 20:32:24.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 20:32:24.083 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.6661ms
+2023-10-21 20:32:24.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 20:32:24.249 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.5000ms
+2023-10-21 20:32:34.481 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:32:34.489 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:32:34.497 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:32:34.501 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:32:34.503 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 22.3039ms
+2023-10-21 20:33:43.400 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:33:43.403 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:33:43.406 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:33:43.408 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:33:43.411 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 11.0126ms
+2023-10-21 20:33:51.026 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:33:51.029 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:33:51.032 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:33:51.034 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:33:51.037 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 10.5237ms
+2023-10-21 20:33:59.707 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:33:59.709 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:33:59.712 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:33:59.715 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:33:59.718 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 10.8933ms
+2023-10-21 20:34:10.595 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:34:10.598 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:34:10.600 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:34:10.603 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:34:10.605 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 10.1635ms
+2023-10-21 20:56:27.737 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 20:56:27.768 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 20:56:27.773 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 20:56:27.778 +03:00 [INF] Hosting environment: Development
+2023-10-21 20:56:27.782 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 20:56:31.005 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 20:56:31.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 561.4440ms
+2023-10-21 20:56:31.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 20:56:31.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 20:56:31.687 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 33.2173ms
+2023-10-21 20:56:31.805 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.5077ms
+2023-10-21 20:56:32.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 20:56:32.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.6680ms
+2023-10-21 20:56:39.882 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 20:56:39.895 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 20:56:39.905 +03:00 [INF] CORS policy execution successful.
+2023-10-21 20:56:39.912 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 20:56:39.916 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 33.8112ms
+2023-10-21 20:59:52.979 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 20:59:53.006 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 20:59:53.011 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 20:59:53.016 +03:00 [INF] Hosting environment: Development
+2023-10-21 20:59:53.020 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 20:59:56.681 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 20:59:57.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 430.1113ms
+2023-10-21 20:59:57.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 20:59:57.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 11.0844ms
+2023-10-21 20:59:57.184 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 20:59:57.316 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.4470ms
+2023-10-21 20:59:57.591 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 20:59:57.836 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.2265ms
+2023-10-21 21:01:26.105 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 21:01:26.135 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 21:01:26.142 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 21:01:26.144 +03:00 [INF] Hosting environment: Development
+2023-10-21 21:01:26.148 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 21:01:29.790 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 21:01:30.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 489.6050ms
+2023-10-21 21:01:30.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:01:30.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 19.8819ms
+2023-10-21 21:01:30.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 21:01:30.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.1343ms
+2023-10-21 21:01:30.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 21:01:31.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.5786ms
+2023-10-21 21:01:41.225 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 21:01:41.233 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 21:01:41.238 +03:00 [INF] CORS policy execution successful.
+2023-10-21 21:01:41.242 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 21:01:41.245 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 19.6839ms
+2023-10-21 21:02:13.885 +03:00 [INF] Now listening on: https://localhost:5000
+2023-10-21 21:02:13.916 +03:00 [INF] Now listening on: http://localhost:6000
+2023-10-21 21:02:13.922 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 21:02:13.924 +03:00 [INF] Hosting environment: Development
+2023-10-21 21:02:13.927 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-10-21 21:02:17.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-10-21 21:02:17.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 428.7658ms
+2023-10-21 21:02:17.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-10-21 21:02:17.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:02:17.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.7547ms
+2023-10-21 21:02:17.789 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.5742ms
+2023-10-21 21:02:18.219 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-10-21 21:02:18.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.1354ms
+2023-10-21 21:02:23.517 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - -
+2023-10-21 21:02:23.526 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /LiveService/hub/bidhub/negotiate
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-10-21 21:02:23.531 +03:00 [INF] CORS policy execution successful.
+2023-10-21 21:02:23.535 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-10-21 21:02:23.538 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/LiveService/hub/bidhub/negotiate?negotiateVersion=1 - - - 204 - - 20.8502ms

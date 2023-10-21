@@ -69,6 +69,17 @@ namespace Bidder.SignalR.Application.AuctionHub
                 return new JoinResponse(HttpStatusCode.NotFound, "BID_NOT_FOUND", Context.ConnectionId);
             }
 
+            if (response.BidStatus == (int)BidRoomStatus.Finished || response.BidEndDate.ToDateTime() < DateTime.Now)
+            {
+                if (response.BidStatus != (int)BidRoomStatus.Finished)
+                {
+                    UpdateRoomStatus(response.RoomId, (int)BidRoomStatus.Finished);
+                };
+                var status = BidRoomStatus.Finished;
+                logger.LogInformation("BidRoomStatus:{status}, Exiting", status);
+                return new JoinResponse(HttpStatusCode.NotFound, "BID_NOT_FOUND", Context.ConnectionId);
+
+            }
 
 
             if (response.BidStatus == (int)BidRoomStatus.Created)
@@ -130,6 +141,18 @@ namespace Bidder.SignalR.Application.AuctionHub
         public async Task SendMessage(string BidId, string connectionId, string message)
         {
             await Clients.GroupExcept(BidId, new List<string> { connectionId }).SendAsync("ReceiveMessage", message);
+        }
+
+        private async void UpdateRoomStatus(long RoomId, int RoomStatus)
+        { 
+            using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
+            var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
+
+            await client.UpdateBidRoomStatusAsync(new UpdateBidRoomStatusGrpcRequest()
+            {
+                RoomId = RoomId,
+                RoomStatus = RoomStatus
+            });
         }
     }
 }

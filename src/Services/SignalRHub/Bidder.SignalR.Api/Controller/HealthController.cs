@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace Bidder.SignalR.Api.Controllers
 {
-    public class HealthController : ControllerBase
+    public class HealthController : BaseController
     {
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]

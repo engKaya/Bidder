@@ -1,4 +1,5 @@
 ﻿using Bidder.BidService.Application.Interfaces.Services;
+using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Infastructure.Common.Protos.Common;
 using Bidder.Infastructure.Common.Protos.Server;
@@ -89,6 +90,26 @@ namespace Bidder.BidService.Api.GrpcServices
             response.BidStatus = (int)serviceresponse.Data.BidRoomStatus;
             response.BidEndDate = serviceresponse.Data.BidEndDate.ToUniversalTime().ToTimestamp();
 
+            return response;
+        }
+
+        public override async Task<UpdateBidRoomStatusGrpcResponse> UpdateBidRoomStatus(UpdateBidRoomStatusGrpcRequest request, ServerCallContext context)
+        {
+            var response = new UpdateBidRoomStatusGrpcResponse();
+            var bidRoomResponse = await bidService.GetActiveBidRoom(request.RoomId, context.CancellationToken);
+            
+            if (bidRoomResponse.StatusCode == (int)HttpStatusCode.NotFound)
+            {
+                response.RoomStatus = (int)BidRoomStatus.NeverCreated;
+                return response;
+            }
+
+            BidRoom data = bidRoomResponse.Data;
+            data.RoomStatus = (BidRoomStatus)request.RoomStatus;
+
+            var result = await bidService.UpdateBidRoom(data);
+            response.RoomStatus = (int)result.Data.RoomStatus;
+            response.RoomId = result.Data.Id;
             return response;
         }
     }
