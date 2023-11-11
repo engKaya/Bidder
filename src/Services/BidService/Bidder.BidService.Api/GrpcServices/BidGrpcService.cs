@@ -1,4 +1,5 @@
-﻿using Bidder.BidService.Application.Interfaces.Services;
+﻿using Bidder.BidService.Application.Features.Command.Bidding.GetBid;
+using Bidder.BidService.Application.Interfaces.Services;
 using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.Bid.Enums;
 using Bidder.Infastructure.Common.Protos.Common;
@@ -6,6 +7,7 @@ using Bidder.Infastructure.Common.Protos.Server;
 using EventBus.Base.Abstraction;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MediatR;
 using System.Net;
 
 namespace Bidder.BidService.Api.GrpcServices
@@ -13,17 +15,20 @@ namespace Bidder.BidService.Api.GrpcServices
     public class BidGrpcServerService : BidGrpcService.BidGrpcServiceBase
     {
         private readonly IEventBus eventBus;
-        private readonly IBiddingService bidService; 
+        private readonly IBiddingService bidService;
+        private readonly IMediator mediator;
+         
 
-        public BidGrpcServerService(IEventBus eventBus, IBiddingService bidService)
+        public BidGrpcServerService(IEventBus eventBus, IBiddingService bidService, IMediator mediator)
         {
             this.eventBus = eventBus;
             this.bidService = bidService;
+            this.mediator = mediator;
         }
 
         public override async Task<GetBidRoomsGrpcResponse> GetBidRoom(GetBidRoomGrpcRequest request, ServerCallContext context)
         {
-            var result = await bidService.GetBid(Guid.Parse(request.Id), context.CancellationToken);
+            var result = await mediator.Send(new GetBidQuery(Guid.Parse(request.Id)), context.CancellationToken);
             var response = new GetBidRoomsGrpcResponse();
             if (result.StatusCode == (int)HttpStatusCode.NotFound)
             {
@@ -89,6 +94,7 @@ namespace Bidder.BidService.Api.GrpcServices
             response.RoomId= serviceresponse.Data.RoomId;
             response.BidStatus = (int)serviceresponse.Data.BidRoomStatus;
             response.BidEndDate = serviceresponse.Data.BidEndDate.ToUniversalTime().ToTimestamp();
+            response.OwnerId= serviceresponse.Data.OwnerId.ToString();
 
             return response;
         }

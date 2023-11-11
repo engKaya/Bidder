@@ -33,6 +33,7 @@ builder.Services.AddCustomServices(builder.Configuration);
 builder.Services.ConfigureAuth(builder.Configuration);
 builder.Services.AddGrpc();
 builder.Services.AddGrpcReflection();
+builder.Services.AddConsulConfig(builder.Configuration);
 builder.Services.AddElasticWithSerilog(Assembly.GetExecutingAssembly().GetName().Name, builder.Configuration, builder.Environment.EnvironmentName);
 var serviceProvider = builder.Services.BuildServiceProvider();  
 var app = builder.Build();
@@ -55,4 +56,5 @@ app.UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection(); 
 app.MapControllers();   
+app.UseConsul();
 app.Run();

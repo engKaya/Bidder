@@ -50,19 +50,26 @@ namespace Bidder.SignalR.Application.Services.Implementation
 
         private async Task<GetActiveBidRoomsGrpcResponse> GetRoomsFromBidService()
         {
-            _logger.LogInformation("GetActiveRoomsAndSaveToRedis has started");
+            try
+            {  
+                _logger.LogInformation("GetActiveRoomsAndSaveToRedis has started");
 
-            using var channel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
-            var client = new BidGrpcService.BidGrpcServiceClient(channel);
+                using var channel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
+                var client = new BidGrpcService.BidGrpcServiceClient(channel);
 
-            var policy = PollyPolicyGenerator.CreateExceptionPolicy(_logger);
-            var response = await policy.ExecuteAsync<GetActiveBidRoomsGrpcResponse>(async () =>
+                var policy = PollyPolicyGenerator.CreateExceptionPolicy(_logger);
+                var response = await policy.ExecuteAsync<GetActiveBidRoomsGrpcResponse>(async () =>
+                {
+                    return await client.GetActiveBidRoomsAsync(new Google.Protobuf.WellKnownTypes.Empty());
+                });
+
+                _logger.LogInformation($"GetActiveRoomsAndSaveToRedis has finished with {response.ActiveBidRooms.Count}");
+                return response;
+            }
+            catch (Exception ex)
             {
-                return await client.GetActiveBidRoomsAsync(new Google.Protobuf.WellKnownTypes.Empty());
-            });
-
-            _logger.LogInformation($"GetActiveRoomsAndSaveToRedis has finished with {response.ActiveBidRooms.Count}");
-            return response;
+                return null;
+            }
         }
     }
 }
