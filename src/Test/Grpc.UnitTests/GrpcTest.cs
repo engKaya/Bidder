@@ -1,5 +1,4 @@
-using Bidder.Infastructure.Common.Grpc;
-using Bidder.Infastructure.Common.Protos.Client;
+
 
 namespace Grpc.UnitTests
 {
@@ -12,7 +11,8 @@ namespace Grpc.UnitTests
             using var channel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
             var client = new BidGrpcService.BidGrpcServiceClient(channel);
 
-            var response = client.GetActiveBidRoomAsync(new Google.Protobuf.WellKnownTypes.Empty());
+            var response = client.GetActiveBidRooms(new Empty());
+
             Assert.IsNotNull(response);
         }
     }

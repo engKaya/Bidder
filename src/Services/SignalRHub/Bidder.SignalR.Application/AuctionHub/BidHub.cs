@@ -109,16 +109,17 @@ namespace Bidder.SignalR.Application.AuctionHub
                         await roomRedisService.CreateOrUpdateRoom(bidRoom);
                     }
                 }
-            }
-
+            } 
             return new JoinResponse(HttpStatusCode.OK, "JOINED", Context.ConnectionId);
-        }
+        } 
+
+
 
         private async Task<ActiveBidRoomGrpcResponse> GetActiveBidRoomWithGrpcAsync(string BidId)
         {
 
             using var grpcChannel = GrpcClientFactory.GrpcChannelFactory(GrpcServerType.BiddingGrpcService);
-            var client = new Infastructure.Common.Protos.Client.BidGrpcService.BidGrpcServiceClient(grpcChannel);
+            var client = new BidGrpcService.BidGrpcServiceClient(grpcChannel);
 
             GetActiveBidRoomGrpcRequest request = new() { BidId = BidId };
             var response = await client.GetActiveBidRoomAsync(request);
