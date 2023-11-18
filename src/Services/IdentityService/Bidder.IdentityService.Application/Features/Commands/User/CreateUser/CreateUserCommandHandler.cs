@@ -1,6 +1,6 @@
 ﻿using Bidder.Domain.Common.BaseClassess;
 using Bidder.IdentityService.Application.IntegrationEvents;
-using Bidder.IdentityService.Application.Interfaces.Repos;
+using Bidder.IdentityService.Application.Services.Interfaces;
 using Bidder.IdentityService.Domain.Entities;
 using EventBus.Base.Abstraction;
 using MediatR;
@@ -10,13 +10,13 @@ namespace Bidder.IdentityService.Application.Features.Commands.User.CreateUser
 {
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, ResponseMessageNoContent>
     {
-        private readonly IUnitOfWork uof;
+        private readonly IUserService userService;
         private readonly ILogger<CreateUserCommandHandler> logger;
         private readonly IEventBus eventBus;
 
-        public CreateUserCommandHandler(IUnitOfWork uof, IEventBus eventBus, ILogger<CreateUserCommandHandler> logger)
+        public CreateUserCommandHandler(IUserService userService, IEventBus eventBus, ILogger<CreateUserCommandHandler> logger)
         {
-            this.uof = uof;
+            this.userService = userService;
             this.logger = logger;
             this.eventBus = eventBus;
         }
@@ -25,14 +25,13 @@ namespace Bidder.IdentityService.Application.Features.Commands.User.CreateUser
         {
             try
             {
-                Users userMailCheck = await uof.UserRepository.FindFirst(x => x.Email == request.Email);
-                if (userMailCheck is not null)
+                bool userMailCheck = await userService.IsEmailUnique(request.Email);
+                if (!userMailCheck)
                     return ResponseMessageNoContent.Fail("User Already Exists", 400);
 
                 var user = new Users(request.Email, request.Password, request.Name, request.Surname);
 
-                await uof.UserRepository.Add(user, cancellationToken);
-                await uof.SaveChangesAsync(cancellationToken);
+                await userService.SaveUser(user, cancellationToken);
                 eventBus.Publish(new NewUserIntegrationEvent(user.Email, user.Username));
                 return ResponseMessageNoContent.Success("User Successfully Created", 200);
 

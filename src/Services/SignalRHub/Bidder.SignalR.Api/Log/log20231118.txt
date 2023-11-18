@@ -41,3 +41,45 @@
 2023-11-18 14:06:57.813 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 3.4609ms
 2023-11-18 14:06:57.816 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
 2023-11-18 14:06:57.819 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 19.1762ms
+2023-11-18 14:14:41.174 +03:00 [INF] Registering with Consul
+2023-11-18 14:14:41.242 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-18 14:14:41.352 +03:00 [INF] Now listening on: https://localhost:5501
+2023-11-18 14:14:41.354 +03:00 [INF] Now listening on: http://localhost:5502
+2023-11-18 14:14:41.357 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-18 14:14:41.360 +03:00 [INF] Hosting environment: Development
+2023-11-18 14:14:41.362 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-11-18 14:15:00.914 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5501/health/get - -
+2023-11-18 14:15:00.978 +03:00 [INF] Executing endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:15:00.995 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.SignalR.Api.Controllers.HealthController (Bidder.SignalR.Api).
+2023-11-18 14:15:01.001 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-18 14:15:01.007 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 7.0245ms
+2023-11-18 14:15:01.010 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:15:01.014 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 100.8168ms
+2023-11-18 14:15:31.023 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5501/health/get - -
+2023-11-18 14:15:31.031 +03:00 [INF] Executing endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:15:31.033 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.SignalR.Api.Controllers.HealthController (Bidder.SignalR.Api).
+2023-11-18 14:15:31.036 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-18 14:15:31.039 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 3.0176ms
+2023-11-18 14:15:31.041 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:15:31.043 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 20.8513ms
+2023-11-18 14:15:49.033 +03:00 [INF] Registering with Consul
+2023-11-18 14:15:49.107 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-18 14:15:49.230 +03:00 [INF] Now listening on: https://localhost:5501
+2023-11-18 14:15:49.233 +03:00 [INF] Now listening on: http://localhost:5502
+2023-11-18 14:15:49.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-18 14:15:49.238 +03:00 [INF] Hosting environment: Development
+2023-11-18 14:15:49.240 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-11-18 14:16:16.566 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5501/health/get - -
+2023-11-18 14:16:16.648 +03:00 [INF] Executing endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:16:16.667 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.SignalR.Api.Controllers.HealthController (Bidder.SignalR.Api).
+2023-11-18 14:16:16.677 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-18 14:16:16.683 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 10.2451ms
+2023-11-18 14:16:16.688 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:16:16.693 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 127.7741ms
+2023-11-18 14:16:46.702 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5501/health/get - -
+2023-11-18 14:16:46.706 +03:00 [INF] Executing endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:16:46.709 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.SignalR.Api.Controllers.HealthController (Bidder.SignalR.Api).
+2023-11-18 14:16:46.711 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-18 14:16:46.713 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 2.4369ms
+2023-11-18 14:16:46.715 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-18 14:16:46.718 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 15.4877ms

@@ -95,3 +95,146 @@ Server: Kestrel
 Access-Control-Allow-Origin: [Redacted]
 Content-Length: 749
 2023-11-18 14:06:52.444 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 200 749 application/json;+charset=utf-8 1724.7634ms
+2023-11-18 14:14:37.971 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-18 14:14:38.011 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-18 14:14:38.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-18 14:14:38.023 +03:00 [INF] Hosting environment: Development
+2023-11-18 14:14:38.030 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-18 14:15:45.002 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-18 14:15:45.030 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-18 14:15:45.035 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-18 14:15:45.038 +03:00 [INF] Hosting environment: Development
+2023-11-18 14:15:45.041 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-18 14:15:45.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-18 14:15:46.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 226.8272ms
+2023-11-18 14:15:46.209 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-18 14:15:46.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-18 14:15:46.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 13.1802ms
+2023-11-18 14:15:46.563 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 349.2662ms
+2023-11-18 14:15:46.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-18 14:15:46.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.4702ms
+2023-11-18 14:15:54.855 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-18 14:15:54.863 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-18 14:15:54.868 +03:00 [INF] CORS policy execution successful.
+2023-11-18 14:15:54.872 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-18 14:15:54.874 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 19.2189ms
+2023-11-18 14:15:54.877 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-18 14:15:54.879 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-18 14:15:54.882 +03:00 [INF] CORS policy execution successful.
+2023-11-18 14:15:54.890 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-18 14:15:54.917 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-18 14:15:54.922 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-18 14:15:54.926 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-18 14:15:54.931 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'IdentityService' is enabled.
+2023-11-18 14:15:54.933 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-11-18 14:15:54.942 +03:00 [INF] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-18 14:15:55.010 +03:00 [WRN] requestId: 0HMV84UQRR372:00000003, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-18 14:15:55.014 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-18 14:15:55.017 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 140.3477ms
+2023-11-18 14:16:08.343 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-18 14:16:08.345 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-18 14:16:08.348 +03:00 [INF] CORS policy execution successful.
+2023-11-18 14:16:08.350 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-18 14:16:08.353 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 9.8857ms
+2023-11-18 14:16:08.354 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-18 14:16:08.357 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-18 14:16:08.359 +03:00 [INF] CORS policy execution successful.
+2023-11-18 14:16:08.361 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-18 14:16:08.364 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-18 14:16:08.366 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-18 14:16:08.368 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-18 14:16:08.370 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-18 14:16:35.630 +03:00 [INF] requestId: 0HMV84UQRR372:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5001/Auth/Login
+2023-11-18 14:16:35.644 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 18 Nov 2023 11:16:35 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Content-Length: 749
+2023-11-18 14:16:35.648 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 200 749 application/json;+charset=utf-8 27293.0903ms

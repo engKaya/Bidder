@@ -1,5 +1,5 @@
 ﻿using Bidder.Domain.Common.BaseClassess;
-using Bidder.IdentityService.Application.Interfaces.Repos;
+using Bidder.IdentityService.Application.Services.Interfaces;
 using Bidder.IdentityService.Domain.DTOs.User.Responses;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -13,17 +13,17 @@ namespace Bidder.IdentityService.Application.Features.Queries.User.Login
 {
     public class LoginQueryHandler : IRequestHandler<LoginQuery, ResponseMessage<LoginResponse>>
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserService _userService;
         private readonly IConfiguration _configuration;
-        public LoginQueryHandler(IUnitOfWork unitOfWork, IConfiguration configuration)
+        public LoginQueryHandler(IUserService userService, IConfiguration configuration)
         {
-            _unitOfWork = unitOfWork;
+            _userService = userService;
             _configuration = configuration;
         }
 
         public async Task<ResponseMessage<LoginResponse>> Handle(LoginQuery request, CancellationToken cancellationToken)
         {
-            var user = await _unitOfWork.UserRepository.FindFirst(x => x.Email == request.Email); 
+            var user = await _userService.GetUserWithEmail(request.Email);
             if (user is null || !user.VerifyPassword(request.Password)) return ResponseMessage<LoginResponse>.Fail("Password Or Email not correct", (int)HttpStatusCode.Unauthorized);
             var secretKey = _configuration["CustomSettings:Key"];
 
