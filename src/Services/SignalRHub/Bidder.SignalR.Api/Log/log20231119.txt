@@ -307,3 +307,25 @@
 2023-11-19 21:20:28.372 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 7.7644ms
 2023-11-19 21:20:28.375 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
 2023-11-19 21:20:28.377 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 47.9739ms
+2023-11-19 21:22:20.187 +03:00 [INF] Registering with Consul
+2023-11-19 21:22:20.263 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:22:20.373 +03:00 [INF] Now listening on: https://localhost:5501
+2023-11-19 21:22:20.375 +03:00 [INF] Now listening on: http://localhost:5502
+2023-11-19 21:22:20.378 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:22:20.380 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:22:20.382 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\SignalRHub\Bidder.SignalR.Api
+2023-11-19 21:22:20.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/index.html - -
+2023-11-19 21:22:20.813 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/index.html - - - 200 - text/html;charset=utf-8 157.3335ms
+2023-11-19 21:22:20.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:22:20.834 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/_vs/browserLink - -
+2023-11-19 21:22:20.838 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 13.8898ms
+2023-11-19 21:22:20.869 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.5766ms
+2023-11-19 21:22:20.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - -
+2023-11-19 21:22:20.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5501/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.5301ms
+2023-11-19 21:22:50.193 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5501/health/get - -
+2023-11-19 21:22:50.200 +03:00 [INF] Executing endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-19 21:22:50.218 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.SignalR.Api.Controllers.HealthController (Bidder.SignalR.Api).
+2023-11-19 21:22:50.225 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:22:50.230 +03:00 [INF] Executed action Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api) in 7.0832ms
+2023-11-19 21:22:50.234 +03:00 [INF] Executed endpoint 'Bidder.SignalR.Api.Controllers.HealthController.Get (Bidder.SignalR.Api)'
+2023-11-19 21:22:50.236 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5501/health/get - - - 200 - text/plain;+charset=utf-8 43.7088ms

@@ -933,3 +933,40 @@ Content-Type: text/plain; charset=utf-8
 Date: Sun, 19 Nov 2023 18:20:31 GMT
 Server: Kestrel
 2023-11-19 21:20:32.722 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.2807ms
+2023-11-19 21:21:55.252 +03:00 [INF] Registering with Consul
+2023-11-19 21:21:55.551 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:21:55.672 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 21:21:55.674 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 21:21:55.676 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:21:55.678 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:21:55.680 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 21:21:55.937 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 21:21:56.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 142.1593ms
+2023-11-19 21:21:56.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:21:56.096 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 21:21:56.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 8.5524ms
+2023-11-19 21:21:56.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.4269ms
+2023-11-19 21:21:56.177 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 21:21:56.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.6411ms
+2023-11-19 21:22:43.636 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:22:43.644 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:22:43.649 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:22:43.658 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:22:43.666 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:22:43.672 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 9.1279ms
+2023-11-19 21:22:43.677 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:22:43.680 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:22:43 GMT
+Server: Kestrel
+2023-11-19 21:22:43.682 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 45.6462ms
