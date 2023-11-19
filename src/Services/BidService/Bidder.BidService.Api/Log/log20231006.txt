@@ -18,7 +18,7 @@ WHERE [b].[Id] = @__id_0
 2023-10-06 00:59:59.445 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 27.8653ms
 2023-10-06 01:00:57.844 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc -
 2023-10-06 01:00:57.849 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
-2023-10-06 01:00:57.857 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30']
+2023-10-06 01:00:57.857 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='ae795423-86f0-42fa-9391-ca22778d7a36'], CommandType='"Text"', CommandTimeout='30'] DASDASD
 SELECT TOP(1) [b].[Id], [b].[CategoryId], [b].[CreatedAt], [b].[Description], [b].[EndDate], [b].[HasIncreaseRest], [b].[IsEnded], [b].[MinPrice], [b].[MinPriceIncrease], [b].[ProductType], [b].[Title], [b].[UserId], [b0].[Id], [b0].[BidId], [b0].[BidName], [b0].[CreatedAt], [b0].[RoomStatus]
 FROM [Bid] AS [b]
 LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
