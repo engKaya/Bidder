@@ -1,0 +1,469 @@
+2023-11-19 15:43:53.738 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:43:53.765 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:43:53.769 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:43:53.771 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:43:53.773 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:44:37.618 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:44:37.645 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:44:37.649 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:44:37.652 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:44:37.655 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:45:49.245 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:45:49.273 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:45:49.277 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:45:49.280 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:45:49.283 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:46:12.023 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:46:12.050 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:46:12.054 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:46:12.057 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:46:12.060 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:46:30.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 15:46:30.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 178.6884ms
+2023-11-19 15:46:30.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:46:30.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 15:46:30.824 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.7075ms
+2023-11-19 15:46:30.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.6911ms
+2023-11-19 15:46:30.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 15:46:31.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.3025ms
+2023-11-19 15:46:42.186 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:46:42.214 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:46:42.219 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:46:42.223 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:46:42.226 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:46:46.529 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 15:46:46.651 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 124.5624ms
+2023-11-19 15:46:46.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:46:46.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 15:46:46.687 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 12.1976ms
+2023-11-19 15:46:46.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.5531ms
+2023-11-19 15:46:46.757 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 15:46:55.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8902.4895ms
+2023-11-19 15:48:27.343 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:48:27.372 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:48:27.377 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:48:27.380 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:48:27.383 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:48:43.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 15:48:43.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 144.2590ms
+2023-11-19 15:48:43.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 15:48:43.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:48:43.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.4091ms
+2023-11-19 15:48:43.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.8241ms
+2023-11-19 15:48:43.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 15:48:43.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.1883ms
+2023-11-19 15:49:39.073 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 15:49:39.104 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 15:49:39.110 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:49:39.114 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:49:39.118 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 15:49:43.423 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 15:49:43.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 120.1159ms
+2023-11-19 15:49:43.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:49:43.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 15:49:43.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 7.9592ms
+2023-11-19 15:49:43.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3370ms
+2023-11-19 15:49:43.645 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 15:49:43.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.5824ms
+2023-11-19 15:50:16.045 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-19 15:50:16.054 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 15:50:16.057 +03:00 [INF] CORS policy execution successful.
+2023-11-19 15:50:16.060 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-19 15:50:16.062 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 18.1064ms
+2023-11-19 15:50:16.064 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 15:50:16.066 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 15:50:16.069 +03:00 [INF] CORS policy execution successful.
+2023-11-19 15:50:16.076 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 15:50:16.096 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 15:50:16.100 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 15:50:16.103 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 15:50:16.107 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'IdentityService' is enabled.
+2023-11-19 15:50:16.109 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-11-19 15:50:16.116 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 15:50:34.861 +03:00 [INF] requestId: 0HMV8VNV60HAA:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5001/Auth/Login
+2023-11-19 15:50:34.874 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sun, 19 Nov 2023 12:50:34 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Content-Length: 749
+2023-11-19 15:50:34.876 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 200 749 application/json;+charset=utf-8 18812.1417ms
+2023-11-19 21:04:03.760 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 21:04:03.791 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 21:04:03.797 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:04:03.800 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:04:03.802 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 21:04:25.861 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-19 21:04:25.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 21:04:25.951 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:25.956 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:25.961 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-19 21:04:25.970 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 110.5561ms
+2023-11-19 21:04:25.979 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:25.983 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:25.989 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:25.998 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:26.037 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:26.042 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:26.048 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:26.055 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: The UseServiceDiscovery mode of the route 'IdentityService' is enabled.
+2023-11-19 21:04:26.057 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: Getting service discovery provider of Type 'PollConsul'...
+2023-11-19 21:04:26.068 +03:00 [INF] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:26.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 214.0869ms
+2023-11-19 21:04:26.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:04:26.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 18.6604ms
+2023-11-19 21:04:26.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 21:04:26.198 +03:00 [WRN] requestId: 0HMV957LLDDTH:00000003, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-19 21:04:26.208 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-19 21:04:26.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.2747ms
+2023-11-19 21:04:26.213 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 233.6471ms
+2023-11-19 21:04:26.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 21:04:26.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.5254ms
+2023-11-19 21:04:28.698 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:28.703 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:28.706 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:28.708 +03:00 [INF] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:28.711 +03:00 [INF] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:28.713 +03:00 [INF] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:28.715 +03:00 [INF] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:28.718 +03:00 [INF] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:28.722 +03:00 [WRN] requestId: 0HMV957LLDDTH:00000005, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-19 21:04:28.725 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-19 21:04:28.727 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 29.2157ms
+2023-11-19 21:04:30.809 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:30.812 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:30.813 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:30.816 +03:00 [INF] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:30.818 +03:00 [INF] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:30.820 +03:00 [INF] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:30.822 +03:00 [INF] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:30.824 +03:00 [INF] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:30.827 +03:00 [WRN] requestId: 0HMV957LLDDTH:00000007, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-19 21:04:30.829 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-19 21:04:30.831 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 21.8289ms
+2023-11-19 21:04:31.681 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-19 21:04:31.684 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:31.686 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:31.689 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-19 21:04:31.691 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 9.4076ms
+2023-11-19 21:04:31.693 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:31.694 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:31.696 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:31.698 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:31.700 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:31.703 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:31.705 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:31.707 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:31.710 +03:00 [WRN] requestId: 0HMV957LLDDTH:0000000B, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-19 21:04:31.712 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-19 21:04:31.714 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 21.2855ms
+2023-11-19 21:04:36.402 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:36.405 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:36.407 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:36.409 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:36.410 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:36.412 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:36.414 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:36.416 +03:00 [INF] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:36.420 +03:00 [WRN] requestId: 0HMV957LLDDTH:0000000D, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: There were no services in NoLoadBalancer errors found in ResponderMiddleware. Setting error response for request path:/IdentityService/Auth/Login, request method: POST
+2023-11-19 21:04:36.422 +03:00 [INF] Response:
+StatusCode: 404
+2023-11-19 21:04:36.424 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 404 0 - 22.6082ms
+2023-11-19 21:04:52.657 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - -
+2023-11-19 21:04:52.659 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:52.661 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:52.663 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+2023-11-19 21:04:52.665 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/IdentityService/Auth/Login - - - 204 - - 8.0944ms
+2023-11-19 21:04:52.667 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61
+2023-11-19 21:04:52.669 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /IdentityService/Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:52.671 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:52.672 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2023-11-19 21:04:52.674 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /Auth/Login
+2023-11-19 21:04:52.676 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: No authentication needed for /IdentityService/Auth/Login
+2023-11-19 21:04:52.678 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: /Auth/Login route does not require user to be authorized
+2023-11-19 21:04:52.679 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: Retrieving new client information for service: IdentityService...
+2023-11-19 21:04:56.775 +03:00 [INF] requestId: 0HMV957LLDDTH:00000011, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5001/Auth/Login
+2023-11-19 21:04:56.785 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sun, 19 Nov 2023 18:04:56 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Content-Length: 749
+2023-11-19 21:04:56.787 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/IdentityService/Auth/Login application/json 61 - 200 749 application/json;+charset=utf-8 4120.2970ms
+2023-11-19 21:18:42.239 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 21:18:42.278 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 21:18:42.285 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:18:42.289 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:18:42.292 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 21:18:49.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger - -
+2023-11-19 21:18:49.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger - - - 301 0 - 68.9498ms
+2023-11-19 21:18:49.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 21:18:49.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 58.8637ms
+2023-11-19 21:18:49.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/swagger-ui.css - -
+2023-11-19 21:18:49.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/swagger-ui-standalone-preset.js - -
+2023-11-19 21:18:49.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:18:49.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/swagger-ui-bundle.js - -
+2023-11-19 21:18:49.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 14.3466ms
+2023-11-19 21:18:49.696 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-19 21:18:49.702 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-19 21:18:49.703 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/swagger-ui.css - - - 200 143943 text/css 41.1825ms
+2023-11-19 21:18:49.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 43.1313ms
+2023-11-19 21:18:49.716 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-19 21:18:49.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 56.0553ms
+2023-11-19 21:18:55.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 21:18:55.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6355ms
+2023-11-19 21:18:55.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 21:18:55.629 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/favicon-32x32.png - -
+2023-11-19 21:18:55.631 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-19 21:18:55.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/favicon-32x32.png - - - 200 628 image/png 5.2886ms
+2023-11-19 21:18:55.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.8551ms
+2023-11-19 21:19:54.758 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 21:19:54.789 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 21:19:54.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:19:54.797 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:19:54.800 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 21:19:55.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 21:19:55.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 191.1049ms
+2023-11-19 21:19:55.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:19:55.748 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 21:19:55.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 7.7442ms
+2023-11-19 21:19:55.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6751ms
+2023-11-19 21:19:55.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
+2023-11-19 21:19:55.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.9189ms

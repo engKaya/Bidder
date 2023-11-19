@@ -1,0 +1,935 @@
+2023-11-19 15:45:49.854 +03:00 [INF] Registering with Consul
+2023-11-19 15:45:50.622 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 15:45:50.827 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 15:45:50.829 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 15:45:50.832 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:45:50.835 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:45:50.838 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 15:46:12.482 +03:00 [INF] Registering with Consul
+2023-11-19 15:46:12.711 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 15:46:13.052 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 15:46:13.054 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 15:46:13.056 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:46:13.058 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:46:13.061 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 15:46:30.598 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:46:30.598 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 15:46:30.694 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:46:30.700 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:46:30.709 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:46:30.719 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:46:30.725 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 11.2095ms
+2023-11-19 15:46:30.730 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:46:30.735 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:46:30 GMT
+Server: Kestrel
+2023-11-19 15:46:30.740 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 144.3935ms
+2023-11-19 15:46:30.775 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 180.1439ms
+2023-11-19 15:46:30.806 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:46:30.809 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 15:46:30.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 10.8488ms
+2023-11-19 15:46:30.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.5735ms
+2023-11-19 15:46:30.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 15:46:31.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.4633ms
+2023-11-19 15:46:43.660 +03:00 [INF] Registering with Consul
+2023-11-19 15:46:43.810 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 15:46:43.915 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 15:46:43.918 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 15:46:43.920 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:46:43.922 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:46:43.924 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 15:47:01.087 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:47:01.529 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 15:47:04.642 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:47:04.647 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:47:04.658 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:47:06.355 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:47:06.362 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 11.9264ms
+2023-11-19 15:47:06.367 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:47:06.371 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:47:06 GMT
+Server: Kestrel
+2023-11-19 15:47:06.376 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 5290.3708ms
+2023-11-19 15:47:06.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 4883.5990ms
+2023-11-19 15:47:06.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:47:06.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 15:47:06.447 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 8.9862ms
+2023-11-19 15:47:06.485 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.9424ms
+2023-11-19 15:47:06.538 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 15:47:06.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.4611ms
+2023-11-19 15:47:36.387 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:47:36.390 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:47:36.393 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:47:36.396 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:47:36.399 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:47:36.402 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 3.183ms
+2023-11-19 15:47:36.404 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:47:36.407 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:47:35 GMT
+Server: Kestrel
+2023-11-19 15:47:36.409 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 21.6808ms
+2023-11-19 15:48:06.418 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:48:06.420 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:48:06.422 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:48:06.424 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:48:06.426 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:48:06.428 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 1.9635ms
+2023-11-19 15:48:06.430 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:48:06.432 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:48:05 GMT
+Server: Kestrel
+2023-11-19 15:48:06.435 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 16.9388ms
+2023-11-19 15:48:28.013 +03:00 [INF] Registering with Consul
+2023-11-19 15:48:28.350 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 15:48:28.471 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 15:48:28.474 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 15:48:28.478 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:48:28.480 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:48:28.483 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 15:48:43.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 15:48:43.616 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 149.3194ms
+2023-11-19 15:48:43.645 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:48:43.650 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 15:48:43.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 9.9859ms
+2023-11-19 15:48:43.686 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3725ms
+2023-11-19 15:48:43.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 15:48:43.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.5409ms
+2023-11-19 15:49:39.539 +03:00 [INF] Registering with Consul
+2023-11-19 15:49:39.684 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 15:49:39.833 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 15:49:39.843 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 15:49:40.003 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 15:49:40.020 +03:00 [INF] Hosting environment: Development
+2023-11-19 15:49:40.104 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 15:49:48.275 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:49:48.358 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:49:48.363 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:49:48.371 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:49:48.379 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:49:48.383 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 7.9355ms
+2023-11-19 15:49:48.387 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:49:48.390 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:49:47 GMT
+Server: Kestrel
+2023-11-19 15:49:48.394 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 119.6724ms
+2023-11-19 15:49:52.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 15:49:52.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 85.7807ms
+2023-11-19 15:49:52.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 15:49:52.639 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 15:49:52.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 12.4458ms
+2023-11-19 15:49:52.692 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.4069ms
+2023-11-19 15:49:52.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 15:49:52.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.2710ms
+2023-11-19 15:50:16.239 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Auth/Login application/json 61
+2023-11-19 15:50:16.243 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+traceparent: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 15:50:16.246 +03:00 [INF] CORS policy execution successful.
+2023-11-19 15:50:16.249 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api)'
+2023-11-19 15:50:16.260 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse]]] Login(Bidder.IdentityService.Domain.DTOs.User.Request.LoginRequest) on controller Bidder.IdentityService.Api.Controllers.AuthController (Bidder.IdentityService.Api).
+2023-11-19 15:50:16.641 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-11-19 15:50:21.429 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 15:50:21.457 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 15:50:21.460 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:50:21.462 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 15:50:21.464 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 15:50:21.466 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.5392ms
+2023-11-19 15:50:21.469 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 15:50:21.471 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 12:50:21 GMT
+Server: Kestrel
+2023-11-19 15:50:21.473 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 44.6275ms
+2023-11-19 15:50:21.681 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__email_0='ibrahimsabitkaya@gmail.com' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[EmailVerifiedAt], [u].[IdentityNumber], [u].[IsEmailVerified], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[Surname], [u].[Username]
+FROM [BIDDER_USER].[USERS] AS [u]
+WHERE [u].[Email] = @__email_0
+2023-11-19 15:50:32.814 +03:00 [INF] Executing OkObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse, Bidder.IdentityService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-19 15:50:34.851 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api) in 18588.8309ms
+2023-11-19 15:50:34.854 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api)'
+2023-11-19 15:50:34.856 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sun, 19 Nov 2023 12:50:34 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Transfer-Encoding: chunked
+2023-11-19 15:50:34.860 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-11-19 15:50:34.878 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/Auth/Login application/json 61 - 200 - application/json;+charset=utf-8 18638.4845ms
+2023-11-19 21:04:06.124 +03:00 [INF] Registering with Consul
+2023-11-19 21:04:06.299 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:04:06.432 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 21:04:06.435 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 21:04:06.437 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:04:06.439 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:04:06.441 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 21:04:25.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 21:04:26.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 250.1490ms
+2023-11-19 21:04:26.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:04:26.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 9.5878ms
+2023-11-19 21:04:26.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 21:04:26.214 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.5128ms
+2023-11-19 21:04:26.294 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 21:04:26.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.8220ms
+2023-11-19 21:04:50.061 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:04:50.071 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:04:50.075 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:04:50.085 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:04:50.093 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:04:50.100 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 9.1398ms
+2023-11-19 21:04:50.104 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:04:50.108 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:04:49 GMT
+Server: Kestrel
+2023-11-19 21:04:50.110 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 49.1792ms
+2023-11-19 21:04:52.737 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Auth/Login application/json 61
+2023-11-19 21:04:52.740 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Auth/Login
+Accept: application/json, text/plain, */*
+Host: localhost:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+traceparent: [Redacted]
+Content-Length: 61
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-11-19 21:04:52.743 +03:00 [INF] CORS policy execution successful.
+2023-11-19 21:04:52.746 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api)'
+2023-11-19 21:04:52.757 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Bidder.Domain.Common.BaseClassess.ResponseMessage`1[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse]]] Login(Bidder.IdentityService.Domain.DTOs.User.Request.LoginRequest) on controller Bidder.IdentityService.Api.Controllers.AuthController (Bidder.IdentityService.Api).
+2023-11-19 21:04:53.108 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-11-19 21:04:56.624 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__email_0='ibrahimsabitkaya@gmail.com' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[EmailVerifiedAt], [u].[IdentityNumber], [u].[IsEmailVerified], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[Surname], [u].[Username]
+FROM [BIDDER_USER].[USERS] AS [u]
+WHERE [u].[Email] = @__email_0
+2023-11-19 21:04:56.753 +03:00 [INF] Executing OkObjectResult, writing value of type 'Bidder.Domain.Common.BaseClassess.ResponseMessage`1[[Bidder.IdentityService.Domain.DTOs.User.Responses.LoginResponse, Bidder.IdentityService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-19 21:04:56.764 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api) in 4004.8875ms
+2023-11-19 21:04:56.768 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.AuthController.Login (Bidder.IdentityService.Api)'
+2023-11-19 21:04:56.770 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sun, 19 Nov 2023 18:04:56 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Transfer-Encoding: chunked
+2023-11-19 21:04:56.774 +03:00 [INF] Disposing UnitOfWork._dbContext
+2023-11-19 21:04:56.790 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/Auth/Login application/json 61 - 200 - application/json;+charset=utf-8 4053.2062ms
+2023-11-19 21:05:20.118 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:05:20.121 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:05:20.123 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:05:20.125 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:05:20.127 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:05:20.129 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.2885ms
+2023-11-19 21:05:20.131 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:05:20.133 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:05:19 GMT
+Server: Kestrel
+2023-11-19 21:05:20.136 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 18.0518ms
+2023-11-19 21:05:50.143 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:05:50.146 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:05:50.148 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:05:50.150 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:05:50.152 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:05:50.155 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.7434ms
+2023-11-19 21:05:50.158 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:05:50.159 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:05:49 GMT
+Server: Kestrel
+2023-11-19 21:05:50.161 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.9784ms
+2023-11-19 21:06:20.169 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:06:20.172 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:06:20.175 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:06:20.177 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:06:20.180 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:06:20.182 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.059ms
+2023-11-19 21:06:20.184 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:06:20.187 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:06:20 GMT
+Server: Kestrel
+2023-11-19 21:06:20.190 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 20.5588ms
+2023-11-19 21:06:50.200 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:06:50.204 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:06:50.205 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:06:50.207 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:06:50.210 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:06:50.244 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 33.9496ms
+2023-11-19 21:06:50.248 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:06:50.250 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:06:49 GMT
+Server: Kestrel
+2023-11-19 21:06:50.252 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 52.0704ms
+2023-11-19 21:07:20.260 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:07:20.263 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:07:20.265 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:07:20.267 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:07:20.269 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:07:20.271 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1467ms
+2023-11-19 21:07:20.273 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:07:20.275 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:07:19 GMT
+Server: Kestrel
+2023-11-19 21:07:20.277 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.5617ms
+2023-11-19 21:07:50.288 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:07:50.292 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:07:50.295 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:07:50.298 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:07:50.301 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:07:50.303 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1617ms
+2023-11-19 21:07:50.305 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:07:50.307 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:07:49 GMT
+Server: Kestrel
+2023-11-19 21:07:50.309 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 21.1989ms
+2023-11-19 21:08:20.324 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:08:20.326 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:08:20.328 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:08:20.329 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:08:20.333 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:08:20.335 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.4932ms
+2023-11-19 21:08:20.338 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:08:20.340 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:08:20 GMT
+Server: Kestrel
+2023-11-19 21:08:20.342 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.9066ms
+2023-11-19 21:08:50.352 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:08:50.356 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:08:50.359 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:08:50.361 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:08:50.363 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:08:50.365 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.033ms
+2023-11-19 21:08:50.367 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:08:50.369 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:08:49 GMT
+Server: Kestrel
+2023-11-19 21:08:50.371 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.1168ms
+2023-11-19 21:09:20.380 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:09:20.382 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:09:20.384 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:09:20.386 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:09:20.389 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:09:20.391 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.5695ms
+2023-11-19 21:09:20.393 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:09:20.396 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:09:19 GMT
+Server: Kestrel
+2023-11-19 21:09:20.397 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.9657ms
+2023-11-19 21:09:50.406 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:09:50.412 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:09:50.414 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:09:50.417 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:09:50.419 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:09:50.421 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.2086ms
+2023-11-19 21:09:50.423 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:09:50.426 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:09:49 GMT
+Server: Kestrel
+2023-11-19 21:09:50.428 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 21.6506ms
+2023-11-19 21:10:20.436 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:10:20.438 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:10:20.440 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:10:20.443 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:10:20.445 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:10:20.447 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1714ms
+2023-11-19 21:10:20.449 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:10:20.451 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:10:20 GMT
+Server: Kestrel
+2023-11-19 21:10:20.453 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.5968ms
+2023-11-19 21:10:50.464 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:10:50.466 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:10:50.468 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:10:50.470 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:10:50.473 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:10:50.476 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 3.2905ms
+2023-11-19 21:10:50.479 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:10:50.481 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:10:49 GMT
+Server: Kestrel
+2023-11-19 21:10:50.482 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 18.7045ms
+2023-11-19 21:11:20.490 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:11:20.492 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:11:20.495 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:11:20.497 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:11:20.500 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:11:20.502 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.318ms
+2023-11-19 21:11:20.505 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:11:20.506 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:11:19 GMT
+Server: Kestrel
+2023-11-19 21:11:20.508 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 18.4140ms
+2023-11-19 21:11:50.519 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:11:50.521 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:11:50.524 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:11:50.526 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:11:50.528 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:11:50.531 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.4804ms
+2023-11-19 21:11:50.533 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:11:50.535 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:11:50 GMT
+Server: Kestrel
+2023-11-19 21:11:50.538 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 18.3800ms
+2023-11-19 21:12:20.549 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:12:20.552 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:12:20.554 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:12:20.556 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:12:20.560 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:12:20.562 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.3223ms
+2023-11-19 21:12:20.564 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:12:20.567 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:12:20 GMT
+Server: Kestrel
+2023-11-19 21:12:20.569 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.8841ms
+2023-11-19 21:12:50.579 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:12:50.582 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:12:50.584 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:12:50.586 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:12:50.589 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:12:50.591 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.2274ms
+2023-11-19 21:12:50.593 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:12:50.596 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:12:49 GMT
+Server: Kestrel
+2023-11-19 21:12:50.598 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.0411ms
+2023-11-19 21:13:20.608 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:13:20.613 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:13:20.615 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:13:20.617 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:13:20.620 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:13:20.623 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.8587ms
+2023-11-19 21:13:20.625 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:13:20.627 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:13:19 GMT
+Server: Kestrel
+2023-11-19 21:13:20.629 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 20.5815ms
+2023-11-19 21:13:50.638 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:13:50.641 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:13:50.643 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:13:50.645 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:13:50.647 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:13:50.649 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.0855ms
+2023-11-19 21:13:50.651 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:13:50.654 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:13:50 GMT
+Server: Kestrel
+2023-11-19 21:13:50.656 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.6775ms
+2023-11-19 21:14:20.667 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:14:20.670 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:14:20.672 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:14:20.674 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:14:20.676 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:14:20.678 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1653ms
+2023-11-19 21:14:20.680 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:14:20.682 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:14:20 GMT
+Server: Kestrel
+2023-11-19 21:14:20.684 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.1611ms
+2023-11-19 21:14:50.695 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:14:50.698 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:14:50.699 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:14:50.701 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:14:50.704 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:14:50.706 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 1.9273ms
+2023-11-19 21:14:50.708 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:14:50.710 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:14:49 GMT
+Server: Kestrel
+2023-11-19 21:14:50.712 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 16.8933ms
+2023-11-19 21:15:20.720 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:15:20.723 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:15:20.725 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:15:20.727 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:15:20.730 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:15:20.732 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.189ms
+2023-11-19 21:15:20.734 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:15:20.736 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:15:20 GMT
+Server: Kestrel
+2023-11-19 21:15:20.738 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 18.5352ms
+2023-11-19 21:15:50.751 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:15:50.756 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:15:50.759 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:15:50.761 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:15:50.764 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:15:50.766 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1251ms
+2023-11-19 21:15:50.768 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:15:50.770 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:15:50 GMT
+Server: Kestrel
+2023-11-19 21:15:50.772 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 21.2163ms
+2023-11-19 21:16:20.783 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:16:20.785 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:16:20.787 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:16:20.788 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:16:20.791 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:16:20.793 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.444ms
+2023-11-19 21:16:20.796 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:16:20.798 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:16:20 GMT
+Server: Kestrel
+2023-11-19 21:16:20.800 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 17.4609ms
+2023-11-19 21:16:50.812 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:16:50.817 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:16:50.819 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:16:50.821 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:16:50.824 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:16:50.826 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.1548ms
+2023-11-19 21:16:50.828 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:16:50.830 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:16:50 GMT
+Server: Kestrel
+2023-11-19 21:16:50.832 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.7413ms
+2023-11-19 21:18:42.920 +03:00 [INF] Registering with Consul
+2023-11-19 21:18:43.063 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:18:43.164 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 21:18:43.166 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 21:18:43.168 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:18:43.170 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:18:43.172 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 21:19:00.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2023-11-19 21:19:00.578 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 102.8488ms
+2023-11-19 21:19:00.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 21:19:00.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 73.2929ms
+2023-11-19 21:19:00.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2023-11-19 21:19:00.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2023-11-19 21:19:00.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:19:00.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2023-11-19 21:19:00.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 16.3781ms
+2023-11-19 21:19:00.704 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-19 21:19:00.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143943 text/css 46.1249ms
+2023-11-19 21:19:00.714 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-19 21:19:00.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 54.1821ms
+2023-11-19 21:19:00.733 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-19 21:19:00.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 72.5295ms
+2023-11-19 21:19:01.450 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 21:19:01.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.6572ms
+2023-11-19 21:19:55.332 +03:00 [INF] Registering with Consul
+2023-11-19 21:19:55.596 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:19:55.733 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 21:19:55.735 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 21:19:55.738 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:19:55.740 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:19:55.743 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api
+2023-11-19 21:19:56.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2023-11-19 21:19:56.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 177.2060ms
+2023-11-19 21:19:56.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:19:56.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 10.9543ms
+2023-11-19 21:19:56.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - -
+2023-11-19 21:19:56.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.2546ms
+2023-11-19 21:19:56.445 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2023-11-19 21:19:56.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 80.2075ms
+2023-11-19 21:20:02.650 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:20:02.658 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:20:02.662 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:20:02.670 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:20:02.678 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:20:02.683 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 8.5742ms
+2023-11-19 21:20:02.688 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:20:02.690 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:20:02 GMT
+Server: Kestrel
+2023-11-19 21:20:02.692 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 42.5083ms
+2023-11-19 21:20:32.703 +03:00 [INF] Request starting HTTP/2 GET https://host.docker.internal:5001/health/get - -
+2023-11-19 21:20:32.705 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /health/get
+Accept: text/plain, text/*, */*
+Host: host.docker.internal:5001
+User-Agent: Consul Health Check
+Accept-Encoding: gzip
+2023-11-19 21:20:32.708 +03:00 [INF] Executing endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:20:32.710 +03:00 [INF] Route matched with {action = "Get", controller = "Health"}. Executing controller action with signature System.String Get() on controller Bidder.IdentityService.Api.Controllers.HealthController (Bidder.IdentityService.Api).
+2023-11-19 21:20:32.713 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-11-19 21:20:32.715 +03:00 [INF] Executed action Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api) in 2.7608ms
+2023-11-19 21:20:32.718 +03:00 [INF] Executed endpoint 'Bidder.IdentityService.Api.Controllers.HealthController.Get (Bidder.IdentityService.Api)'
+2023-11-19 21:20:32.720 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 19 Nov 2023 18:20:31 GMT
+Server: Kestrel
+2023-11-19 21:20:32.722 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 19.2807ms

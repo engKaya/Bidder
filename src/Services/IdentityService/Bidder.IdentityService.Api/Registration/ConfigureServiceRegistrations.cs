@@ -1,12 +1,12 @@
-﻿using Bidder.Application.Common.Extension;
-using Bidder.Application.Common.Interfaces;
+﻿using Bidder.Application.Common.Interfaces;
 using Bidder.Domain.Common.Interfaces;
 using Bidder.IdentityService.Application.Features.Commands.User.CreateUser;
 using Bidder.IdentityService.Application.Interfaces.Repos;
+using Bidder.IdentityService.Application.Services.Implementation;
+using Bidder.IdentityService.Application.Services.Interfaces;
 using Bidder.IdentityService.Infastructure.Repos;
 using Bidder.IdentityService.Infastructure.Uof;
 using Bidder.Infastructure.Common.Extensions;
-using System.Configuration;
 using System.Reflection;
 
 namespace Bidder.IdentityService.Api.Registration
@@ -32,6 +32,7 @@ namespace Bidder.IdentityService.Api.Registration
             services.AddScoped(typeof(IBaseRepository<>), typeof(Repository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
         }
         public static void AddMediatR(this IServiceCollection services)
         {
