@@ -16,4 +16,4 @@ obj*
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Development.json
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Test.json
 /Services.txt
-**/Log/
+log*.txt
