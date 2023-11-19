@@ -1,6 +1,7 @@
 .vs*
 bin*
 obj*
+Log*
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.json
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.json
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.Development.json
@@ -16,4 +17,3 @@ obj*
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Development.json
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Test.json
 /Services.txt
-log*.txt
