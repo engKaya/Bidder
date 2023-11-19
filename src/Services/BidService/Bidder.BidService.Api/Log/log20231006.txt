@@ -15,7 +15,7 @@ LEFT JOIN [BidRoom] AS [b0] ON [b].[Id] = [b0].[BidId]
 WHERE [b].[Id] = @__id_0
 2023-10-06 00:59:59.440 +03:00 [INF] Executed endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
 2023-10-06 00:59:59.442 +03:00 [INF] Disposing UnitOfWork._dbContext
-2023-10-06 00:59:59.445 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 27.8653ms
+2023-10-06 00:59:59.445 +03:00 [INF] Request finished HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - - 200 - application/grpc 27.8653ms ssdf
 2023-10-06 01:00:57.844 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - sdfsdf
 2023-10-06 01:00:57.844 +03:00 [INF] Request starting HTTP/2 POST http://localhost:5012/BidGrpcService.BidGrpcService/GetBidRoom application/grpc - sdfsdf
 2023-10-06 01:00:57.849 +03:00 [INF] Executing endpoint 'gRPC - /BidGrpcService.BidGrpcService/GetBidRoom'
