@@ -65,7 +65,6 @@ export class BidComponent implements OnInit {
     if(response != null &&  response.StatusCode === HttpStatusCode.Ok)
       this.toast.openToastSuccess(this.successString, this.translate.instant(`BID.SUCCESS.${response?.Message}`));
     else if(response != null &&  response.StatusCode !== HttpStatusCode.Ok){
-      debugger
       this.toast.openToastError(this.errorString, this.translate.instant(`BID.ERRORS.${response?.Message}`));
       this.route.navigate(['/']);
       }

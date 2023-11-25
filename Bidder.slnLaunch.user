@@ -1,0 +1,31 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "src\\Services\\ApiGateway\\Bidder.Gateway\\Bidder.Gateway.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "src\\Services\\IdentityService\\Bidder.IdentityService.Api\\Bidder.IdentityService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "src\\Services\\BidService\\Bidder.BidService.Api\\Bidder.BidService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "src\\Services\\NotificationService\\Bidder.Notification.Api\\Bidder.Notification.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "src\\Services\\SignalRHub\\Bidder.SignalR.Api\\Bidder.SignalR.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      }
+    ]
+  }
+]

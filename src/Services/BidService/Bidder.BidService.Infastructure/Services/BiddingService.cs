@@ -76,18 +76,18 @@ namespace Bidder.BidService.Infastructure.Services
                 IEnumerable<Bid> bids = await uof.BidRepository.GetWhere(x => !x.IsEnded && x.EndDate > DateTime.Now, null, cancellationToken, x => x.BidRoom);
                 foreach (var bid in bids)
                 {
+                    
                     if (bid.BidRoom is null || bid.BidRoom.Id == 0)
                         continue;
 
                     ActiveBidRoom room = new(bid.BidRoom.BidId.ToString(), bid.BidRoom.Id, bid.Title, bid.Description, bid.UserId, bid.EndDate, bid.BidRoom.RoomStatus);
                     activeRooms.Add(room);
-                }  
-                return ResponseMessage<IEnumerable<ActiveBidRoom>>.Success(activeRooms.AsEnumerable());
-
+                }   
+                return ResponseMessage<IEnumerable<ActiveBidRoom>>.Success(activeRooms.AsEnumerable()); 
             }
             catch (Exception ex)
             {
-                logger.LogError("Failed On GetActiveBidRooms", ex.StackTrace);
+                logger.LogError("Failed On GetActiveBidRooms, Stack: {stack}", ex.StackTrace); 
                 return ResponseMessage<IEnumerable<ActiveBidRoom>>.Fail("Failed On GetActiveBidRooms", 500);
             }
         }
@@ -96,8 +96,8 @@ namespace Bidder.BidService.Infastructure.Services
         {
             var room = await uof.BidRepository.FindFirst(x => x.Id == id, null, cancellationToken, x => x.BidRoom);
 
-            if (room == null)
-                return ResponseMessage<Bid>.Fail("Bid Room Not Found", 404);
+            if (room is null)
+                return ResponseMessage<Bid>.Fail("BID_NOT_FOUND", 404);
 
             return ResponseMessage<Bid>.Success(room, 200);
         }
@@ -105,11 +105,16 @@ namespace Bidder.BidService.Infastructure.Services
         public async Task<ResponseMessage<BidRoom>> GetActiveBidRoom(long RoomId, CancellationToken cancellationToken)
         {
             var room = await uof.BidRoomRepository.FindFirst(x => x.Id == RoomId, null, cancellationToken);
-            if (room == null)
+            if (room is null)
                 return ResponseMessage<BidRoom>.Fail("ROOM_NOT_FOUND", 404);
 
             return ResponseMessage<BidRoom>.Success(room);
         }
 
+        public async Task<ResponseMessage<IEnumerable<Bid>>> GetAllBids(CancellationToken cancellationToken)
+        {
+            var bids = await uof.BidRepository.GetAll();
+            return ResponseMessage<IEnumerable<Bid>>.Success(bids.AsEnumerable());
+        }
     }
 }

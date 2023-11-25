@@ -970,3 +970,10 @@ Content-Type: text/plain; charset=utf-8
 Date: Sun, 19 Nov 2023 18:22:43 GMT
 Server: Kestrel
 2023-11-19 21:22:43.682 +03:00 [INF] Request finished HTTP/2 GET https://host.docker.internal:5001/health/get - - - 200 - text/plain;+charset=utf-8 45.6462ms
+2023-11-19 21:40:10.768 +03:00 [INF] Registering with Consul
+2023-11-19 21:40:10.919 +03:00 [INF] User profile is available. Using 'C:\Users\Kaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-19 21:40:11.022 +03:00 [INF] Now listening on: https://localhost:5001
+2023-11-19 21:40:11.024 +03:00 [INF] Now listening on: http://localhost:6001
+2023-11-19 21:40:11.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:40:11.028 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:40:11.030 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\IdentityService\Bidder.IdentityService.Api

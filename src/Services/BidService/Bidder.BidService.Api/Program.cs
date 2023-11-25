@@ -51,10 +51,13 @@ app.UseAuthorization();
 app.UseCors();
 app.UseEndpoints(endpoints =>
 {
-    app.MapGrpcService<BidGrpcServerService>(); 
+    endpoints.MapGraphQLPlayground("graphql");
+    endpoints.MapGraphQLVoyager("ui/voyager");
 });
 
+app.MapGrpcService<BidGrpcServerService>();
 app.UseHttpsRedirection(); 
 app.MapControllers();   
 app.UseConsul();
+app.AddGraphQLApp();
 app.Run();

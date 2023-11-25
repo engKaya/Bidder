@@ -480,3 +480,13 @@ Content-Length: 749
 2023-11-19 21:21:55.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.8878ms
 2023-11-19 21:21:55.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - -
 2023-11-19 21:21:55.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.4708ms
+2023-11-19 21:40:10.114 +03:00 [INF] Now listening on: https://localhost:5000
+2023-11-19 21:40:10.148 +03:00 [INF] Now listening on: http://localhost:6000
+2023-11-19 21:40:10.154 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 21:40:10.158 +03:00 [INF] Hosting environment: Development
+2023-11-19 21:40:10.162 +03:00 [INF] Content root path: C:\Users\Kaya\Desktop\Train Projects\Bidder\src\Services\ApiGateway\Bidder.Gateway
+2023-11-19 21:40:11.321 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/index.html - -
+2023-11-19 21:40:11.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 217.7300ms
+2023-11-19 21:40:11.554 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-11-19 21:40:11.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - -
+2023-11-19 21:40:11.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.7245ms

@@ -64,10 +64,8 @@ namespace Bidder.BidService.Api.GrpcServices
             var result = new GetActiveBidRoomsGrpcResponse();
 
             if (response.Data is null)
-            {
                 return result;
-            }
-
+             
             foreach (var item in response.Data)
             {
                 result.ActiveBidRooms.Add(new ActiveBidRoomGrpcResponse
@@ -80,7 +78,7 @@ namespace Bidder.BidService.Api.GrpcServices
                     Description = item.Description,
                     OwnerId = item.OwnerId.ToString()
                 });
-            }
+            }   
             return result;
         }
 

@@ -13,6 +13,7 @@ namespace Bidder.BidService.Api.Registration
         public static IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddServiceRegistrations(configuration);
+            services.AddGraphQLServices();
             services.AddDbContext<BidDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("BidConnectionString"), sqlOptions =>
