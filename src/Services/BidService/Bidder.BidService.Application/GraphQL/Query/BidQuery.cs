@@ -1,7 +1,11 @@
 ﻿using Bidder.BidService.Application.GraphQL.Types;
 using Bidder.BidService.Application.Interfaces.Services;
+using Bidder.BidService.Domain.Entities;
+using Bidder.Domain.Common.BaseClassess;
 using GraphQL;
+using GraphQL.Resolvers;
 using GraphQL.Types;
+using System.Reflection.Emit;
 
 namespace Bidder.BidService.Application.GraphQL.Query
 {
@@ -10,23 +14,15 @@ namespace Bidder.BidService.Application.GraphQL.Query
         public BidQuery(IBiddingService biddingService)
         {
             Name = "Bid_Queries";
-            //TODO: Graphql endpointlerini belirliyoruz.
-            Field<ListGraphType<BidGraphType>>("Bids", resolve: ctx => biddingService.GetAllBids(new CancellationToken()).Result);
+            AddField(new FieldType()
+            {
+                Name = "Bids",
+                Type = typeof(ListGraphType<BidGraphType>),
+                Resolver = new FuncFieldResolver<ResponseMessage<IEnumerable<Bid>>>(async _ => await biddingService.GetAllBids(new CancellationToken()))
 
 
-
-
-            //Field<ListGraphType<MaterialType>>("MeterialByBrandId",
-            //arguments: new QueryArguments
-            //{
-            // new QueryArgument<IntGraphType>{
-            //     Name="Id",
-            //     Description="Brand Id"
-            // }
-            //},
-            // resolve: ctx => _marketingContext.GetMaterialsByBrandId(ctx.GetArgument<int>("Id")));
-            //Field<ListGraphType<BrandType>>("Brands", resolve: ctx => _marketingContext.GetBrands());
-
+            });
+            //Field(type: typeof(ListGraphType<BidGraphType>), name:"Bids", resolve: ctx => biddingService.GetAllBids(new CancellationToken()).Result); 
         }
     }
 }

@@ -5,7 +5,7 @@ using EventBus.Base.Abstraction;
 using EventBus.Factory;
 using RabbitMQ.Client;
 
-namespace Bidder.BidService.Api.Registration
+namespace Bidder.BidService.Api.Registration.EventBusRegistration
 {
     public static class EventBusConfigure
     {
@@ -45,6 +45,7 @@ namespace Bidder.BidService.Api.Registration
                 });
 
                 IEventBus eventBus = services.BuildServiceProvider().GetRequiredService<IEventBus>();
+                services.AddHandlersTransient();
                 eventBus.AddSubscriptions();
             }
             catch (Exception ex)
@@ -53,12 +54,12 @@ namespace Bidder.BidService.Api.Registration
             }
         }
 
-        public static void AddSubscriptions(this IEventBus eventBus)
-        { 
+        private static void AddSubscriptions(this IEventBus eventBus)
+        {
         }
 
-        public static void AddHandlersTransient(this IServiceCollection services)
-        { 
+        private static void AddHandlersTransient(this IServiceCollection services)
+        {
         }
     }
 }

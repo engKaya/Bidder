@@ -2,10 +2,11 @@
 using GraphQL;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
-
+/*
 namespace Bidder.BidService.Api.Controllers
 {
     [ApiController]
+    [Microsoft.AspNetCore.Authorization.AllowAnonymous]
     [Route("[controller]")]
     public class BidGraphController : ControllerBase
     {
@@ -45,4 +46,4 @@ namespace Bidder.BidService.Api.Controllers
         }
 
     }
-}
+}*/
