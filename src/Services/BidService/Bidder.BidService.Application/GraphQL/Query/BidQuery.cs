@@ -18,7 +18,7 @@ namespace Bidder.BidService.Application.GraphQL.Query
             {
                 Name = "Bids",
                 Type = typeof(ListGraphType<BidGraphType>),
-                Resolver = new FuncFieldResolver<ResponseMessage<IEnumerable<Bid>>>(async _ => await biddingService.GetAllBids(new CancellationToken()))
+                Resolver = new FuncFieldResolver<IEnumerable<Bid>>(async _ => (await biddingService.GetAllBids(new CancellationToken())).Data)
 
 
             });

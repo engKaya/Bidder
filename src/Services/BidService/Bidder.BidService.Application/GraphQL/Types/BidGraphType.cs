@@ -3,6 +3,7 @@ using GraphQL.Types;
 
 namespace Bidder.BidService.Application.GraphQL.Types
 {
+    [Serializable]
     public class BidGraphType : ObjectGraphType<Bid>
     {
         public BidGraphType()

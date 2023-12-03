@@ -3,6 +3,7 @@ bin*
 obj*
 Log*
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.json
+/src/Services/NotificationService/Bidder.Notification.Api/Log/
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.json
 /src/Services/NotificationService/Bidder.Notification.Api/appsettings.Development.json
 /src/Services/IdentityService/Bidder.IdentityService.Api/appsettings.Development.json
@@ -14,6 +15,7 @@ Log*
 /src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Development.json
 /src/Services/SignalRHub/Bidder.SignalR.Api/appsettings.Test.json
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.json
+/src/Services/ApiGateway/Bidder.ApiGateway/Log*
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Development.json
 /src/Services/ApiGateway/Bidder.ApiGateway/appsettings.Test.json
 /Services.txt

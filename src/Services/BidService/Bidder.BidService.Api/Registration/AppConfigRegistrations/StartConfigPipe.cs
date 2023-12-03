@@ -1,11 +1,8 @@
 ﻿using Bidder.Application.Common.Extension;
-using Bidder.BidService.Api.GrpcServices;
-using Bidder.BidService.Api.Registration;
-using Bidder.BidService.Infastructure.Context;
 using Bidder.Infastructure.Common.Extensions;
-using Steeltoe.Discovery.Client;
 using System.Reflection;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Bidder.BidService.Api.Registration.AppConfigRegistrations
 {
@@ -22,9 +19,11 @@ namespace Bidder.BidService.Api.Registration.AppConfigRegistrations
         {
             services.AddControllers().AddJsonOptions(options =>
             {
-                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+                options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString;
+                options.JsonSerializerOptions.WriteIndented = true;
+                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; 
                 options.JsonSerializerOptions.PropertyNamingPolicy = null;
-            });
+            }); 
             services.ConfigureAuth(configuration);
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();

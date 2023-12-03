@@ -11,6 +11,7 @@ using Bidder.BidService.Infastructure.Services;
 using Bidder.BidService.Infastructure.Uof;
 using Bidder.Domain.Common.Interfaces;
 using Bidder.Infastructure.Common.Services;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using System.Reflection;
 
 
@@ -27,8 +28,20 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 
+            services.AddResponseCompression(); 
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                options.MimeTypes = new[] { "text/plain" };
+            });
             services.AddLogging(conf => conf.AddConsole()).Configure<LoggerFilterOptions>(cfg => cfg.MinLevel = LogLevel.Debug);
+
+            services.Configure<KestrelServerOptions>(options =>
+            {
+                options.AllowSynchronousIO = true;
+            });
             services.AddAutoMapperCustom(configuration);
+            services.AddGraphQLServices();
         }
 
 
@@ -85,8 +98,7 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             app.UseCors();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGraphQLPlayground("graphql");
-                endpoints.MapGraphQLVoyager("ui/voyager");
+                endpoints.MapGraphQLPlayground("graphql");  
             });
 
 
