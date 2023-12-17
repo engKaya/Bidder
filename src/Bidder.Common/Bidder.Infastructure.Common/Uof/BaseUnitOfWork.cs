@@ -36,7 +36,7 @@ namespace Bidder.Infastructure.Common.Uof
                 await mediator.DispatchDomainEventsAsync(_dbContext);
                 int hasChanges = await _dbContext.SaveChangesAsync();
                 await currentTransaction.CommitAsync(cancellation);
-                logger.LogInformation($"Changes Commited. Transaction Id: {this.currentTransaction.TransactionId}, {hasChanges} changes committed!");
+                logger.LogInformation($"Changes Commited. Transaction Id: {this.currentTransaction.TransactionId}, {hasChanges} changes committed!"); 
                 return hasChanges;
             }
             catch (Exception ex)

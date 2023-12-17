@@ -1,6 +1,7 @@
 ﻿using Bidder.Domain.Common.Entity;
 using Bidder.Domain.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using System.Linq.Expressions;
 
 namespace Bidder.Infastructure.Common.Repos
@@ -75,6 +76,8 @@ namespace Bidder.Infastructure.Common.Repos
             context.Set<T>().Update(entity);
             return entity;
         }
+
+        public async Task<int> BulkUpdate(Expression<Func<T, bool>> predicate, Expression<Func<SetPropertyCalls<T>, SetPropertyCalls<T>>>  setProp,CancellationToken token)  => await context.Set<T>().Where(predicate).ExecuteUpdateAsync(setProp, token);  
 
         public IEnumerable<T> UpdateRange(IEnumerable<T> entities)
         {

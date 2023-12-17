@@ -6,24 +6,23 @@ using Bidder.BidService.Domain.DTOs.Bidding.CreateBid;
 using Bidder.BidService.Domain.Entities;
 using Bidder.Domain.Common.BaseClassess;
 using Bidder.Domain.Common.Dto.BidService.IBiddingService;
-using EventBus.Base.Abstraction;
-using Microsoft.Extensions.Logging; 
+using Microsoft.Extensions.Logging;
+using System.Threading;
 
 namespace Bidder.BidService.Infastructure.Services
 {
     public class BiddingService : IBiddingService
     {
-        private readonly IUnitOfWork uof;
-        private readonly IEventBus eventBus;
+        private readonly IUnitOfWork uof; 
         private readonly IIdentityService identityService;
         private readonly ILogger<BiddingService> logger;
 
-        public BiddingService(IUnitOfWork uof, IEventBus eventBus, IIdentityService identityService, ILogger<BiddingService> logger)
+        public BiddingService(IUnitOfWork uof,  IIdentityService identityService, ILogger<BiddingService> logger)
         {
-            this.uof = uof;
-            this.eventBus = eventBus;
+            this.uof = uof; 
             this.identityService = identityService;
             this.logger = logger;
+
         }
 
         public async Task<ResponseMessage<CreateBidResponse>> CreateBid(Bid request, CancellationToken cancellationToken)

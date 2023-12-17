@@ -1,5 +1,6 @@
-﻿using Bidder.Domain.Common.Entity; 
-using System.Linq.Expressions;
+﻿using Bidder.Domain.Common.Entity;
+using Microsoft.EntityFrameworkCore.Query;
+using System.Linq.Expressions;  
 
 namespace Bidder.Domain.Common.Interfaces
 {
@@ -11,6 +12,7 @@ namespace Bidder.Domain.Common.Interfaces
         Task<T> Add(T entity, CancellationToken cancellationToken);
         Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities);
         T Update(T entity);
+        Task<int> BulkUpdate(Expression<Func<T, bool>> predicate, Expression<Func<SetPropertyCalls<T>, SetPropertyCalls<T>>> setProp, CancellationToken token);
         IEnumerable<T> UpdateRange(IEnumerable<T> entities);
         void Delete(T entity);
         void DeleteRange(IEnumerable<T> entities);

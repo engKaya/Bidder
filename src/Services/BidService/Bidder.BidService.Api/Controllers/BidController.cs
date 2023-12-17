@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Bidder.BidService.Application.Features.Command.Bidding.CreateBid;
+using Bidder.BidService.Application.Interfaces.Repos;
 using Bidder.BidService.Domain.DTOs.Bidding.CreateBid;
 using Bidder.Domain.Common.BaseClassess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,7 +13,7 @@ namespace Bidder.BidService.Api.Controllers
     public class BidController : BaseController
     {
         private readonly IMapper map; 
-        private readonly ILogger<BidController> logger;
+        private readonly ILogger<BidController> logger; 
         public BidController(IMapper map)
         {
             this.map = map;
@@ -24,7 +25,7 @@ namespace Bidder.BidService.Api.Controllers
         public async Task<ResponseMessage<CreateBidResponse>> CreateBid([FromBody] CreateBidRequest request)
         {
             try
-            {
+            {    
                 var command = map.Map<CreateBidCommand>(request);
                 return await mediator.Send(command);
             }
