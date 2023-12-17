@@ -5,7 +5,7 @@ using Bidder.Infastructure.Common.Repos;
 
 namespace Bidder.BidService.Infastructure.Repos
 {
-    public class BidRoomUserRepository : BaseRepository<BidRoomUser>, IBidRomUserRepository
+    public class BidRoomUserRepository : BaseRepository<BidRoomUser>, IBidRoomUserRepository
     {
         public BidRoomUserRepository(BidDbContext context) : base(context)
         {

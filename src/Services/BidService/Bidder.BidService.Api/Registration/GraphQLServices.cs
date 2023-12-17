@@ -29,15 +29,15 @@ namespace Bidder.BidService.Api.Registration
 
         public static void AddGraphQLApp(this WebApplication app)
         { 
-            app.UseGraphQL<ISchema>();
-            app.UseGraphQL("/graphql");            // url to host GraphQL endpoint
-            app.UseGraphQLPlayground(
-                "/",                               // url to host Playground at
-                new GraphQL.Server.Ui.Playground.PlaygroundOptions
-                {
-                    GraphQLEndPoint = "/graphql",         // url of GraphQL endpoint
-                    SubscriptionsEndPoint = "/graphql",   // url of GraphQL endpoint
-                });
+            //app.UseGraphQL<ISchema>();
+            //app.UseGraphQL("/graphql");            // url to host GraphQL endpoint
+            //app.UseGraphQLPlayground(
+            //    "/",                               // url to host Playground at
+            //    new GraphQL.Server.Ui.Playground.PlaygroundOptions
+            //    {
+            //        GraphQLEndPoint = "/graphql",         // url of GraphQL endpoint
+            //        SubscriptionsEndPoint = "/graphql",   // url of GraphQL endpoint
+            //    });
         }
     }
 }

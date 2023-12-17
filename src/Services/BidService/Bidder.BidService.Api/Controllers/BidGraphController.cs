@@ -22,9 +22,8 @@ namespace Bidder.BidService.Api.Controllers
             _documentWriter = documentWriter;
             _schema = schema;
         }
-
-        [HttpPost]
-        public async Task Post([FromBody] GraphqlQueryParameter query)
+         
+        private async Task Post([FromBody] GraphqlQueryParameter query)
         {
             if (query == null) { throw new ArgumentNullException(nameof(query)); }
 

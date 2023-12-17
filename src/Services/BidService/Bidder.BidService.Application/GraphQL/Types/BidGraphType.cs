@@ -20,7 +20,6 @@ namespace Bidder.BidService.Application.GraphQL.Types
             Field(x => x.UserId).Description("UserId property from the bid object.");
             Field(x => x.CategoryId, nullable: true).Description("CategoryId property from the bid object.");
             Field(x => x.EndDate).Description("EndDate property from the bid object.");
-            Field(x => x.BidRoom, type: typeof(BidRoomGraphType)).Description("BidRoom property from the bid object.");
 
         }
     }

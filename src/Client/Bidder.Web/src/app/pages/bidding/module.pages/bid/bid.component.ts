@@ -8,6 +8,7 @@ import { HttpStatusCode } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthLoginService } from 'src/app/pages/authentication/module.services/auth.service';
 import { HubConnectionState } from '@microsoft/signalr';
+import { SignalRServiceAddresses } from 'src/app/bidder.common/common.services/Signalr.constants';
 
 @Component({
   selector: 'app-bid',
@@ -58,7 +59,7 @@ export class BidComponent implements OnInit {
   }
 
   private async Join(): Promise<void> {
-    var response = await this.signalr.Invoke<JoinResponse>('Join',this.signalrConnection, this.BidId).catch((error: Error) => {
+    var response = await this.signalr.Invoke<JoinResponse>(SignalRServiceAddresses.Join,this.signalrConnection, this.BidId).catch((error: Error) => {
       if(environment.isDevMode) console.error(error);
       return null;
     });
@@ -76,13 +77,13 @@ export class BidComponent implements OnInit {
   }
 
   public async SendMessage(mes: string): Promise<void> { 
-    this.signalr.Invoke('SendMessage',this.signalrConnection, this.BidId.toLocaleLowerCase(), this.ConnectionId, mes).catch((error: Error) => {
+    this.signalr.Invoke(SignalRServiceAddresses.SendMessage,this.signalrConnection, this.BidId.toLocaleLowerCase(), this.ConnectionId, mes).catch((error: Error) => {
       this.toast.openToastError(this.errorString, error.message);
     });
   }
 
   public async ReceiveMessage(): Promise<void> { 
-    this.signalr.OnMethod(this.signalrConnection, 'ReceiveMessage', (message: string) => {
+    this.signalr.OnMethod(this.signalrConnection, SignalRServiceAddresses.ReceiveMessage, (message: string) => {
       console.log(message);
     })
   }

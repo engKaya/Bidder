@@ -40,8 +40,7 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             {
                 options.AllowSynchronousIO = true;
             });
-            services.AddAutoMapperCustom(configuration);
-            services.AddGraphQLServices();
+            services.AddAutoMapperCustom(configuration); 
         }
 
 
@@ -58,6 +57,7 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBidRepository, BidRepository>();
             services.AddScoped<IBidRoomRepository, BidRoomRepository>();
+            services.AddScoped<IBidRoomUserRepository, BidRoomUserRepository>();
         }
 
         private static void AddCustomServices(this IServiceCollection services)
@@ -65,6 +65,7 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IIdentityService, IdentityService>();
             services.AddScoped<IBiddingService, BiddingService>();
+            services.AddScoped<IBidRoomUserService, BidRoomUserService>();
         }
 
         public static void StartInternalServiceApp(this WebApplication app)
@@ -95,18 +96,13 @@ namespace Bidder.BidService.Api.Registration.InternalServices
         {
             app.UseRouting();
             app.UseAuthorization();
-            app.UseCors();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGraphQLPlayground("graphql");  
-            });
+            app.UseCors(); 
 
 
             app.MapGrpcService<BidGrpcServerService>();
             app.UseHttpsRedirection();
             app.MapControllers();
             app.UseConsul();
-            app.AddGraphQLApp();
         }
     }
 }
