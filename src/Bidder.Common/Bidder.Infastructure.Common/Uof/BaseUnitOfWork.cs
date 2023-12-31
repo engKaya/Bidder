@@ -41,7 +41,7 @@ namespace Bidder.Infastructure.Common.Uof
             }
             catch (Exception ex)
             {
-                logger.LogCritical($"Error occured at commiting changes. Transaction Id: {this.currentTransaction.TransactionId}.\n Ex: {ex.ToString()}\n Stack Trace: {ex.StackTrace} ");
+                logger.LogCritical($"Error occured at commiting changes. Transaction Id: {this.currentTransaction.TransactionId}.\n Ex: {ex}\n Stack Trace: {ex.StackTrace} ");
                 this.RollbackTransaction();
                 throw;
             }

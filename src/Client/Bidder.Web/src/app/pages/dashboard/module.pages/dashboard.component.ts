@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
+import { forkJoin } from 'rxjs';
 
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html'
 })
-export class AppDashboardComponent {
+export class DashboardComponent {
 
   constructor() { 
+  } 
+  ngOnInit() { 
+
   }
 
-  ngOnInit() {
-    
-   }
+  private _getDashboardData() {
+      
+  };
+ 
 }

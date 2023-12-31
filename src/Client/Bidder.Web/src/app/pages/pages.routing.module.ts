@@ -1,11 +1,14 @@
-import { Routes } from '@angular/router';
-import { AppDashboardComponent } from './dashboard/dashboard.component';
+import { Routes } from '@angular/router'; 
 
 export const PagesRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full'
+    redirectTo: 'dashboard',
+    pathMatch: 'full', 
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'bidding',
@@ -13,6 +16,6 @@ export const PagesRoutes: Routes = [
   },
   {
     path:'**',
-    redirectTo: '/dashboard'
+    redirectTo: 'dashboard'
   }
 ];
