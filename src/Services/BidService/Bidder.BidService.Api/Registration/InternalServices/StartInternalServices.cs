@@ -98,7 +98,6 @@ namespace Bidder.BidService.Api.Registration.InternalServices
             app.UseAuthorization();
             app.UseCors(); 
 
-
             app.MapGrpcService<BidGrpcServerService>();
             app.UseHttpsRedirection();
             app.MapControllers();

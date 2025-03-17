@@ -25,7 +25,7 @@ namespace Bidder.Application.Common.Extension
         {
             var consulClient = app.ApplicationServices.GetRequiredService<IConsulClient>();
             var logger = app.ApplicationServices.GetRequiredService<ILoggerFactory>().CreateLogger("AppExtensions");
-            var lifetime = app.ApplicationServices.GetRequiredService<IApplicationLifetime>();
+            var lifetime = app.ApplicationServices.GetRequiredService<IHostApplicationLifetime>();
             var config = app.ApplicationServices.GetRequiredService<IConfiguration>();
 
             var registration = GenerateAgentServiceRegistration(config); 
@@ -47,6 +47,8 @@ namespace Bidder.Application.Common.Extension
 
             var serviceName = configuration["CustomSettings:Consul:ServiceName"];
             var appHost = configuration["CustomSettings:Consul:AppAddress"];
+            if (string.IsNullOrEmpty(appHost))
+                throw new ArgumentNullException();
 
             var uri = new Uri(appHost);
 

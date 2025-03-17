@@ -58,7 +58,7 @@ namespace Bidder.SignalR.Application.Services.Implementation
                 var client = new BidGrpcService.BidGrpcServiceClient(channel);
 
                 var policy = PollyPolicyGenerator.CreateExceptionPolicy(_logger);
-                var response = await policy.ExecuteAsync<GetActiveBidRoomsGrpcResponse>(async () =>
+                var response = await policy.ExecuteAsync(async () =>
                 {
                     return await client.GetActiveBidRoomsAsync(new Google.Protobuf.WellKnownTypes.Empty());
                 });
@@ -68,7 +68,8 @@ namespace Bidder.SignalR.Application.Services.Implementation
             }
             catch (Exception ex)
             {
-                return null;
+                _logger.LogDebug($" GetActiveRoomsAndSaveToRedis has failed with {ex.Message}");
+                throw;
             }
         }
     }

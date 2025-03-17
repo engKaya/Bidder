@@ -41,7 +41,7 @@ namespace Bidder.BidService.Api.Registration.AppConfigRegistrations
         private static void ConfigureGrpc(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddGrpc();
-            services.AddGrpcReflection();
+            services.AddGrpcReflection(); 
         }
 
         private static void ConfigureElasticAndConsul(this IServiceCollection services, IConfiguration configuration)

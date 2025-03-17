@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using Bidder.BidService.Application.Features.Command.Bidding.CreateBid;
-using Bidder.BidService.Application.Interfaces.Repos;
 using Bidder.BidService.Domain.DTOs.Bidding.CreateBid;
 using Bidder.Domain.Common.BaseClassess;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bidder.BidService.Api.Controllers
@@ -13,10 +10,12 @@ namespace Bidder.BidService.Api.Controllers
     public class BidController : BaseController
     {
         private readonly IMapper map; 
-        private readonly ILogger<BidController> logger; 
-        public BidController(IMapper map)
+        private readonly ILogger<BidController> logger;
+
+        public BidController(IMapper map, ILogger<BidController> logger)
         {
             this.map = map;
+            this.logger = logger;
         }
 
         [HttpPost]
@@ -32,7 +31,7 @@ namespace Bidder.BidService.Api.Controllers
             catch (Exception ex)
             {
                 logger.LogError(ex, ex.StackTrace);
-                return ResponseMessage<CreateBidResponse>.Fail("AUCTION_CREATION_FAILED", 500, new List<string>() { ex.Message, ex.StackTrace });
+                return ResponseMessage<CreateBidResponse>.Fail("AUCTION_CREATION_FAILED", 500, new List<string>() { ex.Message, ex.StackTrace ?? ""});
             }
         }
     }

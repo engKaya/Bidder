@@ -11,7 +11,7 @@ import { environment } from 'src/environment/environment';
   providedIn: 'root',
 })
 export class BidderRestService {
-  apiUrl = environment.bid_server;
+  apiUrl = environment.api_gateway;
   isDevMode = environment.isDevMode;
   IsLoadingSubject: BehaviorSubject<boolean>;
   IsLoading$: Observable<boolean>;
@@ -44,7 +44,9 @@ export class BidderRestService {
   ): Promise<ResponseMessage<Type>> {
     if (IsLoadingSubject) IsLoadingSubject.next(true);
     else this.IsLoadingSubject.next(true);
-    return lastValueFrom(this.http.get<ResponseMessage<Type>>(url))
+    return lastValueFrom(
+      this.http.get<ResponseMessage<Type>>(this.apiUrl + url)
+    )
       .then(async (response: ResponseMessage<Type>) => {
         if (response.StatusCode === HttpStatusCode.Ok) {
           if (callback) callback(response);
@@ -93,10 +95,10 @@ export class BidderRestService {
     if (IsLoadingSubject) IsLoadingSubject.next(true);
     else this.IsLoadingSubject.next(true);
     return lastValueFrom(
-      this.http.post<ResponseMessage<TypeResponse>>(url, data)
+      this.http.post<ResponseMessage<TypeResponse>>(this.apiUrl + url, data)
     )
       .then(async (response: ResponseMessage<TypeResponse>) => {
-        if (response.StatusCode === HttpStatusCode.Ok) {
+        if (response.StatusCode == HttpStatusCode.Ok) {
           if (callback) callback(response);
           return response;
         } else {

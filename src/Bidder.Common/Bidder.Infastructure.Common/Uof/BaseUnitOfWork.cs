@@ -1,4 +1,4 @@
-﻿using Bidder.Application.Common.Interfaces;
+﻿    using Bidder.Application.Common.Interfaces;
 using Bidder.Infastructure.Common.Extensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +12,7 @@ namespace Bidder.Infastructure.Common.Uof
         protected readonly T _dbContext;
         private readonly ILogger<BaseUnitOfWork<T>> logger;
         private readonly IMediator mediator;
-        private IDbContextTransaction currentTransaction;
+        private readonly IDbContextTransaction currentTransaction;
         public IDbContextTransaction GetCurrentTransaction() => currentTransaction;
         public bool HasActiveTransaction => currentTransaction != null;
         public BaseUnitOfWork(T context, ILogger<BaseUnitOfWork<T>> _logger, IMediator mediator)
